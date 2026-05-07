@@ -1,0 +1,2461 @@
+{
+  "metadata": {
+    "evaluation": "codebook_figs_interpretability",
+    "description": "Evaluates Codebook-FIGS interpretability via 20 metrics across 7 groups",
+    "target_datasets": [
+      "auto_mpg",
+      "breast_cancer_wdbc",
+      "california_housing",
+      "diabetes_pima",
+      "heart_disease"
+    ],
+    "K": 8,
+    "max_rules": 12,
+    "n_folds": 5,
+    "best_config_used": "random_wls",
+    "per_dataset_results": {
+      "auto_mpg": {
+        "dataset": "auto_mpg",
+        "task_type": "regression",
+        "n_features": 25,
+        "n_samples": 392,
+        "n_folds_trained": 5,
+        "config": "random_wls",
+        "sparsity": {
+          "per_direction_l1_norm": [
+            3.7545395640681005,
+            3.6621333292977547,
+            4.235785157603349,
+            3.8257580595398326,
+            3.915742429377043,
+            4.358317324631371,
+            4.43571691960282,
+            4.13922244744216
+          ],
+          "per_direction_n_active": [
+            12,
+            12,
+            17,
+            13,
+            16,
+            19,
+            18,
+            15
+          ],
+          "per_direction_top3_concentration": [
+            0.32789962238508613,
+            0.33287753777944756,
+            0.23940861842934372,
+            0.30624269196548176,
+            0.29929295003843276,
+            0.24222304835359995,
+            0.22207973931613778,
+            0.27428771364986804
+          ],
+          "per_direction_gini": [
+            0.477669948051759,
+            0.5058621229116753,
+            0.3598067229906903,
+            0.4592167861901184,
+            0.4438697022612874,
+            0.31587470601325207,
+            0.2970074471183788,
+            0.3809062371887084
+          ],
+          "mean_l1_norm": 4.040901903945304,
+          "mean_n_active": 15.25,
+          "mean_top3_concentration": 0.2805389902396747,
+          "mean_gini": 0.4050267090907337
+        },
+        "domain_alignment": {
+          "per_direction_top3_hit_rate": [
+            0.6666666666666666,
+            1.0,
+            1.0,
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "per_direction_top5_hit_rate": [
+            0.4,
+            1.0,
+            1.0,
+            0.4,
+            0.4,
+            0.4,
+            0.2,
+            0.4
+          ],
+          "per_direction_weighted_alignment": [
+            0.46654203186281407,
+            0.7449480889020788,
+            0.47202347043997656,
+            0.435991536293739,
+            0.36584473895897157,
+            0.4065876477591549,
+            0.37156223688682877,
+            0.29947784039881703
+          ],
+          "mean_top3_hit_rate": 0.5416666666666666,
+          "mean_top5_hit_rate": 0.525,
+          "mean_weighted_alignment": 0.44537219893779756
+        },
+        "usage_distribution": {
+          "usage_counts": [
+            0.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            6.0,
+            1.0
+          ],
+          "total_splits": 12,
+          "active_codebook_size": 3,
+          "usage_entropy": 1.3250112108241772,
+          "usage_uniformity": 0.44167040360805904,
+          "avg_active_codebook_size": 2.2,
+          "avg_usage_uniformity": 0.2740881978503894,
+          "avg_usage_entropy": 0.8222645935511682,
+          "avg_total_splits": 12.0
+        },
+        "complexity_comparison": {
+          "figs_baseline_unique_features": 11,
+          "active_codebook_size": 3,
+          "compression_ratio": 4.0,
+          "effective_rank": 7.413425222063265
+        },
+        "direction_diversity": {
+          "mean_pairwise_abs_cos": 0.20201943705130385,
+          "max_pairwise_abs_cos": 0.49226503197009325,
+          "diversity_score": 0.7979805629486961,
+          "n_redundant_pairs": 0,
+          "redundant_pairs": []
+        },
+        "cross_fold_stability": {
+          "mean_top3_feature_overlap": 0.5874999999999999,
+          "mean_sign_consistency": 0.797,
+          "mean_cosine_stability": 0.6778261421212788,
+          "per_direction_top3_overlap": [
+            0.2333333333333333,
+            0.5666666666666667,
+            0.16666666666666666,
+            0.7333333333333332,
+            1.0,
+            0.4,
+            0.6,
+            1.0
+          ],
+          "per_direction_sign_consistency": [
+            0.752,
+            0.656,
+            0.5280000000000001,
+            0.8560000000000001,
+            1.0,
+            0.712,
+            0.8720000000000001,
+            1.0
+          ],
+          "per_direction_cosine_stability": [
+            0.460137600773741,
+            0.7170238529314097,
+            0.25822498442564906,
+            0.7605014026667873,
+            0.9999999999989999,
+            0.49891738210176034,
+            0.7278039140728833,
+            0.9999999999989999
+          ]
+        },
+        "semantic_labels": [
+          {
+            "direction_idx": 0,
+            "semantic_name": "Engine Configuration",
+            "formula": "+0.48*cylinders_6 -0.38*cylinders_4 -0.37*model_79",
+            "top_features": [
+              {
+                "feature": "cylinders_6",
+                "weight": 0.483
+              },
+              {
+                "feature": "cylinders_4",
+                "weight": -0.3802
+              },
+              {
+                "feature": "model_79",
+                "weight": -0.3679
+              },
+              {
+                "feature": "model_82",
+                "weight": -0.2883
+              },
+              {
+                "feature": "model_78",
+                "weight": 0.2809
+              }
+            ]
+          },
+          {
+            "direction_idx": 1,
+            "semantic_name": "Engine Power/Weight",
+            "formula": "-0.42*weight -0.41*displacement -0.39*horsepower",
+            "top_features": [
+              {
+                "feature": "weight",
+                "weight": -0.4198
+              },
+              {
+                "feature": "displacement",
+                "weight": -0.4067
+              },
+              {
+                "feature": "horsepower",
+                "weight": -0.3925
+              },
+              {
+                "feature": "cylinders_8",
+                "weight": -0.3611
+              },
+              {
+                "feature": "cylinders_4",
+                "weight": 0.3221
+              }
+            ]
+          },
+          {
+            "direction_idx": 2,
+            "semantic_name": "Engine Power/Weight",
+            "formula": "+0.36*horsepower -0.34*displacement -0.31*cylinders_6",
+            "top_features": [
+              {
+                "feature": "horsepower",
+                "weight": 0.364
+              },
+              {
+                "feature": "displacement",
+                "weight": -0.3358
+              },
+              {
+                "feature": "cylinders_6",
+                "weight": -0.3143
+              },
+              {
+                "feature": "cylinders_8",
+                "weight": -0.2875
+              },
+              {
+                "feature": "origin_2",
+                "weight": -0.2764
+              }
+            ]
+          },
+          {
+            "direction_idx": 3,
+            "semantic_name": "Engine Power/Weight",
+            "formula": "-0.52*displacement -0.35*model_75 -0.31*model_80",
+            "top_features": [
+              {
+                "feature": "displacement",
+                "weight": -0.5162
+              },
+              {
+                "feature": "model_75",
+                "weight": -0.348
+              },
+              {
+                "feature": "model_80",
+                "weight": -0.3075
+              },
+              {
+                "feature": "origin_3",
+                "weight": -0.3064
+              },
+              {
+                "feature": "model_73",
+                "weight": -0.2928
+              }
+            ]
+          },
+          {
+            "direction_idx": 4,
+            "semantic_name": "Vehicle Origin",
+            "formula": "+0.40*model_79 -0.39*origin_1 +0.38*model_73",
+            "top_features": [
+              {
+                "feature": "model_79",
+                "weight": 0.3978
+              },
+              {
+                "feature": "origin_1",
+                "weight": -0.3907
+              },
+              {
+                "feature": "model_73",
+                "weight": 0.3834
+              },
+              {
+                "feature": "model_80",
+                "weight": -0.3274
+              },
+              {
+                "feature": "cylinders_4",
+                "weight": 0.3016
+              }
+            ]
+          },
+          {
+            "direction_idx": 5,
+            "semantic_name": "Engine Power/Weight",
+            "formula": "-0.39*model_81 +0.38*displacement -0.29*model_71",
+            "top_features": [
+              {
+                "feature": "model_81",
+                "weight": -0.3854
+              },
+              {
+                "feature": "displacement",
+                "weight": 0.3776
+              },
+              {
+                "feature": "model_71",
+                "weight": -0.2927
+              },
+              {
+                "feature": "model_79",
+                "weight": -0.2778
+              },
+              {
+                "feature": "cylinders_4",
+                "weight": 0.2743
+              }
+            ]
+          },
+          {
+            "direction_idx": 6,
+            "semantic_name": "Engine Power/Weight",
+            "formula": "+0.36*model_71 -0.32*horsepower +0.31*model_77",
+            "top_features": [
+              {
+                "feature": "model_71",
+                "weight": 0.3555
+              },
+              {
+                "feature": "horsepower",
+                "weight": -0.3174
+              },
+              {
+                "feature": "model_77",
+                "weight": 0.3122
+              },
+              {
+                "feature": "model_74",
+                "weight": -0.3065
+              },
+              {
+                "feature": "model_80",
+                "weight": 0.2824
+              }
+            ]
+          },
+          {
+            "direction_idx": 7,
+            "semantic_name": "Engine Configuration",
+            "formula": "-0.38*model_82 +0.38*cylinders_6 +0.37*model_70",
+            "top_features": [
+              {
+                "feature": "model_82",
+                "weight": -0.3832
+              },
+              {
+                "feature": "cylinders_6",
+                "weight": 0.378
+              },
+              {
+                "feature": "model_70",
+                "weight": 0.3741
+              },
+              {
+                "feature": "cylinders_8",
+                "weight": -0.299
+              },
+              {
+                "feature": "model_71",
+                "weight": 0.2837
+              }
+            ]
+          }
+        ],
+        "verdict": {
+          "sparsity": "low",
+          "domain_alignment": "medium",
+          "utilization": "low",
+          "cross_fold_reliability": "medium"
+        },
+        "experiment_cosine_stability": 0.6950572966564085,
+        "time_seconds": 4.95
+      },
+      "breast_cancer_wdbc": {
+        "dataset": "breast_cancer_wdbc",
+        "task_type": "classification",
+        "n_features": 30,
+        "n_samples": 569,
+        "n_folds_trained": 5,
+        "config": "random_wls",
+        "sparsity": {
+          "per_direction_l1_norm": [
+            4.748049911809379,
+            4.467051319293452,
+            4.54636600299996,
+            4.775518427147596,
+            4.277397922514653,
+            4.687494939695727,
+            4.850081056282268,
+            4.211494965774908
+          ],
+          "per_direction_n_active": [
+            23,
+            18,
+            19,
+            22,
+            17,
+            21,
+            23,
+            14
+          ],
+          "per_direction_top3_concentration": [
+            0.1921810080067165,
+            0.24321922749084632,
+            0.21445492793971024,
+            0.21278457380928759,
+            0.24901987298773232,
+            0.22250518668350477,
+            0.16572652128611115,
+            0.26243754314526535
+          ],
+          "per_direction_gini": [
+            0.32755479842280866,
+            0.396270934126594,
+            0.38491178700993633,
+            0.31514317156805216,
+            0.4480462866681727,
+            0.33697356784497434,
+            0.29663101519856494,
+            0.45444743117141373
+          ],
+          "mean_l1_norm": 4.570431818189743,
+          "mean_n_active": 19.625,
+          "mean_top3_concentration": 0.2202911076686468,
+          "mean_gini": 0.3699973740013146
+        },
+        "domain_alignment": {
+          "per_direction_top3_hit_rate": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.3333333333333333,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "per_direction_top5_hit_rate": [
+            0.0,
+            0.0,
+            0.8,
+            0.6,
+            0.4,
+            0.6,
+            1.0,
+            0.0
+          ],
+          "per_direction_weighted_alignment": [
+            0.28651743453140227,
+            0.2713788808718488,
+            0.4973712333747785,
+            0.3781213984178531,
+            0.39217983942721696,
+            0.4594400962640217,
+            0.6036122341550292,
+            0.23519625446260128
+          ],
+          "mean_top3_hit_rate": 0.5416666666666666,
+          "mean_top5_hit_rate": 0.425,
+          "mean_weighted_alignment": 0.39047717143809396
+        },
+        "usage_distribution": {
+          "usage_counts": [
+            1.0,
+            2.0,
+            2.0,
+            4.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0
+          ],
+          "total_splits": 12,
+          "active_codebook_size": 5,
+          "usage_entropy": 2.188721875540867,
+          "usage_uniformity": 0.7295739585136224,
+          "avg_active_codebook_size": 4.2,
+          "avg_usage_uniformity": 0.6186063560078608,
+          "avg_usage_entropy": 1.8558190680235824,
+          "avg_total_splits": 12.0
+        },
+        "complexity_comparison": {
+          "figs_baseline_unique_features": 10,
+          "active_codebook_size": 5,
+          "compression_ratio": 2.4,
+          "effective_rank": 7.445177245028316
+        },
+        "direction_diversity": {
+          "mean_pairwise_abs_cos": 0.24848109717746997,
+          "max_pairwise_abs_cos": 0.6328333114728845,
+          "diversity_score": 0.75151890282253,
+          "n_redundant_pairs": 0,
+          "redundant_pairs": []
+        },
+        "cross_fold_stability": {
+          "mean_top3_feature_overlap": 0.4333333333333333,
+          "mean_sign_consistency": 0.7158333333333333,
+          "mean_cosine_stability": 0.5502194343847912,
+          "per_direction_top3_overlap": [
+            0.16666666666666666,
+            0.1,
+            0.4666666666666666,
+            0.3,
+            0.7333333333333332,
+            0.6,
+            0.8666666666666668,
+            0.23333333333333334
+          ],
+          "per_direction_sign_consistency": [
+            0.6733333333333333,
+            0.6,
+            0.6466666666666665,
+            0.7133333333333333,
+            0.8266666666666665,
+            0.7866666666666667,
+            0.9400000000000001,
+            0.5399999999999999
+          ],
+          "per_direction_cosine_stability": [
+            0.4217100094867046,
+            0.24001626912478974,
+            0.5054689467513362,
+            0.605337608923598,
+            0.6811638550061894,
+            0.6445690588230222,
+            0.996275053986239,
+            0.3072146729764499
+          ]
+        },
+        "semantic_labels": [
+          {
+            "direction_idx": 0,
+            "semantic_name": "Tumor Morphology",
+            "formula": "-0.34*mean smoothness -0.32*worst smoothness -0.26*mean symmetry",
+            "top_features": [
+              {
+                "feature": "mean smoothness",
+                "weight": -0.3365
+              },
+              {
+                "feature": "worst smoothness",
+                "weight": -0.3174
+              },
+              {
+                "feature": "mean symmetry",
+                "weight": -0.2586
+              },
+              {
+                "feature": "mean texture",
+                "weight": 0.2582
+              },
+              {
+                "feature": "mean fractal dimension",
+                "weight": -0.2518
+              }
+            ]
+          },
+          {
+            "direction_idx": 1,
+            "semantic_name": "Tumor Size",
+            "formula": "-0.38*symmetry error -0.36*smoothness error -0.35*radius error",
+            "top_features": [
+              {
+                "feature": "symmetry error",
+                "weight": -0.3768
+              },
+              {
+                "feature": "smoothness error",
+                "weight": -0.3582
+              },
+              {
+                "feature": "radius error",
+                "weight": -0.3515
+              },
+              {
+                "feature": "perimeter error",
+                "weight": -0.2994
+              },
+              {
+                "feature": "area error",
+                "weight": -0.2834
+              }
+            ]
+          },
+          {
+            "direction_idx": 2,
+            "semantic_name": "Tumor Size",
+            "formula": "+0.35*mean concavity -0.32*mean compactness -0.30*mean area",
+            "top_features": [
+              {
+                "feature": "mean concavity",
+                "weight": 0.3499
+              },
+              {
+                "feature": "mean compactness",
+                "weight": -0.3229
+              },
+              {
+                "feature": "mean area",
+                "weight": -0.3022
+              },
+              {
+                "feature": "mean smoothness",
+                "weight": -0.2764
+              },
+              {
+                "feature": "worst area",
+                "weight": -0.2657
+              }
+            ]
+          },
+          {
+            "direction_idx": 3,
+            "semantic_name": "Tumor Shape/Concavity",
+            "formula": "+0.36*worst compactness +0.34*worst concavity +0.32*mean compactness",
+            "top_features": [
+              {
+                "feature": "worst compactness",
+                "weight": 0.3562
+              },
+              {
+                "feature": "worst concavity",
+                "weight": 0.3383
+              },
+              {
+                "feature": "mean compactness",
+                "weight": 0.3216
+              },
+              {
+                "feature": "compactness error",
+                "weight": 0.2712
+              },
+              {
+                "feature": "symmetry error",
+                "weight": -0.2329
+              }
+            ]
+          },
+          {
+            "direction_idx": 4,
+            "semantic_name": "Tumor Size",
+            "formula": "+0.36*symmetry error -0.36*worst perimeter +0.35*perimeter error",
+            "top_features": [
+              {
+                "feature": "symmetry error",
+                "weight": 0.3615
+              },
+              {
+                "feature": "worst perimeter",
+                "weight": -0.3551
+              },
+              {
+                "feature": "perimeter error",
+                "weight": 0.3485
+              },
+              {
+                "feature": "worst compactness",
+                "weight": -0.3401
+              },
+              {
+                "feature": "fractal dimension error",
+                "weight": -0.2976
+              }
+            ]
+          },
+          {
+            "direction_idx": 5,
+            "semantic_name": "Tumor Size",
+            "formula": "-0.39*worst concave points -0.33*worst radius +0.32*mean compactness",
+            "top_features": [
+              {
+                "feature": "worst concave points",
+                "weight": -0.3948
+              },
+              {
+                "feature": "worst radius",
+                "weight": -0.3274
+              },
+              {
+                "feature": "mean compactness",
+                "weight": 0.3208
+              },
+              {
+                "feature": "worst symmetry",
+                "weight": -0.2952
+              },
+              {
+                "feature": "radius error",
+                "weight": -0.2487
+              }
+            ]
+          },
+          {
+            "direction_idx": 6,
+            "semantic_name": "Tumor Size",
+            "formula": "-0.27*worst concave points -0.27*mean concave points -0.27*worst perimeter",
+            "top_features": [
+              {
+                "feature": "worst concave points",
+                "weight": -0.2705
+              },
+              {
+                "feature": "mean concave points",
+                "weight": -0.2681
+              },
+              {
+                "feature": "worst perimeter",
+                "weight": -0.2652
+              },
+              {
+                "feature": "worst radius",
+                "weight": -0.2642
+              },
+              {
+                "feature": "mean perimeter",
+                "weight": -0.2539
+              }
+            ]
+          },
+          {
+            "direction_idx": 7,
+            "semantic_name": "Tumor Texture",
+            "formula": "-0.39*worst texture -0.38*smoothness error -0.33*mean texture",
+            "top_features": [
+              {
+                "feature": "worst texture",
+                "weight": -0.3917
+              },
+              {
+                "feature": "smoothness error",
+                "weight": -0.3794
+              },
+              {
+                "feature": "mean texture",
+                "weight": -0.3341
+              },
+              {
+                "feature": "symmetry error",
+                "weight": -0.3002
+              },
+              {
+                "feature": "mean symmetry",
+                "weight": -0.2894
+              }
+            ]
+          }
+        ],
+        "verdict": {
+          "sparsity": "low",
+          "domain_alignment": "medium",
+          "utilization": "medium",
+          "cross_fold_reliability": "medium"
+        },
+        "experiment_cosine_stability": 0.567540138324846,
+        "time_seconds": 11.05
+      },
+      "california_housing": {
+        "dataset": "california_housing",
+        "task_type": "regression",
+        "n_features": 8,
+        "n_samples": 20640,
+        "n_folds_trained": 5,
+        "config": "random_wls",
+        "sparsity": {
+          "per_direction_l1_norm": [
+            2.2577602077895684,
+            2.295008302802313,
+            1.854104722176979,
+            1.9225943084637482,
+            2.161955984814578,
+            2.694291367717816,
+            2.1715143027967687,
+            2.178910976608099
+          ],
+          "per_direction_n_active": [
+            5,
+            8,
+            4,
+            4,
+            5,
+            8,
+            6,
+            5
+          ],
+          "per_direction_top3_concentration": [
+            0.688476940840542,
+            0.6446324463626035,
+            0.7883712227080715,
+            0.8013018906055038,
+            0.7401967515630847,
+            0.49460982024998584,
+            0.7069442329517008,
+            0.7121545863040009
+          ],
+          "per_direction_gini": [
+            0.4065804717888857,
+            0.34758576870343205,
+            0.5557917715676919,
+            0.5338825998599281,
+            0.4567402789849888,
+            0.16684053599563664,
+            0.4370839472662651,
+            0.44816179720139626
+          ],
+          "mean_l1_norm": 2.192017521646234,
+          "mean_n_active": 5.625,
+          "mean_top3_concentration": 0.6970859864481866,
+          "mean_gini": 0.4190833964210281
+        },
+        "domain_alignment": {
+          "per_direction_top3_hit_rate": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "per_direction_top5_hit_rate": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "per_direction_weighted_alignment": [
+            0.999999999999557,
+            0.9999999999995642,
+            0.9999999999994608,
+            0.9999999999994799,
+            0.9999999999995373,
+            0.9999999999996286,
+            0.9999999999995397,
+            0.999999999999541
+          ],
+          "mean_top3_hit_rate": 1.0,
+          "mean_top5_hit_rate": 1.0,
+          "mean_weighted_alignment": 0.9999999999995386
+        },
+        "usage_distribution": {
+          "usage_counts": [
+            3.0,
+            0.0,
+            9.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total_splits": 12,
+          "active_codebook_size": 2,
+          "usage_entropy": 0.8112781244591328,
+          "usage_uniformity": 0.2704260414863776,
+          "avg_active_codebook_size": 1.8,
+          "avg_usage_uniformity": 0.20105904769635244,
+          "avg_usage_entropy": 0.6031771430890573,
+          "avg_total_splits": 12.0
+        },
+        "complexity_comparison": {
+          "figs_baseline_unique_features": 5,
+          "active_codebook_size": 2,
+          "compression_ratio": 6.0,
+          "effective_rank": 6.292721120166602
+        },
+        "direction_diversity": {
+          "mean_pairwise_abs_cos": 0.38072254869839545,
+          "max_pairwise_abs_cos": 0.9645468985916328,
+          "diversity_score": 0.6192774513016046,
+          "n_redundant_pairs": 4,
+          "redundant_pairs": [
+            [
+              2,
+              6,
+              0.9645468985916328
+            ],
+            [
+              2,
+              7,
+              0.9017182043927346
+            ],
+            [
+              4,
+              6,
+              0.9303220743728741
+            ],
+            [
+              6,
+              7,
+              0.9541662934790591
+            ]
+          ]
+        },
+        "cross_fold_stability": {
+          "mean_top3_feature_overlap": 0.5791666666666666,
+          "mean_sign_consistency": 0.76875,
+          "mean_cosine_stability": 0.6710900669227755,
+          "per_direction_top3_overlap": [
+            0.5333333333333332,
+            0.4666666666666666,
+            0.6333333333333334,
+            0.7333333333333332,
+            0.4,
+            1.0,
+            0.4333333333333333,
+            0.4333333333333333
+          ],
+          "per_direction_sign_consistency": [
+            0.8,
+            0.75,
+            0.7,
+            0.8,
+            0.625,
+            1.0,
+            0.825,
+            0.65
+          ],
+          "per_direction_cosine_stability": [
+            0.5154268601150829,
+            0.5272374546425788,
+            0.8625121098086588,
+            0.8473991759475137,
+            0.44137337149161465,
+            0.9999999999989999,
+            0.6783057500163397,
+            0.49646581336141515
+          ]
+        },
+        "semantic_labels": [
+          {
+            "direction_idx": 0,
+            "semantic_name": "Geographic Location",
+            "formula": "+0.63*Latitude +0.61*AveBedrms +0.31*Longitude",
+            "top_features": [
+              {
+                "feature": "Latitude",
+                "weight": 0.6344
+              },
+              {
+                "feature": "AveBedrms",
+                "weight": 0.6118
+              },
+              {
+                "feature": "Longitude",
+                "weight": 0.3083
+              },
+              {
+                "feature": "AveRooms",
+                "weight": 0.2602
+              },
+              {
+                "feature": "MedInc",
+                "weight": 0.1995
+              }
+            ]
+          },
+          {
+            "direction_idx": 1,
+            "semantic_name": "Geographic Location",
+            "formula": "+0.79*Longitude -0.36*HouseAge +0.34*Population",
+            "top_features": [
+              {
+                "feature": "Longitude",
+                "weight": 0.7874
+              },
+              {
+                "feature": "HouseAge",
+                "weight": -0.3559
+              },
+              {
+                "feature": "Population",
+                "weight": 0.3361
+              },
+              {
+                "feature": "AveBedrms",
+                "weight": -0.2095
+              },
+              {
+                "feature": "Latitude",
+                "weight": 0.1952
+              }
+            ]
+          },
+          {
+            "direction_idx": 2,
+            "semantic_name": "Income Level",
+            "formula": "+0.88*MedInc -0.34*Longitude +0.24*HouseAge",
+            "top_features": [
+              {
+                "feature": "MedInc",
+                "weight": 0.8769
+              },
+              {
+                "feature": "Longitude",
+                "weight": -0.3419
+              },
+              {
+                "feature": "HouseAge",
+                "weight": 0.243
+              },
+              {
+                "feature": "AveRooms",
+                "weight": 0.2139
+              },
+              {
+                "feature": "Latitude",
+                "weight": 0.067
+              }
+            ]
+          },
+          {
+            "direction_idx": 3,
+            "semantic_name": "Geographic Location",
+            "formula": "-0.84*AveOccup -0.41*Population -0.28*Longitude",
+            "top_features": [
+              {
+                "feature": "AveOccup",
+                "weight": -0.8437
+              },
+              {
+                "feature": "Population",
+                "weight": -0.4131
+              },
+              {
+                "feature": "Longitude",
+                "weight": -0.2837
+              },
+              {
+                "feature": "AveRooms",
+                "weight": -0.1284
+              },
+              {
+                "feature": "Latitude",
+                "weight": 0.0941
+              }
+            ]
+          },
+          {
+            "direction_idx": 4,
+            "semantic_name": "Income Level",
+            "formula": "+0.68*MedInc +0.56*HouseAge -0.36*Longitude",
+            "top_features": [
+              {
+                "feature": "MedInc",
+                "weight": 0.6828
+              },
+              {
+                "feature": "HouseAge",
+                "weight": 0.5575
+              },
+              {
+                "feature": "Longitude",
+                "weight": -0.36
+              },
+              {
+                "feature": "Population",
+                "weight": -0.26
+              },
+              {
+                "feature": "AveRooms",
+                "weight": 0.1234
+              }
+            ]
+          },
+          {
+            "direction_idx": 5,
+            "semantic_name": "Population Density",
+            "formula": "+0.58*AveOccup +0.42*HouseAge -0.34*Population",
+            "top_features": [
+              {
+                "feature": "AveOccup",
+                "weight": 0.5761
+              },
+              {
+                "feature": "HouseAge",
+                "weight": 0.4185
+              },
+              {
+                "feature": "Population",
+                "weight": -0.338
+              },
+              {
+                "feature": "Latitude",
+                "weight": -0.3246
+              },
+              {
+                "feature": "AveRooms",
+                "weight": 0.2962
+              }
+            ]
+          },
+          {
+            "direction_idx": 6,
+            "semantic_name": "Income Level",
+            "formula": "+0.77*MedInc -0.47*Longitude +0.30*HouseAge",
+            "top_features": [
+              {
+                "feature": "MedInc",
+                "weight": 0.7665
+              },
+              {
+                "feature": "Longitude",
+                "weight": -0.469
+              },
+              {
+                "feature": "HouseAge",
+                "weight": 0.2996
+              },
+              {
+                "feature": "Latitude",
+                "weight": 0.2219
+              },
+              {
+                "feature": "AveRooms",
+                "weight": 0.187
+              }
+            ]
+          },
+          {
+            "direction_idx": 7,
+            "semantic_name": "Income Level",
+            "formula": "+0.72*MedInc -0.50*Longitude +0.32*Latitude",
+            "top_features": [
+              {
+                "feature": "MedInc",
+                "weight": 0.7248
+              },
+              {
+                "feature": "Longitude",
+                "weight": -0.5046
+              },
+              {
+                "feature": "Latitude",
+                "weight": 0.3224
+              },
+              {
+                "feature": "AveRooms",
+                "weight": 0.2673
+              },
+              {
+                "feature": "Population",
+                "weight": -0.1854
+              }
+            ]
+          }
+        ],
+        "verdict": {
+          "sparsity": "medium",
+          "domain_alignment": "high",
+          "utilization": "low",
+          "cross_fold_reliability": "medium"
+        },
+        "experiment_cosine_stability": 0.8308163447591064,
+        "time_seconds": 37.97
+      },
+      "diabetes_pima": {
+        "dataset": "diabetes_pima",
+        "task_type": "classification",
+        "n_features": 8,
+        "n_samples": 768,
+        "n_folds_trained": 5,
+        "config": "random_wls",
+        "sparsity": {
+          "per_direction_l1_norm": [
+            2.4344991903952025,
+            2.3728777506861918,
+            2.478064934446177,
+            2.577235009530388,
+            2.2808319259851535,
+            2.694291367717816,
+            2.1243498365656963,
+            2.358237920781472
+          ],
+          "per_direction_n_active": [
+            7,
+            8,
+            7,
+            8,
+            6,
+            8,
+            5,
+            6
+          ],
+          "per_direction_top3_concentration": [
+            0.6000544199794666,
+            0.6078950146641627,
+            0.6005532151468311,
+            0.559340366987034,
+            0.6577389213856998,
+            0.49460982024998584,
+            0.7755952023186352,
+            0.652828361832578
+          ],
+          "per_direction_gini": [
+            0.3230575420468398,
+            0.310299774198741,
+            0.31033349322368053,
+            0.256376185512337,
+            0.39652274359732975,
+            0.16684053599563664,
+            0.4852139454520865,
+            0.3683893356856698
+          ],
+          "mean_l1_norm": 2.4150484920135122,
+          "mean_n_active": 6.875,
+          "mean_top3_concentration": 0.6185769153205491,
+          "mean_gini": 0.3271291944640401
+        },
+        "domain_alignment": {
+          "per_direction_top3_hit_rate": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.6666666666666666
+          ],
+          "per_direction_top5_hit_rate": [
+            1.0,
+            1.0,
+            1.0,
+            0.8,
+            0.8,
+            1.0,
+            1.0,
+            0.8
+          ],
+          "per_direction_weighted_alignment": [
+            0.9779576507425046,
+            0.925503490247509,
+            0.9463081952149783,
+            0.8938613067985393,
+            0.8834682694263274,
+            0.9238279970802158,
+            0.9867125541784479,
+            0.7237612073372663
+          ],
+          "mean_top3_hit_rate": 0.9583333333333333,
+          "mean_top5_hit_rate": 0.925,
+          "mean_weighted_alignment": 0.9076750838782235
+        },
+        "usage_distribution": {
+          "usage_counts": [
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            5.0,
+            0.0,
+            2.0,
+            0.0
+          ],
+          "total_splits": 12,
+          "active_codebook_size": 6,
+          "usage_entropy": 2.2841591278514217,
+          "usage_uniformity": 0.7613863759504739,
+          "avg_active_codebook_size": 4.6,
+          "avg_usage_uniformity": 0.6666898117414919,
+          "avg_usage_entropy": 2.000069435224476,
+          "avg_total_splits": 12.0
+        },
+        "complexity_comparison": {
+          "figs_baseline_unique_features": 7,
+          "active_codebook_size": 6,
+          "compression_ratio": 2.0,
+          "effective_rank": 6.276270835225274
+        },
+        "direction_diversity": {
+          "mean_pairwise_abs_cos": 0.4743712577920297,
+          "max_pairwise_abs_cos": 0.8960528468051508,
+          "diversity_score": 0.5256287422079703,
+          "n_redundant_pairs": 0,
+          "redundant_pairs": []
+        },
+        "cross_fold_stability": {
+          "mean_top3_feature_overlap": 0.4916666666666667,
+          "mean_sign_consistency": 0.75,
+          "mean_cosine_stability": 0.5651688526343024,
+          "per_direction_top3_overlap": [
+            0.5333333333333334,
+            0.6,
+            0.3,
+            0.3333333333333333,
+            0.36666666666666664,
+            1.0,
+            0.4,
+            0.4
+          ],
+          "per_direction_sign_consistency": [
+            0.8,
+            0.675,
+            0.625,
+            0.775,
+            0.65,
+            1.0,
+            0.75,
+            0.725
+          ],
+          "per_direction_cosine_stability": [
+            0.7499496631559972,
+            0.675372940812336,
+            0.3972936541882881,
+            0.5337412205946623,
+            0.2413009457884034,
+            0.9999999999989999,
+            0.4646507298368954,
+            0.4590416666988366
+          ]
+        },
+        "semantic_labels": [
+          {
+            "direction_idx": 0,
+            "semantic_name": "Glucose/Metabolic",
+            "formula": "+0.68*plas +0.42*age +0.37*mass",
+            "top_features": [
+              {
+                "feature": "plas",
+                "weight": 0.678
+              },
+              {
+                "feature": "age",
+                "weight": 0.4161
+              },
+              {
+                "feature": "mass",
+                "weight": 0.3667
+              },
+              {
+                "feature": "preg",
+                "weight": 0.3308
+              },
+              {
+                "feature": "pedi",
+                "weight": 0.23
+              }
+            ]
+          },
+          {
+            "direction_idx": 1,
+            "semantic_name": "Glucose/Metabolic",
+            "formula": "+0.77*plas +0.35*preg +0.33*age",
+            "top_features": [
+              {
+                "feature": "plas",
+                "weight": 0.7688
+              },
+              {
+                "feature": "preg",
+                "weight": 0.3484
+              },
+              {
+                "feature": "age",
+                "weight": 0.3253
+              },
+              {
+                "feature": "pedi",
+                "weight": 0.252
+              },
+              {
+                "feature": "pres",
+                "weight": -0.2113
+              }
+            ]
+          },
+          {
+            "direction_idx": 2,
+            "semantic_name": "Glucose/Metabolic",
+            "formula": "+0.55*plas +0.51*insu +0.43*preg",
+            "top_features": [
+              {
+                "feature": "plas",
+                "weight": 0.5468
+              },
+              {
+                "feature": "insu",
+                "weight": 0.512
+              },
+              {
+                "feature": "preg",
+                "weight": 0.4294
+              },
+              {
+                "feature": "age",
+                "weight": 0.3575
+              },
+              {
+                "feature": "pres",
+                "weight": -0.2965
+              }
+            ]
+          },
+          {
+            "direction_idx": 3,
+            "semantic_name": "Glucose/Metabolic",
+            "formula": "-0.56*mass +0.51*preg +0.38*plas",
+            "top_features": [
+              {
+                "feature": "mass",
+                "weight": -0.5587
+              },
+              {
+                "feature": "preg",
+                "weight": 0.5061
+              },
+              {
+                "feature": "plas",
+                "weight": 0.3767
+              },
+              {
+                "feature": "age",
+                "weight": 0.3428
+              },
+              {
+                "feature": "skin",
+                "weight": -0.2735
+              }
+            ]
+          },
+          {
+            "direction_idx": 4,
+            "semantic_name": "Genetic Predisposition",
+            "formula": "+0.72*preg -0.46*pedi -0.32*pres",
+            "top_features": [
+              {
+                "feature": "preg",
+                "weight": 0.7227
+              },
+              {
+                "feature": "pedi",
+                "weight": -0.4597
+              },
+              {
+                "feature": "pres",
+                "weight": -0.3177
+              },
+              {
+                "feature": "skin",
+                "weight": -0.2658
+              },
+              {
+                "feature": "age",
+                "weight": 0.2102
+              }
+            ]
+          },
+          {
+            "direction_idx": 5,
+            "semantic_name": "Glucose/Metabolic",
+            "formula": "+0.58*mass +0.42*plas -0.34*insu",
+            "top_features": [
+              {
+                "feature": "mass",
+                "weight": 0.5761
+              },
+              {
+                "feature": "plas",
+                "weight": 0.4185
+              },
+              {
+                "feature": "insu",
+                "weight": -0.338
+              },
+              {
+                "feature": "pedi",
+                "weight": -0.3246
+              },
+              {
+                "feature": "pres",
+                "weight": 0.2962
+              }
+            ]
+          },
+          {
+            "direction_idx": 6,
+            "semantic_name": "Glucose/Metabolic",
+            "formula": "+0.59*preg +0.58*plas +0.47*age",
+            "top_features": [
+              {
+                "feature": "preg",
+                "weight": 0.5943
+              },
+              {
+                "feature": "plas",
+                "weight": 0.5803
+              },
+              {
+                "feature": "age",
+                "weight": 0.4731
+              },
+              {
+                "feature": "pedi",
+                "weight": 0.2452
+              },
+              {
+                "feature": "insu",
+                "weight": 0.1539
+              }
+            ]
+          },
+          {
+            "direction_idx": 7,
+            "semantic_name": "Insulin Response",
+            "formula": "+0.65*skin -0.52*insu -0.37*preg",
+            "top_features": [
+              {
+                "feature": "skin",
+                "weight": 0.6514
+              },
+              {
+                "feature": "insu",
+                "weight": -0.5152
+              },
+              {
+                "feature": "preg",
+                "weight": -0.3728
+              },
+              {
+                "feature": "plas",
+                "weight": -0.2934
+              },
+              {
+                "feature": "pres",
+                "weight": 0.2377
+              }
+            ]
+          }
+        ],
+        "verdict": {
+          "sparsity": "low",
+          "domain_alignment": "high",
+          "utilization": "high",
+          "cross_fold_reliability": "medium"
+        },
+        "experiment_cosine_stability": 0.6004690252658668,
+        "time_seconds": 7.03
+      },
+      "heart_disease": {
+        "dataset": "heart_disease",
+        "task_type": "classification",
+        "n_features": 25,
+        "n_samples": 296,
+        "n_folds_trained": 5,
+        "config": "random_wls",
+        "sparsity": {
+          "per_direction_l1_norm": [
+            4.350090697827316,
+            4.239927288125857,
+            4.235785157603349,
+            4.009494154075683,
+            3.915742429377043,
+            4.358317324631371,
+            4.426612140008889,
+            3.8256819905298456
+          ],
+          "per_direction_n_active": [
+            17,
+            16,
+            17,
+            18,
+            16,
+            19,
+            17,
+            13
+          ],
+          "per_direction_top3_concentration": [
+            0.21392613513267114,
+            0.23132930811887856,
+            0.23940861842934372,
+            0.28964675587621985,
+            0.29929295003843276,
+            0.24222304835359995,
+            0.20706959752257897,
+            0.3209436499400463
+          ],
+          "per_direction_gini": [
+            0.32142343192748335,
+            0.35822080251497534,
+            0.3598067229906903,
+            0.4112417674873463,
+            0.4438697022612874,
+            0.31587470601325207,
+            0.3002455676614393,
+            0.45325820940130956
+          ],
+          "mean_l1_norm": 4.170206397772419,
+          "mean_n_active": 16.625,
+          "mean_top3_concentration": 0.2554800079264714,
+          "mean_gini": 0.370492613782223
+        },
+        "domain_alignment": {
+          "per_direction_top3_hit_rate": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.3333333333333333,
+            0.3333333333333333,
+            0.6666666666666666,
+            0.0,
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "per_direction_top5_hit_rate": [
+            0.8,
+            0.6,
+            0.2,
+            0.2,
+            0.6,
+            0.2,
+            0.4,
+            0.4
+          ],
+          "per_direction_weighted_alignment": [
+            0.5792912783701384,
+            0.6044696058832103,
+            0.4078422668078701,
+            0.4379283272565744,
+            0.5318031010649461,
+            0.3766337985731453,
+            0.4736747977833249,
+            0.5222803661296396
+          ],
+          "mean_top3_hit_rate": 0.4583333333333333,
+          "mean_top5_hit_rate": 0.425,
+          "mean_weighted_alignment": 0.49174044273360606
+        },
+        "usage_distribution": {
+          "usage_counts": [
+            4.0,
+            3.0,
+            3.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "total_splits": 12,
+          "active_codebook_size": 5,
+          "usage_entropy": 2.1258145836939115,
+          "usage_uniformity": 0.7086048612313038,
+          "avg_active_codebook_size": 4.8,
+          "avg_usage_uniformity": 0.6721367561378593,
+          "avg_usage_entropy": 2.016410268413577,
+          "avg_total_splits": 12.0
+        },
+        "complexity_comparison": {
+          "figs_baseline_unique_features": 13,
+          "active_codebook_size": 5,
+          "compression_ratio": 2.4,
+          "effective_rank": 6.967731318688843
+        },
+        "direction_diversity": {
+          "mean_pairwise_abs_cos": 0.19147450469749877,
+          "max_pairwise_abs_cos": 0.989484487343897,
+          "diversity_score": 0.8085254953025012,
+          "n_redundant_pairs": 1,
+          "redundant_pairs": [
+            [
+              0,
+              1,
+              0.989484487343897
+            ]
+          ]
+        },
+        "cross_fold_stability": {
+          "mean_top3_feature_overlap": 0.2708333333333333,
+          "mean_sign_consistency": 0.6729999999999999,
+          "mean_cosine_stability": 0.4690307179340353,
+          "per_direction_top3_overlap": [
+            0.4333333333333333,
+            0.3,
+            0.4666666666666666,
+            0.1,
+            0.19999999999999998,
+            0.13333333333333333,
+            0.2333333333333333,
+            0.3
+          ],
+          "per_direction_sign_consistency": [
+            0.9039999999999999,
+            0.728,
+            0.6559999999999999,
+            0.592,
+            0.576,
+            0.568,
+            0.704,
+            0.6559999999999999
+          ],
+          "per_direction_cosine_stability": [
+            0.9293722048511585,
+            0.5713291613333887,
+            0.5637020777304133,
+            0.1348521976839442,
+            0.3356972910041563,
+            0.20148784081072688,
+            0.5022563355463026,
+            0.5135486345121918
+          ]
+        },
+        "semantic_labels": [
+          {
+            "direction_idx": 0,
+            "semantic_name": "Thalassemia Type",
+            "formula": "-0.32*thal_normal +0.31*thal_reversable_defect +0.30*ca",
+            "top_features": [
+              {
+                "feature": "thal_normal",
+                "weight": -0.3233
+              },
+              {
+                "feature": "thal_reversable_defect",
+                "weight": 0.3058
+              },
+              {
+                "feature": "ca",
+                "weight": 0.3015
+              },
+              {
+                "feature": "cp_asympt",
+                "weight": 0.284
+              },
+              {
+                "feature": "oldpeak",
+                "weight": 0.2759
+              }
+            ]
+          },
+          {
+            "direction_idx": 1,
+            "semantic_name": "ST Segment Pattern",
+            "formula": "-0.34*thal_normal +0.33*thal_reversable_defect +0.31*oldpeak",
+            "top_features": [
+              {
+                "feature": "thal_normal",
+                "weight": -0.3429
+              },
+              {
+                "feature": "thal_reversable_defect",
+                "weight": 0.3306
+              },
+              {
+                "feature": "oldpeak",
+                "weight": 0.3073
+              },
+              {
+                "feature": "ca",
+                "weight": 0.2892
+              },
+              {
+                "feature": "slope_up",
+                "weight": -0.2815
+              }
+            ]
+          },
+          {
+            "direction_idx": 2,
+            "semantic_name": "Chest Pain Type",
+            "formula": "+0.36*cp_typ_angina -0.34*cp_non_anginal -0.31*cp_asympt",
+            "top_features": [
+              {
+                "feature": "cp_typ_angina",
+                "weight": 0.364
+              },
+              {
+                "feature": "cp_non_anginal",
+                "weight": -0.3358
+              },
+              {
+                "feature": "cp_asympt",
+                "weight": -0.3143
+              },
+              {
+                "feature": "cp_atyp_angina",
+                "weight": -0.2875
+              },
+              {
+                "feature": "thal_normal",
+                "weight": -0.2764
+              }
+            ]
+          },
+          {
+            "direction_idx": 3,
+            "semantic_name": "Cardiovascular Risk",
+            "formula": "-0.45*restecg_st_t_wave_abnormality +0.37*trestbps +0.34*restecg_left_vent_hyper",
+            "top_features": [
+              {
+                "feature": "restecg_st_t_wave_abnormality",
+                "weight": -0.452
+              },
+              {
+                "feature": "trestbps",
+                "weight": 0.3705
+              },
+              {
+                "feature": "restecg_left_vent_hyper",
+                "weight": 0.3388
+              },
+              {
+                "feature": "cp_atyp_angina",
+                "weight": -0.3212
+              },
+              {
+                "feature": "restecg_normal",
+                "weight": 0.316
+              }
+            ]
+          },
+          {
+            "direction_idx": 4,
+            "semantic_name": "ST Segment Pattern",
+            "formula": "+0.40*slope_down -0.39*thal_fixed_defect +0.38*restecg_normal",
+            "top_features": [
+              {
+                "feature": "slope_down",
+                "weight": 0.3978
+              },
+              {
+                "feature": "thal_fixed_defect",
+                "weight": -0.3907
+              },
+              {
+                "feature": "restecg_normal",
+                "weight": 0.3834
+              },
+              {
+                "feature": "slope_flat",
+                "weight": -0.3274
+              },
+              {
+                "feature": "sex_female",
+                "weight": 0.3016
+              }
+            ]
+          },
+          {
+            "direction_idx": 5,
+            "semantic_name": "ST Segment Pattern",
+            "formula": "-0.39*slope_up +0.38*cp_non_anginal -0.29*fbs_t",
+            "top_features": [
+              {
+                "feature": "slope_up",
+                "weight": -0.3854
+              },
+              {
+                "feature": "cp_non_anginal",
+                "weight": 0.3776
+              },
+              {
+                "feature": "fbs_t",
+                "weight": -0.2927
+              },
+              {
+                "feature": "slope_down",
+                "weight": -0.2778
+              },
+              {
+                "feature": "sex_female",
+                "weight": 0.2743
+              }
+            ]
+          },
+          {
+            "direction_idx": 6,
+            "semantic_name": "Thalassemia Type",
+            "formula": "+0.31*thal_normal -0.30*sex_female +0.30*sex_male",
+            "top_features": [
+              {
+                "feature": "thal_normal",
+                "weight": 0.3104
+              },
+              {
+                "feature": "sex_female",
+                "weight": -0.3031
+              },
+              {
+                "feature": "sex_male",
+                "weight": 0.3031
+              },
+              {
+                "feature": "exang_yes",
+                "weight": -0.3014
+              },
+              {
+                "feature": "exang_no",
+                "weight": 0.3014
+              }
+            ]
+          },
+          {
+            "direction_idx": 7,
+            "semantic_name": "Exercise Cardiac Response",
+            "formula": "-0.47*thal_normal +0.43*thal_reversable_defect -0.33*exang_yes",
+            "top_features": [
+              {
+                "feature": "thal_normal",
+                "weight": -0.4664
+              },
+              {
+                "feature": "thal_reversable_defect",
+                "weight": 0.4329
+              },
+              {
+                "feature": "exang_yes",
+                "weight": -0.3285
+              },
+              {
+                "feature": "exang_no",
+                "weight": 0.3285
+              },
+              {
+                "feature": "sex_female",
+                "weight": -0.2904
+              }
+            ]
+          }
+        ],
+        "verdict": {
+          "sparsity": "low",
+          "domain_alignment": "medium",
+          "utilization": "medium",
+          "cross_fold_reliability": "low"
+        },
+        "experiment_cosine_stability": 0.6079200987121152,
+        "time_seconds": 3.04
+      }
+    },
+    "experiment_summary": {
+      "best_config_per_dataset": {
+        "auto_mpg": {
+          "best_config": "pca_wls",
+          "score": 0.7193446542574435,
+          "metric": "mean_r2"
+        },
+        "breast_cancer_wdbc": {
+          "best_config": "lda_wls",
+          "score": 0.9508306163639186,
+          "metric": "mean_accuracy"
+        },
+        "california_housing": {
+          "best_config": "lda_lbfgs",
+          "score": 0.4842477499007389,
+          "metric": "mean_r2"
+        },
+        "credit_german": {
+          "best_config": "random_wls",
+          "score": 0.744,
+          "metric": "mean_accuracy"
+        },
+        "diabetes_pima": {
+          "best_config": "random_wls",
+          "score": 0.7551396316102199,
+          "metric": "mean_accuracy"
+        },
+        "diabetes_regression": {
+          "best_config": "lda_lbfgs",
+          "score": 0.3296200985223211,
+          "metric": "mean_r2"
+        },
+        "heart_disease": {
+          "best_config": "lda_wls",
+          "score": 0.7971186440677966,
+          "metric": "mean_accuracy"
+        },
+        "ionosphere": {
+          "best_config": "lda_lbfgs",
+          "score": 0.9030583501006035,
+          "metric": "mean_accuracy"
+        },
+        "spambase": {
+          "best_config": "lda_wls",
+          "score": 0.907196808761743,
+          "metric": "mean_accuracy"
+        },
+        "wine_quality_red": {
+          "best_config": "random_wls",
+          "score": 0.29948202009647706,
+          "metric": "mean_r2"
+        }
+      },
+      "overall_best_config": "random_wls",
+      "overall_mean_ranks": {
+        "pca_wls": 3.0,
+        "random_wls": 2.1,
+        "lda_wls": 3.0,
+        "lda_lbfgs": 2.6,
+        "pca_lbfgs": 4.3,
+        "random_lbfgs": 6.0
+      },
+      "stability_summary": {
+        "auto_mpg": {
+          "config": "pca_wls",
+          "mean_cosine_sim": 0.6950572966564085,
+          "min_cosine_sim": 0.08010225309603491,
+          "stable": false
+        },
+        "breast_cancer_wdbc": {
+          "config": "lda_wls",
+          "mean_cosine_sim": 0.567540138324846,
+          "min_cosine_sim": 0.16451500960421847,
+          "stable": false
+        },
+        "california_housing": {
+          "config": "lda_lbfgs",
+          "mean_cosine_sim": 0.8308163447591064,
+          "min_cosine_sim": 0.132864140571882,
+          "stable": true
+        },
+        "credit_german": {
+          "config": "random_wls",
+          "mean_cosine_sim": 0.46570588493869336,
+          "min_cosine_sim": 0.04780583518762756,
+          "stable": false
+        },
+        "diabetes_pima": {
+          "config": "random_wls",
+          "mean_cosine_sim": 0.6004690252658668,
+          "min_cosine_sim": 0.02176451757110581,
+          "stable": false
+        },
+        "diabetes_regression": {
+          "config": "lda_lbfgs",
+          "mean_cosine_sim": 0.7598323108750694,
+          "min_cosine_sim": 0.2649704641049166,
+          "stable": false
+        },
+        "heart_disease": {
+          "config": "lda_wls",
+          "mean_cosine_sim": 0.6079200987121152,
+          "min_cosine_sim": 0.01753501306355358,
+          "stable": false
+        },
+        "ionosphere": {
+          "config": "lda_lbfgs",
+          "mean_cosine_sim": 0.6016886742934104,
+          "min_cosine_sim": 0.013255230424993856,
+          "stable": false
+        },
+        "spambase": {
+          "config": "lda_wls",
+          "mean_cosine_sim": 0.42186061094615035,
+          "min_cosine_sim": 0.044864927965038444,
+          "stable": false
+        },
+        "wine_quality_red": {
+          "config": "random_wls",
+          "mean_cosine_sim": 0.69563322644454,
+          "min_cosine_sim": 0.14267779055114738,
+          "stable": false
+        }
+      },
+      "convergence_summary": {
+        "pca_wls": {
+          "mean_converged_round_across_datasets": 4.74
+        },
+        "random_wls": {
+          "mean_converged_round_across_datasets": 4.819999999999999
+        },
+        "lda_wls": {
+          "mean_converged_round_across_datasets": 4.6
+        },
+        "lda_lbfgs": {
+          "mean_converged_round_across_datasets": 2.6799999999999997
+        },
+        "pca_lbfgs": {
+          "mean_converged_round_across_datasets": 2.6799999999999997
+        },
+        "random_lbfgs": {
+          "mean_converged_round_across_datasets": 2.88
+        }
+      }
+    }
+  },
+  "metrics_agg": {
+    "mean_top3_concentration": 0.41439460152070573,
+    "mean_gini_coefficient": 0.37834585755186784,
+    "mean_l1_norm": 3.4777212267134425,
+    "mean_n_active_features": 12.8,
+    "mean_domain_top3_hit_rate": 0.7,
+    "mean_domain_top5_hit_rate": 0.6599999999999999,
+    "mean_domain_weighted_alignment": 0.6470529793974519,
+    "mean_active_codebook_size": 3.5200000000000005,
+    "mean_usage_uniformity": 0.48651603388679077,
+    "mean_compression_ratio": 3.3600000000000003,
+    "mean_effective_rank": 6.87906514823446,
+    "mean_figs_unique_features": 9.2,
+    "mean_pairwise_abs_cosine": 0.2994137690833395,
+    "mean_diversity_score": 0.7005862309166604,
+    "mean_cross_fold_top3_overlap": 0.47250000000000003,
+    "mean_cross_fold_sign_consistency": 0.7409166666666668,
+    "mean_cross_fold_cosine_stability": 0.5866670427994366,
+    "verdict_sparsity_high_count": 0.0,
+    "verdict_sparsity_medium_count": 1.0,
+    "verdict_sparsity_low_count": 4.0,
+    "verdict_domain_alignment_high_count": 2.0,
+    "verdict_domain_alignment_medium_count": 3.0,
+    "verdict_domain_alignment_low_count": 0.0,
+    "verdict_utilization_high_count": 1.0,
+    "verdict_utilization_medium_count": 2.0,
+    "verdict_utilization_low_count": 2.0,
+    "verdict_cross_fold_reliability_high_count": 0.0,
+    "verdict_cross_fold_reliability_medium_count": 4.0,
+    "verdict_cross_fold_reliability_low_count": 1.0,
+    "n_datasets_evaluated": 5.0
+  },
+  "datasets": [
+    {
+      "dataset": "auto_mpg",
+      "examples": [
+        {
+          "input": "[0.0, 0.0, 0.0, 0.0, 1.0, 307.0, 130.0, 3504.0, 12.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "18.0",
+          "metadata_fold": 0,
+          "metadata_task_type": "regression",
+          "eval_sparsity_top3_concentration": 0.2805389902396747,
+          "eval_domain_top3_hit_rate": 0.5416666666666666,
+          "eval_usage_uniformity": 0.2740881978503894,
+          "eval_diversity_score": 0.7979805629486961,
+          "eval_cross_fold_top3_overlap": 0.5874999999999999,
+          "eval_cross_fold_cosine_stability": 0.6778261421212788,
+          "metadata_n_samples": 392,
+          "metadata_n_features": 25,
+          "metadata_feature_names": [
+            "cylinders_3",
+            "cylinders_4",
+            "cylinders_5",
+            "cylinders_6",
+            "cylinders_8",
+            "displacement",
+            "horsepower",
+            "weight",
+            "acceleration",
+            "model_70",
+            "model_71",
+            "model_72",
+            "model_73",
+            "model_74",
+            "model_75",
+            "model_76",
+            "model_77",
+            "model_78",
+            "model_79",
+            "model_80",
+            "model_81",
+            "model_82",
+            "origin_1",
+            "origin_2",
+            "origin_3"
+          ]
+        },
+        {
+          "input": "[0.0, 0.0, 0.0, 0.0, 1.0, 350.0, 165.0, 3693.0, 11.5, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "15.0",
+          "metadata_fold": 4,
+          "metadata_task_type": "regression",
+          "eval_sparsity_top3_concentration": 0.2805389902396747,
+          "eval_domain_top3_hit_rate": 0.5416666666666666,
+          "eval_usage_uniformity": 0.2740881978503894,
+          "eval_diversity_score": 0.7979805629486961,
+          "eval_cross_fold_top3_overlap": 0.5874999999999999,
+          "eval_cross_fold_cosine_stability": 0.6778261421212788
+        },
+        {
+          "input": "[0.0, 0.0, 0.0, 0.0, 1.0, 318.0, 150.0, 3436.0, 11.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "18.0",
+          "metadata_fold": 2,
+          "metadata_task_type": "regression",
+          "eval_sparsity_top3_concentration": 0.2805389902396747,
+          "eval_domain_top3_hit_rate": 0.5416666666666666,
+          "eval_usage_uniformity": 0.2740881978503894,
+          "eval_diversity_score": 0.7979805629486961,
+          "eval_cross_fold_top3_overlap": 0.5874999999999999,
+          "eval_cross_fold_cosine_stability": 0.6778261421212788
+        }
+      ]
+    },
+    {
+      "dataset": "breast_cancer_wdbc",
+      "examples": [
+        {
+          "input": "[17.99, 10.38, 122.8, 1001.0, 0.1184, 0.2776, 0.3001, 0.1471, 0.2419, 0.07871, 1.095, 0.9053, 8.589, 153.4, 0.006399, 0.04904, 0.05373, 0.01587, 0.03003, 0.006193, 25.38, 17.33, 184.6, 2019.0, 0.1622,...",
+          "output": "0.0",
+          "metadata_fold": 0,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.2202911076686468,
+          "eval_domain_top3_hit_rate": 0.5416666666666666,
+          "eval_usage_uniformity": 0.6186063560078608,
+          "eval_diversity_score": 0.75151890282253,
+          "eval_cross_fold_top3_overlap": 0.4333333333333333,
+          "eval_cross_fold_cosine_stability": 0.5502194343847912,
+          "metadata_n_samples": 569,
+          "metadata_n_features": 30,
+          "metadata_feature_names": [
+            "mean radius",
+            "mean texture",
+            "mean perimeter",
+            "mean area",
+            "mean smoothness",
+            "mean compactness",
+            "mean concavity",
+            "mean concave points",
+            "mean symmetry",
+            "mean fractal dimension",
+            "radius error",
+            "texture error",
+            "perimeter error",
+            "area error",
+            "smoothness error",
+            "compactness error",
+            "concavity error",
+            "concave points error",
+            "symmetry error",
+            "fractal dimension error",
+            "worst radius",
+            "worst texture",
+            "worst perimeter",
+            "worst area",
+            "worst smoothness",
+            "worst compactness",
+            "worst concavity",
+            "worst concave points",
+            "worst symmetry",
+            "worst fractal dimension"
+          ]
+        },
+        {
+          "input": "[20.57, 17.77, 132.9, 1326.0, 0.08474, 0.07864, 0.0869, 0.07017, 0.1812, 0.05667, 0.5435, 0.7339, 3.398, 74.08, 0.005225, 0.01308, 0.0186, 0.0134, 0.01389, 0.003532, 24.99, 23.41, 158.8, 1956.0, 0.123...",
+          "output": "0.0",
+          "metadata_fold": 4,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.2202911076686468,
+          "eval_domain_top3_hit_rate": 0.5416666666666666,
+          "eval_usage_uniformity": 0.6186063560078608,
+          "eval_diversity_score": 0.75151890282253,
+          "eval_cross_fold_top3_overlap": 0.4333333333333333,
+          "eval_cross_fold_cosine_stability": 0.5502194343847912
+        },
+        {
+          "input": "[19.69, 21.25, 130.0, 1203.0, 0.1096, 0.1599, 0.1974, 0.1279, 0.2069, 0.05999, 0.7456, 0.7869, 4.585, 94.03, 0.00615, 0.04006, 0.03832, 0.02058, 0.0225, 0.004571, 23.57, 25.53, 152.5, 1709.0, 0.1444, ...",
+          "output": "0.0",
+          "metadata_fold": 3,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.2202911076686468,
+          "eval_domain_top3_hit_rate": 0.5416666666666666,
+          "eval_usage_uniformity": 0.6186063560078608,
+          "eval_diversity_score": 0.75151890282253,
+          "eval_cross_fold_top3_overlap": 0.4333333333333333,
+          "eval_cross_fold_cosine_stability": 0.5502194343847912
+        }
+      ]
+    },
+    {
+      "dataset": "california_housing",
+      "examples": [
+        {
+          "input": "[8.3252, 41.0, 6.984126984126984, 1.0238095238095237, 322.0, 2.5555555555555554, 37.88, -122.23]",
+          "output": "4.526",
+          "metadata_fold": 0,
+          "metadata_task_type": "regression",
+          "eval_sparsity_top3_concentration": 0.6970859864481866,
+          "eval_domain_top3_hit_rate": 1.0,
+          "eval_usage_uniformity": 0.20105904769635244,
+          "eval_diversity_score": 0.6192774513016046,
+          "eval_cross_fold_top3_overlap": 0.5791666666666666,
+          "eval_cross_fold_cosine_stability": 0.6710900669227755,
+          "metadata_n_samples": 20640,
+          "metadata_n_features": 8,
+          "metadata_feature_names": [
+            "MedInc",
+            "HouseAge",
+            "AveRooms",
+            "AveBedrms",
+            "Population",
+            "AveOccup",
+            "Latitude",
+            "Longitude"
+          ]
+        },
+        {
+          "input": "[8.3014, 21.0, 6.238137082601054, 0.9718804920913884, 2401.0, 2.109841827768014, 37.86, -122.22]",
+          "output": "3.585",
+          "metadata_fold": 3,
+          "metadata_task_type": "regression",
+          "eval_sparsity_top3_concentration": 0.6970859864481866,
+          "eval_domain_top3_hit_rate": 1.0,
+          "eval_usage_uniformity": 0.20105904769635244,
+          "eval_diversity_score": 0.6192774513016046,
+          "eval_cross_fold_top3_overlap": 0.5791666666666666,
+          "eval_cross_fold_cosine_stability": 0.6710900669227755
+        },
+        {
+          "input": "[7.2574, 52.0, 8.288135593220339, 1.073446327683616, 496.0, 2.8022598870056497, 37.85, -122.24]",
+          "output": "3.521",
+          "metadata_fold": 2,
+          "metadata_task_type": "regression",
+          "eval_sparsity_top3_concentration": 0.6970859864481866,
+          "eval_domain_top3_hit_rate": 1.0,
+          "eval_usage_uniformity": 0.20105904769635244,
+          "eval_diversity_score": 0.6192774513016046,
+          "eval_cross_fold_top3_overlap": 0.5791666666666666,
+          "eval_cross_fold_cosine_stability": 0.6710900669227755
+        }
+      ]
+    },
+    {
+      "dataset": "diabetes_pima",
+      "examples": [
+        {
+          "input": "[6.0, 148.0, 72.0, 35.0, 0.0, 33.6, 0.627, 50.0]",
+          "output": "1.0",
+          "metadata_fold": 2,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.6185769153205491,
+          "eval_domain_top3_hit_rate": 0.9583333333333333,
+          "eval_usage_uniformity": 0.6666898117414919,
+          "eval_diversity_score": 0.5256287422079703,
+          "eval_cross_fold_top3_overlap": 0.4916666666666667,
+          "eval_cross_fold_cosine_stability": 0.5651688526343024,
+          "metadata_n_samples": 768,
+          "metadata_n_features": 8,
+          "metadata_feature_names": [
+            "preg",
+            "plas",
+            "pres",
+            "skin",
+            "insu",
+            "mass",
+            "pedi",
+            "age"
+          ]
+        },
+        {
+          "input": "[1.0, 85.0, 66.0, 29.0, 0.0, 26.6, 0.351, 31.0]",
+          "output": "0.0",
+          "metadata_fold": 2,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.6185769153205491,
+          "eval_domain_top3_hit_rate": 0.9583333333333333,
+          "eval_usage_uniformity": 0.6666898117414919,
+          "eval_diversity_score": 0.5256287422079703,
+          "eval_cross_fold_top3_overlap": 0.4916666666666667,
+          "eval_cross_fold_cosine_stability": 0.5651688526343024
+        },
+        {
+          "input": "[8.0, 183.0, 64.0, 0.0, 0.0, 23.3, 0.672, 32.0]",
+          "output": "1.0",
+          "metadata_fold": 3,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.6185769153205491,
+          "eval_domain_top3_hit_rate": 0.9583333333333333,
+          "eval_usage_uniformity": 0.6666898117414919,
+          "eval_diversity_score": 0.5256287422079703,
+          "eval_cross_fold_top3_overlap": 0.4916666666666667,
+          "eval_cross_fold_cosine_stability": 0.5651688526343024
+        }
+      ]
+    },
+    {
+      "dataset": "heart_disease",
+      "examples": [
+        {
+          "input": "[63.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 145.0, 233.0, 0.0, 1.0, 1.0, 0.0, 0.0, 150.0, 1.0, 0.0, 2.3, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "0.0",
+          "metadata_fold": 3,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.2554800079264714,
+          "eval_domain_top3_hit_rate": 0.4583333333333333,
+          "eval_usage_uniformity": 0.6721367561378593,
+          "eval_diversity_score": 0.8085254953025012,
+          "eval_cross_fold_top3_overlap": 0.2708333333333333,
+          "eval_cross_fold_cosine_stability": 0.4690307179340353,
+          "metadata_n_samples": 296,
+          "metadata_n_features": 25,
+          "metadata_feature_names": [
+            "age",
+            "sex_female",
+            "sex_male",
+            "cp_asympt",
+            "cp_atyp_angina",
+            "cp_non_anginal",
+            "cp_typ_angina",
+            "trestbps",
+            "chol",
+            "fbs_f",
+            "fbs_t",
+            "restecg_left_vent_hyper",
+            "restecg_normal",
+            "restecg_st_t_wave_abnormality",
+            "thalach",
+            "exang_no",
+            "exang_yes",
+            "oldpeak",
+            "slope_down",
+            "slope_flat",
+            "slope_up",
+            "ca",
+            "thal_fixed_defect",
+            "thal_normal",
+            "thal_reversable_defect"
+          ]
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 160.0, 286.0, 1.0, 0.0, 1.0, 0.0, 0.0, 108.0, 0.0, 1.0, 1.5, 0.0, 1.0, 0.0, 3.0, 0.0, 1.0, 0.0]",
+          "output": "1.0",
+          "metadata_fold": 0,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.2554800079264714,
+          "eval_domain_top3_hit_rate": 0.4583333333333333,
+          "eval_usage_uniformity": 0.6721367561378593,
+          "eval_diversity_score": 0.8085254953025012,
+          "eval_cross_fold_top3_overlap": 0.2708333333333333,
+          "eval_cross_fold_cosine_stability": 0.4690307179340353
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 229.0, 1.0, 0.0, 1.0, 0.0, 0.0, 129.0, 0.0, 1.0, 2.6, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1.0",
+          "metadata_fold": 0,
+          "metadata_task_type": "classification",
+          "eval_sparsity_top3_concentration": 0.2554800079264714,
+          "eval_domain_top3_hit_rate": 0.4583333333333333,
+          "eval_usage_uniformity": 0.6721367561378593,
+          "eval_diversity_score": 0.8085254953025012,
+          "eval_cross_fold_top3_overlap": 0.2708333333333333,
+          "eval_cross_fold_cosine_stability": 0.4690307179340353
+        }
+      ]
+    }
+  ]
+}

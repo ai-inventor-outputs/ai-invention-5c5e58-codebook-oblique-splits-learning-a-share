@@ -1,0 +1,120 @@
+2026-02-28 00:39:27.716 | INFO     | __main__:load_experiment_results:1541 - Loading experiment results from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/full_method_out.json
+2026-02-28 00:39:27.792 | INFO     | __main__:main:1730 - Using best config from experiment: random_wls (random, wls)
+2026-02-28 00:39:27.792 | INFO     | __main__:main:1737 - === FULL MODE ===
+2026-02-28 00:39:27.792 | INFO     | __main__:load_datasets:99 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-28 00:39:27.853 | INFO     | __main__:load_datasets:136 -   heart_disease: 296 samples, 25 features, classification
+2026-02-28 00:39:27.855 | INFO     | __main__:load_datasets:136 -   diabetes_pima: 768 samples, 8 features, classification
+2026-02-28 00:39:27.858 | INFO     | __main__:load_datasets:136 -   breast_cancer_wdbc: 569 samples, 30 features, classification
+2026-02-28 00:39:27.932 | INFO     | __main__:load_datasets:136 -   california_housing: 20640 samples, 8 features, regression
+2026-02-28 00:39:27.938 | INFO     | __main__:load_datasets:136 -   auto_mpg: 392 samples, 25 features, regression
+2026-02-28 00:39:27.942 | INFO     | __main__:main:1750 - Target datasets (5): ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'diabetes_pima', 'heart_disease']
+2026-02-28 00:39:27.942 | INFO     | __main__:train_and_evaluate_dataset:1353 - === Evaluating auto_mpg ===
+2026-02-28 00:39:27.942 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 0: train=313, test=79
+2026-02-28 00:39:30.142 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 1: train=313, test=79
+2026-02-28 00:39:30.835 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 2: train=314, test=78
+2026-02-28 00:39:31.480 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 3: train=314, test=78
+2026-02-28 00:39:32.190 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 4: train=314, test=78
+2026-02-28 00:39:32.886 | INFO     | __main__:train_and_evaluate_dataset:1420 -   Sparsity: mean_top3_conc=0.281, mean_gini=0.405
+2026-02-28 00:39:32.886 | INFO     | __main__:train_and_evaluate_dataset:1436 -   Domain align: mean_top3_hit=0.542
+2026-02-28 00:39:32.886 | INFO     | __main__:train_and_evaluate_dataset:1462 -   Usage: active_size=3, uniformity=0.274
+2026-02-28 00:39:32.886 | INFO     | __main__:train_and_evaluate_dataset:1475 -   Complexity: FIGS features=11, codebook active=3, erank=7.41
+2026-02-28 00:39:32.887 | INFO     | __main__:train_and_evaluate_dataset:1481 -   Diversity: mean_abs_cos=0.202, max_abs_cos=0.492
+2026-02-28 00:39:32.890 | INFO     | __main__:train_and_evaluate_dataset:1486 -   Stability: top3_overlap=0.587, cosine_stab=0.678
+2026-02-28 00:39:32.890 | INFO     | __main__:train_and_evaluate_dataset:1492 -   Verdict: {'sparsity': 'low', 'domain_alignment': 'medium', 'utilization': 'low', 'cross_fold_reliability': 'medium'}
+2026-02-28 00:39:32.890 | INFO     | __main__:train_and_evaluate_dataset:1495 -   Completed auto_mpg in 4.9s
+2026-02-28 00:39:32.891 | INFO     | __main__:train_and_evaluate_dataset:1353 - === Evaluating breast_cancer_wdbc ===
+2026-02-28 00:39:32.891 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 0: train=455, test=114
+2026-02-28 00:39:34.264 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 1: train=455, test=114
+2026-02-28 00:39:36.353 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 2: train=455, test=114
+2026-02-28 00:39:39.440 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 3: train=455, test=114
+2026-02-28 00:39:41.970 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 4: train=456, test=113
+2026-02-28 00:39:43.934 | INFO     | __main__:train_and_evaluate_dataset:1420 -   Sparsity: mean_top3_conc=0.220, mean_gini=0.370
+2026-02-28 00:39:43.935 | INFO     | __main__:train_and_evaluate_dataset:1436 -   Domain align: mean_top3_hit=0.542
+2026-02-28 00:39:43.935 | INFO     | __main__:train_and_evaluate_dataset:1462 -   Usage: active_size=5, uniformity=0.619
+2026-02-28 00:39:43.935 | INFO     | __main__:train_and_evaluate_dataset:1475 -   Complexity: FIGS features=10, codebook active=5, erank=7.45
+2026-02-28 00:39:43.936 | INFO     | __main__:train_and_evaluate_dataset:1481 -   Diversity: mean_abs_cos=0.248, max_abs_cos=0.633
+2026-02-28 00:39:43.942 | INFO     | __main__:train_and_evaluate_dataset:1486 -   Stability: top3_overlap=0.433, cosine_stab=0.550
+2026-02-28 00:39:43.942 | INFO     | __main__:train_and_evaluate_dataset:1492 -   Verdict: {'sparsity': 'low', 'domain_alignment': 'medium', 'utilization': 'medium', 'cross_fold_reliability': 'medium'}
+2026-02-28 00:39:43.943 | INFO     | __main__:train_and_evaluate_dataset:1495 -   Completed breast_cancer_wdbc in 11.1s
+2026-02-28 00:39:43.943 | INFO     | __main__:train_and_evaluate_dataset:1353 - === Evaluating california_housing ===
+2026-02-28 00:39:43.944 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 0: train=16512, test=4128
+2026-02-28 00:39:53.418 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 1: train=16512, test=4128
+2026-02-28 00:40:01.516 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 2: train=16512, test=4128
+2026-02-28 00:40:06.315 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 3: train=16512, test=4128
+2026-02-28 00:40:13.624 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 4: train=16512, test=4128
+2026-02-28 00:40:21.908 | INFO     | __main__:train_and_evaluate_dataset:1420 -   Sparsity: mean_top3_conc=0.697, mean_gini=0.419
+2026-02-28 00:40:21.908 | INFO     | __main__:train_and_evaluate_dataset:1436 -   Domain align: mean_top3_hit=1.000
+2026-02-28 00:40:21.909 | INFO     | __main__:train_and_evaluate_dataset:1462 -   Usage: active_size=2, uniformity=0.201
+2026-02-28 00:40:21.909 | INFO     | __main__:train_and_evaluate_dataset:1475 -   Complexity: FIGS features=5, codebook active=2, erank=6.29
+2026-02-28 00:40:21.909 | INFO     | __main__:train_and_evaluate_dataset:1481 -   Diversity: mean_abs_cos=0.381, max_abs_cos=0.965
+2026-02-28 00:40:21.913 | INFO     | __main__:train_and_evaluate_dataset:1486 -   Stability: top3_overlap=0.579, cosine_stab=0.671
+2026-02-28 00:40:21.913 | INFO     | __main__:train_and_evaluate_dataset:1492 -   Verdict: {'sparsity': 'medium', 'domain_alignment': 'high', 'utilization': 'low', 'cross_fold_reliability': 'medium'}
+2026-02-28 00:40:21.913 | INFO     | __main__:train_and_evaluate_dataset:1495 -   Completed california_housing in 38.0s
+2026-02-28 00:40:21.914 | INFO     | __main__:train_and_evaluate_dataset:1353 - === Evaluating diabetes_pima ===
+2026-02-28 00:40:21.914 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 0: train=614, test=154
+2026-02-28 00:40:23.086 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 1: train=614, test=154
+2026-02-28 00:40:24.831 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 2: train=614, test=154
+2026-02-28 00:40:26.342 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 3: train=615, test=153
+2026-02-28 00:40:27.604 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 4: train=615, test=153
+2026-02-28 00:40:28.942 | INFO     | __main__:train_and_evaluate_dataset:1420 -   Sparsity: mean_top3_conc=0.619, mean_gini=0.327
+2026-02-28 00:40:28.942 | INFO     | __main__:train_and_evaluate_dataset:1436 -   Domain align: mean_top3_hit=0.958
+2026-02-28 00:40:28.943 | INFO     | __main__:train_and_evaluate_dataset:1462 -   Usage: active_size=6, uniformity=0.667
+2026-02-28 00:40:28.943 | INFO     | __main__:train_and_evaluate_dataset:1475 -   Complexity: FIGS features=7, codebook active=6, erank=6.28
+2026-02-28 00:40:28.943 | INFO     | __main__:train_and_evaluate_dataset:1481 -   Diversity: mean_abs_cos=0.474, max_abs_cos=0.896
+2026-02-28 00:40:28.948 | INFO     | __main__:train_and_evaluate_dataset:1486 -   Stability: top3_overlap=0.492, cosine_stab=0.565
+2026-02-28 00:40:28.949 | INFO     | __main__:train_and_evaluate_dataset:1492 -   Verdict: {'sparsity': 'low', 'domain_alignment': 'high', 'utilization': 'high', 'cross_fold_reliability': 'medium'}
+2026-02-28 00:40:28.949 | INFO     | __main__:train_and_evaluate_dataset:1495 -   Completed diabetes_pima in 7.0s
+2026-02-28 00:40:28.949 | INFO     | __main__:train_and_evaluate_dataset:1353 - === Evaluating heart_disease ===
+2026-02-28 00:40:28.949 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 0: train=236, test=60
+2026-02-28 00:40:29.656 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 1: train=237, test=59
+2026-02-28 00:40:30.320 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 2: train=237, test=59
+2026-02-28 00:40:30.807 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 3: train=237, test=59
+2026-02-28 00:40:31.425 | INFO     | __main__:train_and_evaluate_dataset:1377 -   Fold 4: train=237, test=59
+2026-02-28 00:40:31.981 | INFO     | __main__:train_and_evaluate_dataset:1420 -   Sparsity: mean_top3_conc=0.255, mean_gini=0.370
+2026-02-28 00:40:31.982 | INFO     | __main__:train_and_evaluate_dataset:1436 -   Domain align: mean_top3_hit=0.458
+2026-02-28 00:40:31.982 | INFO     | __main__:train_and_evaluate_dataset:1462 -   Usage: active_size=5, uniformity=0.672
+2026-02-28 00:40:31.982 | INFO     | __main__:train_and_evaluate_dataset:1475 -   Complexity: FIGS features=13, codebook active=5, erank=6.97
+2026-02-28 00:40:31.983 | INFO     | __main__:train_and_evaluate_dataset:1481 -   Diversity: mean_abs_cos=0.191, max_abs_cos=0.989
+2026-02-28 00:40:31.987 | INFO     | __main__:train_and_evaluate_dataset:1486 -   Stability: top3_overlap=0.271, cosine_stab=0.469
+2026-02-28 00:40:31.987 | INFO     | __main__:train_and_evaluate_dataset:1492 -   Verdict: {'sparsity': 'low', 'domain_alignment': 'medium', 'utilization': 'medium', 'cross_fold_reliability': 'low'}
+2026-02-28 00:40:31.987 | INFO     | __main__:train_and_evaluate_dataset:1495 -   Completed heart_disease in 3.0s
+2026-02-28 00:40:32.893 | INFO     | __main__:main:1782 - Output file size: 12.9 MB
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1785 - Total evaluation time: 65.2s
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1788 - === EVALUATION SUMMARY ===
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1791 -   auto_mpg: sparsity=low, domain_align=medium, utilization=low, reliability=medium
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1791 -   breast_cancer_wdbc: sparsity=low, domain_align=medium, utilization=medium, reliability=medium
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1791 -   california_housing: sparsity=medium, domain_align=high, utilization=low, reliability=medium
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1791 -   diabetes_pima: sparsity=low, domain_align=high, utilization=high, reliability=medium
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1791 -   heart_disease: sparsity=low, domain_align=medium, utilization=medium, reliability=low
+2026-02-28 00:40:32.894 | INFO     | __main__:main:1795 - Aggregate metrics: {
+  "mean_top3_concentration": 0.4144,
+  "mean_gini_coefficient": 0.3783,
+  "mean_l1_norm": 3.4777,
+  "mean_n_active_features": 12.8,
+  "mean_domain_top3_hit_rate": 0.7,
+  "mean_domain_top5_hit_rate": 0.66,
+  "mean_domain_weighted_alignment": 0.6471,
+  "mean_active_codebook_size": 3.52,
+  "mean_usage_uniformity": 0.4865,
+  "mean_compression_ratio": 3.36,
+  "mean_effective_rank": 6.8791,
+  "mean_figs_unique_features": 9.2,
+  "mean_pairwise_abs_cosine": 0.2994,
+  "mean_diversity_score": 0.7006,
+  "mean_cross_fold_top3_overlap": 0.4725,
+  "mean_cross_fold_sign_consistency": 0.7409,
+  "mean_cross_fold_cosine_stability": 0.5867,
+  "verdict_sparsity_high_count": 0.0,
+  "verdict_sparsity_medium_count": 1.0,
+  "verdict_sparsity_low_count": 4.0,
+  "verdict_domain_alignment_high_count": 2.0,
+  "verdict_domain_alignment_medium_count": 3.0,
+  "verdict_domain_alignment_low_count": 0.0,
+  "verdict_utilization_high_count": 1.0,
+  "verdict_utilization_medium_count": 2.0,
+  "verdict_utilization_low_count": 2.0,
+  "verdict_cross_fold_reliability_high_count": 0.0,
+  "verdict_cross_fold_reliability_medium_count": 4.0,
+  "verdict_cross_fold_reliability_low_count": 1.0,
+  "n_datasets_evaluated": 5.0
+}

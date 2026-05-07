@@ -1,0 +1,758 @@
+{
+  "datasets": [
+    {
+      "dataset": "heart_disease",
+      "examples": [
+        {
+          "input": "[57.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 140.0, 192.0, 1.0, 0.0, 0.0, 1.0, 0.0, 148.0, 1.0, 0.0, 0.4, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 10,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[54.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 140.0, 239.0, 1.0, 0.0, 0.0, 1.0, 0.0, 160.0, 1.0, 0.0, 1.2, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 17,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[49.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 130.0, 266.0, 1.0, 0.0, 0.0, 1.0, 0.0, 171.0, 1.0, 0.0, 0.6, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 19,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[58.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 150.0, 283.0, 0.0, 1.0, 1.0, 0.0, 0.0, 162.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 21,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[50.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 120.0, 219.0, 1.0, 0.0, 0.0, 1.0, 0.0, 158.0, 1.0, 0.0, 1.6, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 25,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[69.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 140.0, 239.0, 1.0, 0.0, 0.0, 1.0, 0.0, 151.0, 1.0, 0.0, 1.8, 0.0, 0.0, 1.0, 2.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 30,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[44.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 130.0, 233.0, 1.0, 0.0, 0.0, 1.0, 0.0, 179.0, 0.0, 1.0, 0.4, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 34,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[42.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 140.0, 226.0, 1.0, 0.0, 0.0, 1.0, 0.0, 178.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 35,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[61.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 150.0, 243.0, 0.0, 1.0, 0.0, 1.0, 0.0, 137.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 39,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[40.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 140.0, 199.0, 1.0, 0.0, 0.0, 1.0, 0.0, 178.0, 0.0, 1.0, 1.4, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 41,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 160.0, 286.0, 1.0, 0.0, 1.0, 0.0, 0.0, 108.0, 0.0, 1.0, 1.5, 0.0, 1.0, 0.0, 3.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 1,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 229.0, 1.0, 0.0, 1.0, 0.0, 0.0, 129.0, 0.0, 1.0, 2.6, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 2,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[62.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 140.0, 268.0, 1.0, 0.0, 1.0, 0.0, 0.0, 160.0, 1.0, 0.0, 3.6, 1.0, 0.0, 0.0, 2.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 6,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[63.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 130.0, 254.0, 1.0, 0.0, 1.0, 0.0, 0.0, 147.0, 1.0, 0.0, 1.4, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 8,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[56.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 130.0, 256.0, 0.0, 1.0, 1.0, 0.0, 0.0, 142.0, 0.0, 1.0, 0.6, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 12,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[60.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 117.0, 230.0, 0.0, 1.0, 0.0, 1.0, 0.0, 160.0, 0.0, 1.0, 1.4, 0.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 31,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[57.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 150.0, 276.0, 1.0, 0.0, 1.0, 0.0, 0.0, 112.0, 0.0, 1.0, 0.6, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 37,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[55.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 132.0, 353.0, 1.0, 0.0, 0.0, 1.0, 0.0, 132.0, 0.0, 1.0, 1.2, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 38,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[65.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 150.0, 225.0, 1.0, 0.0, 1.0, 0.0, 0.0, 114.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 3.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 40,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[46.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 150.0, 231.0, 1.0, 0.0, 0.0, 1.0, 0.0, 147.0, 1.0, 0.0, 3.6, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 69,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[56.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 120.0, 236.0, 1.0, 0.0, 0.0, 1.0, 0.0, 178.0, 1.0, 0.0, 0.8, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 5,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[44.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 120.0, 263.0, 1.0, 0.0, 0.0, 1.0, 0.0, 173.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 13,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[51.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 110.0, 175.0, 1.0, 0.0, 0.0, 1.0, 0.0, 123.0, 1.0, 0.0, 0.6, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 46,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[44.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 130.0, 219.0, 1.0, 0.0, 1.0, 0.0, 0.0, 188.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 53,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[54.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 135.0, 304.0, 0.0, 1.0, 0.0, 1.0, 0.0, 170.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 63,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[54.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 150.0, 232.0, 1.0, 0.0, 1.0, 0.0, 0.0, 165.0, 1.0, 0.0, 1.6, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 67,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[52.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 120.0, 325.0, 1.0, 0.0, 0.0, 1.0, 0.0, 172.0, 1.0, 0.0, 0.2, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 84,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[71.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 110.0, 265.0, 0.0, 1.0, 1.0, 0.0, 0.0, 130.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 102,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[41.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 135.0, 203.0, 1.0, 0.0, 0.0, 1.0, 0.0, 132.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 114,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[43.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 122.0, 213.0, 1.0, 0.0, 0.0, 1.0, 0.0, 165.0, 1.0, 0.0, 0.2, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 133,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[48.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 110.0, 229.0, 1.0, 0.0, 0.0, 1.0, 0.0, 168.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 16,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[58.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 132.0, 224.0, 1.0, 0.0, 1.0, 0.0, 0.0, 173.0, 1.0, 0.0, 3.2, 0.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 23,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[40.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 110.0, 167.0, 1.0, 0.0, 1.0, 0.0, 0.0, 114.0, 0.0, 1.0, 2.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 29,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[64.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 140.0, 335.0, 1.0, 0.0, 0.0, 1.0, 0.0, 158.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 32,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[43.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 177.0, 1.0, 0.0, 1.0, 0.0, 0.0, 120.0, 0.0, 1.0, 2.5, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 36,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[58.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 112.0, 230.0, 1.0, 0.0, 1.0, 0.0, 0.0, 165.0, 1.0, 0.0, 2.5, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 45,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[50.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 150.0, 243.0, 1.0, 0.0, 1.0, 0.0, 0.0, 128.0, 1.0, 0.0, 2.6, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 47,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[60.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 145.0, 282.0, 1.0, 0.0, 1.0, 0.0, 0.0, 142.0, 0.0, 1.0, 2.8, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 65,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[62.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 267.0, 1.0, 0.0, 0.0, 1.0, 0.0, 99.0, 0.0, 1.0, 1.8, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 72,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[68.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 180.0, 274.0, 0.0, 1.0, 1.0, 0.0, 0.0, 150.0, 0.0, 1.0, 1.6, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 83,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[57.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 120.0, 354.0, 1.0, 0.0, 0.0, 1.0, 0.0, 163.0, 0.0, 1.0, 0.6, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 7,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[48.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 130.0, 275.0, 1.0, 0.0, 0.0, 1.0, 0.0, 139.0, 1.0, 0.0, 0.2, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 18,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[64.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 110.0, 211.0, 1.0, 0.0, 1.0, 0.0, 0.0, 144.0, 0.0, 1.0, 1.8, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 20,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[59.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 135.0, 234.0, 1.0, 0.0, 0.0, 1.0, 0.0, 161.0, 1.0, 0.0, 0.5, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 33,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[65.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 177.0, 1.0, 0.0, 0.0, 1.0, 0.0, 140.0, 1.0, 0.0, 0.4, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 51,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[65.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 155.0, 269.0, 1.0, 0.0, 0.0, 1.0, 0.0, 148.0, 1.0, 0.0, 0.8, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 70,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[65.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 160.0, 360.0, 1.0, 0.0, 1.0, 0.0, 0.0, 151.0, 1.0, 0.0, 0.8, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 75,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[45.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 104.0, 208.0, 1.0, 0.0, 1.0, 0.0, 0.0, 148.0, 0.0, 1.0, 3.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 80,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[44.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 140.0, 235.0, 1.0, 0.0, 1.0, 0.0, 0.0, 180.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 85,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[51.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 130.0, 256.0, 1.0, 0.0, 1.0, 0.0, 0.0, 149.0, 1.0, 0.0, 0.5, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 88,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[53.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 140.0, 203.0, 0.0, 1.0, 1.0, 0.0, 0.0, 155.0, 0.0, 1.0, 3.1, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 9,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[58.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 120.0, 284.0, 1.0, 0.0, 1.0, 0.0, 0.0, 160.0, 1.0, 0.0, 1.8, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 22,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[44.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 112.0, 290.0, 1.0, 0.0, 1.0, 0.0, 0.0, 153.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 52,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[60.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 130.0, 253.0, 1.0, 0.0, 0.0, 1.0, 0.0, 144.0, 0.0, 1.0, 1.4, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 54,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[41.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 110.0, 172.0, 1.0, 0.0, 1.0, 0.0, 0.0, 158.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 57,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[59.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 170.0, 326.0, 1.0, 0.0, 1.0, 0.0, 0.0, 140.0, 0.0, 1.0, 3.4, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 68,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[60.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 125.0, 258.0, 1.0, 0.0, 1.0, 0.0, 0.0, 141.0, 0.0, 1.0, 2.8, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 76,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[48.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 130.0, 256.0, 0.0, 1.0, 1.0, 0.0, 0.0, 150.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 119,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[63.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 150.0, 407.0, 1.0, 0.0, 1.0, 0.0, 0.0, 154.0, 1.0, 0.0, 4.0, 0.0, 1.0, 0.0, 3.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 120,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[55.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 140.0, 217.0, 1.0, 0.0, 0.0, 1.0, 0.0, 111.0, 0.0, 1.0, 5.6, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 122,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[63.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 145.0, 233.0, 0.0, 1.0, 1.0, 0.0, 0.0, 150.0, 1.0, 0.0, 2.3, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 0,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_n_samples": 296,
+          "metadata_n_features": 25,
+          "metadata_domain": "cardiology",
+          "metadata_domain_description": "Predict presence of heart disease from clinical measurements",
+          "metadata_source": "OpenML ID 49 (Cleveland Heart Disease)",
+          "metadata_feature_names": [
+            "age",
+            "sex_female",
+            "sex_male",
+            "cp_asympt",
+            "cp_atyp_angina",
+            "cp_non_anginal",
+            "cp_typ_angina",
+            "trestbps",
+            "chol",
+            "fbs_f",
+            "fbs_t",
+            "restecg_left_vent_hyper",
+            "restecg_normal",
+            "restecg_st_t_wave_abnormality",
+            "thalach",
+            "exang_no",
+            "exang_yes",
+            "oldpeak",
+            "slope_down",
+            "slope_flat",
+            "slope_up",
+            "ca",
+            "thal_fixed_defect",
+            "thal_normal",
+            "thal_reversable_defect"
+          ],
+          "metadata_original_feature_names": [
+            "age",
+            "sex",
+            "cp",
+            "trestbps",
+            "chol",
+            "fbs",
+            "restecg",
+            "thalach",
+            "exang",
+            "oldpeak",
+            "slope",
+            "ca",
+            "thal"
+          ],
+          "metadata_feature_descriptions": "{\"age\": \"Age in years\", \"sex\": \"Sex (male/female)\", \"cp\": \"Chest pain type (typical angina, atypical angina, non-anginal, asymptomatic)\", \"trestbps\": \"Resting blood pressure (mm Hg)\", \"chol\": \"Serum cholesterol (mg/dl)\", \"fbs\": \"Fasting blood sugar > 120 mg/dl\", \"restecg\": \"Resting ECG results\", \"thalach\": \"Maximum heart rate achieved\", \"exang\": \"Exercise induced angina\", \"oldpeak\": \"ST depression induced by exercise relative to rest\", \"slope\": \"Slope of peak exercise ST segment\", \"ca\": \"Number of major vessels colored by fluoroscopy\", \"thal\": \"Thalassemia (normal, fixed defect, reversible defect)\"}"
+        },
+        {
+          "input": "[37.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 130.0, 250.0, 1.0, 0.0, 0.0, 1.0, 0.0, 187.0, 1.0, 0.0, 3.5, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 3,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[56.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 140.0, 294.0, 1.0, 0.0, 1.0, 0.0, 0.0, 153.0, 1.0, 0.0, 1.3, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 11,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[52.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 172.0, 199.0, 0.0, 1.0, 0.0, 1.0, 0.0, 162.0, 1.0, 0.0, 0.5, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 14,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[43.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 150.0, 247.0, 1.0, 0.0, 0.0, 1.0, 0.0, 171.0, 1.0, 0.0, 1.5, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 28,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[59.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 150.0, 212.0, 0.0, 1.0, 0.0, 1.0, 0.0, 157.0, 1.0, 0.0, 1.6, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 43,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[53.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 130.0, 197.0, 0.0, 1.0, 1.0, 0.0, 0.0, 152.0, 1.0, 0.0, 1.2, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 49,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[54.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 125.0, 273.0, 1.0, 0.0, 1.0, 0.0, 0.0, 152.0, 1.0, 0.0, 0.5, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 58,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[46.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 142.0, 177.0, 1.0, 0.0, 1.0, 0.0, 0.0, 160.0, 0.0, 1.0, 1.4, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 61,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[53.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 130.0, 264.0, 1.0, 0.0, 1.0, 0.0, 0.0, 143.0, 1.0, 0.0, 0.4, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 81,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[50.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 140.0, 233.0, 1.0, 0.0, 0.0, 1.0, 0.0, 163.0, 1.0, 0.0, 0.6, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 56,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[51.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 130.0, 305.0, 1.0, 0.0, 0.0, 1.0, 0.0, 142.0, 0.0, 1.0, 1.2, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 60,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[58.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 128.0, 216.0, 1.0, 0.0, 1.0, 0.0, 0.0, 131.0, 0.0, 1.0, 2.2, 0.0, 1.0, 0.0, 3.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 62,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[54.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 188.0, 1.0, 0.0, 0.0, 1.0, 0.0, 113.0, 1.0, 0.0, 1.4, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 64,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 125.0, 254.0, 0.0, 1.0, 0.0, 1.0, 0.0, 163.0, 1.0, 0.0, 0.2, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 71,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[65.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 110.0, 248.0, 1.0, 0.0, 1.0, 0.0, 0.0, 158.0, 1.0, 0.0, 0.6, 0.0, 0.0, 1.0, 2.0, 1.0, 0.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 73,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[44.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 110.0, 197.0, 1.0, 0.0, 1.0, 0.0, 0.0, 177.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 74,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[57.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 128.0, 229.0, 1.0, 0.0, 1.0, 0.0, 0.0, 150.0, 1.0, 0.0, 0.4, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 106,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[63.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 130.0, 330.0, 0.0, 1.0, 1.0, 0.0, 0.0, 132.0, 0.0, 1.0, 1.8, 0.0, 0.0, 1.0, 3.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 117,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[64.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 125.0, 309.0, 1.0, 0.0, 0.0, 1.0, 0.0, 131.0, 0.0, 1.0, 1.8, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 142,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[41.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 130.0, 204.0, 1.0, 0.0, 1.0, 0.0, 0.0, 172.0, 1.0, 0.0, 1.4, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 4,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[57.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 150.0, 168.0, 1.0, 0.0, 0.0, 1.0, 0.0, 174.0, 1.0, 0.0, 1.6, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 15,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[58.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 120.0, 340.0, 1.0, 0.0, 0.0, 1.0, 0.0, 172.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 26,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[66.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 150.0, 226.0, 1.0, 0.0, 0.0, 1.0, 0.0, 114.0, 1.0, 0.0, 2.6, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 27,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[71.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 160.0, 302.0, 1.0, 0.0, 0.0, 1.0, 0.0, 162.0, 1.0, 0.0, 0.4, 0.0, 0.0, 1.0, 2.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 42,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[65.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 140.0, 417.0, 0.0, 1.0, 1.0, 0.0, 0.0, 157.0, 1.0, 0.0, 0.8, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 48,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[41.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 105.0, 198.0, 1.0, 0.0, 0.0, 1.0, 0.0, 168.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 50,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[48.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 130.0, 245.0, 1.0, 0.0, 1.0, 0.0, 0.0, 180.0, 1.0, 0.0, 0.2, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 78,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[39.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 140.0, 321.0, 1.0, 0.0, 1.0, 0.0, 0.0, 182.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 82,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[53.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 138.0, 234.0, 1.0, 0.0, 1.0, 0.0, 0.0, 160.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 87,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[60.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 130.0, 206.0, 1.0, 0.0, 1.0, 0.0, 0.0, 132.0, 0.0, 1.0, 2.4, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 24,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[61.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 130.0, 330.0, 1.0, 0.0, 1.0, 0.0, 0.0, 169.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 44,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[54.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 124.0, 266.0, 1.0, 0.0, 1.0, 0.0, 0.0, 109.0, 0.0, 1.0, 2.2, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 55,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[60.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 140.0, 185.0, 1.0, 0.0, 1.0, 0.0, 0.0, 155.0, 1.0, 0.0, 3.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 66,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[58.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 150.0, 270.0, 1.0, 0.0, 1.0, 0.0, 0.0, 111.0, 0.0, 1.0, 0.8, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 79,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[62.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 160.0, 164.0, 1.0, 0.0, 1.0, 0.0, 0.0, 145.0, 1.0, 0.0, 6.2, 1.0, 0.0, 0.0, 3.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 90,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[49.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 120.0, 188.0, 1.0, 0.0, 0.0, 1.0, 0.0, 139.0, 1.0, 0.0, 2.0, 0.0, 1.0, 0.0, 3.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 103,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[59.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 140.0, 177.0, 1.0, 0.0, 0.0, 1.0, 0.0, 162.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 105,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[61.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 145.0, 307.0, 1.0, 0.0, 1.0, 0.0, 0.0, 146.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 109,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[70.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 130.0, 322.0, 1.0, 0.0, 1.0, 0.0, 0.0, 109.0, 1.0, 0.0, 2.4, 0.0, 1.0, 0.0, 3.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 154,
+          "metadata_task_type": "classification"
+        }
+      ]
+    }
+  ]
+}

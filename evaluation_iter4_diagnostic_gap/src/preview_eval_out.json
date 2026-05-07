@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "evaluation_name": "diagnostic_gap_decomposition",
+    "description": "Three-component gap decomposition of Codebook-FIGS accuracy: Gap A (oblique-vs-axis), Gap B (codebook constraint), Gap C (optimizer sensitivity range)",
+    "source_experiments": {
+      "exp_id2": "Unconstrained Oblique Baselines",
+      "exp_id1": "Codebook-FIGS Full K-Sweep Benchmark",
+      "exp_id3": "Codebook-FIGS Ablation (Init/Refine/Stability)"
+    },
+    "n_folds": 5,
+    "n_datasets": 10,
+    "bottleneck_conclusion": "implementation",
+    "bottleneck_reasoning": "Gap B (codebook constraint) is NOT statistically significant (p=0.4316), meaning the codebook constraint is essentially free. Performance loss comes from other sources.",
+    "gap_definitions": {
+      "gap_a": "figs_axis_score - oblique_figs_score (positive = oblique hurts)",
+      "gap_b": "oblique_figs_score - cb_figs_best_score (positive = codebook hurts)",
+      "gap_b_prime": "figs_exp1_score - cb_figs_best_score (within-experiment)",
+      "gap_c_range": "max - min score across 6 optimizer configs in exp_id3 (K=8)",
+      "total_gap": "figs_axis_score - cb_figs_best_score (= gap_a + gap_b)"
+    },
+    "fold_alignment": {
+      "note": "FIGS axis-aligned scores verified between exp_id1 and exp_id2. Minor mismatches found for breast_cancer_wdbc (4 folds, max delta=0.009) and ionosphere (3 folds, max delta=0.070). Gap B' (within-experi...",
+      "n_mismatched_folds": 7,
+      "affected_datasets": [
+        "breast_cancer_wdbc",
+        "ionosphere"
+      ]
+    },
+    "statistical_tests": {
+      "wilcoxon_gap_a_p": 0.083984375,
+      "wilcoxon_gap_b_p": 0.431640625,
+      "wilcoxon_gap_b_prime_p": 0.625,
+      "wilcoxon_ab_magnitude_p": 0.193359375,
+      "mannwhitney_clf_vs_reg_p": 1.0
+    },
+    "correlation_summary": {
+      "gap_b_vs_n_features": {
+        "rho": -0.5000092953216654,
+        "p": 0.14158584141585842
+      },
+      "gap_b_vs_n_samples": {
+        "rho": 0.1515151515151515,
+        "p": 0.6779322067793221
+      },
+      "gap_b_vs_erank": {
+        "rho": -0.406060606060606,
+        "p": 0.24587541245875413
+      },
+      "gap_b_vs_baseline_performance": {
+        "rho": -0.11515151515151514,
+        "p": 0.7642235776422358
+      }
+    },
+    "classification_vs_regression": {
+      "n_classification": 6,
+      "n_regression": 4,
+      "clf_mean_gap_b": -0.034653480386519726,
+      "reg_mean_gap_b": -0.02448874568619954
+    }
+  },
+  "metrics_agg": {
+    "n_datasets": 10,
+    "overall_mean_gap_a": 0.060189787617606995,
+    "overall_mean_gap_b": -0.03058758650639165,
+    "overall_mean_gap_b_prime": 0.028831894439637955,
+    "overall_mean_gap_c": 0.15055586462371323,
+    "overall_mean_total_gap": 0.029602201111215337,
+    "wilcoxon_gap_a_stat": 10.0,
+    "wilcoxon_gap_a_p": 0.083984375,
+    "wilcoxon_gap_b_stat": 19.0,
+    "wilcoxon_gap_b_p": 0.431640625,
+    "wilcoxon_gap_b_prime_stat": 22.0,
+    "wilcoxon_gap_b_prime_p": 0.625,
+    "wilcoxon_ab_magnitude_stat": 14.0,
+    "wilcoxon_ab_magnitude_p": 0.193359375,
+    "bootstrap_ci_gap_a_lo": 0.013207187956061631,
+    "bootstrap_ci_gap_a_hi": 0.11120307967181448,
+    "bootstrap_ci_gap_b_lo": -0.07890689892064144,
+    "bootstrap_ci_gap_b_hi": 0.006708769422473481,
+    "bootstrap_ci_gap_b_prime_lo": -0.01579739384717993,
+    "bootstrap_ci_gap_b_prime_hi": 0.08417972627612788,
+    "bootstrap_ci_gap_c_lo": 0.10982605590766366,
+    "bootstrap_ci_gap_c_hi": 0.1995510815171107,
+    "cohens_d_gap_a": 0.7044023429930754,
+    "cohens_d_gap_b": -0.40866147186848506,
+    "cohens_d_gap_b_prime": 0.33382316972518916,
+    "corr_gap_b_nfeatures_rho": -0.5000092953216654,
+    "corr_gap_b_nfeatures_p": 0.14158584141585842,
+    "corr_gap_b_nsamples_rho": 0.1515151515151515,
+    "corr_gap_b_nsamples_p": 0.6779322067793221,
+    "corr_gap_b_erank_rho": -0.406060606060606,
+    "corr_gap_b_erank_p": 0.24587541245875413,
+    "corr_gap_b_baseline_rho": -0.11515151515151514,
+    "corr_gap_b_baseline_p": 0.7642235776422358,
+    "clf_gap_b_mean": -0.034653480386519726,
+    "clf_gap_b_std": 0.07923317310417098,
+    "reg_gap_b_mean": -0.02448874568619954,
+    "reg_gap_b_std": 0.055912804210565964,
+    "mannwhitney_clf_vs_reg_stat": 12.0,
+    "mannwhitney_clf_vs_reg_p": 1.0,
+    "recoverable_gap": 0.21074565224132022,
+    "recoverable_pct": 711.9256147525981,
+    "identity_residual": 7.37257477290143e-18
+  },
+  "datasets": [
+    {
+      "dataset": "auto_mpg",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"auto_mpg\", \"fold\": 0, \"task_type\": \"regression\", \"n_features\": 25, \"n_samples\": 392}",
+          "output": "{\"gap_a\": 0.162904, \"gap_b\": -0.020529, \"gap_b_prime\": 0.142376, \"gap_c_range\": 0.126691, \"total_gap\": 0.142376, \"identity_check\": 0.0}",
+          "metadata_fold": 0,
+          "metadata_task_type": "regression",
+          "metadata_n_features": 25,
+          "metadata_n_samples": 392,
+          "metadata_best_config": "random",
+          "metadata_best_K": 5,
+          "predict_figs_axis_aligned": "0.792375",
+          "predict_oblique_figs": "0.629471",
+          "predict_cb_figs_best": "0.649999",
+          "predict_figs_exp1": "0.792375",
+          "eval_gap_a": 0.162904,
+          "eval_gap_b": -0.020529,
+          "eval_gap_b_prime": 0.142376,
+          "eval_gap_c_range": 0.126691,
+          "eval_total_gap": 0.142376,
+          "eval_erank_figs_axis": 8.1232
+        },
+        {
+          "input": "{\"dataset\": \"auto_mpg\", \"fold\": 1, \"task_type\": \"regression\", \"n_features\": 25, \"n_samples\": 392}",
+          "output": "{\"gap_a\": 0.040131, \"gap_b\": -0.023429, \"gap_b_prime\": 0.016702, \"gap_c_range\": 0.296084, \"total_gap\": 0.016702, \"identity_check\": 0.0}",
+          "metadata_fold": 1,
+          "metadata_task_type": "regression",
+          "metadata_n_features": 25,
+          "metadata_n_samples": 392,
+          "metadata_best_config": "random",
+          "metadata_best_K": 5,
+          "predict_figs_axis_aligned": "0.772194",
+          "predict_oblique_figs": "0.732062",
+          "predict_cb_figs_best": "0.755491",
+          "predict_figs_exp1": "0.772194",
+          "eval_gap_a": 0.040131,
+          "eval_gap_b": -0.023429,
+          "eval_gap_b_prime": 0.016702,
+          "eval_gap_c_range": 0.296084,
+          "eval_total_gap": 0.016702,
+          "eval_erank_figs_axis": 4.663
+        },
+        {
+          "input": "{\"dataset\": \"auto_mpg\", \"fold\": 2, \"task_type\": \"regression\", \"n_features\": 25, \"n_samples\": 392}",
+          "output": "{\"gap_a\": 0.037736, \"gap_b\": -0.033675, \"gap_b_prime\": 0.004061, \"gap_c_range\": 0.267899, \"total_gap\": 0.004061, \"identity_check\": 0.0}",
+          "metadata_fold": 2,
+          "metadata_task_type": "regression",
+          "metadata_n_features": 25,
+          "metadata_n_samples": 392,
+          "metadata_best_config": "random",
+          "metadata_best_K": 5,
+          "predict_figs_axis_aligned": "0.785186",
+          "predict_oblique_figs": "0.747451",
+          "predict_cb_figs_best": "0.781126",
+          "predict_figs_exp1": "0.785186",
+          "eval_gap_a": 0.037736,
+          "eval_gap_b": -0.033675,
+          "eval_gap_b_prime": 0.004061,
+          "eval_gap_c_range": 0.267899,
+          "eval_total_gap": 0.004061,
+          "eval_erank_figs_axis": 8.1232
+        }
+      ]
+    },
+    {
+      "dataset": "breast_cancer_wdbc",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"breast_cancer_wdbc\", \"fold\": 0, \"task_type\": \"classification\", \"n_features\": 30, \"n_samples\": 569}",
+          "output": "{\"gap_a\": 0.008772, \"gap_b\": -0.008772, \"gap_b_prime\": -0.008772, \"gap_c_range\": 0.105263, \"total_gap\": 0.0, \"identity_check\": 0.0}",
+          "metadata_fold": 0,
+          "metadata_task_type": "classification",
+          "metadata_n_features": 30,
+          "metadata_n_samples": 569,
+          "metadata_best_config": "random",
+          "metadata_best_K": 3,
+          "predict_figs_axis_aligned": "0.938596",
+          "predict_oblique_figs": "0.929825",
+          "predict_cb_figs_best": "0.938596",
+          "predict_figs_exp1": "0.929825",
+          "eval_gap_a": 0.008772,
+          "eval_gap_b": -0.008772,
+          "eval_gap_b_prime": -0.008772,
+          "eval_gap_c_range": 0.105263,
+          "eval_total_gap": 0.0,
+          "eval_erank_figs_axis": 8.4853
+        },
+        {
+          "input": "{\"dataset\": \"breast_cancer_wdbc\", \"fold\": 1, \"task_type\": \"classification\", \"n_features\": 30, \"n_samples\": 569}",
+          "output": "{\"gap_a\": -0.061404, \"gap_b\": 0.026316, \"gap_b_prime\": -0.026316, \"gap_c_range\": 0.052632, \"total_gap\": -0.035088, \"identity_check\": 0.0}",
+          "metadata_fold": 1,
+          "metadata_task_type": "classification",
+          "metadata_n_features": 30,
+          "metadata_n_samples": 569,
+          "metadata_best_config": "random",
+          "metadata_best_K": 3,
+          "predict_figs_axis_aligned": "0.885965",
+          "predict_oblique_figs": "0.947368",
+          "predict_cb_figs_best": "0.921053",
+          "predict_figs_exp1": "0.894737",
+          "eval_gap_a": -0.061404,
+          "eval_gap_b": 0.026316,
+          "eval_gap_b_prime": -0.026316,
+          "eval_gap_c_range": 0.052632,
+          "eval_total_gap": -0.035088,
+          "eval_erank_figs_axis": 9.5244
+        },
+        {
+          "input": "{\"dataset\": \"breast_cancer_wdbc\", \"fold\": 2, \"task_type\": \"classification\", \"n_features\": 30, \"n_samples\": 569}",
+          "output": "{\"gap_a\": 0.04386, \"gap_b\": -0.04386, \"gap_b_prime\": 0.008772, \"gap_c_range\": 0.096491, \"total_gap\": 0.0, \"identity_check\": 0.0}",
+          "metadata_fold": 2,
+          "metadata_task_type": "classification",
+          "metadata_n_features": 30,
+          "metadata_n_samples": 569,
+          "metadata_best_config": "random",
+          "metadata_best_K": 3,
+          "predict_figs_axis_aligned": "0.921053",
+          "predict_oblique_figs": "0.877193",
+          "predict_cb_figs_best": "0.921053",
+          "predict_figs_exp1": "0.929825",
+          "eval_gap_a": 0.04386,
+          "eval_gap_b": -0.04386,
+          "eval_gap_b_prime": 0.008772,
+          "eval_gap_c_range": 0.096491,
+          "eval_total_gap": 0.0,
+          "eval_erank_figs_axis": 9.5244
+        }
+      ]
+    },
+    {
+      "dataset": "california_housing",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"california_housing\", \"fold\": 0, \"task_type\": \"regression\", \"n_features\": 8, \"n_samples\": 20640}",
+          "output": "{\"gap_a\": 0.183938, \"gap_b\": 0.024047, \"gap_b_prime\": 0.207985, \"gap_c_range\": 0.230414, \"total_gap\": 0.207985, \"identity_check\": 0.0}",
+          "metadata_fold": 0,
+          "metadata_task_type": "regression",
+          "metadata_n_features": 8,
+          "metadata_n_samples": 20640,
+          "metadata_best_config": "adaptive",
+          "metadata_best_K": 8,
+          "predict_figs_axis_aligned": "0.656651",
+          "predict_oblique_figs": "0.472713",
+          "predict_cb_figs_best": "0.448666",
+          "predict_figs_exp1": "0.656651",
+          "eval_gap_a": 0.183938,
+          "eval_gap_b": 0.024047,
+          "eval_gap_b_prime": 0.207985,
+          "eval_gap_c_range": 0.230414,
+          "eval_total_gap": 0.207985,
+          "eval_erank_figs_axis": 3.7798
+        },
+        {
+          "input": "{\"dataset\": \"california_housing\", \"fold\": 1, \"task_type\": \"regression\", \"n_features\": 8, \"n_samples\": 20640}",
+          "output": "{\"gap_a\": 0.160016, \"gap_b\": 0.022117, \"gap_b_prime\": 0.182133, \"gap_c_range\": 0.155744, \"total_gap\": 0.182133, \"identity_check\": 0.0}",
+          "metadata_fold": 1,
+          "metadata_task_type": "regression",
+          "metadata_n_features": 8,
+          "metadata_n_samples": 20640,
+          "metadata_best_config": "adaptive",
+          "metadata_best_K": 8,
+          "predict_figs_axis_aligned": "0.671494",
+          "predict_oblique_figs": "0.511479",
+          "predict_cb_figs_best": "0.489362",
+          "predict_figs_exp1": "0.671494",
+          "eval_gap_a": 0.160016,
+          "eval_gap_b": 0.022117,
+          "eval_gap_b_prime": 0.182133,
+          "eval_gap_c_range": 0.155744,
+          "eval_total_gap": 0.182133,
+          "eval_erank_figs_axis": 3.7798
+        },
+        {
+          "input": "{\"dataset\": \"california_housing\", \"fold\": 2, \"task_type\": \"regression\", \"n_features\": 8, \"n_samples\": 20640}",
+          "output": "{\"gap_a\": 0.202406, \"gap_b\": 0.148704, \"gap_b_prime\": 0.351111, \"gap_c_range\": 0.124022, \"total_gap\": 0.351111, \"identity_check\": 0.0}",
+          "metadata_fold": 2,
+          "metadata_task_type": "regression",
+          "metadata_n_features": 8,
+          "metadata_n_samples": 20640,
+          "metadata_best_config": "adaptive",
+          "metadata_best_K": 8,
+          "predict_figs_axis_aligned": "0.676407",
+          "predict_oblique_figs": "0.474001",
+          "predict_cb_figs_best": "0.325297",
+          "predict_figs_exp1": "0.676407",
+          "eval_gap_a": 0.202406,
+          "eval_gap_b": 0.148704,
+          "eval_gap_b_prime": 0.351111,
+          "eval_gap_c_range": 0.124022,
+          "eval_total_gap": 0.351111,
+          "eval_erank_figs_axis": 3.7798
+        }
+      ]
+    }
+  ]
+}

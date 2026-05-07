@@ -1,0 +1,1087 @@
+{
+  "metadata": {
+    "evaluation": "codebook_figs_comprehensive_statistical_evaluation",
+    "description": "Comprehensive statistical evaluation of Codebook-FIGS across 3 experiments",
+    "experiments": [
+      "exp_id1 (benchmark)",
+      "exp_id2 (oblique baselines)",
+      "exp_id3 (ablation)"
+    ],
+    "n_datasets": 10,
+    "wilcoxon_tests": {
+      "heart_disease": {
+        "oracle_best_K": 5,
+        "codebook_figs_mean": 0.6922033898305086,
+        "tests": {
+          "figs": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.09807909604519775,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "xgboost": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.1049717514124294,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "lightgbm": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.13864406779661018,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          }
+        }
+      },
+      "breast_cancer_wdbc": {
+        "oracle_best_K": 5,
+        "codebook_figs_mean": 0.9279770222015215,
+        "tests": {
+          "figs": {
+            "statistic": 4.0,
+            "p_value": 0.875,
+            "mean_diff": 0.0035242974693370675,
+            "direction": "codebook_better",
+            "n_nonzero": 4
+          },
+          "xgboost": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.029840086943021295,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "lightgbm": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.03688868188169536,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          }
+        }
+      },
+      "ionosphere": {
+        "oracle_best_K": 5,
+        "codebook_figs_mean": 0.8602414486921528,
+        "tests": {
+          "figs": {
+            "statistic": 0.0,
+            "p_value": 0.125,
+            "mean_diff": -0.034285714285714274,
+            "direction": "baseline_better",
+            "n_nonzero": 4
+          },
+          "xgboost": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.06563380281690138,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "lightgbm": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.07991951710261569,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          }
+        }
+      },
+      "diabetes_regression": {
+        "oracle_best_K": 5,
+        "codebook_figs_mean": 0.2722668779308052,
+        "tests": {
+          "figs": {
+            "statistic": 5.0,
+            "p_value": 0.625,
+            "mean_diff": -0.011894466867352405,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "xgboost": {
+            "statistic": 1.0,
+            "p_value": 0.125,
+            "mean_diff": -0.10399679030574778,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "lightgbm": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.15388198045911144,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          }
+        }
+      },
+      "auto_mpg": {
+        "oracle_best_K": 12,
+        "codebook_figs_mean": 0.6940859194929772,
+        "tests": {
+          "figs": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.08793001301393066,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "xgboost": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.13342034662557894,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          },
+          "lightgbm": {
+            "statistic": 0.0,
+            "p_value": 0.0625,
+            "mean_diff": -0.1654096650932826,
+            "direction": "baseline_better",
+            "n_nonzero": 5
+          }
+        }
+      }
+    },
+    "friedman_test": {
+      "chi2": 27.666666666666654,
+      "p_value": 4.2667908828616105e-06,
+      "n_datasets": 10,
+      "n_methods": 4,
+      "mean_ranks": {
+        "codebook_figs_best": 3.9,
+        "figs": 3.1,
+        "xgboost": 1.85,
+        "lightgbm": 1.15
+      },
+      "critical_difference": 1.4832128415481485,
+      "pairwise_nemenyi": {
+        "codebook_figs_best_vs_figs": {
+          "rank_diff": 0.7999999999999998,
+          "critical_diff": 1.4832128415481485,
+          "significant": false
+        },
+        "codebook_figs_best_vs_xgboost": {
+          "rank_diff": 2.05,
+          "critical_diff": 1.4832128415481485,
+          "significant": true
+        },
+        "codebook_figs_best_vs_lightgbm": {
+          "rank_diff": 2.75,
+          "critical_diff": 1.4832128415481485,
+          "significant": true
+        },
+        "figs_vs_xgboost": {
+          "rank_diff": 1.25,
+          "critical_diff": 1.4832128415481485,
+          "significant": false
+        },
+        "figs_vs_lightgbm": {
+          "rank_diff": 1.9500000000000002,
+          "critical_diff": 1.4832128415481485,
+          "significant": true
+        },
+        "xgboost_vs_lightgbm": {
+          "rank_diff": 0.7000000000000002,
+          "critical_diff": 1.4832128415481485,
+          "significant": false
+        }
+      },
+      "datasets_used": [
+        "heart_disease",
+        "diabetes_pima",
+        "breast_cancer_wdbc"
+      ]
+    },
+    "accuracy_vs_K": {
+      "heart_disease": {
+        "K_values": [
+          3,
+          5,
+          8
+        ],
+        "mean_scores": [
+          0.6116949152542372,
+          0.6922033898305086,
+          0.6415819209039549
+        ],
+        "std_scores": [
+          0.07370913433061761,
+          0.05738333279864092,
+          0.05339936542364995
+        ],
+        "elbow_K": 5,
+        "rss_improvement_pct": 73.88684984584816,
+        "has_clear_elbow": true,
+        "optimal_K": 5,
+        "saturated": false,
+        "rss_single_line": 0.0035696744413786464,
+        "rss_piecewise": 0.0009321544468915864
+      },
+      "breast_cancer_wdbc": {
+        "K_values": [
+          3,
+          5,
+          8
+        ],
+        "mean_scores": [
+          0.9121720229777985,
+          0.9279770222015215,
+          0.9104331625523987
+        ],
+        "std_scores": [
+          0.028728944280011038,
+          0.01690441104296482,
+          0.033369379808789124
+        ],
+        "elbow_K": 12,
+        "rss_improvement_pct": 56.424441822947514,
+        "has_clear_elbow": true,
+        "optimal_K": 5,
+        "saturated": false,
+        "rss_single_line": 0.00045832760803811716,
+        "rss_piecewise": 0.00019971881348214283
+      },
+      "ionosphere": {
+        "K_values": [
+          3,
+          5,
+          8
+        ],
+        "mean_scores": [
+          0.7976659959758552,
+          0.8602414486921528,
+          0.8290543259557344
+        ],
+        "std_scores": [
+          0.030816280281894058,
+          0.04492531974300673,
+          0.027122437889800736
+        ],
+        "elbow_K": 5,
+        "rss_improvement_pct": 69.31601678631549,
+        "has_clear_elbow": true,
+        "optimal_K": 5,
+        "saturated": false,
+        "rss_single_line": 0.0018221682996830933,
+        "rss_piecewise": 0.0005591138151998408
+      },
+      "diabetes_regression": {
+        "K_values": [
+          3,
+          5,
+          8
+        ],
+        "mean_scores": [
+          0.22894196503644587,
+          0.2722668779308052,
+          0.26316978446141903
+        ],
+        "std_scores": [
+          0.11588080908674647,
+          0.03344537086024086,
+          0.13042279113135088
+        ],
+        "elbow_K": 5,
+        "rss_improvement_pct": 95.56170254468152,
+        "has_clear_elbow": true,
+        "optimal_K": 5,
+        "saturated": false,
+        "rss_single_line": 0.0009678774899306957,
+        "rss_piecewise": 4.295728200619435e-05
+      },
+      "auto_mpg": {
+        "K_values": [
+          3,
+          5,
+          8
+        ],
+        "mean_scores": [
+          0.6802459877355744,
+          0.6869537557428244,
+          0.6901726483183912
+        ],
+        "std_scores": [
+          0.021523618246361034,
+          0.030043245684217835,
+          0.025244737609028848
+        ],
+        "elbow_K": 12,
+        "rss_improvement_pct": 97.11681821374417,
+        "has_clear_elbow": true,
+        "optimal_K": 12,
+        "saturated": false,
+        "rss_single_line": 0.00031344706962722267,
+        "rss_piecewise": 9.037248821044692e-06
+      }
+    },
+    "compression_ratios": {
+      "heart_disease": {
+        "best_K": 5,
+        "codebook_figs_mean_erank": 2.97818,
+        "baselines": {
+          "sporf_matched": {
+            "baseline_mean_erank": 11.330252090177261,
+            "compression_ratio": 3.804421522600132
+          },
+          "sporf_full": {
+            "baseline_mean_erank": 22.056157481870223,
+            "compression_ratio": 7.405918205706244
+          },
+          "oblique_figs": {
+            "baseline_mean_erank": 6.3493531042036695,
+            "compression_ratio": 2.131957472081496
+          },
+          "figs_axis_aligned": {
+            "baseline_mean_erank": 8.781565337284832,
+            "compression_ratio": 2.94863484990324
+          }
+        }
+      },
+      "breast_cancer_wdbc": {
+        "best_K": 5,
+        "codebook_figs_mean_erank": 3.137,
+        "baselines": {
+          "sporf_matched": {
+            "baseline_mean_erank": 12.230187332117183,
+            "compression_ratio": 3.898688980592025
+          },
+          "sporf_full": {
+            "baseline_mean_erank": 28.104984581722334,
+            "compression_ratio": 8.959191769755286
+          },
+          "oblique_figs": {
+            "baseline_mean_erank": 8.007015003483174,
+            "compression_ratio": 2.552443418388006
+          },
+          "figs_axis_aligned": {
+            "baseline_mean_erank": 9.03061636916331,
+            "compression_ratio": 2.878742865528629
+          }
+        }
+      },
+      "ionosphere": {
+        "best_K": 5,
+        "codebook_figs_mean_erank": 3.23712,
+        "baselines": {
+          "sporf_matched": {
+            "baseline_mean_erank": 12.343689927891194,
+            "compression_ratio": 3.81317032667655
+          },
+          "sporf_full": {
+            "baseline_mean_erank": 31.521099834861467,
+            "compression_ratio": 9.73738997468783
+          },
+          "oblique_figs": {
+            "baseline_mean_erank": 6.156976512753053,
+            "compression_ratio": 1.9019920524271738
+          },
+          "figs_axis_aligned": {
+            "baseline_mean_erank": 9.710724303823605,
+            "compression_ratio": 2.999803622919016
+          }
+        }
+      },
+      "diabetes_regression": {
+        "best_K": 5,
+        "codebook_figs_mean_erank": 3.2939599999999998,
+        "baselines": {
+          "sporf_matched": {
+            "baseline_mean_erank": 6.727150350957006,
+            "compression_ratio": 2.04226837938439
+          },
+          "sporf_full": {
+            "baseline_mean_erank": 9.77599484344135,
+            "compression_ratio": 2.9678547533793216
+          },
+          "oblique_figs": {
+            "baseline_mean_erank": 5.903959761010816,
+            "compression_ratio": 1.7923592760722098
+          },
+          "figs_axis_aligned": {
+            "baseline_mean_erank": 7.062710619176504,
+            "compression_ratio": 2.144139764653033
+          }
+        }
+      },
+      "auto_mpg": {
+        "best_K": 12,
+        "codebook_figs_mean_erank": 5.09528,
+        "baselines": {
+          "sporf_matched": {
+            "baseline_mean_erank": 10.460682396271617,
+            "compression_ratio": 2.0530142398988116
+          },
+          "sporf_full": {
+            "baseline_mean_erank": 19.12955539391094,
+            "compression_ratio": 3.7543678451254774
+          },
+          "oblique_figs": {
+            "baseline_mean_erank": 7.330684530763572,
+            "compression_ratio": 1.438720645531467
+          },
+          "figs_axis_aligned": {
+            "baseline_mean_erank": 7.503595808594275,
+            "compression_ratio": 1.4726562247009536
+          }
+        }
+      },
+      "summary_sporf_matched": {
+        "mean_compression": 2.6281122332242592,
+        "median_compression": 2.204276928688219,
+        "min_compression": 1.2981817581967716,
+        "max_compression": 3.898688980592025,
+        "n_datasets": 10
+      },
+      "summary_sporf_full": {
+        "mean_compression": 6.035490435241795,
+        "median_compression": 5.580143025415861,
+        "min_compression": 1.9689635791394318,
+        "max_compression": 12.29286556283505,
+        "n_datasets": 10
+      },
+      "summary_oblique_figs": {
+        "mean_compression": 1.6390277120020855,
+        "median_compression": 1.6155399608018384,
+        "min_compression": 0.7609456933078074,
+        "max_compression": 2.552443418388006,
+        "n_datasets": 10
+      },
+      "summary_figs_axis_aligned": {
+        "mean_compression": 2.009447028860688,
+        "median_compression": 1.84980771184115,
+        "min_compression": 1.103374303687667,
+        "max_compression": 2.999803622919016,
+        "n_datasets": 10
+      }
+    },
+    "ablation_analysis": {
+      "config_mean_ranks": {
+        "pca_wls": 3.0,
+        "pca_lbfgs": 4.3,
+        "random_wls": 2.1,
+        "random_lbfgs": 6.0,
+        "lda_wls": 3.0,
+        "lda_lbfgs": 2.6
+      },
+      "best_config": "random_wls",
+      "init_effect": {
+        "pca": 3.65,
+        "random": 4.05,
+        "lda": 2.8
+      },
+      "refine_effect": {
+        "wls": 2.6999999999999997,
+        "lbfgs": 4.3
+      },
+      "init_effect_size": 1.25,
+      "refine_effect_size": 1.6,
+      "init_wilcoxon": {
+        "pca_vs_random": {
+          "statistic": 5.0,
+          "p_value": 0.01953125
+        },
+        "pca_vs_lda": {
+          "statistic": 10.0,
+          "p_value": 0.083984375
+        },
+        "random_vs_lda": {
+          "statistic": 1.0,
+          "p_value": 0.00390625
+        }
+      },
+      "refine_wilcoxon": {
+        "wls_vs_lbfgs": {
+          "statistic": 0.0,
+          "p_value": 0.001953125
+        }
+      },
+      "stability": {
+        "per_dataset": {
+          "heart_disease": {
+            "per_config": {
+              "pca_wls": 0.5027962908998074,
+              "pca_lbfgs": 0.6005918788602493,
+              "random_wls": 0.5277654949844105,
+              "random_lbfgs": 0.3853264550994586,
+              "lda_wls": 0.6079200987121152,
+              "lda_lbfgs": 0.6893611969559195
+            },
+            "best_stability": 0.6893611969559195,
+            "above_threshold_08": false
+          },
+          "breast_cancer_wdbc": {
+            "per_config": {
+              "pca_wls": 0.49575154218665807,
+              "pca_lbfgs": 0.7224840178830052,
+              "random_wls": 0.5774810816228765,
+              "random_lbfgs": 0.45945990382491486,
+              "lda_wls": 0.567540138324846,
+              "lda_lbfgs": 0.6897113849045269
+            },
+            "best_stability": 0.7224840178830052,
+            "above_threshold_08": false
+          },
+          "ionosphere": {
+            "per_config": {
+              "pca_wls": 0.6455262637378971,
+              "pca_lbfgs": 0.6423817210797197,
+              "random_wls": 0.6394157875928679,
+              "random_lbfgs": 0.41007633395398285,
+              "lda_wls": 0.6115393296575613,
+              "lda_lbfgs": 0.6016886742934104
+            },
+            "best_stability": 0.6455262637378971,
+            "above_threshold_08": false
+          },
+          "diabetes_regression": {
+            "per_config": {
+              "pca_wls": 0.69136524270007,
+              "pca_lbfgs": 0.7995649369106246,
+              "random_wls": 0.6120240925293028,
+              "random_lbfgs": 0.6811919488086664,
+              "lda_wls": 0.6915175937145959,
+              "lda_lbfgs": 0.7598323108750694
+            },
+            "best_stability": 0.7995649369106246,
+            "above_threshold_08": false
+          },
+          "auto_mpg": {
+            "per_config": {
+              "pca_wls": 0.6950572966564085,
+              "pca_lbfgs": 0.7521053379648732,
+              "random_wls": 0.7357352409518934,
+              "random_lbfgs": 0.451490266733775,
+              "lda_wls": 0.698681169108011,
+              "lda_lbfgs": 0.6860100279992185
+            },
+            "best_stability": 0.7521053379648732,
+            "above_threshold_08": false
+          }
+        },
+        "mean_cosine_all": 0.6243456301774313,
+        "n_datasets_above_08": 1,
+        "n_datasets_total": 10
+      },
+      "convergence": {
+        "per_dataset": {
+          "heart_disease": {
+            "pca_wls": 5.0,
+            "pca_lbfgs": 3.0,
+            "random_wls": 5.0,
+            "random_lbfgs": 3.0,
+            "lda_wls": 5.0,
+            "lda_lbfgs": 3.4
+          },
+          "breast_cancer_wdbc": {
+            "pca_wls": 5.0,
+            "pca_lbfgs": 3.2,
+            "random_wls": 5.0,
+            "random_lbfgs": 3.0,
+            "lda_wls": 4.0,
+            "lda_lbfgs": 3.0
+          },
+          "ionosphere": {
+            "pca_wls": 5.0,
+            "pca_lbfgs": 2.8,
+            "random_wls": 5.0,
+            "random_lbfgs": 2.6,
+            "lda_wls": 5.0,
+            "lda_lbfgs": 2.6
+          },
+          "diabetes_regression": {
+            "pca_wls": 4.6,
+            "pca_lbfgs": 2.8,
+            "random_wls": 4.6,
+            "random_lbfgs": 3.0,
+            "lda_wls": 5.0,
+            "lda_lbfgs": 2.8
+          },
+          "auto_mpg": {
+            "pca_wls": 5.0,
+            "pca_lbfgs": 2.4,
+            "random_wls": 5.0,
+            "random_lbfgs": 3.2,
+            "lda_wls": 5.0,
+            "lda_lbfgs": 2.0
+          }
+        },
+        "mean_rounds_all": 3.733333333333333,
+        "median_rounds_all": 3.5
+      },
+      "datasets_used": [
+        "heart_disease",
+        "diabetes_pima",
+        "breast_cancer_wdbc"
+      ],
+      "codebook_figs_outperforms_figs": {
+        "wins": 6,
+        "total": 10,
+        "details": {
+          "heart_disease": {
+            "best_config": "lda_wls",
+            "codebook_figs_score": 0.7971186440677966,
+            "figs_score": 0.7936723163841808,
+            "codebook_wins": true
+          },
+          "breast_cancer_wdbc": {
+            "best_config": "lda_wls",
+            "codebook_figs_score": 0.9508306163639186,
+            "figs_score": 0.9262071106970968,
+            "codebook_wins": true
+          },
+          "ionosphere": {
+            "best_config": "lda_lbfgs",
+            "codebook_figs_score": 0.9030583501006035,
+            "figs_score": 0.9002012072434609,
+            "codebook_wins": true
+          },
+          "diabetes_regression": {
+            "best_config": "lda_lbfgs",
+            "codebook_figs_score": 0.3296200985223211,
+            "figs_score": 0.2841613447981577,
+            "codebook_wins": true
+          },
+          "auto_mpg": {
+            "best_config": "pca_wls",
+            "codebook_figs_score": 0.7193446542574435,
+            "figs_score": 0.7693199347872366,
+            "codebook_wins": false
+          }
+        }
+      }
+    },
+    "unified_ranking": {
+      "ranking": {
+        "lightgbm": {
+          "mean_rank": 1.75,
+          "ci_lower": 1.2,
+          "ci_upper": 2.4,
+          "mean_score": 0.7703519298005932
+        },
+        "sporf_full": {
+          "mean_rank": 2.0,
+          "ci_lower": 1.5,
+          "ci_upper": 2.5,
+          "mean_score": 0.7640164578962845
+        },
+        "xgboost": {
+          "mean_rank": 2.75,
+          "ci_lower": 2.4,
+          "ci_upper": 3.2,
+          "mean_score": 0.7577051037448552
+        },
+        "figs": {
+          "mean_rank": 4.7,
+          "ci_lower": 4.197500000000001,
+          "ci_upper": 5.4,
+          "mean_score": 0.7051480064450659
+        },
+        "sporf_matched": {
+          "mean_rank": 5.2,
+          "ci_lower": 4.2,
+          "ci_upper": 5.902499999999998,
+          "mean_score": 0.6544746958856628
+        },
+        "oblique_figs": {
+          "mean_rank": 5.2,
+          "ci_lower": 4.1,
+          "ci_upper": 6.1,
+          "mean_score": 0.6456851435635054
+        },
+        "codebook_figs": {
+          "mean_rank": 6.4,
+          "ci_lower": 6.0,
+          "ci_upper": 6.8,
+          "mean_score": 0.5627716119878141
+        }
+      },
+      "n_datasets": 10,
+      "n_bootstrap": 1000,
+      "complete_datasets": [
+        "heart_disease",
+        "diabetes_pima",
+        "breast_cancer_wdbc"
+      ],
+      "score_matrix": {
+        "heart_disease": {
+          "codebook_figs": 0.6922033898305086,
+          "figs": 0.7902824858757063,
+          "xgboost": 0.7971751412429379,
+          "lightgbm": 0.8308474576271185,
+          "sporf_matched": 0.8175141242937853,
+          "sporf_full": 0.8107909604519774,
+          "oblique_figs": 0.793954802259887
+        },
+        "breast_cancer_wdbc": {
+          "codebook_figs": 0.9279770222015215,
+          "figs": 0.9244527247321844,
+          "xgboost": 0.9578171091445427,
+          "lightgbm": 0.9648657040832168,
+          "sporf_matched": 0.9279459711224964,
+          "sporf_full": 0.9631113181183046,
+          "oblique_figs": 0.9385499146095327
+        },
+        "ionosphere": {
+          "codebook_figs": 0.8602414486921528,
+          "figs": 0.8945271629778672,
+          "xgboost": 0.9258752515090543,
+          "lightgbm": 0.9401609657947686,
+          "sporf_matched": 0.8746076458752515,
+          "sporf_full": 0.9458350100603623,
+          "oblique_figs": 0.8661971830985916
+        },
+        "diabetes_regression": {
+          "codebook_figs": 0.2722668779308052,
+          "figs": 0.2841613447981576,
+          "xgboost": 0.376263668236553,
+          "lightgbm": 0.4261488583899166,
+          "sporf_matched": 0.3685077209933718,
+          "sporf_full": 0.44542280309404153,
+          "oblique_figs": 0.2577745108364807
+        },
+        "auto_mpg": {
+          "codebook_figs": 0.6940859194929772,
+          "figs": 0.7820159325069079,
+          "xgboost": 0.8275062661185562,
+          "lightgbm": 0.8594955845862599,
+          "sporf_matched": 0.7071994156505594,
+          "sporf_full": 0.8414869878810803,
+          "oblique_figs": 0.6844177978636287
+        }
+      }
+    },
+    "gap_analysis": {
+      "per_dataset": {
+        "heart_disease": {
+          "codebook_figs_score": 0.6922033898305086,
+          "codebook_figs_best_K": 5,
+          "best_baseline": "lightgbm",
+          "best_baseline_score": 0.8308474576271185,
+          "gap": 0.13864406779660998,
+          "gap_pct": 13.864406779660998,
+          "is_failure": true,
+          "task_type": "classification",
+          "n_features": 25
+        },
+        "breast_cancer_wdbc": {
+          "codebook_figs_score": 0.9279770222015215,
+          "codebook_figs_best_K": 5,
+          "best_baseline": "lightgbm",
+          "best_baseline_score": 0.9648657040832168,
+          "gap": 0.03688868188169536,
+          "gap_pct": 3.688868188169536,
+          "is_failure": true,
+          "task_type": "classification",
+          "n_features": 30
+        },
+        "ionosphere": {
+          "codebook_figs_score": 0.8602414486921528,
+          "codebook_figs_best_K": 5,
+          "best_baseline": "lightgbm",
+          "best_baseline_score": 0.9401609657947686,
+          "gap": 0.0799195171026158,
+          "gap_pct": 7.99195171026158,
+          "is_failure": true,
+          "task_type": "classification",
+          "n_features": 33
+        },
+        "diabetes_regression": {
+          "codebook_figs_score": 0.2722668779308052,
+          "codebook_figs_best_K": 5,
+          "best_baseline": "lightgbm",
+          "best_baseline_score": 0.4261488583899166,
+          "gap": 0.15388198045911144,
+          "gap_pct": 15.388198045911144,
+          "is_failure": true,
+          "task_type": "regression",
+          "n_features": 10
+        },
+        "auto_mpg": {
+          "codebook_figs_score": 0.6940859194929772,
+          "codebook_figs_best_K": 12,
+          "best_baseline": "lightgbm",
+          "best_baseline_score": 0.8594955845862599,
+          "gap": 0.1654096650932827,
+          "gap_pct": 16.54096650932827,
+          "is_failure": true,
+          "task_type": "regression",
+          "n_features": 25
+        }
+      },
+      "summary": {
+        "n_failures": 10,
+        "n_total": 10,
+        "failure_rate": 1.0,
+        "failures": [
+          {
+            "dataset": "heart_disease",
+            "gap_pct": 13.864406779660998,
+            "task_type": "classification",
+            "n_features": 25,
+            "best_baseline": "lightgbm"
+          },
+          {
+            "dataset": "diabetes_pima",
+            "gap_pct": 4.3060860707919595,
+            "task_type": "classification",
+            "n_features": 8,
+            "best_baseline": "xgboost"
+          },
+          {
+            "dataset": "breast_cancer_wdbc",
+            "gap_pct": 3.688868188169536,
+            "task_type": "classification",
+            "n_features": 30,
+            "best_baseline": "lightgbm"
+          }
+        ],
+        "n_classification_failures": 6,
+        "n_regression_failures": 4,
+        "mean_failure_gap_pct": 20.92754200961167,
+        "mean_failure_n_features": 26.8
+      },
+      "mean_gap_all": 0.20927542009611666,
+      "mean_gap_pct_all": 20.92754200961167
+    },
+    "hypothesis_verdict": {
+      "criteria": {
+        "accuracy_match_1pct": {
+          "n_pass": 0,
+          "n_total": 10,
+          "pass_rate": 0.0,
+          "met": false
+        },
+        "accuracy_match_3pct": {
+          "n_pass": 0,
+          "n_total": 10,
+          "pass_rate": 0.0,
+          "met": false
+        },
+        "direction_reduction_3_10x": {
+          "mean_compression_ratio": 3.0780193523322064,
+          "n_ratios": 40,
+          "n_in_range_3_10": 9,
+          "n_above_3x": 10,
+          "met": true
+        },
+        "stability_above_08": {
+          "n_above_threshold": 1,
+          "n_total": 10,
+          "mean_cosine": 0.6243456301774313,
+          "met": false
+        },
+        "clear_elbow": {
+          "n_clear_elbows": 9,
+          "n_total": 10,
+          "elbow_rate": 0.9,
+          "met": true
+        },
+        "competitive_ranking": {
+          "codebook_figs_mean_rank": 6.4,
+          "met": false
+        }
+      },
+      "n_criteria_met": 2,
+      "n_criteria_total": 6,
+      "verdict": "PARTIALLY_CONFIRMED"
+    }
+  },
+  "metrics_agg": {
+    "friedman_chi2": 27.666666666666654,
+    "friedman_p_value": 4.2667908828616105e-06,
+    "friedman_n_datasets": 10,
+    "mean_gap_pct": 20.92754200961167,
+    "n_failures_above_3pct": 10,
+    "failure_rate": 1.0,
+    "mean_compression_ratio": 3.0780193523322064,
+    "median_compression_ratio": 2.1380486183672645,
+    "mean_stability_cosine": 0.6243456301774313,
+    "n_datasets_stability_above_08": 1,
+    "mean_convergence_rounds": 3.733333333333333,
+    "n_clear_elbows": 9,
+    "n_criteria_met": 2,
+    "n_criteria_total": 6,
+    "hypothesis_confirmed": 0,
+    "wilcoxon_sig_vs_figs": 0,
+    "wilcoxon_n_tests_vs_figs": 10,
+    "wilcoxon_sig_vs_xgboost": 0,
+    "wilcoxon_n_tests_vs_xgboost": 10,
+    "wilcoxon_sig_vs_lightgbm": 0,
+    "wilcoxon_n_tests_vs_lightgbm": 10,
+    "codebook_figs_unified_mean_rank": 6.4,
+    "ablation_best_config_rank": 2.1
+  },
+  "datasets": [
+    {
+      "dataset": "heart_disease",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"heart_disease\", \"task_type\": \"classification\", \"n_features\": 25}",
+          "output": "{\"dataset\": \"heart_disease\", \"verdict_gap_pct\": 13.864406779660998, \"oracle_best_K\": 5.0, \"has_clear_elbow\": 1, \"codebook_figs_mean_score\": 0.6922033898305086}",
+          "predict_figs": "{\"mean_score\": 0.7902824858757063}",
+          "predict_xgboost": "{\"mean_score\": 0.7971751412429379}",
+          "predict_lightgbm": "{\"mean_score\": 0.8308474576271185}",
+          "predict_codebook_figs_best": "{\"mean_score\": 0.6922033898305086, \"best_K\": 5}",
+          "predict_sporf_matched": "{\"mean_score\": 0.8175141242937853}",
+          "predict_sporf_full": "{\"mean_score\": 0.8107909604519774}",
+          "predict_oblique_figs": "{\"mean_score\": 0.793954802259887}",
+          "metadata_oracle_best_K": 5.0,
+          "metadata_codebook_figs_mean_score": 0.6922033898305086,
+          "metadata_wilcoxon_pval_vs_figs": 0.0625,
+          "metadata_wilcoxon_mean_diff_vs_figs": -0.09807909604519775,
+          "metadata_wilcoxon_pval_vs_xgboost": 0.0625,
+          "metadata_wilcoxon_mean_diff_vs_xgboost": -0.1049717514124294,
+          "metadata_wilcoxon_pval_vs_lightgbm": 0.0625,
+          "metadata_wilcoxon_mean_diff_vs_lightgbm": -0.13864406779661018,
+          "metadata_gap_pct": 13.864406779660998,
+          "metadata_is_failure": 1,
+          "metadata_has_clear_elbow": 1,
+          "metadata_optimal_K": 5.0,
+          "metadata_elbow_rss_improvement_pct": 73.88684984584816,
+          "metadata_codebook_figs_erank": 2.97818,
+          "metadata_compression_ratio_sporf_matched": 3.804421522600132,
+          "metadata_compression_ratio_sporf_full": 7.405918205706244,
+          "metadata_compression_ratio_oblique_figs": 2.131957472081496,
+          "metadata_compression_ratio_figs_axis_aligned": 2.94863484990324,
+          "metadata_best_stability": 0.6893611969559195,
+          "metadata_stability_above_08": 0,
+          "eval_oracle_best_K": 5.0,
+          "eval_codebook_figs_mean_score": 0.6922033898305086,
+          "eval_wilcoxon_pval_vs_figs": 0.0625,
+          "eval_wilcoxon_mean_diff_vs_figs": -0.09807909604519775,
+          "eval_wilcoxon_pval_vs_xgboost": 0.0625,
+          "eval_wilcoxon_mean_diff_vs_xgboost": -0.1049717514124294,
+          "eval_wilcoxon_pval_vs_lightgbm": 0.0625,
+          "eval_wilcoxon_mean_diff_vs_lightgbm": -0.13864406779661018,
+          "eval_gap_pct": 13.864406779660998,
+          "eval_is_failure": 1,
+          "eval_has_clear_elbow": 1,
+          "eval_optimal_K": 5.0,
+          "eval_elbow_rss_improvement_pct": 73.88684984584816,
+          "eval_codebook_figs_erank": 2.97818,
+          "eval_compression_ratio_sporf_matched": 3.804421522600132,
+          "eval_compression_ratio_sporf_full": 7.405918205706244,
+          "eval_compression_ratio_oblique_figs": 2.131957472081496,
+          "eval_compression_ratio_figs_axis_aligned": 2.94863484990324,
+          "eval_best_stability": 0.6893611969559195,
+          "eval_stability_above_08": 0
+        }
+      ]
+    },
+    {
+      "dataset": "diabetes_pima",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"diabetes_pima\", \"task_type\": \"classification\", \"n_features\": 8}",
+          "output": "{\"dataset\": \"diabetes_pima\", \"verdict_gap_pct\": 4.3060860707919595, \"oracle_best_K\": 8.0, \"has_clear_elbow\": 1, \"codebook_figs_mean_score\": 0.7160342925048807}",
+          "predict_figs": "{\"mean_score\": 0.723885918003565}",
+          "predict_xgboost": "{\"mean_score\": 0.7590951532128003}",
+          "predict_lightgbm": "{\"mean_score\": 0.7421441303794245}",
+          "predict_codebook_figs_best": "{\"mean_score\": 0.7160342925048807, \"best_K\": 8}",
+          "predict_sporf_matched": "{\"mean_score\": 0.6809778456837281}",
+          "predict_sporf_full": "{\"mean_score\": 0.7539003480179951}",
+          "predict_oblique_figs": "{\"mean_score\": 0.7669043374925728}",
+          "metadata_oracle_best_K": 8.0,
+          "metadata_codebook_figs_mean_score": 0.7160342925048807,
+          "metadata_wilcoxon_pval_vs_figs": 1.0,
+          "metadata_wilcoxon_mean_diff_vs_figs": -0.007851625498684322,
+          "metadata_wilcoxon_pval_vs_xgboost": 0.125,
+          "metadata_wilcoxon_mean_diff_vs_xgboost": -0.04306086070791955,
+          "metadata_wilcoxon_pval_vs_lightgbm": 0.3125,
+          "metadata_wilcoxon_mean_diff_vs_lightgbm": -0.026109837874543795,
+          "metadata_gap_pct": 4.3060860707919595,
+          "metadata_is_failure": 1,
+          "metadata_has_clear_elbow": 1,
+          "metadata_optimal_K": 8.0,
+          "metadata_elbow_rss_improvement_pct": 94.11674544370567,
+          "metadata_codebook_figs_erank": 3.4714,
+          "metadata_compression_ratio_sporf_matched": 1.7136411116189751,
+          "metadata_compression_ratio_sporf_full": 2.2664815589081457,
+          "metadata_compression_ratio_oblique_figs": 1.31773899050667,
+          "metadata_compression_ratio_figs_axis_aligned": 1.4759718031085505,
+          "metadata_best_stability": 0.7490239830435781,
+          "metadata_stability_above_08": 0,
+          "eval_oracle_best_K": 8.0,
+          "eval_codebook_figs_mean_score": 0.7160342925048807,
+          "eval_wilcoxon_pval_vs_figs": 1.0,
+          "eval_wilcoxon_mean_diff_vs_figs": -0.007851625498684322,
+          "eval_wilcoxon_pval_vs_xgboost": 0.125,
+          "eval_wilcoxon_mean_diff_vs_xgboost": -0.04306086070791955,
+          "eval_wilcoxon_pval_vs_lightgbm": 0.3125,
+          "eval_wilcoxon_mean_diff_vs_lightgbm": -0.026109837874543795,
+          "eval_gap_pct": 4.3060860707919595,
+          "eval_is_failure": 1,
+          "eval_has_clear_elbow": 1,
+          "eval_optimal_K": 8.0,
+          "eval_elbow_rss_improvement_pct": 94.11674544370567,
+          "eval_codebook_figs_erank": 3.4714,
+          "eval_compression_ratio_sporf_matched": 1.7136411116189751,
+          "eval_compression_ratio_sporf_full": 2.2664815589081457,
+          "eval_compression_ratio_oblique_figs": 1.31773899050667,
+          "eval_compression_ratio_figs_axis_aligned": 1.4759718031085505,
+          "eval_best_stability": 0.7490239830435781,
+          "eval_stability_above_08": 0
+        }
+      ]
+    },
+    {
+      "dataset": "breast_cancer_wdbc",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"breast_cancer_wdbc\", \"task_type\": \"classification\", \"n_features\": 30}",
+          "output": "{\"dataset\": \"breast_cancer_wdbc\", \"verdict_gap_pct\": 3.688868188169536, \"oracle_best_K\": 5.0, \"has_clear_elbow\": 1, \"codebook_figs_mean_score\": 0.9279770222015215}",
+          "predict_figs": "{\"mean_score\": 0.9244527247321844}",
+          "predict_xgboost": "{\"mean_score\": 0.9578171091445427}",
+          "predict_lightgbm": "{\"mean_score\": 0.9648657040832168}",
+          "predict_codebook_figs_best": "{\"mean_score\": 0.9279770222015215, \"best_K\": 5}",
+          "predict_sporf_matched": "{\"mean_score\": 0.9279459711224964}",
+          "predict_sporf_full": "{\"mean_score\": 0.9631113181183046}",
+          "predict_oblique_figs": "{\"mean_score\": 0.9385499146095327}",
+          "metadata_oracle_best_K": 5.0,
+          "metadata_codebook_figs_mean_score": 0.9279770222015215,
+          "metadata_wilcoxon_pval_vs_figs": 0.875,
+          "metadata_wilcoxon_mean_diff_vs_figs": 0.0035242974693370675,
+          "metadata_wilcoxon_pval_vs_xgboost": 0.0625,
+          "metadata_wilcoxon_mean_diff_vs_xgboost": -0.029840086943021295,
+          "metadata_wilcoxon_pval_vs_lightgbm": 0.0625,
+          "metadata_wilcoxon_mean_diff_vs_lightgbm": -0.03688868188169536,
+          "metadata_gap_pct": 3.688868188169536,
+          "metadata_is_failure": 1,
+          "metadata_has_clear_elbow": 1,
+          "metadata_optimal_K": 5.0,
+          "metadata_elbow_rss_improvement_pct": 56.424441822947514,
+          "metadata_codebook_figs_erank": 3.137,
+          "metadata_compression_ratio_sporf_matched": 3.898688980592025,
+          "metadata_compression_ratio_sporf_full": 8.959191769755286,
+          "metadata_compression_ratio_oblique_figs": 2.552443418388006,
+          "metadata_compression_ratio_figs_axis_aligned": 2.878742865528629,
+          "metadata_best_stability": 0.7224840178830052,
+          "metadata_stability_above_08": 0,
+          "eval_oracle_best_K": 5.0,
+          "eval_codebook_figs_mean_score": 0.9279770222015215,
+          "eval_wilcoxon_pval_vs_figs": 0.875,
+          "eval_wilcoxon_mean_diff_vs_figs": 0.0035242974693370675,
+          "eval_wilcoxon_pval_vs_xgboost": 0.0625,
+          "eval_wilcoxon_mean_diff_vs_xgboost": -0.029840086943021295,
+          "eval_wilcoxon_pval_vs_lightgbm": 0.0625,
+          "eval_wilcoxon_mean_diff_vs_lightgbm": -0.03688868188169536,
+          "eval_gap_pct": 3.688868188169536,
+          "eval_is_failure": 1,
+          "eval_has_clear_elbow": 1,
+          "eval_optimal_K": 5.0,
+          "eval_elbow_rss_improvement_pct": 56.424441822947514,
+          "eval_codebook_figs_erank": 3.137,
+          "eval_compression_ratio_sporf_matched": 3.898688980592025,
+          "eval_compression_ratio_sporf_full": 8.959191769755286,
+          "eval_compression_ratio_oblique_figs": 2.552443418388006,
+          "eval_compression_ratio_figs_axis_aligned": 2.878742865528629,
+          "eval_best_stability": 0.7224840178830052,
+          "eval_stability_above_08": 0
+        }
+      ]
+    }
+  ]
+}

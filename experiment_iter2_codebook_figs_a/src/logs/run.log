@@ -1,0 +1,1327 @@
+2026-02-27 21:09:53.888 | INFO     | __main__:main:1308 - === MINI MODE (testing) ===
+2026-02-27 21:09:53.888 | INFO     | __main__:load_mini_datasets:98 - Loading mini datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:09:53.888 | ERROR    | __main__:<module>:1396 - An error has been caught in function '<module>', process 'MainProcess' (2426788), thread 'MainThread' (139813084890944):
+Traceback (most recent call last):
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x7f28bdfcecb0>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1309, in main
+    datasets = load_mini_datasets(MINI_DATA_PATH)
+               │                  └ PosixPath('/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/...
+               └ <function load_mini_datasets at 0x7f28bdfcde10>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 99, in load_mini_datasets
+    raw = json.loads(data_path.read_text())
+          │    │     │         └ <function Path.read_text at 0x7f28c44d7b50>
+          │    │     └ PosixPath('/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/...
+          │    └ <function loads at 0x7f28c4572560>
+          └ <module 'json' from '/home/adrian/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/json/__init__.py'>
+
+  File "/home/adrian/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         │    │                       │                └ None
+         │    │                       └ 'locale'
+         │    └ <function Path.open at 0x7f28c44d7c70>
+         └ PosixPath('/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/...
+  File "/home/adrian/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+           │    │         │    │     │     │          │         └ None
+           │    │         │    │     │     │          └ 'locale'
+           │    │         │    │     │     └ -1
+           │    │         │    │     └ 'r'
+           │    │         │    └ PosixPath('/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/...
+           │    │         └ <built-in function open>
+           │    └ <pathlib._NormalAccessor object at 0x7f28c44dfe50>
+           └ PosixPath('/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/...
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/data_id2_it1__opus/mini_data_out.json'
+2026-02-27 21:10:07.455 | INFO     | __main__:main:1308 - === MINI MODE (testing) ===
+2026-02-27 21:10:07.456 | INFO     | __main__:load_mini_datasets:98 - Loading mini datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   heart_disease (mini): 3 samples, 25 features, classification
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   diabetes_pima (mini): 3 samples, 8 features, classification
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   breast_cancer_wdbc (mini): 3 samples, 30 features, classification
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   credit_german (mini): 3 samples, 61 features, classification
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   ionosphere (mini): 3 samples, 33 features, classification
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   spambase (mini): 3 samples, 57 features, classification
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   diabetes_regression (mini): 3 samples, 10 features, regression
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   california_housing (mini): 3 samples, 8 features, regression
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   auto_mpg (mini): 3 samples, 25 features, regression
+2026-02-27 21:10:07.457 | INFO     | __main__:load_mini_datasets:135 -   wine_quality_red (mini): 3 samples, 11 features, regression
+2026-02-27 21:10:07.457 | INFO     | __main__:main:1327 - Datasets (10): ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-27 21:10:07.462 | INFO     | __main__:main:1332 - Starting Codebook-FIGS ablation...
+2026-02-27 21:10:07.462 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: auto_mpg ===
+2026-02-27 21:10:07.462 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:09.671 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 2.2s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:10:09.671 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:09.677 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:10:09.677 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:09.683 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:10:09.683 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:09.688 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:10:09.689 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:09.696 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:10:09.697 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:09.704 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:10:09.704 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: breast_cancer_wdbc ===
+2026-02-27 21:10:09.705 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:09.713 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.713 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:09.721 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.721 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:09.728 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.728 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:09.735 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.735 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:09.743 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.743 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:09.751 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.751 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: california_housing ===
+2026-02-27 21:10:09.751 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:09.758 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:10:09.758 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:09.764 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:10:09.764 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:09.770 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:10:09.770 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:09.775 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:10:09.775 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:09.783 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:10:09.783 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:09.790 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:10:09.791 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: credit_german ===
+2026-02-27 21:10:09.791 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:09.803 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.803 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:09.815 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.815 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:09.825 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.825 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:09.836 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.836 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:09.860 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.860 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:09.889 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.889 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: diabetes_pima ===
+2026-02-27 21:10:09.889 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:09.898 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.898 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:09.907 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.907 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:09.914 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.914 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:09.956 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.956 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:09.965 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.966 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:09.975 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:09.975 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: diabetes_regression ===
+2026-02-27 21:10:09.975 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:09.981 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:10:09.982 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:09.989 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:10:09.989 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:09.994 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:10:09.994 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:10.000 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:10:10.000 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:10.008 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:10:10.008 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:10.016 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:10:10.016 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: heart_disease ===
+2026-02-27 21:10:10.016 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:10.024 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.024 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:10.033 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.033 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:10.040 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.040 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:10.048 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.048 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:10.057 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.057 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:10.066 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.066 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: ionosphere ===
+2026-02-27 21:10:10.066 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:10.078 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.078 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:10.090 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.090 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:10.100 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.100 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:10.110 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.111 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:10.123 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.123 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:10.135 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.135 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: spambase ===
+2026-02-27 21:10:10.136 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:10.143 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.143 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:10.151 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.151 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:10.158 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.158 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:10.165 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.165 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:10.186 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.186 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:10.203 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:10.203 | INFO     | __main__:run_codebook_figs_ablation:958 - === Dataset: wine_quality_red ===
+2026-02-27 21:10:10.203 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:10.210 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_wls done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:10:10.210 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:10.234 | INFO     | __main__:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:10:10.236 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:10.245 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_wls done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:10:10.248 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:10.254 | INFO     | __main__:run_codebook_figs_ablation:1042 -     random_lbfgs done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:10:10.261 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:10:10.291 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_wls done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:10:10.292 | INFO     | __main__:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:10:10.304 | INFO     | __main__:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:10:10.304 | INFO     | __main__:main:1340 - Codebook-FIGS ablation done in 2.8s
+2026-02-27 21:10:10.304 | INFO     | __main__:main:1343 - Starting FIGS baseline...
+2026-02-27 21:10:11.739 | INFO     | __main__:run_figs_baseline:1068 - imodels loaded successfully
+2026-02-27 21:10:11.739 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: auto_mpg
+2026-02-27 21:10:11.740 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on auto_mpg/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([16.])
+    │          │   └ array([[0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 3.040e+02,
+    │          │             1.500e+02, 3.433e+03, 1.200e+01, 1.000e+00,...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.750 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline auto_mpg: {'mean_mse': 500002.0, 'std_mse': 499998.0, 'mean_r2': -2000000000000.0, 'std_r2': 1999999999999.0}
+2026-02-27 21:10:11.750 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: breast_cancer_wdbc
+2026-02-27 21:10:11.755 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on breast_cancer_wdbc/fold0
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.])
+    │          │   └ array([[1.246e+01, 2.404e+01, 8.397e+01, 4.759e+02, 1.186e-01, 2.396e-01,
+    │          │             2.273e-01, 8.543e-02, 2.030e-01, 8.243e-02,...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.760 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on breast_cancer_wdbc/fold4
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0., 0.])
+    │          │   └ array([[1.245e+01, 1.570e+01, 8.257e+01, 4.771e+02, 1.278e-01, 1.700e-01,
+    │          │             1.578e-01, 8.089e-02, 2.087e-01, 7.613e-02,...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.763 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline breast_cancer_wdbc: {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': None, 'std_auc': None}
+2026-02-27 21:10:11.763 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: california_housing
+2026-02-27 21:10:11.763 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on california_housing/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.851])
+    │          │   └ array([[   1.6196    ,   38.        ,    3.83011583,    1.07722008,
+    │          │              732.        ,    2.82625483,   37.75      , -122...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.768 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline california_housing: {'mean_mse': 500000.3898445, 'std_mse': 499999.6101555, 'mean_r2': -389844500000.0, 'std_r2': 389844499999.0}
+2026-02-27 21:10:11.768 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: credit_german
+2026-02-27 21:10:11.773 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on credit_german/fold1
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0., 0.])
+    │          │   └ array([[0.000e+00, 1.000e+00, 0.000e+00, 0.000e+00, 4.200e+01, 0.000e+00,
+    │          │             0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00,...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.789 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline credit_german: {'mean_accuracy': 0.3333333333333333, 'std_accuracy': 0.4714045207910317, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:11.789 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: diabetes_pima
+2026-02-27 21:10:11.799 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on diabetes_pima/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.])
+    │          │   └ array([[  5.   , 116.   ,  74.   ,   0.   ,   0.   ,  25.6  ,   0.201,
+    │          │              30.   ]])
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.801 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline diabetes_pima: {'mean_accuracy': 0.5, 'std_accuracy': 0.5, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:11.801 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: diabetes_regression
+2026-02-27 21:10:11.802 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on diabetes_regression/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([206.])
+    │          │   └ array([[-0.08906294, -0.04464164, -0.01159501, -0.03665608,  0.01219057,
+    │          │              0.02499059, -0.03603757,  0.03430886,  0.02...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.807 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline diabetes_regression: {'mean_mse': 501512.5, 'std_mse': 498487.5, 'mean_r2': -1512500000000000.0, 'std_r2': 1512499999999999.0}
+2026-02-27 21:10:11.807 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: heart_disease
+2026-02-27 21:10:11.816 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on heart_disease/fold3
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.])
+    │          │   └ array([[ 41. ,   1. ,   0. ,   0. ,   1. ,   0. ,   0. , 130. , 204. ,
+    │          │               1. ,   0. ,   1. ,   0. ,   0. , 172. ,   1....
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.818 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline heart_disease: {'mean_accuracy': 0.5, 'std_accuracy': 0.5, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:11.819 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: ionosphere
+2026-02-27 21:10:11.829 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on ionosphere/fold3
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0., 0.])
+    │          │   └ array([[ 1.     ,  1.     , -0.18829,  0.93035, -0.36156, -0.10868,
+    │          │             -0.93597,  1.     , -0.04549,  0.50874, -0.67743,...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.837 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline ionosphere: {'mean_accuracy': 0.3333333333333333, 'std_accuracy': 0.4714045207910317, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:10:11.837 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: spambase
+2026-02-27 21:10:11.841 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on spambase/fold0
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([1., 1.])
+    │          │   └ array([[ 0.   ,  0.   ,  0.   ,  0.   ,  1.16 ,  0.   ,  0.   ,  0.   ,
+    │          │              0.   ,  0.   ,  0.   ,  0.58 ,  0.   ,  0.  ...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.847 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on spambase/fold1
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([1.])
+    │          │   └ array([[ 0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.   ,
+    │          │              0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.  ...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.849 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline spambase: {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': None, 'std_auc': None}
+2026-02-27 21:10:11.849 | INFO     | __main__:run_figs_baseline:1076 -   FIGS baseline: wine_quality_red
+2026-02-27 21:10:11.850 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on wine_quality_red/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([6.])
+    │          │   └ array([[ 7.8   ,  0.645 ,  0.    ,  2.    ,  0.082 ,  8.    , 16.    ,
+    │          │              0.9964,  3.38  ,  0.59  ,  9.8   ]])
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.852 | ERROR    | __main__:run_figs_baseline:1099 - FIGS baseline failed on wine_quality_red/fold4
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1396, in <module>
+    main()
+    └ <function main at 0x791b3754bf40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1344, in main
+    figs_results = run_figs_baseline(
+                   └ <function run_figs_baseline at 0x791b3754bbe0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1096, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([5., 5.])
+    │          │   └ array([[8.500e+00, 4.900e-01, 1.100e-01, 2.300e+00, 8.400e-02, 9.000e+00,
+    │          │             6.700e+01, 9.968e-01, 3.170e+00, 5.300e-01,...
+    │          └ <function FIGS.fit at 0x791b103cc940>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:10:11.854 | INFO     | __main__:run_figs_baseline:1112 -     FIGS baseline wine_quality_red: {'mean_mse': 1000000.0, 'std_mse': 0.0, 'mean_r2': -1.0, 'std_r2': 0.0}
+2026-02-27 21:10:11.855 | INFO     | __main__:main:1349 - FIGS baseline done in 1.6s
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1377 - Output file size: 0.1 MB
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1380 - Total time: 4.4s
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1381 - Summary: best overall config = pca_wls
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1382 - Rankings: {'pca_wls': 1.0, 'pca_lbfgs': 2.0, 'random_wls': 3.0, 'random_lbfgs': 4.0, 'lda_wls': 5.0, 'lda_lbfgs': 6.0}
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   auto_mpg: best=pca_wls score=-124999999999.5556 stability=0.7334044465946072
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   breast_cancer_wdbc: best=pca_wls score=1.0000 stability=0.7215682341991941
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   california_housing: best=pca_wls score=-340725125102.5548 stability=0.6711502439445857
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   credit_german: best=pca_wls score=0.0000 stability=0.5639426149189793
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   diabetes_pima: best=pca_wls score=0.2500 stability=0.6711502439445857
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   diabetes_regression: best=pca_wls score=-3362000000000004.0000 stability=0.6835549513268125
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   heart_disease: best=pca_wls score=0.2500 stability=0.7334044465946072
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   ionosphere: best=pca_wls score=0.0000 stability=0.6066649534307468
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   spambase: best=pca_wls score=1.0000 stability=0.6986063823363278
+2026-02-27 21:10:11.866 | INFO     | __main__:main:1388 -   wine_quality_red: best=pca_wls score=-1499999999999.0000 stability=0.6835749470707325
+2026-02-27 21:10:44.867 | INFO     | method:load_all_datasets:55 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:10:44.924 | INFO     | method:load_all_datasets:91 -   heart_disease: 296 samples, 25 features, classification
+2026-02-27 21:10:44.926 | INFO     | method:load_all_datasets:91 -   diabetes_pima: 768 samples, 8 features, classification
+2026-02-27 21:10:44.930 | INFO     | method:load_all_datasets:91 -   breast_cancer_wdbc: 569 samples, 30 features, classification
+2026-02-27 21:10:44.939 | INFO     | method:load_all_datasets:91 -   credit_german: 1000 samples, 61 features, classification
+2026-02-27 21:10:44.942 | INFO     | method:load_all_datasets:91 -   ionosphere: 351 samples, 33 features, classification
+2026-02-27 21:10:44.986 | INFO     | method:load_all_datasets:91 -   spambase: 4601 samples, 57 features, classification
+2026-02-27 21:10:44.991 | INFO     | method:load_all_datasets:91 -   diabetes_regression: 442 samples, 10 features, regression
+2026-02-27 21:10:45.072 | INFO     | method:load_all_datasets:91 -   california_housing: 20640 samples, 8 features, regression
+2026-02-27 21:10:45.076 | INFO     | method:load_all_datasets:91 -   auto_mpg: 392 samples, 25 features, regression
+2026-02-27 21:10:45.081 | INFO     | method:load_all_datasets:91 -   wine_quality_red: 1599 samples, 11 features, regression
+2026-02-27 21:10:45.085 | INFO     | __main__:<module>:9 - Timing test on diabetes_regression
+2026-02-27 21:10:45.085 | INFO     | method:run_codebook_figs_ablation:958 - === Dataset: diabetes_regression ===
+2026-02-27 21:10:45.085 | INFO     | method:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:10:48.718 | INFO     | method:run_codebook_figs_ablation:1042 -     pca_wls done in 3.6s | {'mean_mse': 4007.947785647587, 'std_mse': 509.4842940861578, 'mean_r2': 0.3091141212320801, 'std_r2': 0.11221176066234613}
+2026-02-27 21:10:48.718 | INFO     | method:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:10:50.743 | INFO     | method:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 2.0s | {'mean_mse': 4644.869360897441, 'std_mse': 774.047028831274, 'mean_r2': 0.20333890183467793, 'std_r2': 0.1409435199951204}
+2026-02-27 21:10:50.743 | INFO     | method:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:10:54.188 | INFO     | method:run_codebook_figs_ablation:1042 -     random_wls done in 3.4s | {'mean_mse': 3926.3464536594634, 'std_mse': 733.7567060511954, 'mean_r2': 0.3245296951347215, 'std_r2': 0.13896702663526833}
+2026-02-27 21:10:54.189 | INFO     | method:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:10:56.814 | INFO     | method:run_codebook_figs_ablation:1042 -     random_lbfgs done in 2.6s | {'mean_mse': 4797.3822413009975, 'std_mse': 485.1222306028768, 'mean_r2': 0.16883024766177762, 'std_r2': 0.1423135292927253}
+2026-02-27 21:10:56.815 | INFO     | method:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:11:01.109 | INFO     | method:run_codebook_figs_ablation:1042 -     lda_wls done in 4.3s | {'mean_mse': 3955.632035786003, 'std_mse': 121.36505051323873, 'mean_r2': 0.3206790217508759, 'std_r2': 0.048976257616913675}
+2026-02-27 21:11:01.109 | INFO     | method:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:11:03.409 | INFO     | method:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 2.3s | {'mean_mse': 3903.8257121293145, 'std_mse': 549.7843885705237, 'mean_r2': 0.3296200985223211, 'std_r2': 0.10936681614059977}
+2026-02-27 21:11:03.410 | INFO     | __main__:<module>:17 - diabetes_regression full ablation (6 configs × 5 folds = 30 fits): 18.3s
+2026-02-27 21:11:03.410 | INFO     | method:run_codebook_figs_ablation:958 - === Dataset: california_housing ===
+2026-02-27 21:11:03.411 | INFO     | method:run_codebook_figs_ablation:977 -   Config: pca_wls
+2026-02-27 21:11:37.223 | INFO     | method:run_codebook_figs_ablation:1042 -     pca_wls done in 33.8s | {'mean_mse': 0.7408391135151493, 'std_mse': 0.04943183881421504, 'mean_r2': 0.4430748952742025, 'std_r2': 0.042839148229457655}
+2026-02-27 21:11:37.224 | INFO     | method:run_codebook_figs_ablation:977 -   Config: pca_lbfgs
+2026-02-27 21:11:55.303 | INFO     | method:run_codebook_figs_ablation:1042 -     pca_lbfgs done in 18.1s | {'mean_mse': 0.6945489564596404, 'std_mse': 0.03396338265338265, 'mean_r2': 0.4780493667945419, 'std_r2': 0.028632394832828093}
+2026-02-27 21:11:55.303 | INFO     | method:run_codebook_figs_ablation:977 -   Config: random_wls
+2026-02-27 21:12:39.210 | INFO     | method:run_codebook_figs_ablation:1042 -     random_wls done in 43.9s | {'mean_mse': 0.7045966802832141, 'std_mse': 0.020531189293606103, 'mean_r2': 0.4704577611665437, 'std_r2': 0.02124101178840086}
+2026-02-27 21:12:39.211 | INFO     | method:run_codebook_figs_ablation:977 -   Config: random_lbfgs
+2026-02-27 21:13:18.352 | INFO     | method:run_codebook_figs_ablation:1042 -     random_lbfgs done in 39.1s | {'mean_mse': 0.8524355709468591, 'std_mse': 0.08378970573797812, 'mean_r2': 0.3594568115672299, 'std_r2': 0.06528114583691565}
+2026-02-27 21:13:18.364 | INFO     | method:run_codebook_figs_ablation:977 -   Config: lda_wls
+2026-02-27 21:13:58.633 | INFO     | method:run_codebook_figs_ablation:1042 -     lda_wls done in 40.3s | {'mean_mse': 0.7643439841327553, 'std_mse': 0.09325643944654727, 'mean_r2': 0.4259849025019685, 'std_r2': 0.06764334000542752}
+2026-02-27 21:13:58.634 | INFO     | method:run_codebook_figs_ablation:977 -   Config: lda_lbfgs
+2026-02-27 21:14:37.851 | INFO     | method:run_codebook_figs_ablation:1042 -     lda_lbfgs done in 39.2s | {'mean_mse': 0.6860955120464853, 'std_mse': 0.02651043935371007, 'mean_r2': 0.4842477499007389, 'std_r2': 0.0269443347582893}
+2026-02-27 21:14:37.851 | INFO     | __main__:<module>:27 - california_housing full ablation (6 configs × 5 folds = 30 fits): 214.4s
+2026-02-27 21:17:29.436 | INFO     | __main__:main:1355 - === MINI MODE (testing) ===
+2026-02-27 21:17:29.437 | INFO     | __main__:load_mini_datasets:98 - Loading mini datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:17:29.437 | INFO     | __main__:load_mini_datasets:135 -   heart_disease (mini): 3 samples, 25 features, classification
+2026-02-27 21:17:29.437 | INFO     | __main__:load_mini_datasets:135 -   diabetes_pima (mini): 3 samples, 8 features, classification
+2026-02-27 21:17:29.437 | INFO     | __main__:load_mini_datasets:135 -   breast_cancer_wdbc (mini): 3 samples, 30 features, classification
+2026-02-27 21:17:29.437 | INFO     | __main__:load_mini_datasets:135 -   credit_german (mini): 3 samples, 61 features, classification
+2026-02-27 21:17:29.438 | INFO     | __main__:load_mini_datasets:135 -   ionosphere (mini): 3 samples, 33 features, classification
+2026-02-27 21:17:29.438 | INFO     | __main__:load_mini_datasets:135 -   spambase (mini): 3 samples, 57 features, classification
+2026-02-27 21:17:29.438 | INFO     | __main__:load_mini_datasets:135 -   diabetes_regression (mini): 3 samples, 10 features, regression
+2026-02-27 21:17:29.438 | INFO     | __main__:load_mini_datasets:135 -   california_housing (mini): 3 samples, 8 features, regression
+2026-02-27 21:17:29.438 | INFO     | __main__:load_mini_datasets:135 -   auto_mpg (mini): 3 samples, 25 features, regression
+2026-02-27 21:17:29.438 | INFO     | __main__:load_mini_datasets:135 -   wine_quality_red (mini): 3 samples, 11 features, regression
+2026-02-27 21:17:29.438 | INFO     | __main__:main:1374 - Datasets (10): ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-27 21:17:29.438 | INFO     | __main__:main:1379 - Starting Codebook-FIGS ablation...
+2026-02-27 21:17:29.443 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: auto_mpg ===
+2026-02-27 21:17:29.443 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:30.656 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 1.2s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:17:30.657 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:30.669 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:17:30.670 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:30.677 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:17:30.681 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:30.687 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:17:30.688 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:30.703 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:17:30.709 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:30.718 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_mse': 1.375, 'std_mse': 1.125, 'mean_r2': -124999999999.55556, 'std_r2': 124999999999.44444}
+2026-02-27 21:17:30.722 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: breast_cancer_wdbc ===
+2026-02-27 21:17:30.722 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:30.735 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.735 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:30.744 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.745 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:30.752 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.752 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:30.759 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.759 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:30.768 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.769 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:30.777 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.777 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: california_housing ===
+2026-02-27 21:17:30.778 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:30.785 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:17:30.786 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:30.792 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:17:30.792 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:30.797 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:17:30.797 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:30.804 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:17:30.805 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:30.812 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:17:30.812 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:30.819 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_mse': 0.683103375, 'std_mse': 0.0016531250000000886, 'mean_r2': -340725125102.5548, 'std_r2': 340725124896.44507}
+2026-02-27 21:17:30.819 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: credit_german ===
+2026-02-27 21:17:30.819 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:30.832 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.833 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:30.843 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.843 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:30.852 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.853 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:30.862 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.862 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:30.989 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.1s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:30.993 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:31.423 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.4s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.423 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: diabetes_pima ===
+2026-02-27 21:17:31.423 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:31.432 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.432 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:31.441 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.441 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:31.448 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.448 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:31.457 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.457 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:31.464 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.465 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:31.472 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.473 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: diabetes_regression ===
+2026-02-27 21:17:31.473 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:31.478 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:17:31.478 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:31.484 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:17:31.484 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:31.489 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:17:31.489 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:31.494 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:17:31.494 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:31.502 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:17:31.502 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:31.509 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_mse': 7088.5, 'std_mse': 364.5, 'mean_r2': -3362000000000004.0, 'std_r2': 3361999999999995.0}
+2026-02-27 21:17:31.509 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: heart_disease ===
+2026-02-27 21:17:31.509 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:31.517 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.517 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:31.525 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.525 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:31.531 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.531 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:31.538 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.538 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:31.546 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.546 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:31.555 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 0.25, 'std_accuracy': 0.25, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.555 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: ionosphere ===
+2026-02-27 21:17:31.555 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:31.567 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.567 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:31.580 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.580 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:31.591 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.591 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:31.602 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.602 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:31.623 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.623 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:31.641 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.644 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: spambase ===
+2026-02-27 21:17:31.645 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:31.656 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.656 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:31.670 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.670 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:31.678 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.678 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:31.690 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.691 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:31.753 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.1s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.755 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:31.893 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.1s | {'mean_accuracy': 1.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:31.899 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: wine_quality_red ===
+2026-02-27 21:17:31.900 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:31.914 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:17:31.924 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:31.953 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:17:31.967 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:17:31.974 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:17:31.987 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:17:32.001 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:17:32.005 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:17:32.023 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:17:32.023 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:17:32.030 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 0.0s | {'mean_mse': 1.0, 'std_mse': 0.0, 'mean_r2': -1499999999999.0, 'std_r2': 500000000000.0}
+2026-02-27 21:17:32.031 | INFO     | __main__:main:1387 - Codebook-FIGS ablation done in 2.6s
+2026-02-27 21:17:32.031 | INFO     | __main__:main:1390 - Starting FIGS baseline...
+2026-02-27 21:17:32.765 | INFO     | __main__:run_figs_baseline:1094 - imodels loaded successfully
+2026-02-27 21:17:32.766 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: auto_mpg
+2026-02-27 21:17:32.767 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on auto_mpg/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([16.])
+    │          │   └ array([[0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 3.040e+02,
+    │          │             1.500e+02, 3.433e+03, 1.200e+01, 1.000e+00,...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.785 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline auto_mpg: {'mean_mse': 500002.0, 'std_mse': 499998.0, 'mean_r2': -2000000000000.0, 'std_r2': 1999999999999.0}
+2026-02-27 21:17:32.785 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: breast_cancer_wdbc
+2026-02-27 21:17:32.793 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on breast_cancer_wdbc/fold0
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.])
+    │          │   └ array([[1.246e+01, 2.404e+01, 8.397e+01, 4.759e+02, 1.186e-01, 2.396e-01,
+    │          │             2.273e-01, 8.543e-02, 2.030e-01, 8.243e-02,...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.808 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on breast_cancer_wdbc/fold4
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0., 0.])
+    │          │   └ array([[1.245e+01, 1.570e+01, 8.257e+01, 4.771e+02, 1.278e-01, 1.700e-01,
+    │          │             1.578e-01, 8.089e-02, 2.087e-01, 7.613e-02,...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.817 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline breast_cancer_wdbc: {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': None, 'std_auc': None}
+2026-02-27 21:17:32.817 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: california_housing
+2026-02-27 21:17:32.818 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on california_housing/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.851])
+    │          │   └ array([[   1.6196    ,   38.        ,    3.83011583,    1.07722008,
+    │          │              732.        ,    2.82625483,   37.75      , -122...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.828 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline california_housing: {'mean_mse': 500000.294912, 'std_mse': 499999.705088, 'mean_r2': -294912000000.0, 'std_r2': 294911999999.0}
+2026-02-27 21:17:32.832 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: credit_german
+2026-02-27 21:17:32.836 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on credit_german/fold1
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0., 0.])
+    │          │   └ array([[0.000e+00, 1.000e+00, 0.000e+00, 0.000e+00, 4.200e+01, 0.000e+00,
+    │          │             0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00,...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.875 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline credit_german: {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:32.876 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: diabetes_pima
+2026-02-27 21:17:32.890 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on diabetes_pima/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.])
+    │          │   └ array([[  5.   , 116.   ,  74.   ,   0.   ,   0.   ,  25.6  ,   0.201,
+    │          │              30.   ]])
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.893 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline diabetes_pima: {'mean_accuracy': 0.5, 'std_accuracy': 0.5, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:32.893 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: diabetes_regression
+2026-02-27 21:17:32.894 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on diabetes_regression/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([206.])
+    │          │   └ array([[-0.08906294, -0.04464164, -0.01159501, -0.03665608,  0.01219057,
+    │          │              0.02499059, -0.03603757,  0.03430886,  0.02...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.902 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline diabetes_regression: {'mean_mse': 501512.5, 'std_mse': 498487.5, 'mean_r2': -1512500000000000.0, 'std_r2': 1512499999999999.0}
+2026-02-27 21:17:32.902 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: heart_disease
+2026-02-27 21:17:32.913 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on heart_disease/fold3
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0.])
+    │          │   └ array([[ 41. ,   1. ,   0. ,   0. ,   1. ,   0. ,   0. , 130. , 204. ,
+    │          │               1. ,   0. ,   1. ,   0. ,   0. , 172. ,   1....
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.916 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline heart_disease: {'mean_accuracy': 0.5, 'std_accuracy': 0.5, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:32.916 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: ionosphere
+2026-02-27 21:17:32.929 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on ionosphere/fold3
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([0., 0.])
+    │          │   └ array([[ 1.     ,  1.     , -0.18829,  0.93035, -0.36156, -0.10868,
+    │          │             -0.93597,  1.     , -0.04549,  0.50874, -0.67743,...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.938 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline ionosphere: {'mean_accuracy': 0.3333333333333333, 'std_accuracy': 0.4714045207910317, 'mean_auc': nan, 'std_auc': nan}
+2026-02-27 21:17:32.939 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: spambase
+2026-02-27 21:17:32.943 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on spambase/fold0
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([1., 1.])
+    │          │   └ array([[ 0.   ,  0.   ,  0.   ,  0.   ,  1.16 ,  0.   ,  0.   ,  0.   ,
+    │          │              0.   ,  0.   ,  0.   ,  0.58 ,  0.   ,  0.  ...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.954 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on spambase/fold1
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([1.])
+    │          │   └ array([[ 0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.   ,
+    │          │              0.   ,  0.   ,  0.   ,  0.   ,  0.   ,  0.  ...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSClassifier(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSClassifier(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.959 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline spambase: {'mean_accuracy': 0.0, 'std_accuracy': 0.0, 'mean_auc': None, 'std_auc': None}
+2026-02-27 21:17:32.959 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: wine_quality_red
+2026-02-27 21:17:32.960 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on wine_quality_red/fold2
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([6.])
+    │          │   └ array([[ 7.8   ,  0.645 ,  0.    ,  2.    ,  0.082 ,  8.    , 16.    ,
+    │          │              0.9964,  3.38  ,  0.59  ,  9.8   ]])
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.964 | ERROR    | __main__:run_figs_baseline:1129 - FIGS baseline failed on wine_quality_red/fold4
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1444, in <module>
+    main()
+    └ <function main at 0x7aaa5ab53f40>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1391, in main
+    figs_results, figs_predictions = run_figs_baseline(
+                                     └ <function run_figs_baseline at 0x7aaa5ab53c70>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/method.py", line 1124, in run_figs_baseline
+    figs_model.fit(X_train, y_train)
+    │          │   │        └ array([5., 5.])
+    │          │   └ array([[8.500e+00, 4.900e-01, 1.100e-01, 2.300e+00, 8.400e-02, 9.000e+00,
+    │          │             6.700e+01, 9.968e-01, 3.170e+00, 5.300e-01,...
+    │          └ <function FIGS.fit at 0x7aaa3782dd80>
+    └ FIGSRegressor(max_rules=4)
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/.venv/lib/python3.10/site-packages/imodels/tree/figs.py", line 353, in fit
+    if split_node.impurity_reduction < self.min_impurity_decrease:
+       │          │                    │    └ 0.0
+       │          │                    └ FIGSRegressor(max_rules=4)
+       │          └ None
+       └ X_-2 <= -2.000 (Tree #-1 root)
+
+TypeError: '<' not supported between instances of 'NoneType' and 'float'
+2026-02-27 21:17:32.968 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline wine_quality_red: {'mean_mse': 1000000.0, 'std_mse': 0.0, 'mean_r2': -1.0, 'std_r2': 0.0}
+2026-02-27 21:17:32.970 | INFO     | __main__:main:1396 - FIGS baseline done in 0.9s
+2026-02-27 21:17:33.001 | INFO     | __main__:main:1425 - Output file size: 0.1 MB
+2026-02-27 21:17:33.001 | INFO     | __main__:main:1428 - Total time: 3.6s
+2026-02-27 21:17:33.001 | INFO     | __main__:main:1429 - Summary: best overall config = pca_wls
+2026-02-27 21:17:33.001 | INFO     | __main__:main:1430 - Rankings: {'pca_wls': 1.0, 'pca_lbfgs': 2.0, 'random_wls': 3.0, 'random_lbfgs': 4.0, 'lda_wls': 5.0, 'lda_lbfgs': 6.0}
+2026-02-27 21:17:33.002 | INFO     | __main__:main:1436 -   auto_mpg: best=pca_wls score=-124999999999.5556 stability=0.7334044465946072
+2026-02-27 21:17:33.002 | INFO     | __main__:main:1436 -   breast_cancer_wdbc: best=pca_wls score=1.0000 stability=0.7215682341991941
+2026-02-27 21:17:33.002 | INFO     | __main__:main:1436 -   california_housing: best=pca_wls score=-340725125102.5548 stability=0.6711502439445857
+2026-02-27 21:17:33.004 | INFO     | __main__:main:1436 -   credit_german: best=pca_wls score=0.0000 stability=0.5639426149189793
+2026-02-27 21:17:33.004 | INFO     | __main__:main:1436 -   diabetes_pima: best=pca_wls score=0.2500 stability=0.6711502439445857
+2026-02-27 21:17:33.004 | INFO     | __main__:main:1436 -   diabetes_regression: best=pca_wls score=-3362000000000004.0000 stability=0.6835549513268125
+2026-02-27 21:17:33.005 | INFO     | __main__:main:1436 -   heart_disease: best=pca_wls score=0.2500 stability=0.7334044465946072
+2026-02-27 21:17:33.005 | INFO     | __main__:main:1436 -   ionosphere: best=pca_wls score=0.0000 stability=0.6066649534307468
+2026-02-27 21:17:33.005 | INFO     | __main__:main:1436 -   spambase: best=pca_wls score=1.0000 stability=0.6986063823363278
+2026-02-27 21:17:33.005 | INFO     | __main__:main:1436 -   wine_quality_red: best=pca_wls score=-1499999999999.0000 stability=0.6835749470707325
+2026-02-27 21:17:46.570 | INFO     | __main__:main:1367 - === FULL MODE ===
+2026-02-27 21:17:46.571 | INFO     | __main__:load_all_datasets:55 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:17:46.681 | INFO     | __main__:load_all_datasets:91 -   heart_disease: 296 samples, 25 features, classification
+2026-02-27 21:17:46.685 | INFO     | __main__:load_all_datasets:91 -   diabetes_pima: 768 samples, 8 features, classification
+2026-02-27 21:17:46.690 | INFO     | __main__:load_all_datasets:91 -   breast_cancer_wdbc: 569 samples, 30 features, classification
+2026-02-27 21:17:46.704 | INFO     | __main__:load_all_datasets:91 -   credit_german: 1000 samples, 61 features, classification
+2026-02-27 21:17:46.707 | INFO     | __main__:load_all_datasets:91 -   ionosphere: 351 samples, 33 features, classification
+2026-02-27 21:17:46.757 | INFO     | __main__:load_all_datasets:91 -   spambase: 4601 samples, 57 features, classification
+2026-02-27 21:17:46.763 | INFO     | __main__:load_all_datasets:91 -   diabetes_regression: 442 samples, 10 features, regression
+2026-02-27 21:17:46.855 | INFO     | __main__:load_all_datasets:91 -   california_housing: 20640 samples, 8 features, regression
+2026-02-27 21:17:46.859 | INFO     | __main__:load_all_datasets:91 -   auto_mpg: 392 samples, 25 features, regression
+2026-02-27 21:17:46.864 | INFO     | __main__:load_all_datasets:91 -   wine_quality_red: 1599 samples, 11 features, regression
+2026-02-27 21:17:46.868 | INFO     | __main__:main:1374 - Datasets (10): ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-27 21:17:46.869 | INFO     | __main__:main:1379 - Starting Codebook-FIGS ablation...
+2026-02-27 21:17:46.869 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: auto_mpg ===
+2026-02-27 21:17:46.869 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:17:52.959 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 6.1s | {'mean_mse': 16.512790547569963, 'std_mse': 2.284493371271111, 'mean_r2': 0.7193446542574435, 'std_r2': 0.06309971119694098}
+2026-02-27 21:17:52.959 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:17:55.518 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 2.5s | {'mean_mse': 20.217609790026206, 'std_mse': 5.230137275000374, 'mean_r2': 0.6628309730617004, 'std_r2': 0.07933698495309129}
+2026-02-27 21:17:55.518 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:18:00.592 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 5.1s | {'mean_mse': 17.082937361140537, 'std_mse': 3.079417937989249, 'mean_r2': 0.7118911774413055, 'std_r2': 0.06478250301684545}
+2026-02-27 21:18:00.592 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:18:05.026 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 4.4s | {'mean_mse': 28.34302518022323, 'std_mse': 6.206357832385791, 'mean_r2': 0.527682234886182, 'std_r2': 0.09665070668537978}
+2026-02-27 21:18:05.027 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:18:10.361 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 5.3s | {'mean_mse': 17.90867224607719, 'std_mse': 2.112085061958774, 'mean_r2': 0.6981939960334846, 'std_r2': 0.04979120611685255}
+2026-02-27 21:18:10.361 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:18:12.700 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 2.3s | {'mean_mse': 19.96062303803787, 'std_mse': 3.024281198618362, 'mean_r2': 0.6666689540662892, 'std_r2': 0.047103626539414696}
+2026-02-27 21:18:12.701 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: breast_cancer_wdbc ===
+2026-02-27 21:18:12.701 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:18:49.435 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 36.7s | {'mean_accuracy': 0.9420742120788699, 'std_accuracy': 0.021139229332021402, 'mean_auc': 0.9676550799196558, 'std_auc': 0.019666424218874084}
+2026-02-27 21:18:49.444 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:19:38.846 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 49.4s | {'mean_accuracy': 0.9227138643067846, 'std_accuracy': 0.03386121947310791, 'mean_auc': 0.9533649355218305, 'std_auc': 0.017514500156937732}
+2026-02-27 21:19:38.849 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:20:21.485 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 42.6s | {'mean_accuracy': 0.9455208818506444, 'std_accuracy': 0.011624721142877433, 'mean_auc': 0.9672701150919296, 'std_auc': 0.013656198739920827}
+2026-02-27 21:20:21.500 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:21:00.177 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 38.7s | {'mean_accuracy': 0.8945971122496508, 'std_accuracy': 0.03627958163722589, 'mean_auc': 0.9400304280463139, 'std_auc': 0.0351610989903276}
+2026-02-27 21:21:00.187 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:21:54.810 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 54.6s | {'mean_accuracy': 0.9508306163639186, 'std_accuracy': 0.018003842981006782, 'mean_auc': 0.9617678616921165, 'std_auc': 0.02106214084104456}
+2026-02-27 21:21:54.824 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:22:25.366 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 30.5s | {'mean_accuracy': 0.9402732494954199, 'std_accuracy': 0.016937901108664277, 'mean_auc': 0.9502588636903246, 'std_auc': 0.0372023741212986}
+2026-02-27 21:22:25.366 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: california_housing ===
+2026-02-27 21:22:25.366 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:23:56.436 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 91.1s | {'mean_mse': 0.7408391135151493, 'std_mse': 0.04943183881421504, 'mean_r2': 0.4430748952742025, 'std_r2': 0.042839148229457655}
+2026-02-27 21:23:56.436 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:24:59.966 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 63.5s | {'mean_mse': 0.6945489564596404, 'std_mse': 0.03396338265338265, 'mean_r2': 0.4780493667945419, 'std_r2': 0.028632394832828093}
+2026-02-27 21:24:59.966 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:26:22.354 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 82.4s | {'mean_mse': 0.7045966802832141, 'std_mse': 0.020531189293606103, 'mean_r2': 0.4704577611665437, 'std_r2': 0.02124101178840086}
+2026-02-27 21:26:22.357 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:27:13.695 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 51.3s | {'mean_mse': 0.8524355709468591, 'std_mse': 0.08378970573797812, 'mean_r2': 0.3594568115672299, 'std_r2': 0.06528114583691565}
+2026-02-27 21:27:13.718 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:28:31.512 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 77.8s | {'mean_mse': 0.7643439841327553, 'std_mse': 0.09325643944654727, 'mean_r2': 0.4259849025019685, 'std_r2': 0.06764334000542752}
+2026-02-27 21:28:31.512 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:28:56.758 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 25.2s | {'mean_mse': 0.6860955120464853, 'std_mse': 0.02651043935371007, 'mean_r2': 0.4842477499007389, 'std_r2': 0.0269443347582893}
+2026-02-27 21:28:56.761 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: credit_german ===
+2026-02-27 21:28:56.762 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:30:07.389 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 70.6s | {'mean_accuracy': 0.736, 'std_accuracy': 0.020832666655999678, 'mean_auc': 0.7319404761904762, 'std_auc': 0.0303386404866132}
+2026-02-27 21:30:07.399 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:31:30.238 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 82.8s | {'mean_accuracy': 0.7, 'std_accuracy': 0.02983286778035258, 'mean_auc': 0.6928690476190476, 'std_auc': 0.01951318671520144}
+2026-02-27 21:31:30.239 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:32:37.281 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 67.0s | {'mean_accuracy': 0.744, 'std_accuracy': 0.027459060435491987, 'mean_auc': 0.7385833333333334, 'std_auc': 0.0358929933662424}
+2026-02-27 21:32:37.281 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:33:36.382 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 59.1s | {'mean_accuracy': 0.681, 'std_accuracy': 0.03322649545167228, 'mean_auc': 0.6327380952380952, 'std_auc': 0.03238530695509873}
+2026-02-27 21:33:36.385 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:34:02.105 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 25.7s | {'mean_accuracy': 0.727, 'std_accuracy': 0.007483314773547889, 'mean_auc': 0.7298690476190476, 'std_auc': 0.01834428398989833}
+2026-02-27 21:34:02.112 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:34:17.063 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 15.0s | {'mean_accuracy': 0.728, 'std_accuracy': 0.027676705006196085, 'mean_auc': 0.7209761904761904, 'std_auc': 0.053714604967811816}
+2026-02-27 21:34:17.063 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: diabetes_pima ===
+2026-02-27 21:34:17.064 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:34:24.479 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 7.4s | {'mean_accuracy': 0.7421016891605128, 'std_accuracy': 0.030326994766106407, 'mean_auc': 0.7945174703004891, 'std_auc': 0.03392652732672933}
+2026-02-27 21:34:24.479 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:34:28.254 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 3.8s | {'mean_accuracy': 0.734334946099652, 'std_accuracy': 0.01912400759036535, 'mean_auc': 0.7685503144654089, 'std_auc': 0.028813728673296075}
+2026-02-27 21:34:28.255 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:34:37.679 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 9.4s | {'mean_accuracy': 0.7551396316102199, 'std_accuracy': 0.035982020820613435, 'mean_auc': 0.7868413696715584, 'std_auc': 0.0348729607868139}
+2026-02-27 21:34:37.679 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:34:43.175 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 5.5s | {'mean_accuracy': 0.7160767337237927, 'std_accuracy': 0.048433493566776765, 'mean_auc': 0.750520964360587, 'std_auc': 0.04635013006571786}
+2026-02-27 21:34:43.175 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:34:50.484 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 7.3s | {'mean_accuracy': 0.7212970036499449, 'std_accuracy': 0.029153322764605763, 'mean_auc': 0.7646408106219427, 'std_auc': 0.032977121432264}
+2026-02-27 21:34:50.484 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:34:53.756 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 3.3s | {'mean_accuracy': 0.7434598081656906, 'std_accuracy': 0.019486456647837113, 'mean_auc': 0.7818193570929419, 'std_auc': 0.028705714867829683}
+2026-02-27 21:34:53.756 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: diabetes_regression ===
+2026-02-27 21:34:53.757 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:34:58.714 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 5.0s | {'mean_mse': 4007.947785647587, 'std_mse': 509.4842940861578, 'mean_r2': 0.3091141212320801, 'std_r2': 0.11221176066234613}
+2026-02-27 21:34:58.714 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:35:01.619 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 2.9s | {'mean_mse': 4644.869360897441, 'std_mse': 774.047028831274, 'mean_r2': 0.20333890183467793, 'std_r2': 0.1409435199951204}
+2026-02-27 21:35:01.620 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:35:07.111 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 5.5s | {'mean_mse': 3926.3464536594634, 'std_mse': 733.7567060511954, 'mean_r2': 0.3245296951347215, 'std_r2': 0.13896702663526833}
+2026-02-27 21:35:07.120 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:35:12.082 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 5.0s | {'mean_mse': 4797.3822413009975, 'std_mse': 485.1222306028768, 'mean_r2': 0.16883024766177762, 'std_r2': 0.1423135292927253}
+2026-02-27 21:35:12.082 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:35:18.234 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 6.2s | {'mean_mse': 3955.632035786003, 'std_mse': 121.36505051323873, 'mean_r2': 0.3206790217508759, 'std_r2': 0.048976257616913675}
+2026-02-27 21:35:18.235 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:35:20.912 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 2.7s | {'mean_mse': 3903.8257121293145, 'std_mse': 549.7843885705237, 'mean_r2': 0.3296200985223211, 'std_r2': 0.10936681614059977}
+2026-02-27 21:35:20.913 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: heart_disease ===
+2026-02-27 21:35:20.913 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:35:23.799 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 2.9s | {'mean_accuracy': 0.7598870056497176, 'std_accuracy': 0.07663649698446633, 'mean_auc': 0.7988508597883597, 'std_auc': 0.06583683695640397}
+2026-02-27 21:35:23.800 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:35:26.386 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 2.6s | {'mean_accuracy': 0.7327683615819208, 'std_accuracy': 0.05710408482934816, 'mean_auc': 0.7780505952380952, 'std_auc': 0.06537925892529259}
+2026-02-27 21:35:26.386 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:35:29.225 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 2.8s | {'mean_accuracy': 0.7906779661016949, 'std_accuracy': 0.049094062230373686, 'mean_auc': 0.866786541005291, 'std_auc': 0.029270740681566022}
+2026-02-27 21:35:29.226 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:35:31.584 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 2.4s | {'mean_accuracy': 0.7125988700564971, 'std_accuracy': 0.03994458161066492, 'mean_auc': 0.7771288029100528, 'std_auc': 0.043437493202716226}
+2026-02-27 21:35:31.584 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:35:35.361 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 3.8s | {'mean_accuracy': 0.7971186440677966, 'std_accuracy': 0.05408771749267978, 'mean_auc': 0.844828869047619, 'std_auc': 0.060700874242612585}
+2026-02-27 21:35:35.361 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:35:38.064 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 2.7s | {'mean_accuracy': 0.7633898305084745, 'std_accuracy': 0.031097884586250107, 'mean_auc': 0.8144923941798942, 'std_auc': 0.049663381120496924}
+2026-02-27 21:35:38.065 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: ionosphere ===
+2026-02-27 21:35:38.065 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:35:59.359 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 21.3s | {'mean_accuracy': 0.8888531187122736, 'std_accuracy': 0.027822705977457583, 'mean_auc': 0.9039350427350428, 'std_auc': 0.02722037970927803}
+2026-02-27 21:35:59.366 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:36:13.374 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 14.0s | {'mean_accuracy': 0.897344064386318, 'std_accuracy': 0.01928711806711353, 'mean_auc': 0.8880752136752136, 'std_auc': 0.03133106356106247}
+2026-02-27 21:36:13.385 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:36:45.325 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 31.9s | {'mean_accuracy': 0.8662374245472837, 'std_accuracy': 0.03251907460102795, 'mean_auc': 0.8431829059829059, 'std_auc': 0.03787642363023884}
+2026-02-27 21:36:45.332 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:37:16.475 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 31.1s | {'mean_accuracy': 0.8174647887323943, 'std_accuracy': 0.05416974336430247, 'mean_auc': 0.8434529914529915, 'std_auc': 0.035023707988521856}
+2026-02-27 21:37:16.475 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:37:46.876 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 30.4s | {'mean_accuracy': 0.8659959758551308, 'std_accuracy': 0.050175616352841144, 'mean_auc': 0.8546905982905983, 'std_auc': 0.07203898393488121}
+2026-02-27 21:37:46.877 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:37:59.045 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 12.2s | {'mean_accuracy': 0.9030583501006035, 'std_accuracy': 0.02124443609612089, 'mean_auc': 0.9078085470085471, 'std_auc': 0.03700902058479885}
+2026-02-27 21:37:59.047 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: spambase ===
+2026-02-27 21:37:59.047 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:39:28.890 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 89.8s | {'mean_accuracy': 0.9037180758155123, 'std_accuracy': 0.005366708616016295, 'mean_auc': 0.9374978833056659, 'std_auc': 0.009163996123621504}
+2026-02-27 21:39:28.890 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:41:26.310 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 117.4s | {'mean_accuracy': 0.8611192937733089, 'std_accuracy': 0.009674287689376662, 'mean_auc': 0.9115429849354448, 'std_auc': 0.00700906045889651}
+2026-02-27 21:41:26.311 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:43:23.802 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 117.5s | {'mean_accuracy': 0.9015458150403626, 'std_accuracy': 0.010319617319645676, 'mean_auc': 0.9421581953004503, 'std_auc': 0.008444229234924919}
+2026-02-27 21:43:23.810 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:44:14.545 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 50.7s | {'mean_accuracy': 0.7520164754756172, 'std_accuracy': 0.04566415533241101, 'mean_auc': 0.7980097998774365, 'std_auc': 0.050603206432450414}
+2026-02-27 21:44:14.550 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:46:11.569 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 117.0s | {'mean_accuracy': 0.907196808761743, 'std_accuracy': 0.008231719777843096, 'mean_auc': 0.9408407547038073, 'std_auc': 0.009395558197928042}
+2026-02-27 21:46:11.570 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:49:09.764 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 178.2s | {'mean_accuracy': 0.8989354671198603, 'std_accuracy': 0.00536027000258287, 'mean_auc': 0.9263178921318861, 'std_auc': 0.0033930680501106504}
+2026-02-27 21:49:09.764 | INFO     | __main__:run_codebook_figs_ablation:964 - === Dataset: wine_quality_red ===
+2026-02-27 21:49:09.765 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_wls
+2026-02-27 21:49:58.738 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_wls done in 49.0s | {'mean_mse': 0.4858799129614093, 'std_mse': 0.06855034212772843, 'mean_r2': 0.25531676025145317, 'std_r2': 0.0887417045942847}
+2026-02-27 21:49:58.738 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: pca_lbfgs
+2026-02-27 21:50:19.253 | INFO     | __main__:run_codebook_figs_ablation:1060 -     pca_lbfgs done in 20.5s | {'mean_mse': 0.4940937947462879, 'std_mse': 0.07547605362635866, 'mean_r2': 0.24330543158000273, 'std_r2': 0.09741226525649155}
+2026-02-27 21:50:19.253 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_wls
+2026-02-27 21:50:49.958 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_wls done in 30.7s | {'mean_mse': 0.45556802373835126, 'std_mse': 0.0351601845032004, 'mean_r2': 0.29948202009647706, 'std_r2': 0.05317407273611574}
+2026-02-27 21:50:49.959 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: random_lbfgs
+2026-02-27 21:51:09.562 | INFO     | __main__:run_codebook_figs_ablation:1060 -     random_lbfgs done in 19.6s | {'mean_mse': 0.5143343961507143, 'std_mse': 0.03381895519279057, 'mean_r2': 0.20947447515889978, 'std_r2': 0.04551546801498702}
+2026-02-27 21:51:09.565 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_wls
+2026-02-27 21:51:44.880 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_wls done in 35.3s | {'mean_mse': 0.4755538419184181, 'std_mse': 0.04923440436009635, 'mean_r2': 0.2703391207350213, 'std_r2': 0.05887834748762163}
+2026-02-27 21:51:44.880 | INFO     | __main__:run_codebook_figs_ablation:984 -   Config: lda_lbfgs
+2026-02-27 21:52:10.438 | INFO     | __main__:run_codebook_figs_ablation:1060 -     lda_lbfgs done in 25.6s | {'mean_mse': 0.479558155959277, 'std_mse': 0.04087750977431327, 'mean_r2': 0.2631328892736177, 'std_r2': 0.055455804169705955}
+2026-02-27 21:52:10.442 | INFO     | __main__:main:1387 - Codebook-FIGS ablation done in 2063.9s
+2026-02-27 21:52:10.442 | INFO     | __main__:main:1390 - Starting FIGS baseline...
+2026-02-27 21:52:11.156 | INFO     | __main__:run_figs_baseline:1094 - imodels loaded successfully
+2026-02-27 21:52:11.157 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: auto_mpg
+2026-02-27 21:52:11.532 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline auto_mpg: {'mean_mse': 13.736379153075067, 'std_mse': 1.3510145442705717, 'mean_r2': 0.7693199347872366, 'std_r2': 0.029709631883608135}
+2026-02-27 21:52:11.533 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: breast_cancer_wdbc
+2026-02-27 21:52:11.959 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline breast_cancer_wdbc: {'mean_accuracy': 0.9262071106970968, 'std_accuracy': 0.021136389891558388, 'mean_auc': 0.9032601509140978, 'std_auc': 0.0506785727330705}
+2026-02-27 21:52:11.960 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: california_housing
+2026-02-27 21:52:19.710 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline california_housing: {'mean_mse': 0.44033982154172885, 'std_mse': 0.016609368907493285, 'mean_r2': 0.66924655429778, 'std_r2': 0.01092290913374697}
+2026-02-27 21:52:19.711 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: credit_german
+2026-02-27 21:52:20.340 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline credit_german: {'mean_accuracy': 0.719, 'std_accuracy': 0.01685229954635273, 'mean_auc': 0.716202380952381, 'std_auc': 0.0332208006923291}
+2026-02-27 21:52:20.341 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: diabetes_pima
+2026-02-27 21:52:20.984 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline diabetes_pima: {'mean_accuracy': 0.723885918003565, 'std_accuracy': 0.03375231854365016, 'mean_auc': 0.7759821802935012, 'std_auc': 0.03309871585052102}
+2026-02-27 21:52:20.985 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: diabetes_regression
+2026-02-27 21:52:21.408 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline diabetes_regression: {'mean_mse': 4155.502746199842, 'std_mse': 555.9003562540544, 'mean_r2': 0.2841613447981577, 'std_r2': 0.1179717473192069}
+2026-02-27 21:52:21.409 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: heart_disease
+2026-02-27 21:52:21.958 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline heart_disease: {'mean_accuracy': 0.7936723163841808, 'std_accuracy': 0.04415520810601516, 'mean_auc': 0.8479538690476189, 'std_auc': 0.03838153614464333}
+2026-02-27 21:52:21.959 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: ionosphere
+2026-02-27 21:52:22.408 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline ionosphere: {'mean_accuracy': 0.9002012072434609, 'std_accuracy': 0.0453042583066877, 'mean_auc': 0.8884307692307691, 'std_auc': 0.06302216547087591}
+2026-02-27 21:52:22.408 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: spambase
+2026-02-27 21:52:25.266 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline spambase: {'mean_accuracy': 0.9102409951376103, 'std_accuracy': 0.013413509695699618, 'mean_auc': 0.9466259391333545, 'std_auc': 0.020675806348551387}
+2026-02-27 21:52:25.269 | INFO     | __main__:run_figs_baseline:1102 -   FIGS baseline: wine_quality_red
+2026-02-27 21:52:26.137 | INFO     | __main__:run_figs_baseline:1148 -     FIGS baseline wine_quality_red: {'mean_mse': 0.4210767924389821, 'std_mse': 0.036346039367225094, 'mean_r2': 0.35366694612088195, 'std_r2': 0.04171767128992465}
+2026-02-27 21:52:26.137 | INFO     | __main__:main:1396 - FIGS baseline done in 15.7s
+2026-02-27 21:52:27.090 | INFO     | __main__:main:1425 - Output file size: 11.9 MB
+2026-02-27 21:52:27.090 | INFO     | __main__:main:1428 - Total time: 2080.5s
+2026-02-27 21:52:27.091 | INFO     | __main__:main:1429 - Summary: best overall config = random_wls
+2026-02-27 21:52:27.091 | INFO     | __main__:main:1430 - Rankings: {'pca_wls': 3.0, 'random_wls': 2.1, 'lda_wls': 3.0, 'lda_lbfgs': 2.6, 'pca_lbfgs': 4.3, 'random_lbfgs': 6.0}
+2026-02-27 21:52:27.091 | INFO     | __main__:main:1436 -   auto_mpg: best=pca_wls score=0.7193 stability=0.6950572966564085
+2026-02-27 21:52:27.091 | INFO     | __main__:main:1436 -   breast_cancer_wdbc: best=lda_wls score=0.9508 stability=0.567540138324846
+2026-02-27 21:52:27.091 | INFO     | __main__:main:1436 -   california_housing: best=lda_lbfgs score=0.4842 stability=0.8308163447591064
+2026-02-27 21:52:27.091 | INFO     | __main__:main:1436 -   credit_german: best=random_wls score=0.7440 stability=0.46570588493869336
+2026-02-27 21:52:27.091 | INFO     | __main__:main:1436 -   diabetes_pima: best=random_wls score=0.7551 stability=0.6004690252658668
+2026-02-27 21:52:27.092 | INFO     | __main__:main:1436 -   diabetes_regression: best=lda_lbfgs score=0.3296 stability=0.7598323108750694
+2026-02-27 21:52:27.092 | INFO     | __main__:main:1436 -   heart_disease: best=lda_wls score=0.7971 stability=0.6079200987121152
+2026-02-27 21:52:27.092 | INFO     | __main__:main:1436 -   ionosphere: best=lda_lbfgs score=0.9031 stability=0.6016886742934104
+2026-02-27 21:52:27.092 | INFO     | __main__:main:1436 -   spambase: best=lda_wls score=0.9072 stability=0.42186061094615035
+2026-02-27 21:52:27.092 | INFO     | __main__:main:1436 -   wine_quality_red: best=random_wls score=0.2995 stability=0.69563322644454

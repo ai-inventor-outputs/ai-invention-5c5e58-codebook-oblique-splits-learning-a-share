@@ -1,0 +1,133 @@
+{
+  "datasets": [
+    {
+      "dataset": "heart_disease",
+      "examples": [
+        {
+          "input": "[63.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 145.0, 233.0, 0.0, 1.0, 1.0, 0.0, 0.0, 150.0, 1.0, 0.0, 2.3, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 0,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_n_samples": 296,
+          "metadata_n_features": 25,
+          "metadata_domain": "cardiology",
+          "metadata_domain_description": "Predict presence of heart disease from clinical measurements",
+          "metadata_source": "OpenML ID 49 (Cleveland Heart Disease)",
+          "metadata_feature_names": [
+            "age",
+            "sex_female",
+            "sex_male"
+          ],
+          "metadata_original_feature_names": [
+            "age",
+            "sex",
+            "cp"
+          ],
+          "metadata_feature_descriptions": "{\"age\": \"Age in years\", \"sex\": \"Sex (male/female)\", \"cp\": \"Chest pain type (typical angina, atypical angina, non-anginal, asymptomatic)\", \"trestbps\": \"Resting blood pressure (mm Hg)\", \"chol\": \"Serum c..."
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 160.0, 286.0, 1.0, 0.0, 1.0, 0.0, 0.0, 108.0, 0.0, 1.0, 1.5, 0.0, 1.0, 0.0, 3.0, 0.0, 1.0, 0.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 1,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 229.0, 1.0, 0.0, 1.0, 0.0, 0.0, 129.0, 0.0, 1.0, 2.6, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 2,
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "heart_disease_mini",
+      "examples": [
+        {
+          "input": "[63.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 145.0, 233.0, 0.0, 1.0, 1.0, 0.0, 0.0, 150.0, 1.0, 0.0, 2.3, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 0,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_n_samples": 200,
+          "metadata_n_features": 25,
+          "metadata_domain": "cardiology",
+          "metadata_domain_description": "Predict presence of heart disease from clinical measurements",
+          "metadata_source": "OpenML ID 49 (Cleveland Heart Disease)",
+          "metadata_feature_names": [
+            "age",
+            "sex_female",
+            "sex_male"
+          ],
+          "metadata_original_feature_names": [
+            "age",
+            "sex",
+            "cp"
+          ],
+          "metadata_feature_descriptions": "{\"age\": \"Age in years\", \"sex\": \"Sex (male/female)\", \"cp\": \"Chest pain type (typical angina, atypical angina, non-anginal, asymptomatic)\", \"trestbps\": \"Resting blood pressure (mm Hg)\", \"chol\": \"Serum c..."
+        },
+        {
+          "input": "[67.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 120.0, 229.0, 1.0, 0.0, 1.0, 0.0, 0.0, 129.0, 0.0, 1.0, 2.6, 0.0, 1.0, 0.0, 2.0, 0.0, 0.0, 1.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 2,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[41.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 130.0, 204.0, 1.0, 0.0, 1.0, 0.0, 0.0, 172.0, 1.0, 0.0, 1.4, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 4,
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "diabetes_pima",
+      "examples": [
+        {
+          "input": "[6.0, 148.0, 72.0, 35.0, 0.0, 33.6, 0.627, 50.0]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 0,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_n_samples": 768,
+          "metadata_n_features": 8,
+          "metadata_domain": "diabetes",
+          "metadata_domain_description": "Predict onset of diabetes from medical measurements in Pima Indian women",
+          "metadata_source": "OpenML ID 37 (Pima Indians Diabetes)",
+          "metadata_feature_names": [
+            "preg",
+            "plas",
+            "pres"
+          ],
+          "metadata_original_feature_names": [
+            "preg",
+            "plas",
+            "pres"
+          ],
+          "metadata_feature_descriptions": "{\"preg\": \"Number of pregnancies\", \"plas\": \"Plasma glucose concentration (2h oral glucose tolerance test)\", \"pres\": \"Diastolic blood pressure (mm Hg)\", \"skin\": \"Triceps skinfold thickness (mm)\", \"insu\"..."
+        },
+        {
+          "input": "[1.0, 85.0, 66.0, 29.0, 0.0, 26.6, 0.351, 31.0]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 1,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[8.0, 183.0, 64.0, 0.0, 0.0, 23.3, 0.672, 32.0]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 2,
+          "metadata_task_type": "classification"
+        }
+      ]
+    }
+  ]
+}

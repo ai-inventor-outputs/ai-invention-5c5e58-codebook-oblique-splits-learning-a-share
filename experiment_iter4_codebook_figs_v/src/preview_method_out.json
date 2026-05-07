@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "experiment": "codebook_figs_v2_joint_refinement",
+    "description": "Codebook-FIGS v2 with joint L-BFGS-B codebook+threshold refinement, elastic-net sparsity, and warm-start tree reassignment. Benchmarked against FIGS, XGBoost, LightGBM across 10 tabular datasets.",
+    "improvements_over_iter3": [
+      "Joint gradient-based optimization of codebook entries AND thresholds",
+      "Elastic-net (L1+L2) sparsity penalty on codebook entries",
+      "Post-optimization weight thresholding for genuine sparsity"
+    ],
+    "config": {
+      "K_values": [
+        3,
+        5,
+        8
+      ],
+      "n_folds": 5,
+      "max_rules": 12,
+      "max_depth": 4,
+      "n_alternation_rounds": 10,
+      "tau": 1.0,
+      "lambda_l1": 0.01,
+      "lambda_l2": 0.001,
+      "weight_threshold": 0.05,
+      "lbfgs_maxiter": 30,
+      "codebook_configs": [
+        "v2_adaptive",
+        "v2_random"
+      ],
+      "baselines": [
+        "figs",
+        "xgboost",
+        "lightgbm"
+      ],
+      "datasets": [
+        "auto_mpg",
+        "breast_cancer_wdbc",
+        "california_housing"
+      ],
+      "dataset_times": {
+        "auto_mpg": 148.2047336101532,
+        "breast_cancer_wdbc": 355.0246663093567,
+        "california_housing": 412.3200566768646,
+        "credit_german": 555.8193778991699,
+        "diabetes_pima": 95.27028298377991,
+        "diabetes_regression": 60.38219499588013,
+        "heart_disease": 70.64690899848938,
+        "ionosphere": 126.28228378295898,
+        "spambase": 422.8958420753479,
+        "wine_quality_red": 144.45309495925903
+      }
+    },
+    "summary": [
+      {
+        "dataset": "auto_mpg",
+        "config": "figs",
+        "K": null,
+        "rmse_mean": 3.6089258408548894,
+        "rmse_std": 0.25302628294481005,
+        "r2_mean": 0.7820159325069078,
+        "r2_std": 0.0223818683423507,
+        "n_splits_mean": 12.0,
+        "n_splits_std": 0.0,
+        "train_time_sec_mean": 0.16526000000000002,
+        "train_time_sec_std": 0.20160199006954274
+      },
+      {
+        "dataset": "auto_mpg",
+        "config": "xgboost",
+        "K": null,
+        "rmse_mean": 3.2019233216537373,
+        "rmse_std": 0.20373376347902042,
+        "r2_mean": 0.8275062661185562,
+        "r2_std": 0.024023293958570422,
+        "train_time_sec_mean": 6.59346,
+        "train_time_sec_std": 5.015216755674674
+      },
+      {
+        "dataset": "auto_mpg",
+        "config": "lightgbm",
+        "K": null,
+        "rmse_mean": 2.9009884139728306,
+        "rmse_std": 0.28542845880697293,
+        "r2_mean": 0.8594955845862599,
+        "r2_std": 0.016387315165198556,
+        "train_time_sec_mean": 3.75738,
+        "train_time_sec_std": 5.336228982493162
+      }
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "heart_disease",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"heart_disease\", \"fold\": 0, \"n_train\": 236, \"n_test\": 60, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"heart_disease\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 0, \"train_time_sec\": 0.0829, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codebook_sta...",
+          "metadata_fold": 0,
+          "metadata_dataset": "heart_disease",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.8666666666666667, \"auroc\": 0.9012276785714286, \"n_splits\": 12, \"train_time_sec\": 0.0829}",
+          "predict_xgboost": "{\"accuracy\": 0.8333333333333334, \"auroc\": 0.9464285714285714, \"train_time_sec\": 6.4494}",
+          "predict_lightgbm": "{\"accuracy\": 0.9, \"auroc\": 0.9642857142857143, \"train_time_sec\": 0.8508}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.8, \"auroc\": 0.9151785714285714, \"erank\": 2.7127, \"n_splits\": 12, \"train_time_sec\": 0.4648, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.7336672119399653, \"converged_at_round\": 5, ...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.85, \"auroc\": 0.875, \"erank\": 4.9259, \"n_splits\": 12, \"train_time_sec\": 0.6877, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.8347879360363685, \"converged_at_round\": 5, \"top3_concen...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.85, \"auroc\": 0.9358258928571428, \"erank\": 7.8215, \"n_splits\": 12, \"train_time_sec\": 1.0406, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.7493754596473108, \"converged_at_round\": 5,...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.8166666666666667, \"auroc\": 0.8744419642857143, \"erank\": 2.9675, \"n_splits\": 12, \"train_time_sec\": 0.4511, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.4047208348852247, \"converged...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.8666666666666667, \"auroc\": 0.9375, \"erank\": 4.6117, \"n_splits\": 12, \"train_time_sec\": 0.7939, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.4233160690410295, \"converged_at_round\": ...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.7833333333333333, \"auroc\": 0.8978794642857142, \"erank\": 7.2291, \"n_splits\": 12, \"train_time_sec\": 1.068, \"n_codebook_used\": 6, \"codebook_stability_mean\": 0.4030504491476248, \"converged_..."
+        },
+        {
+          "input": "{\"dataset\": \"heart_disease\", \"fold\": 1, \"n_train\": 237, \"n_test\": 59, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"heart_disease\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 1, \"train_time_sec\": 0.0596, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codebook_sta...",
+          "metadata_fold": 1,
+          "metadata_dataset": "heart_disease",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.711864406779661, \"auroc\": 0.7685185185185186, \"n_splits\": 12, \"train_time_sec\": 0.0596}",
+          "predict_xgboost": "{\"accuracy\": 0.7627118644067796, \"auroc\": 0.8460648148148149, \"train_time_sec\": 5.5193}",
+          "predict_lightgbm": "{\"accuracy\": 0.8135593220338984, \"auroc\": 0.861111111111111, \"train_time_sec\": 3.5424}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.864406779661017, \"auroc\": 0.9085648148148147, \"erank\": 2.9838, \"n_splits\": 12, \"train_time_sec\": 0.4856, \"n_codebook_used\": 1, \"codebook_stability_mean\": 0.7336672119399653, \"converged_...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.7627118644067796, \"auroc\": 0.7945601851851851, \"erank\": 4.9747, \"n_splits\": 12, \"train_time_sec\": 0.6257, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.8347879360363685, \"converged...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.7966101694915254, \"auroc\": 0.8732638888888888, \"erank\": 7.8905, \"n_splits\": 12, \"train_time_sec\": 0.926, \"n_codebook_used\": 5, \"codebook_stability_mean\": 0.7493754596473108, \"converged_...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.847457627118644, \"auroc\": 0.8958333333333333, \"erank\": 2.9483, \"n_splits\": 12, \"train_time_sec\": 0.3952, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.4047208348852247, \"converged_...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.7457627118644068, \"auroc\": 0.7899305555555555, \"erank\": 4.7185, \"n_splits\": 12, \"train_time_sec\": 0.6759, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.4233160690410295, \"converged...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.7796610169491526, \"auroc\": 0.8350694444444444, \"erank\": 7.3843, \"n_splits\": 12, \"train_time_sec\": 1.0056, \"n_codebook_used\": 5, \"codebook_stability_mean\": 0.4030504491476248, \"converged..."
+        },
+        {
+          "input": "{\"dataset\": \"heart_disease\", \"fold\": 2, \"n_train\": 237, \"n_test\": 59, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"heart_disease\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 2, \"train_time_sec\": 0.074, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codebook_stab...",
+          "metadata_fold": 2,
+          "metadata_dataset": "heart_disease",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.7966101694915254, \"auroc\": 0.8506944444444444, \"n_splits\": 12, \"train_time_sec\": 0.074}",
+          "predict_xgboost": "{\"accuracy\": 0.7796610169491526, \"auroc\": 0.8402777777777777, \"train_time_sec\": 8.3273}",
+          "predict_lightgbm": "{\"accuracy\": 0.7966101694915254, \"auroc\": 0.8530092592592593, \"train_time_sec\": 1.7862}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.711864406779661, \"auroc\": 0.8275462962962963, \"erank\": 2.9495, \"n_splits\": 12, \"train_time_sec\": 0.4536, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.7336672119399653, \"converged_...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.7966101694915254, \"auroc\": 0.8622685185185185, \"erank\": 4.9595, \"n_splits\": 12, \"train_time_sec\": 0.5553, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.8347879360363685, \"converged...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.711864406779661, \"auroc\": 0.759837962962963, \"erank\": 7.7792, \"n_splits\": 12, \"train_time_sec\": 1.0136, \"n_codebook_used\": 5, \"codebook_stability_mean\": 0.7493754596473108, \"converged_a...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.6949152542372882, \"auroc\": 0.8078703703703702, \"erank\": 2.6861, \"n_splits\": 12, \"train_time_sec\": 0.382, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.4047208348852247, \"converged_...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.8135593220338984, \"auroc\": 0.814236111111111, \"erank\": 4.6136, \"n_splits\": 12, \"train_time_sec\": 0.6082, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.4233160690410295, \"converged_...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.7627118644067796, \"auroc\": 0.7563657407407407, \"erank\": 7.6549, \"n_splits\": 12, \"train_time_sec\": 0.9326, \"n_codebook_used\": 6, \"codebook_stability_mean\": 0.4030504491476248, \"converged..."
+        }
+      ]
+    },
+    {
+      "dataset": "diabetes_pima",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"diabetes_pima\", \"fold\": 0, \"n_train\": 614, \"n_test\": 154, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"diabetes_pima\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 0, \"train_time_sec\": 0.1044, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codebook_sta...",
+          "metadata_fold": 0,
+          "metadata_dataset": "diabetes_pima",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.7272727272727273, \"auroc\": 0.7912962962962962, \"n_splits\": 12, \"train_time_sec\": 0.1044}",
+          "predict_xgboost": "{\"accuracy\": 0.7532467532467533, \"auroc\": 0.8381481481481481, \"train_time_sec\": 9.0316}",
+          "predict_lightgbm": "{\"accuracy\": 0.7792207792207793, \"auroc\": 0.8466666666666667, \"train_time_sec\": 8.2181}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.7467532467532467, \"auroc\": 0.7888888888888888, \"erank\": 2.6941, \"n_splits\": 12, \"train_time_sec\": 1.2794, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.6230200969481614, \"converged...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.7207792207792207, \"auroc\": 0.7623148148148147, \"erank\": 4.029, \"n_splits\": 12, \"train_time_sec\": 1.3417, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.7320587519746112, \"converged_...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.7597402597402597, \"auroc\": 0.7850925925925926, \"erank\": 6.8756, \"n_splits\": 12, \"train_time_sec\": 0.8116, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.8176350916802566, \"converged...",
+          "predict_v2_adaptive_K12": "{\"accuracy\": 0.7597402597402597, \"auroc\": 0.7850925925925926, \"erank\": 6.8756, \"n_splits\": 12, \"train_time_sec\": 0.729, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.8176350916802566, \"converged_...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.7402597402597403, \"auroc\": 0.7988888888888889, \"erank\": 2.5635, \"n_splits\": 12, \"train_time_sec\": 1.3054, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.6282100842878023, \"converged...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.7142857142857143, \"auroc\": 0.7712962962962963, \"erank\": 4.3532, \"n_splits\": 12, \"train_time_sec\": 1.2829, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.6306836388450955, \"converged...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.7207792207792207, \"auroc\": 0.7841666666666667, \"erank\": 6.3206, \"n_splits\": 12, \"train_time_sec\": 1.3681, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.6648591836109388, \"converged...",
+          "predict_v2_random_K12": "{\"accuracy\": 0.7207792207792207, \"auroc\": 0.7841666666666667, \"erank\": 6.3206, \"n_splits\": 12, \"train_time_sec\": 1.5437, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.6648591836109388, \"converged..."
+        },
+        {
+          "input": "{\"dataset\": \"diabetes_pima\", \"fold\": 1, \"n_train\": 614, \"n_test\": 154, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"diabetes_pima\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 1, \"train_time_sec\": 0.1246, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codebook_sta...",
+          "metadata_fold": 1,
+          "metadata_dataset": "diabetes_pima",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.7597402597402597, \"auroc\": 0.8326851851851852, \"n_splits\": 12, \"train_time_sec\": 0.1246}",
+          "predict_xgboost": "{\"accuracy\": 0.7662337662337663, \"auroc\": 0.8453703703703703, \"train_time_sec\": 6.5604}",
+          "predict_lightgbm": "{\"accuracy\": 0.7402597402597403, \"auroc\": 0.8272222222222222, \"train_time_sec\": 2.8106}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.7597402597402597, \"auroc\": 0.8134259259259259, \"erank\": 2.5719, \"n_splits\": 12, \"train_time_sec\": 1.6917, \"n_codebook_used\": 1, \"codebook_stability_mean\": 0.6230200969481614, \"converged...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.7792207792207793, \"auroc\": 0.8356481481481481, \"erank\": 4.1032, \"n_splits\": 12, \"train_time_sec\": 1.7233, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.7320587519746112, \"converged...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.7662337662337663, \"auroc\": 0.815, \"erank\": 7.52, \"n_splits\": 12, \"train_time_sec\": 1.0939, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.8176350916802566, \"converged_at_round\": 3, ...",
+          "predict_v2_adaptive_K12": "{\"accuracy\": 0.7662337662337663, \"auroc\": 0.815, \"erank\": 7.52, \"n_splits\": 12, \"train_time_sec\": 0.9139, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.8176350916802566, \"converged_at_round\": 3, ...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.8116883116883117, \"auroc\": 0.8390740740740741, \"erank\": 2.5844, \"n_splits\": 12, \"train_time_sec\": 1.6919, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.6282100842878023, \"converged...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.7597402597402597, \"auroc\": 0.8156481481481482, \"erank\": 3.2184, \"n_splits\": 12, \"train_time_sec\": 1.6161, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.6306836388450955, \"converged...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.7727272727272727, \"auroc\": 0.7082407407407406, \"erank\": 6.1058, \"n_splits\": 12, \"train_time_sec\": 1.4138, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.6648591836109388, \"converged...",
+          "predict_v2_random_K12": "{\"accuracy\": 0.7727272727272727, \"auroc\": 0.7082407407407406, \"erank\": 6.1058, \"n_splits\": 12, \"train_time_sec\": 1.3321, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.6648591836109388, \"converged..."
+        },
+        {
+          "input": "{\"dataset\": \"diabetes_pima\", \"fold\": 2, \"n_train\": 614, \"n_test\": 154, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"diabetes_pima\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 2, \"train_time_sec\": 0.0938, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codebook_sta...",
+          "metadata_fold": 2,
+          "metadata_dataset": "diabetes_pima",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.7402597402597403, \"auroc\": 0.7407407407407408, \"n_splits\": 12, \"train_time_sec\": 0.0938}",
+          "predict_xgboost": "{\"accuracy\": 0.7727272727272727, \"auroc\": 0.8233333333333334, \"train_time_sec\": 2.3716}",
+          "predict_lightgbm": "{\"accuracy\": 0.7402597402597403, \"auroc\": 0.8009259259259259, \"train_time_sec\": 0.1983}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.7597402597402597, \"auroc\": 0.8320370370370371, \"erank\": 2.5491, \"n_splits\": 12, \"train_time_sec\": 1.5364, \"n_codebook_used\": 1, \"codebook_stability_mean\": 0.6230200969481614, \"converged...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.7792207792207793, \"auroc\": 0.8275, \"erank\": 4.3223, \"n_splits\": 12, \"train_time_sec\": 1.3745, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.7320587519746112, \"converged_at_round\": ...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.7792207792207793, \"auroc\": 0.7783333333333333, \"erank\": 7.7756, \"n_splits\": 12, \"train_time_sec\": 0.891, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.8176350916802566, \"converged_...",
+          "predict_v2_adaptive_K12": "{\"accuracy\": 0.7792207792207793, \"auroc\": 0.7783333333333333, \"erank\": 7.7756, \"n_splits\": 12, \"train_time_sec\": 0.875, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.8176350916802566, \"converged_...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.7922077922077922, \"auroc\": 0.8262962962962963, \"erank\": 2.5283, \"n_splits\": 12, \"train_time_sec\": 1.8418, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.6282100842878023, \"converged...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.7727272727272727, \"auroc\": 0.794074074074074, \"erank\": 3.9894, \"n_splits\": 12, \"train_time_sec\": 1.7035, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.6306836388450955, \"converged_...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.7337662337662337, \"auroc\": 0.7998148148148148, \"erank\": 6.2643, \"n_splits\": 12, \"train_time_sec\": 1.3932, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.6648591836109388, \"converged...",
+          "predict_v2_random_K12": "{\"accuracy\": 0.7337662337662337, \"auroc\": 0.7998148148148148, \"erank\": 6.2643, \"n_splits\": 12, \"train_time_sec\": 1.6218, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.6648591836109388, \"converged..."
+        }
+      ]
+    },
+    {
+      "dataset": "breast_cancer_wdbc",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"breast_cancer_wdbc\", \"fold\": 0, \"n_train\": 455, \"n_test\": 114, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"breast_cancer_wdbc\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 0, \"train_time_sec\": 0.0638, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codeboo...",
+          "metadata_fold": 0,
+          "metadata_dataset": "breast_cancer_wdbc",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.9649122807017544, \"auroc\": 0.9778905994104159, \"n_splits\": 12, \"train_time_sec\": 0.0638}",
+          "predict_xgboost": "{\"accuracy\": 0.9649122807017544, \"auroc\": 0.9980347199475925, \"train_time_sec\": 9.4111}",
+          "predict_lightgbm": "{\"accuracy\": 0.9824561403508771, \"auroc\": 0.9993449066491975, \"train_time_sec\": 2.8856}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.9736842105263158, \"auroc\": 0.9970520799213889, \"erank\": 2.8158, \"n_splits\": 12, \"train_time_sec\": 2.0133, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.691502606237294, \"converged_...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.956140350877193, \"auroc\": 0.9832951195545365, \"erank\": 4.9761, \"n_splits\": 12, \"train_time_sec\": 3.829, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.9295925005697713, \"converged_a...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.9736842105263158, \"auroc\": 0.9778905994104159, \"erank\": 7.9263, \"n_splits\": 12, \"train_time_sec\": 5.5862, \"n_codebook_used\": 5, \"codebook_stability_mean\": 0.897910019070122, \"converged_...",
+          "predict_v2_adaptive_K12": "{\"accuracy\": 0.9122807017543859, \"auroc\": 0.9475925319358008, \"erank\": 11.2175, \"n_splits\": 12, \"train_time_sec\": 7.3046, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.7997884633810003, \"converge...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.9736842105263158, \"auroc\": 0.9788732394366197, \"erank\": 2.8648, \"n_splits\": 12, \"train_time_sec\": 1.8973, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.4990427505592388, \"converged...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.9385964912280702, \"auroc\": 0.9937766131673764, \"erank\": 4.628, \"n_splits\": 12, \"train_time_sec\": 4.1295, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.3905705879058553, \"converged_...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.9736842105263158, \"auroc\": 0.9890271863740583, \"erank\": 7.6888, \"n_splits\": 12, \"train_time_sec\": 4.805, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.4285501704696662, \"converged_...",
+          "predict_v2_random_K12": "{\"accuracy\": 0.9473684210526315, \"auroc\": 0.9479200786112021, \"erank\": 10.5084, \"n_splits\": 12, \"train_time_sec\": 5.8656, \"n_codebook_used\": 6, \"codebook_stability_mean\": 0.41533814092624805, \"converg..."
+        },
+        {
+          "input": "{\"dataset\": \"breast_cancer_wdbc\", \"fold\": 1, \"n_train\": 455, \"n_test\": 114, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"breast_cancer_wdbc\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 1, \"train_time_sec\": 0.0746, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codeboo...",
+          "metadata_fold": 1,
+          "metadata_dataset": "breast_cancer_wdbc",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.8947368421052632, \"auroc\": 0.8132983950212906, \"n_splits\": 12, \"train_time_sec\": 0.0746}",
+          "predict_xgboost": "{\"accuracy\": 0.9385964912280702, \"auroc\": 0.9908286930887652, \"train_time_sec\": 3.6847}",
+          "predict_lightgbm": "{\"accuracy\": 0.9473684210526315, \"auroc\": 0.9927939731411726, \"train_time_sec\": 1.1308}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.9649122807017544, \"auroc\": 0.9559449721585326, \"erank\": 2.9991, \"n_splits\": 12, \"train_time_sec\": 8.5768, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.691502606237294, \"converged_...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.9385964912280702, \"auroc\": 0.9819849328529315, \"erank\": 4.9583, \"n_splits\": 12, \"train_time_sec\": 4.5568, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.9295925005697713, \"converged...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.9736842105263158, \"auroc\": 0.9880445463478545, \"erank\": 7.9553, \"n_splits\": 12, \"train_time_sec\": 5.4462, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.897910019070122, \"converged_...",
+          "predict_v2_adaptive_K12": "{\"accuracy\": 0.9385964912280702, \"auroc\": 0.9770717327219128, \"erank\": 11.5224, \"n_splits\": 12, \"train_time_sec\": 14.8297, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.7997884633810003, \"converg...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.956140350877193, \"auroc\": 0.9412053717654766, \"erank\": 2.9503, \"n_splits\": 12, \"train_time_sec\": 11.2829, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.4990427505592388, \"converged...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.9035087719298246, \"auroc\": 0.9629872256796593, \"erank\": 4.9343, \"n_splits\": 12, \"train_time_sec\": 5.3599, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.3905705879058553, \"converged...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.9736842105263158, \"auroc\": 0.9847690795938421, \"erank\": 7.7665, \"n_splits\": 12, \"train_time_sec\": 15.8158, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.4285501704696662, \"converge...",
+          "predict_v2_random_K12": "{\"accuracy\": 0.9210526315789473, \"auroc\": 0.9528332787422207, \"erank\": 10.6804, \"n_splits\": 12, \"train_time_sec\": 17.7063, \"n_codebook_used\": 7, \"codebook_stability_mean\": 0.41533814092624805, \"conver..."
+        },
+        {
+          "input": "{\"dataset\": \"breast_cancer_wdbc\", \"fold\": 2, \"n_train\": 455, \"n_test\": 114, \"task_type\": \"classification\"}",
+          "output": "{\"fold_results\": [{\"dataset\": \"breast_cancer_wdbc\", \"method\": \"figs\", \"config\": \"figs\", \"K\": null, \"fold\": 2, \"train_time_sec\": 0.1662, \"n_splits\": 12, \"erank\": null, \"n_codebook_used\": null, \"codeboo...",
+          "metadata_fold": 2,
+          "metadata_dataset": "breast_cancer_wdbc",
+          "metadata_task_type": "classification",
+          "predict_figs": "{\"accuracy\": 0.9122807017543859, \"auroc\": 0.8442460317460317, \"n_splits\": 12, \"train_time_sec\": 0.1662}",
+          "predict_xgboost": "{\"accuracy\": 0.9649122807017544, \"auroc\": 0.9894179894179894, \"train_time_sec\": 10.6916}",
+          "predict_lightgbm": "{\"accuracy\": 0.9473684210526315, \"auroc\": 0.9824735449735449, \"train_time_sec\": 4.8105}",
+          "predict_v2_adaptive_K3": "{\"accuracy\": 0.9298245614035088, \"auroc\": 0.951223544973545, \"erank\": 2.8727, \"n_splits\": 12, \"train_time_sec\": 8.1956, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.691502606237294, \"converged_a...",
+          "predict_v2_adaptive_K5": "{\"accuracy\": 0.9736842105263158, \"auroc\": 0.9593253968253969, \"erank\": 4.9681, \"n_splits\": 12, \"train_time_sec\": 4.4403, \"n_codebook_used\": 3, \"codebook_stability_mean\": 0.9295925005697713, \"converged...",
+          "predict_v2_adaptive_K8": "{\"accuracy\": 0.956140350877193, \"auroc\": 0.9621362433862433, \"erank\": 7.8218, \"n_splits\": 12, \"train_time_sec\": 8.0926, \"n_codebook_used\": 5, \"codebook_stability_mean\": 0.897910019070122, \"converged_a...",
+          "predict_v2_adaptive_K12": "{\"accuracy\": 0.9210526315789473, \"auroc\": 0.9107142857142857, \"erank\": 11.5767, \"n_splits\": 12, \"train_time_sec\": 14.4521, \"n_codebook_used\": 5, \"codebook_stability_mean\": 0.7997884633810003, \"converg...",
+          "predict_v2_random_K3": "{\"accuracy\": 0.9385964912280702, \"auroc\": 0.9406415343915344, \"erank\": 2.7572, \"n_splits\": 12, \"train_time_sec\": 7.1793, \"n_codebook_used\": 2, \"codebook_stability_mean\": 0.4990427505592388, \"converged...",
+          "predict_v2_random_K5": "{\"accuracy\": 0.956140350877193, \"auroc\": 0.984457671957672, \"erank\": 4.8187, \"n_splits\": 12, \"train_time_sec\": 8.5666, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.3905705879058553, \"converged_a...",
+          "predict_v2_random_K8": "{\"accuracy\": 0.9385964912280702, \"auroc\": 0.9419642857142857, \"erank\": 7.7661, \"n_splits\": 12, \"train_time_sec\": 10.1226, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.4285501704696662, \"converge...",
+          "predict_v2_random_K12": "{\"accuracy\": 0.956140350877193, \"auroc\": 0.9702380952380952, \"erank\": 11.2855, \"n_splits\": 12, \"train_time_sec\": 15.9719, \"n_codebook_used\": 4, \"codebook_stability_mean\": 0.41533814092624805, \"converg..."
+        }
+      ]
+    }
+  ]
+}

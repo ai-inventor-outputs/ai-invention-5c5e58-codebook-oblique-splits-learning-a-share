@@ -1,0 +1,70 @@
+2026-02-28 00:35:07.725 | INFO     | __main__:main:1225 - ============================================================
+2026-02-28 00:35:07.726 | INFO     | __main__:main:1226 - Codebook-FIGS Comprehensive Statistical Evaluation
+2026-02-28 00:35:07.726 | INFO     | __main__:main:1227 - ============================================================
+2026-02-28 00:35:07.726 | INFO     | __main__:load_json:67 - Loading full_method_out.json (0.2 MB)
+2026-02-28 00:35:07.728 | INFO     | __main__:load_json:67 - Loading full_method_out.json (0.1 MB)
+2026-02-28 00:35:07.729 | INFO     | __main__:load_json:67 - Loading full_method_out.json (12.5 MB)
+2026-02-28 00:35:07.855 | INFO     | __main__:main:1234 - Exp1: 10 datasets
+2026-02-28 00:35:07.857 | INFO     | __main__:main:1235 - Exp2: 10 datasets
+2026-02-28 00:35:07.857 | INFO     | __main__:main:1236 - Exp3: 10 datasets
+2026-02-28 00:35:07.859 | INFO     | __main__:main:1244 - Exp1 scores extracted for 10 datasets
+2026-02-28 00:35:07.860 | INFO     | __main__:main:1245 - Exp2 scores extracted for 10 datasets
+2026-02-28 00:35:07.860 | INFO     | __main__:compute_wilcoxon_tests:169 - Computing Wilcoxon signed-rank tests
+2026-02-28 00:35:07.949 | INFO     | __main__:main:1249 - Wilcoxon tests computed for 10 datasets
+2026-02-28 00:35:07.949 | INFO     | __main__:compute_friedman_test:251 - Computing Friedman test + Nemenyi post-hoc
+2026-02-28 00:35:07.952 | INFO     | __main__:main:1253 - Friedman chi2=27.667, p=0.0000
+2026-02-28 00:35:07.952 | INFO     | __main__:compute_accuracy_vs_k:402 - Computing accuracy-vs-K curves with elbow detection
+2026-02-28 00:35:07.987 | INFO     | __main__:main:1258 - Elbow detection: 9/10 datasets have clear elbow
+2026-02-28 00:35:07.988 | INFO     | __main__:compute_compression_ratios:443 - Computing direction diversity compression ratios
+2026-02-28 00:35:07.989 | INFO     | __main__:main:1262 - Compression ratios computed for 10 datasets
+2026-02-28 00:35:07.989 | INFO     | __main__:compute_ablation_analysis:513 - Computing ablation factor analysis
+2026-02-28 00:35:07.998 | INFO     | __main__:main:1266 - Ablation best config: random_wls
+2026-02-28 00:35:07.998 | INFO     | __main__:compute_unified_ranking:732 - Computing unified 7-method ranking with bootstrap CIs
+2026-02-28 00:35:07.999 | INFO     | __main__:compute_unified_ranking:768 - Unified ranking: 10 datasets with all 7 methods
+2026-02-28 00:35:08.029 | INFO     | __main__:main:1272 -   Rank 1.75: lightgbm
+2026-02-28 00:35:08.029 | INFO     | __main__:main:1272 -   Rank 2.00: sporf_full
+2026-02-28 00:35:08.030 | INFO     | __main__:main:1272 -   Rank 2.75: xgboost
+2026-02-28 00:35:08.030 | INFO     | __main__:compute_gap_analysis:830 - Computing gap analysis
+2026-02-28 00:35:08.031 | INFO     | __main__:main:1276 - Gap analysis: mean gap = 20.93%
+2026-02-28 00:35:08.031 | INFO     | __main__:compute_hypothesis_verdict:931 - Computing hypothesis verdict
+2026-02-28 00:35:08.031 | INFO     | __main__:main:1282 - Hypothesis verdict: PARTIALLY_CONFIRMED (2/6 criteria met)
+2026-02-28 00:35:08.031 | INFO     | __main__:format_output:1033 - Formatting output to schema
+2026-02-28 00:35:08.037 | INFO     | __main__:main:1293 - Saved evaluation to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_3/gen_art/eval_id2_it3__opus/eval_out.json (0.08 MB)
+2026-02-28 00:35:08.037 | INFO     | __main__:main:1295 - ============================================================
+2026-02-28 00:35:08.037 | INFO     | __main__:main:1296 - DONE
+2026-02-28 00:35:08.038 | INFO     | __main__:main:1297 - ============================================================
+2026-02-28 00:37:41.202 | INFO     | __main__:main:1225 - ============================================================
+2026-02-28 00:37:41.203 | INFO     | __main__:main:1226 - Codebook-FIGS Comprehensive Statistical Evaluation
+2026-02-28 00:37:41.203 | INFO     | __main__:main:1227 - ============================================================
+2026-02-28 00:37:41.203 | INFO     | __main__:load_json:67 - Loading full_method_out.json (0.2 MB)
+2026-02-28 00:37:41.205 | INFO     | __main__:load_json:67 - Loading full_method_out.json (0.1 MB)
+2026-02-28 00:37:41.206 | INFO     | __main__:load_json:67 - Loading full_method_out.json (12.5 MB)
+2026-02-28 00:37:41.283 | INFO     | __main__:main:1234 - Exp1: 10 datasets
+2026-02-28 00:37:41.284 | INFO     | __main__:main:1235 - Exp2: 10 datasets
+2026-02-28 00:37:41.284 | INFO     | __main__:main:1236 - Exp3: 10 datasets
+2026-02-28 00:37:41.286 | INFO     | __main__:main:1244 - Exp1 scores extracted for 10 datasets
+2026-02-28 00:37:41.286 | INFO     | __main__:main:1245 - Exp2 scores extracted for 10 datasets
+2026-02-28 00:37:41.286 | INFO     | __main__:compute_wilcoxon_tests:169 - Computing Wilcoxon signed-rank tests
+2026-02-28 00:37:41.363 | INFO     | __main__:main:1249 - Wilcoxon tests computed for 10 datasets
+2026-02-28 00:37:41.363 | INFO     | __main__:compute_friedman_test:251 - Computing Friedman test + Nemenyi post-hoc
+2026-02-28 00:37:41.366 | INFO     | __main__:main:1253 - Friedman chi2=27.667, p=0.0000
+2026-02-28 00:37:41.366 | INFO     | __main__:compute_accuracy_vs_k:402 - Computing accuracy-vs-K curves with elbow detection
+2026-02-28 00:37:41.395 | INFO     | __main__:main:1258 - Elbow detection: 9/10 datasets have clear elbow
+2026-02-28 00:37:41.395 | INFO     | __main__:compute_compression_ratios:443 - Computing direction diversity compression ratios
+2026-02-28 00:37:41.397 | INFO     | __main__:main:1262 - Compression ratios computed for 10 datasets
+2026-02-28 00:37:41.397 | INFO     | __main__:compute_ablation_analysis:513 - Computing ablation factor analysis
+2026-02-28 00:37:41.404 | INFO     | __main__:main:1266 - Ablation best config: random_wls
+2026-02-28 00:37:41.405 | INFO     | __main__:compute_unified_ranking:732 - Computing unified 7-method ranking with bootstrap CIs
+2026-02-28 00:37:41.406 | INFO     | __main__:compute_unified_ranking:768 - Unified ranking: 10 datasets with all 7 methods
+2026-02-28 00:37:41.437 | INFO     | __main__:main:1272 -   Rank 1.75: lightgbm
+2026-02-28 00:37:41.438 | INFO     | __main__:main:1272 -   Rank 2.00: sporf_full
+2026-02-28 00:37:41.438 | INFO     | __main__:main:1272 -   Rank 2.75: xgboost
+2026-02-28 00:37:41.438 | INFO     | __main__:compute_gap_analysis:830 - Computing gap analysis
+2026-02-28 00:37:41.439 | INFO     | __main__:main:1276 - Gap analysis: mean gap = 20.93%
+2026-02-28 00:37:41.439 | INFO     | __main__:compute_hypothesis_verdict:931 - Computing hypothesis verdict
+2026-02-28 00:37:41.440 | INFO     | __main__:main:1282 - Hypothesis verdict: PARTIALLY_CONFIRMED (2/6 criteria met)
+2026-02-28 00:37:41.440 | INFO     | __main__:format_output:1033 - Formatting output to schema
+2026-02-28 00:37:41.446 | INFO     | __main__:main:1293 - Saved evaluation to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_3/gen_art/eval_id2_it3__opus/eval_out.json (0.08 MB)
+2026-02-28 00:37:41.447 | INFO     | __main__:main:1295 - ============================================================
+2026-02-28 00:37:41.447 | INFO     | __main__:main:1296 - DONE
+2026-02-28 00:37:41.447 | INFO     | __main__:main:1297 - ============================================================

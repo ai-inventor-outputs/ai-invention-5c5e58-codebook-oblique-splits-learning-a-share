@@ -1,0 +1,1133 @@
+2026-02-27 21:07:27.308 | INFO     | method:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:07:49.598 | INFO     | method:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   heart_disease: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   heart_disease_mini: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   diabetes_pima: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   diabetes_pima_mini: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc: n=3, d=30, task=classification, classes=2, folds=3
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc_mini: n=3, d=30, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   credit_german: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   credit_german_mini: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:07:49.599 | DEBUG    | method:load_datasets:103 -   ionosphere: n=3, d=33, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   ionosphere_mini: n=3, d=33, task=classification, classes=2, folds=3
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   spambase: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   spambase_mini: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   diabetes_regression: n=3, d=10, task=regression, classes=0, folds=3
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   diabetes_regression_mini: n=3, d=10, task=regression, classes=0, folds=2
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   california_housing: n=3, d=8, task=regression, classes=0, folds=3
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   california_housing_mini: n=3, d=8, task=regression, classes=0, folds=2
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   auto_mpg: n=3, d=25, task=regression, classes=0, folds=3
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   auto_mpg_mini: n=3, d=25, task=regression, classes=0, folds=2
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   wine_quality_red: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:07:49.600 | DEBUG    | method:load_datasets:103 -   wine_quality_red_mini: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:07:49.600 | INFO     | method:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:08:03.830 | INFO     | method:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:08:03.887 | DEBUG    | method:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.889 | DEBUG    | method:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.892 | DEBUG    | method:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.893 | DEBUG    | method:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.897 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.899 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.911 | DEBUG    | method:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.914 | DEBUG    | method:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.917 | DEBUG    | method:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.919 | DEBUG    | method:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.962 | DEBUG    | method:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.965 | DEBUG    | method:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:08:03.967 | DEBUG    | method:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:08:03.968 | DEBUG    | method:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:08:04.074 | DEBUG    | method:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:08:04.078 | DEBUG    | method:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:08:04.080 | DEBUG    | method:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:08:04.081 | DEBUG    | method:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:08:04.089 | DEBUG    | method:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:08:04.090 | DEBUG    | method:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:08:04.090 | INFO     | method:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:08:18.087 | INFO     | method:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:08:18.145 | DEBUG    | method:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.146 | DEBUG    | method:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.149 | DEBUG    | method:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.151 | DEBUG    | method:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.155 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.156 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.169 | DEBUG    | method:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.172 | DEBUG    | method:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.175 | DEBUG    | method:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.176 | DEBUG    | method:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.225 | DEBUG    | method:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.229 | DEBUG    | method:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:08:18.231 | DEBUG    | method:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.232 | DEBUG    | method:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.354 | DEBUG    | method:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.358 | DEBUG    | method:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.360 | DEBUG    | method:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.361 | DEBUG    | method:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.366 | DEBUG    | method:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.367 | DEBUG    | method:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:08:18.367 | INFO     | method:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:08:48.088 | INFO     | method:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:08:48.147 | DEBUG    | method:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.149 | DEBUG    | method:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.152 | DEBUG    | method:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.153 | DEBUG    | method:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.157 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.159 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.172 | DEBUG    | method:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.174 | DEBUG    | method:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.177 | DEBUG    | method:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.179 | DEBUG    | method:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.236 | DEBUG    | method:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.241 | DEBUG    | method:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:08:48.244 | DEBUG    | method:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.245 | DEBUG    | method:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.375 | DEBUG    | method:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.378 | DEBUG    | method:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.380 | DEBUG    | method:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.381 | DEBUG    | method:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.386 | DEBUG    | method:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.387 | DEBUG    | method:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:08:48.387 | INFO     | method:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:10:01.622 | INFO     | method:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:10:01.675 | DEBUG    | method:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.676 | DEBUG    | method:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.678 | DEBUG    | method:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.679 | DEBUG    | method:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.682 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.684 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.694 | DEBUG    | method:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.696 | DEBUG    | method:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.699 | DEBUG    | method:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.700 | DEBUG    | method:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.747 | DEBUG    | method:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.751 | DEBUG    | method:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:01.754 | DEBUG    | method:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.755 | DEBUG    | method:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.859 | DEBUG    | method:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.862 | DEBUG    | method:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.865 | DEBUG    | method:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.866 | DEBUG    | method:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.871 | DEBUG    | method:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.872 | DEBUG    | method:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:01.872 | INFO     | method:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:10:15.826 | INFO     | method:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:10:15.887 | DEBUG    | method:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.888 | DEBUG    | method:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.890 | DEBUG    | method:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.891 | DEBUG    | method:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.894 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.895 | DEBUG    | method:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.904 | DEBUG    | method:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.906 | DEBUG    | method:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.908 | DEBUG    | method:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.909 | DEBUG    | method:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.952 | DEBUG    | method:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.957 | DEBUG    | method:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:15.960 | DEBUG    | method:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:15.961 | DEBUG    | method:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:16.064 | DEBUG    | method:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:16.067 | DEBUG    | method:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:16.069 | DEBUG    | method:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:16.070 | DEBUG    | method:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:16.075 | DEBUG    | method:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:16.076 | DEBUG    | method:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:16.076 | INFO     | method:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:10:23.094 | INFO     | __main__:main:853 - ======================================================================
+2026-02-27 21:10:23.094 | INFO     | __main__:main:854 - Codebook-FIGS Benchmark Starting
+2026-02-27 21:10:23.094 | INFO     | __main__:main:855 - ======================================================================
+2026-02-27 21:10:23.094 | INFO     | __main__:main:870 - Data directory: /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus
+2026-02-27 21:10:23.094 | INFO     | __main__:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:10:23.095 | DEBUG    | __main__:load_datasets:103 -   heart_disease: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.095 | DEBUG    | __main__:load_datasets:103 -   heart_disease_mini: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.095 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.095 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima_mini: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc: n=3, d=30, task=classification, classes=2, folds=3
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc_mini: n=3, d=30, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   credit_german: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   credit_german_mini: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   ionosphere: n=3, d=33, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   ionosphere_mini: n=3, d=33, task=classification, classes=2, folds=3
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   spambase: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   spambase_mini: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression: n=3, d=10, task=regression, classes=0, folds=3
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression_mini: n=3, d=10, task=regression, classes=0, folds=2
+2026-02-27 21:10:23.096 | DEBUG    | __main__:load_datasets:103 -   california_housing: n=3, d=8, task=regression, classes=0, folds=3
+2026-02-27 21:10:23.097 | DEBUG    | __main__:load_datasets:103 -   california_housing_mini: n=3, d=8, task=regression, classes=0, folds=2
+2026-02-27 21:10:23.097 | DEBUG    | __main__:load_datasets:103 -   auto_mpg: n=3, d=25, task=regression, classes=0, folds=3
+2026-02-27 21:10:23.097 | DEBUG    | __main__:load_datasets:103 -   auto_mpg_mini: n=3, d=25, task=regression, classes=0, folds=2
+2026-02-27 21:10:23.097 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:10:23.097 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red_mini: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:10:23.097 | INFO     | __main__:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:10:23.097 | INFO     | __main__:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:10:23.151 | DEBUG    | __main__:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.152 | DEBUG    | __main__:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.155 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.155 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.158 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.160 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.169 | DEBUG    | __main__:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.171 | DEBUG    | __main__:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.173 | DEBUG    | __main__:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.174 | DEBUG    | __main__:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.214 | DEBUG    | __main__:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.218 | DEBUG    | __main__:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:23.220 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.221 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.330 | DEBUG    | __main__:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.333 | DEBUG    | __main__:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.335 | DEBUG    | __main__:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.336 | DEBUG    | __main__:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.342 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.343 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:23.343 | INFO     | __main__:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:10:23.346 | INFO     | __main__:main:883 - Full datasets: ['heart_disease', 'diabetes_pima', 'breast_cancer_wdbc', 'credit_german', 'ionosphere', 'spambase', 'diabetes_regression', 'california_housing', 'auto_mpg', 'wine_quality_red']
+2026-02-27 21:10:23.347 | INFO     | __main__:main:884 - Mini datasets: ['heart_disease_mini', 'diabetes_pima_mini', 'breast_cancer_wdbc_mini', 'credit_german_mini', 'ionosphere_mini', 'spambase_mini', 'diabetes_regression_mini', 'california_housing_mini', 'auto_mpg_mini', 'wine_quality_red_mini']
+2026-02-27 21:10:23.347 | INFO     | __main__:main:889 - 
+=== SMOKE TEST on mini dataset ===
+2026-02-27 21:10:23.349 | INFO     | __main__:main:908 - Smoke test PASSED: acc=1.000, complexity=0, codebook shape=(2, 25), n_trees=0
+2026-02-27 21:10:23.349 | ERROR    | __main__:main:920 - Smoke test FAILED
+Traceback (most recent call last):
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/method.py", line 1133, in <module>
+    main()
+    └ <function main at 0x7315553075b0>
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/method.py", line 915, in main
+    assert model.codebook_.shape == (5, X.shape[1]), f"Bad codebook shape: {model.codebook_.shape}"
+           │     │         │            │ └ <attribute 'shape' of 'numpy.ndarray' objects>
+           │     │         │            └ array([[ 63. ,   0. ,   1. ,   0. ,   0. ,   0. ,   1. , 145. , 233. ,
+           │     │         │                        0. ,   1. ,   1. ,   0. ,   0. , 150. ,   1....
+           │     │         └ <attribute 'shape' of 'numpy.ndarray' objects>
+           │     └ array([[-0.11994717, -0.        , -0.        , -0.02998679, -0.        ,
+           │               -0.        ,  0.02998679,  0.74966984,  0.11...
+           └ <__main__.CodebookFIGS object at 0x73155529da50>
+
+AssertionError: Bad codebook shape: (2, 25)
+2026-02-27 21:10:23.354 | ERROR    | __main__:<module>:1133 - An error has been caught in function '<module>', process 'MainProcess' (2427394), thread 'MainThread' (126536149800768):
+Traceback (most recent call last):
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/method.py", line 1133, in <module>
+    main()
+    └ <function main at 0x7315553075b0>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/method.py", line 915, in main
+    assert model.codebook_.shape == (5, X.shape[1]), f"Bad codebook shape: {model.codebook_.shape}"
+           │     │         │            │ └ <attribute 'shape' of 'numpy.ndarray' objects>
+           │     │         │            └ array([[ 63. ,   0. ,   1. ,   0. ,   0. ,   0. ,   1. , 145. , 233. ,
+           │     │         │                        0. ,   1. ,   1. ,   0. ,   0. , 150. ,   1....
+           │     │         └ <attribute 'shape' of 'numpy.ndarray' objects>
+           │     └ array([[-0.11994717, -0.        , -0.        , -0.02998679, -0.        ,
+           │               -0.        ,  0.02998679,  0.74966984,  0.11...
+           └ <__main__.CodebookFIGS object at 0x73155529da50>
+
+AssertionError: Bad codebook shape: (2, 25)
+2026-02-27 21:10:56.456 | INFO     | __main__:main:853 - ======================================================================
+2026-02-27 21:10:56.457 | INFO     | __main__:main:854 - Codebook-FIGS Benchmark Starting
+2026-02-27 21:10:56.457 | INFO     | __main__:main:855 - ======================================================================
+2026-02-27 21:10:56.457 | INFO     | __main__:main:870 - Data directory: /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus
+2026-02-27 21:10:56.458 | INFO     | __main__:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:10:56.459 | DEBUG    | __main__:load_datasets:103 -   heart_disease: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.459 | DEBUG    | __main__:load_datasets:103 -   heart_disease_mini: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.459 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.459 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima_mini: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.460 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc: n=3, d=30, task=classification, classes=2, folds=3
+2026-02-27 21:10:56.460 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc_mini: n=3, d=30, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.460 | DEBUG    | __main__:load_datasets:103 -   credit_german: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:10:56.460 | DEBUG    | __main__:load_datasets:103 -   credit_german_mini: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:10:56.461 | DEBUG    | __main__:load_datasets:103 -   ionosphere: n=3, d=33, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.461 | DEBUG    | __main__:load_datasets:103 -   ionosphere_mini: n=3, d=33, task=classification, classes=2, folds=3
+2026-02-27 21:10:56.461 | DEBUG    | __main__:load_datasets:103 -   spambase: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.462 | DEBUG    | __main__:load_datasets:103 -   spambase_mini: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:10:56.462 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression: n=3, d=10, task=regression, classes=0, folds=3
+2026-02-27 21:10:56.462 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression_mini: n=3, d=10, task=regression, classes=0, folds=2
+2026-02-27 21:10:56.463 | DEBUG    | __main__:load_datasets:103 -   california_housing: n=3, d=8, task=regression, classes=0, folds=3
+2026-02-27 21:10:56.463 | DEBUG    | __main__:load_datasets:103 -   california_housing_mini: n=3, d=8, task=regression, classes=0, folds=2
+2026-02-27 21:10:56.463 | DEBUG    | __main__:load_datasets:103 -   auto_mpg: n=3, d=25, task=regression, classes=0, folds=3
+2026-02-27 21:10:56.463 | DEBUG    | __main__:load_datasets:103 -   auto_mpg_mini: n=3, d=25, task=regression, classes=0, folds=2
+2026-02-27 21:10:56.464 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:10:56.464 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red_mini: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:10:56.464 | INFO     | __main__:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:10:56.464 | INFO     | __main__:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:10:56.522 | DEBUG    | __main__:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.523 | DEBUG    | __main__:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.525 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.526 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.530 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.531 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.541 | DEBUG    | __main__:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.543 | DEBUG    | __main__:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.545 | DEBUG    | __main__:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.547 | DEBUG    | __main__:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.598 | DEBUG    | __main__:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.604 | DEBUG    | __main__:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:10:56.608 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.611 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.733 | DEBUG    | __main__:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.736 | DEBUG    | __main__:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.737 | DEBUG    | __main__:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.738 | DEBUG    | __main__:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.743 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.744 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:10:56.745 | INFO     | __main__:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:10:56.748 | INFO     | __main__:main:883 - Full datasets: ['heart_disease', 'diabetes_pima', 'breast_cancer_wdbc', 'credit_german', 'ionosphere', 'spambase', 'diabetes_regression', 'california_housing', 'auto_mpg', 'wine_quality_red']
+2026-02-27 21:10:56.749 | INFO     | __main__:main:884 - Mini datasets: ['heart_disease_mini', 'diabetes_pima_mini', 'breast_cancer_wdbc_mini', 'credit_german_mini', 'ionosphere_mini', 'spambase_mini', 'diabetes_regression_mini', 'california_housing_mini', 'auto_mpg_mini', 'wine_quality_red_mini']
+2026-02-27 21:10:56.749 | INFO     | __main__:main:890 - 
+=== SMOKE TEST on mini dataset ===
+2026-02-27 21:10:56.753 | INFO     | __main__:main:910 - Smoke test PASSED: acc=0.725, complexity=4, codebook shape=(5, 25), n_trees=1
+2026-02-27 21:10:56.753 | INFO     | __main__:main:933 - 
+=== FULL BENCHMARK ===
+2026-02-27 21:10:56.753 | INFO     | __main__:main:941 - 
+=== Dataset: heart_disease (classification, n=296, d=25) ===
+2026-02-27 21:10:57.626 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.8666666666666667, 'auroc': 0.9012276785714286, 'rmse': None, 'r2': None} (0.87s)
+2026-02-27 21:11:14.920 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.8333333333333334, 'auroc': 0.9464285714285714, 'rmse': None, 'r2': None} (17.29s)
+2026-02-27 21:11:18.015 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9, 'auroc': 0.9642857142857143, 'rmse': None, 'r2': None} (3.09s)
+2026-02-27 21:11:18.067 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.55, 'auroc': 0.5446428571428571, 'rmse': None, 'r2': None}, erank=1.09, used=2/3 (0.04s)
+2026-02-27 21:11:18.132 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.8, 'auroc': 0.7873883928571429, 'rmse': None, 'r2': None}, erank=3.04, used=4/5 (0.06s)
+2026-02-27 21:11:18.213 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.7333333333333333, 'auroc': 0.7226562500000001, 'rmse': None, 'r2': None}, erank=4.00, used=4/8 (0.05s)
+2026-02-27 21:11:18.296 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.7666666666666667, 'auroc': 0.7667410714285715, 'rmse': None, 'r2': None}, erank=6.18, used=8/12 (0.08s)
+2026-02-27 21:11:18.405 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.7, 'auroc': 0.7114955357142858, 'rmse': None, 'r2': None}, erank=7.79, used=10/20 (0.10s)
+2026-02-27 21:11:18.516 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.711864406779661, 'auroc': 0.7685185185185186, 'rmse': None, 'r2': None} (0.10s)
+2026-02-27 21:11:19.462 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.7627118644067796, 'auroc': 0.8460648148148149, 'rmse': None, 'r2': None} (0.94s)
+2026-02-27 21:11:20.204 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.8135593220338984, 'auroc': 0.861111111111111, 'rmse': None, 'r2': None} (0.74s)
+2026-02-27 21:11:20.261 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.6271186440677966, 'auroc': 0.6574074074074073, 'rmse': None, 'r2': None}, erank=1.90, used=2/3 (0.04s)
+2026-02-27 21:11:20.334 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.6779661016949152, 'auroc': 0.7488425925925926, 'rmse': None, 'r2': None}, erank=3.14, used=4/5 (0.06s)
+2026-02-27 21:11:20.397 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.6610169491525424, 'auroc': 0.6603009259259259, 'rmse': None, 'r2': None}, erank=4.24, used=5/8 (0.06s)
+2026-02-27 21:11:20.505 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.6271186440677966, 'auroc': 0.6574074074074074, 'rmse': None, 'r2': None}, erank=6.86, used=7/12 (0.10s)
+2026-02-27 21:11:20.654 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.6271186440677966, 'auroc': 0.5729166666666666, 'rmse': None, 'r2': None}, erank=6.32, used=7/20 (0.13s)
+2026-02-27 21:11:20.770 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.7966101694915254, 'auroc': 0.8506944444444444, 'rmse': None, 'r2': None} (0.11s)
+2026-02-27 21:11:39.250 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.7796610169491526, 'auroc': 0.8402777777777777, 'rmse': None, 'r2': None} (18.48s)
+2026-02-27 21:12:00.569 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.7966101694915254, 'auroc': 0.8530092592592593, 'rmse': None, 'r2': None} (21.31s)
+2026-02-27 21:12:00.590 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.711864406779661, 'auroc': 0.7523148148148148, 'rmse': None, 'r2': None}, erank=1.88, used=2/3 (0.02s)
+2026-02-27 21:12:00.623 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.6949152542372882, 'auroc': 0.654513888888889, 'rmse': None, 'r2': None}, erank=3.73, used=4/5 (0.02s)
+2026-02-27 21:12:00.694 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.6271186440677966, 'auroc': 0.6099537037037037, 'rmse': None, 'r2': None}, erank=5.29, used=6/8 (0.07s)
+2026-02-27 21:12:00.733 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.6779661016949152, 'auroc': 0.6585648148148148, 'rmse': None, 'r2': None}, erank=5.25, used=6/12 (0.04s)
+2026-02-27 21:12:00.801 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.6271186440677966, 'auroc': 0.6649305555555555, 'rmse': None, 'r2': None}, erank=7.73, used=8/20 (0.07s)
+2026-02-27 21:12:00.875 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.7966101694915254, 'auroc': 0.8506944444444444, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:12:21.437 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.7966101694915254, 'auroc': 0.8773148148148148, 'rmse': None, 'r2': None} (20.56s)
+2026-02-27 21:12:25.266 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.847457627118644, 'auroc': 0.886574074074074, 'rmse': None, 'r2': None} (3.83s)
+2026-02-27 21:12:25.306 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.5084745762711864, 'auroc': 0.5040509259259258, 'rmse': None, 'r2': None}, erank=1.06, used=2/3 (0.03s)
+2026-02-27 21:12:25.360 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.6440677966101694, 'auroc': 0.6296296296296297, 'rmse': None, 'r2': None}, erank=2.98, used=3/5 (0.04s)
+2026-02-27 21:12:25.406 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.6101694915254238, 'auroc': 0.6244212962962963, 'rmse': None, 'r2': None}, erank=5.09, used=6/8 (0.04s)
+2026-02-27 21:12:25.459 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.5932203389830508, 'auroc': 0.6354166666666665, 'rmse': None, 'r2': None}, erank=5.91, used=6/12 (0.05s)
+2026-02-27 21:12:25.524 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.6271186440677966, 'auroc': 0.6273148148148148, 'rmse': None, 'r2': None}, erank=5.86, used=6/20 (0.06s)
+2026-02-27 21:12:25.593 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.7796610169491526, 'auroc': 0.8559027777777777, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:12:36.414 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.8135593220338984, 'auroc': 0.8472222222222221, 'rmse': None, 'r2': None} (10.82s)
+2026-02-27 21:12:36.457 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.7966101694915254, 'auroc': 0.8657407407407408, 'rmse': None, 'r2': None} (0.03s)
+2026-02-27 21:12:36.500 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.6610169491525424, 'auroc': 0.6493055555555556, 'rmse': None, 'r2': None}, erank=1.99, used=2/3 (0.03s)
+2026-02-27 21:12:36.568 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.6440677966101694, 'auroc': 0.6151620370370371, 'rmse': None, 'r2': None}, erank=2.00, used=3/5 (0.05s)
+2026-02-27 21:12:36.634 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.576271186440678, 'auroc': 0.6608796296296297, 'rmse': None, 'r2': None}, erank=3.31, used=5/8 (0.06s)
+2026-02-27 21:12:36.721 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.6271186440677966, 'auroc': 0.6649305555555555, 'rmse': None, 'r2': None}, erank=5.12, used=6/12 (0.08s)
+2026-02-27 21:12:36.874 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.5932203389830508, 'auroc': 0.640625, 'rmse': None, 'r2': None}, erank=7.71, used=8/20 (0.14s)
+2026-02-27 21:12:36.878 | INFO     | __main__:main:941 - 
+=== Dataset: diabetes_pima (classification, n=768, d=8) ===
+2026-02-27 21:12:37.088 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.7272727272727273, 'auroc': 0.7912962962962962, 'rmse': None, 'r2': None} (0.21s)
+2026-02-27 21:12:37.408 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.7532467532467533, 'auroc': 0.8381481481481481, 'rmse': None, 'r2': None} (0.31s)
+2026-02-27 21:12:37.470 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.7792207792207793, 'auroc': 0.8466666666666667, 'rmse': None, 'r2': None} (0.06s)
+2026-02-27 21:12:37.504 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.7077922077922078, 'auroc': 0.7403703703703705, 'rmse': None, 'r2': None}, erank=2.02, used=3/3 (0.03s)
+2026-02-27 21:12:37.550 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.7012987012987013, 'auroc': 0.6935185185185185, 'rmse': None, 'r2': None}, erank=3.02, used=4/5 (0.04s)
+2026-02-27 21:12:37.622 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.7402597402597403, 'auroc': 0.7831481481481481, 'rmse': None, 'r2': None}, erank=3.81, used=5/8 (0.06s)
+2026-02-27 21:12:37.714 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.7402597402597403, 'auroc': 0.7831481481481481, 'rmse': None, 'r2': None}, erank=3.81, used=5/8 (0.08s)
+2026-02-27 21:12:37.781 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.7402597402597403, 'auroc': 0.7831481481481481, 'rmse': None, 'r2': None}, erank=3.81, used=5/8 (0.06s)
+2026-02-27 21:12:37.882 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.7597402597402597, 'auroc': 0.8326851851851852, 'rmse': None, 'r2': None} (0.10s)
+2026-02-27 21:12:58.936 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.7662337662337663, 'auroc': 0.8453703703703703, 'rmse': None, 'r2': None} (21.05s)
+2026-02-27 21:13:21.434 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.7402597402597403, 'auroc': 0.8272222222222222, 'rmse': None, 'r2': None} (22.50s)
+2026-02-27 21:13:21.457 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.6688311688311688, 'auroc': 0.7119444444444444, 'rmse': None, 'r2': None}, erank=2.06, used=3/3 (0.02s)
+2026-02-27 21:13:21.481 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.7012987012987013, 'auroc': 0.7393518518518518, 'rmse': None, 'r2': None}, erank=3.22, used=4/5 (0.02s)
+2026-02-27 21:13:21.523 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.7727272727272727, 'auroc': 0.7386111111111112, 'rmse': None, 'r2': None}, erank=3.66, used=4/8 (0.04s)
+2026-02-27 21:13:21.577 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.7727272727272727, 'auroc': 0.7386111111111112, 'rmse': None, 'r2': None}, erank=3.66, used=4/8 (0.05s)
+2026-02-27 21:13:21.644 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.7727272727272727, 'auroc': 0.7386111111111112, 'rmse': None, 'r2': None}, erank=3.66, used=4/8 (0.06s)
+2026-02-27 21:13:21.855 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.7402597402597403, 'auroc': 0.7407407407407408, 'rmse': None, 'r2': None} (0.21s)
+2026-02-27 21:13:28.967 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.7727272727272727, 'auroc': 0.8233333333333334, 'rmse': None, 'r2': None} (7.11s)
+2026-02-27 21:13:31.144 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.7402597402597403, 'auroc': 0.8009259259259259, 'rmse': None, 'r2': None} (2.17s)
+2026-02-27 21:13:31.181 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.6558441558441559, 'auroc': 0.6068518518518519, 'rmse': None, 'r2': None}, erank=1.19, used=3/3 (0.03s)
+2026-02-27 21:13:31.261 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.6948051948051948, 'auroc': 0.7457407407407407, 'rmse': None, 'r2': None}, erank=2.87, used=5/5 (0.06s)
+2026-02-27 21:13:31.324 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.7207792207792207, 'auroc': 0.7074074074074075, 'rmse': None, 'r2': None}, erank=2.24, used=4/8 (0.06s)
+2026-02-27 21:13:31.386 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.7207792207792207, 'auroc': 0.7074074074074075, 'rmse': None, 'r2': None}, erank=2.24, used=4/8 (0.05s)
+2026-02-27 21:13:31.451 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.7207792207792207, 'auroc': 0.7074074074074075, 'rmse': None, 'r2': None}, erank=2.24, used=4/8 (0.06s)
+2026-02-27 21:13:31.627 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.7320261437908496, 'auroc': 0.765, 'rmse': None, 'r2': None} (0.17s)
+2026-02-27 21:13:38.810 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.7647058823529411, 'auroc': 0.8054716981132075, 'rmse': None, 'r2': None} (7.17s)
+2026-02-27 21:14:01.559 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.7450980392156863, 'auroc': 0.7871698113207547, 'rmse': None, 'r2': None} (22.73s)
+2026-02-27 21:14:01.637 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.6078431372549019, 'auroc': 0.6814150943396226, 'rmse': None, 'r2': None}, erank=1.07, used=3/3 (0.06s)
+2026-02-27 21:14:01.744 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.6666666666666666, 'auroc': 0.6603773584905661, 'rmse': None, 'r2': None}, erank=3.07, used=5/5 (0.07s)
+2026-02-27 21:14:01.823 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.6535947712418301, 'auroc': 0.6883018867924529, 'rmse': None, 'r2': None}, erank=3.78, used=6/8 (0.06s)
+2026-02-27 21:14:01.903 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.6535947712418301, 'auroc': 0.6883018867924529, 'rmse': None, 'r2': None}, erank=3.78, used=6/8 (0.07s)
+2026-02-27 21:14:01.978 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.6535947712418301, 'auroc': 0.6883018867924529, 'rmse': None, 'r2': None}, erank=3.78, used=6/8 (0.07s)
+2026-02-27 21:14:02.153 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.6601307189542484, 'auroc': 0.7501886792452831, 'rmse': None, 'r2': None} (0.16s)
+2026-02-27 21:14:23.988 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.738562091503268, 'auroc': 0.7877358490566038, 'rmse': None, 'r2': None} (21.83s)
+2026-02-27 21:14:39.873 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.7058823529411765, 'auroc': 0.7633962264150944, 'rmse': None, 'r2': None} (15.88s)
+2026-02-27 21:14:39.891 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.738562091503268, 'auroc': 0.7546226415094339, 'rmse': None, 'r2': None}, erank=1.98, used=3/3 (0.02s)
+2026-02-27 21:14:39.918 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.7320261437908496, 'auroc': 0.7382075471698114, 'rmse': None, 'r2': None}, erank=3.11, used=5/5 (0.02s)
+2026-02-27 21:14:39.953 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.6928104575163399, 'auroc': 0.7290566037735849, 'rmse': None, 'r2': None}, erank=3.87, used=6/8 (0.03s)
+2026-02-27 21:14:39.996 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.6928104575163399, 'auroc': 0.7290566037735849, 'rmse': None, 'r2': None}, erank=3.87, used=6/8 (0.04s)
+2026-02-27 21:14:40.030 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.6928104575163399, 'auroc': 0.7290566037735849, 'rmse': None, 'r2': None}, erank=3.87, used=6/8 (0.03s)
+2026-02-27 21:14:40.030 | INFO     | __main__:main:941 - 
+=== Dataset: breast_cancer_wdbc (classification, n=569, d=30) ===
+2026-02-27 21:14:40.100 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.9298245614035088, 'auroc': 0.9672453324598757, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:14:44.544 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.9649122807017544, 'auroc': 0.9980347199475925, 'rmse': None, 'r2': None} (4.44s)
+2026-02-27 21:14:46.906 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9824561403508771, 'auroc': 0.9993449066491975, 'rmse': None, 'r2': None} (2.36s)
+2026-02-27 21:14:46.925 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.9298245614035088, 'auroc': 0.9721585325908941, 'rmse': None, 'r2': None}, erank=2.00, used=2/3 (0.01s)
+2026-02-27 21:14:46.946 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.9210526315789473, 'auroc': 0.977890599410416, 'rmse': None, 'r2': None}, erank=3.90, used=4/5 (0.02s)
+2026-02-27 21:14:46.979 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.8596491228070176, 'auroc': 0.9500491320013102, 'rmse': None, 'r2': None}, erank=5.42, used=6/8 (0.03s)
+2026-02-27 21:14:47.029 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.8596491228070176, 'auroc': 0.9500491320013102, 'rmse': None, 'r2': None}, erank=5.77, used=6/12 (0.05s)
+2026-02-27 21:14:47.102 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.9298245614035088, 'auroc': 0.9777268260727153, 'rmse': None, 'r2': None}, erank=5.80, used=6/20 (0.07s)
+2026-02-27 21:14:47.167 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.8771929824561403, 'auroc': 0.8119882083196855, 'rmse': None, 'r2': None} (0.06s)
+2026-02-27 21:14:47.461 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.9385964912280702, 'auroc': 0.9908286930887652, 'rmse': None, 'r2': None} (0.29s)
+2026-02-27 21:14:47.827 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.9473684210526315, 'auroc': 0.9927939731411726, 'rmse': None, 'r2': None} (0.36s)
+2026-02-27 21:14:47.848 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.8771929824561403, 'auroc': 0.9156567310841796, 'rmse': None, 'r2': None}, erank=2.08, used=3/3 (0.02s)
+2026-02-27 21:14:47.875 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.962332132328857, 'rmse': None, 'r2': None}, erank=2.93, used=3/5 (0.02s)
+2026-02-27 21:14:47.908 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.9059941041598427, 'rmse': None, 'r2': None}, erank=3.90, used=4/8 (0.03s)
+2026-02-27 21:14:47.956 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.9059941041598427, 'rmse': None, 'r2': None}, erank=3.90, used=4/12 (0.04s)
+2026-02-27 21:14:48.033 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.9344906649197512, 'rmse': None, 'r2': None}, erank=5.93, used=6/20 (0.07s)
+2026-02-27 21:14:48.106 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.9473684210526315, 'auroc': 0.9222883597883599, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:14:48.297 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.9649122807017544, 'auroc': 0.9894179894179894, 'rmse': None, 'r2': None} (0.19s)
+2026-02-27 21:14:48.354 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.9473684210526315, 'auroc': 0.9824735449735449, 'rmse': None, 'r2': None} (0.05s)
+2026-02-27 21:14:48.371 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.8771929824561403, 'auroc': 0.8791335978835978, 'rmse': None, 'r2': None}, erank=2.07, used=3/3 (0.01s)
+2026-02-27 21:14:48.392 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.9210526315789473, 'auroc': 0.9606481481481481, 'rmse': None, 'r2': None}, erank=2.93, used=3/5 (0.02s)
+2026-02-27 21:14:48.421 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.8947368421052632, 'auroc': 0.9485780423280423, 'rmse': None, 'r2': None}, erank=4.83, used=5/8 (0.03s)
+2026-02-27 21:14:48.470 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.8771929824561403, 'auroc': 0.9158399470899471, 'rmse': None, 'r2': None}, erank=5.81, used=6/12 (0.05s)
+2026-02-27 21:14:48.530 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.9035087719298246, 'auroc': 0.8928571428571428, 'rmse': None, 'r2': None}, erank=6.73, used=7/20 (0.06s)
+2026-02-27 21:14:48.601 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.9210526315789473, 'auroc': 0.9090608465608465, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:14:48.682 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.9649122807017544, 'auroc': 0.9966931216931217, 'rmse': None, 'r2': None} (0.08s)
+2026-02-27 21:14:48.722 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.9736842105263158, 'auroc': 0.9993386243386243, 'rmse': None, 'r2': None} (0.04s)
+2026-02-27 21:14:48.740 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.9385964912280702, 'auroc': 0.9765211640211641, 'rmse': None, 'r2': None}, erank=2.97, used=3/3 (0.02s)
+2026-02-27 21:14:48.766 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.9473684210526315, 'auroc': 0.9733796296296297, 'rmse': None, 'r2': None}, erank=2.93, used=3/5 (0.02s)
+2026-02-27 21:14:48.801 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.9473684210526315, 'auroc': 0.978670634920635, 'rmse': None, 'r2': None}, erank=3.90, used=4/8 (0.03s)
+2026-02-27 21:14:48.849 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.9210526315789473, 'auroc': 0.9456018518518519, 'rmse': None, 'r2': None}, erank=4.88, used=5/12 (0.04s)
+2026-02-27 21:14:48.916 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.9385964912280702, 'auroc': 0.972883597883598, 'rmse': None, 'r2': None}, erank=5.88, used=6/20 (0.06s)
+2026-02-27 21:14:48.987 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9129778672032193, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:14:49.033 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.9557522123893806, 'auroc': 0.9916163648558015, 'rmse': None, 'r2': None} (0.04s)
+2026-02-27 21:14:49.058 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.9734513274336283, 'auroc': 0.9926224010731053, 'rmse': None, 'r2': None} (0.02s)
+2026-02-27 21:14:49.079 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.9380530973451328, 'auroc': 0.970824949698189, 'rmse': None, 'r2': None}, erank=2.00, used=2/3 (0.02s)
+2026-02-27 21:14:49.105 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9731723675385647, 'rmse': None, 'r2': None}, erank=2.99, used=3/5 (0.02s)
+2026-02-27 21:14:49.140 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9879275653923542, 'rmse': None, 'r2': None}, erank=3.92, used=4/8 (0.03s)
+2026-02-27 21:14:49.187 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9726693494299128, 'rmse': None, 'r2': None}, erank=5.79, used=6/12 (0.04s)
+2026-02-27 21:14:49.255 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9423205902079141, 'rmse': None, 'r2': None}, erank=8.61, used=9/20 (0.07s)
+2026-02-27 21:14:49.255 | INFO     | __main__:main:941 - 
+=== Dataset: credit_german (classification, n=1000, d=61) ===
+2026-02-27 21:14:49.371 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.7, 'auroc': 0.7055952380952379, 'rmse': None, 'r2': None} (0.11s)
+2026-02-27 21:14:49.403 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.735, 'auroc': 0.7721428571428572, 'rmse': None, 'r2': None} (0.03s)
+2026-02-27 21:14:49.449 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.75, 'auroc': 0.7714285714285714, 'rmse': None, 'r2': None} (0.04s)
+2026-02-27 21:14:49.490 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.685, 'auroc': 0.595952380952381, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.04s)
+2026-02-27 21:14:49.703 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.685, 'auroc': 0.6483333333333333, 'rmse': None, 'r2': None}, erank=4.98, used=5/5 (0.20s)
+2026-02-27 21:14:49.938 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.69, 'auroc': 0.5980357142857143, 'rmse': None, 'r2': None}, erank=4.98, used=5/8 (0.23s)
+2026-02-27 21:14:50.258 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.675, 'auroc': 0.6135714285714285, 'rmse': None, 'r2': None}, erank=5.97, used=6/12 (0.32s)
+2026-02-27 21:14:50.702 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.675, 'auroc': 0.6135714285714285, 'rmse': None, 'r2': None}, erank=5.97, used=6/20 (0.44s)
+2026-02-27 21:14:50.794 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.72, 'auroc': 0.6807142857142858, 'rmse': None, 'r2': None} (0.09s)
+2026-02-27 21:14:50.856 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.765, 'auroc': 0.7544047619047619, 'rmse': None, 'r2': None} (0.06s)
+2026-02-27 21:14:50.925 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.75, 'auroc': 0.7526190476190476, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:14:50.952 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.67, 'auroc': 0.540952380952381, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.02s)
+2026-02-27 21:14:51.187 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.68, 'auroc': 0.5788690476190477, 'rmse': None, 'r2': None}, erank=4.98, used=5/5 (0.23s)
+2026-02-27 21:14:51.493 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.67, 'auroc': 0.5531547619047619, 'rmse': None, 'r2': None}, erank=5.96, used=6/8 (0.30s)
+2026-02-27 21:14:51.832 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.675, 'auroc': 0.5530952380952382, 'rmse': None, 'r2': None}, erank=6.95, used=7/12 (0.34s)
+2026-02-27 21:14:52.380 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.67, 'auroc': 0.5531547619047619, 'rmse': None, 'r2': None}, erank=5.96, used=6/20 (0.55s)
+2026-02-27 21:14:52.482 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.71, 'auroc': 0.6964880952380952, 'rmse': None, 'r2': None} (0.10s)
+2026-02-27 21:14:52.521 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.745, 'auroc': 0.7761904761904763, 'rmse': None, 'r2': None} (0.04s)
+2026-02-27 21:14:52.583 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.745, 'auroc': 0.7642857142857142, 'rmse': None, 'r2': None} (0.06s)
+2026-02-27 21:14:52.610 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.69, 'auroc': 0.5686904761904763, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.02s)
+2026-02-27 21:14:52.833 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.695, 'auroc': 0.5120833333333332, 'rmse': None, 'r2': None}, erank=3.00, used=3/5 (0.22s)
+2026-02-27 21:14:53.069 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.66, 'auroc': 0.5394642857142857, 'rmse': None, 'r2': None}, erank=5.95, used=6/8 (0.23s)
+2026-02-27 21:14:53.547 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.66, 'auroc': 0.5394642857142857, 'rmse': None, 'r2': None}, erank=5.95, used=6/12 (0.48s)
+2026-02-27 21:14:53.988 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.655, 'auroc': 0.5325595238095239, 'rmse': None, 'r2': None}, erank=5.95, used=6/20 (0.44s)
+2026-02-27 21:14:54.080 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.715, 'auroc': 0.7773214285714285, 'rmse': None, 'r2': None} (0.09s)
+2026-02-27 21:14:54.118 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.75, 'auroc': 0.8047619047619048, 'rmse': None, 'r2': None} (0.04s)
+2026-02-27 21:14:54.161 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.76, 'auroc': 0.8158333333333334, 'rmse': None, 'r2': None} (0.04s)
+2026-02-27 21:14:54.189 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.715, 'auroc': 0.6183928571428572, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.02s)
+2026-02-27 21:14:54.414 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.715, 'auroc': 0.6783333333333333, 'rmse': None, 'r2': None}, erank=3.99, used=4/5 (0.22s)
+2026-02-27 21:14:54.489 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.695, 'auroc': 0.6152380952380953, 'rmse': None, 'r2': None}, erank=5.95, used=6/8 (0.07s)
+2026-02-27 21:14:54.613 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.695, 'auroc': 0.6152380952380953, 'rmse': None, 'r2': None}, erank=5.95, used=6/12 (0.12s)
+2026-02-27 21:14:55.395 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.68, 'auroc': 0.5667261904761904, 'rmse': None, 'r2': None}, erank=6.94, used=7/20 (0.78s)
+2026-02-27 21:14:55.521 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.75, 'auroc': 0.7208928571428572, 'rmse': None, 'r2': None} (0.12s)
+2026-02-27 21:14:56.146 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.79, 'auroc': 0.8021428571428572, 'rmse': None, 'r2': None} (0.62s)
+2026-02-27 21:14:56.175 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.78, 'auroc': 0.7903571428571429, 'rmse': None, 'r2': None} (0.03s)
+2026-02-27 21:14:56.204 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.67, 'auroc': 0.5252380952380953, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.03s)
+2026-02-27 21:14:56.522 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.7, 'auroc': 0.5255952380952381, 'rmse': None, 'r2': None}, erank=4.98, used=5/5 (0.31s)
+2026-02-27 21:14:57.183 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.695, 'auroc': 0.5232738095238095, 'rmse': None, 'r2': None}, erank=4.99, used=5/8 (0.66s)
+2026-02-27 21:15:00.274 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.695, 'auroc': 0.5357738095238095, 'rmse': None, 'r2': None}, erank=5.96, used=6/12 (3.08s)
+2026-02-27 21:15:02.974 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.675, 'auroc': 0.564047619047619, 'rmse': None, 'r2': None}, erank=4.97, used=5/20 (2.69s)
+2026-02-27 21:15:02.993 | INFO     | __main__:main:941 - 
+=== Dataset: ionosphere (classification, n=351, d=33) ===
+2026-02-27 21:15:03.062 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.8873239436619719, 'auroc': 0.8722222222222222, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:15:15.458 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.9436619718309859, 'auroc': 0.9931623931623932, 'rmse': None, 'r2': None} (12.39s)
+2026-02-27 21:15:20.474 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9436619718309859, 'auroc': 0.9871794871794872, 'rmse': None, 'r2': None} (5.01s)
+2026-02-27 21:15:20.496 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.8169014084507042, 'auroc': 0.8910256410256411, 'rmse': None, 'r2': None}, erank=1.80, used=3/3 (0.02s)
+2026-02-27 21:15:20.544 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.9154929577464789, 'auroc': 0.9059829059829059, 'rmse': None, 'r2': None}, erank=3.49, used=4/5 (0.05s)
+2026-02-27 21:15:20.590 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.8309859154929577, 'auroc': 0.8722222222222222, 'rmse': None, 'r2': None}, erank=4.87, used=6/8 (0.04s)
+2026-02-27 21:15:20.668 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.9154929577464789, 'auroc': 0.9282051282051282, 'rmse': None, 'r2': None}, erank=7.35, used=8/12 (0.08s)
+2026-02-27 21:15:20.774 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.8450704225352113, 'auroc': 0.8098290598290598, 'rmse': None, 'r2': None}, erank=9.10, used=10/20 (0.10s)
+2026-02-27 21:15:20.846 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.9142857142857143, 'auroc': 0.916, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:15:25.893 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.9428571428571428, 'auroc': 0.96, 'rmse': None, 'r2': None} (5.04s)
+2026-02-27 21:15:32.857 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.9428571428571428, 'auroc': 0.9635555555555555, 'rmse': None, 'r2': None} (6.96s)
+2026-02-27 21:15:33.070 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.7857142857142857, 'auroc': 0.772888888888889, 'rmse': None, 'r2': None}, erank=2.11, used=3/3 (0.21s)
+2026-02-27 21:15:33.106 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.8285714285714286, 'auroc': 0.8346666666666667, 'rmse': None, 'r2': None}, erank=2.78, used=4/5 (0.03s)
+2026-02-27 21:15:33.338 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.8714285714285714, 'auroc': 0.8924444444444445, 'rmse': None, 'r2': None}, erank=4.83, used=6/8 (0.23s)
+2026-02-27 21:15:33.500 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.7571428571428571, 'auroc': 0.7826666666666667, 'rmse': None, 'r2': None}, erank=7.69, used=8/12 (0.16s)
+2026-02-27 21:15:33.655 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.8428571428571429, 'auroc': 0.8235555555555556, 'rmse': None, 'r2': None}, erank=7.72, used=8/20 (0.15s)
+2026-02-27 21:15:33.720 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.8714285714285714, 'auroc': 0.8164444444444445, 'rmse': None, 'r2': None} (0.06s)
+2026-02-27 21:15:41.575 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.9142857142857143, 'auroc': 0.951111111111111, 'rmse': None, 'r2': None} (7.85s)
+2026-02-27 21:15:42.566 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.9285714285714286, 'auroc': 0.9608888888888889, 'rmse': None, 'r2': None} (0.99s)
+2026-02-27 21:15:42.739 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.7428571428571429, 'auroc': 0.812, 'rmse': None, 'r2': None}, erank=1.54, used=3/3 (0.17s)
+2026-02-27 21:15:43.104 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.8142857142857143, 'auroc': 0.8142222222222221, 'rmse': None, 'r2': None}, erank=2.52, used=4/5 (0.36s)
+2026-02-27 21:15:43.397 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.8285714285714286, 'auroc': 0.9217777777777778, 'rmse': None, 'r2': None}, erank=5.45, used=6/8 (0.29s)
+2026-02-27 21:15:43.653 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.8571428571428571, 'auroc': 0.9142222222222223, 'rmse': None, 'r2': None}, erank=7.35, used=9/12 (0.24s)
+2026-02-27 21:15:43.822 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.8857142857142857, 'auroc': 0.8462222222222223, 'rmse': None, 'r2': None}, erank=9.21, used=10/20 (0.17s)
+2026-02-27 21:15:43.918 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.9571428571428572, 'auroc': 0.9542222222222222, 'rmse': None, 'r2': None} (0.09s)
+2026-02-27 21:15:46.783 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.9571428571428572, 'auroc': 0.9733333333333334, 'rmse': None, 'r2': None} (2.86s)
+2026-02-27 21:15:48.080 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.9571428571428572, 'auroc': 0.991111111111111, 'rmse': None, 'r2': None} (1.29s)
+2026-02-27 21:15:48.200 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.8142857142857143, 'auroc': 0.8115555555555556, 'rmse': None, 'r2': None}, erank=1.46, used=3/3 (0.11s)
+2026-02-27 21:15:48.627 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.9142857142857143, 'auroc': 0.8951111111111112, 'rmse': None, 'r2': None}, erank=3.75, used=5/5 (0.41s)
+2026-02-27 21:15:48.872 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.8285714285714286, 'auroc': 0.864, 'rmse': None, 'r2': None}, erank=4.73, used=7/8 (0.24s)
+2026-02-27 21:15:49.188 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.8428571428571429, 'auroc': 0.8795555555555555, 'rmse': None, 'r2': None}, erank=7.45, used=8/12 (0.31s)
+2026-02-27 21:15:49.900 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.8714285714285714, 'auroc': 0.9062222222222223, 'rmse': None, 'r2': None}, erank=7.86, used=9/20 (0.71s)
+2026-02-27 21:15:50.075 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.8285714285714286, 'auroc': 0.812, 'rmse': None, 'r2': None} (0.17s)
+2026-02-27 21:15:53.549 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.8714285714285714, 'auroc': 0.9306666666666666, 'rmse': None, 'r2': None} (3.47s)
+2026-02-27 21:15:53.584 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.9285714285714286, 'auroc': 0.9546666666666666, 'rmse': None, 'r2': None} (0.03s)
+2026-02-27 21:15:53.614 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.8285714285714286, 'auroc': 0.8457777777777777, 'rmse': None, 'r2': None}, erank=1.66, used=2/3 (0.03s)
+2026-02-27 21:15:53.661 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.8285714285714286, 'auroc': 0.8226666666666667, 'rmse': None, 'r2': None}, erank=3.65, used=5/5 (0.04s)
+2026-02-27 21:15:53.702 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.7857142857142857, 'auroc': 0.7653333333333332, 'rmse': None, 'r2': None}, erank=4.76, used=5/8 (0.04s)
+2026-02-27 21:15:53.750 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.8, 'auroc': 0.7702222222222221, 'rmse': None, 'r2': None}, erank=6.75, used=9/12 (0.05s)
+2026-02-27 21:15:53.812 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.7857142857142857, 'auroc': 0.7822222222222223, 'rmse': None, 'r2': None}, erank=8.19, used=9/20 (0.06s)
+2026-02-27 21:15:53.813 | INFO     | __main__:main:941 - 
+=== Dataset: spambase (classification, n=4601, d=57) ===
+2026-02-27 21:15:54.155 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.8914223669923995, 'auroc': 0.9102535620130928, 'rmse': None, 'r2': None} (0.34s)
+2026-02-27 21:15:54.318 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.9424538545059717, 'auroc': 0.9853816759975116, 'rmse': None, 'r2': None} (0.16s)
+2026-02-27 21:15:54.388 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9467969598262758, 'auroc': 0.9859741106075416, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:15:54.443 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.6862106406080347, 'auroc': 0.744440988575886, 'rmse': None, 'r2': None}, erank=1.22, used=3/3 (0.05s)
+2026-02-27 21:15:54.808 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.6981541802388708, 'auroc': 0.7873974347581385, 'rmse': None, 'r2': None}, erank=3.96, used=4/5 (0.36s)
+2026-02-27 21:15:55.044 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.6905537459283387, 'auroc': 0.7558873189371724, 'rmse': None, 'r2': None}, erank=3.99, used=4/8 (0.23s)
+2026-02-27 21:15:55.253 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.7079261672095548, 'auroc': 0.7767558280754762, 'rmse': None, 'r2': None}, erank=6.92, used=7/12 (0.21s)
+2026-02-27 21:15:55.537 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.7144408251900108, 'auroc': 0.7888217462997521, 'rmse': None, 'r2': None}, erank=5.92, used=6/20 (0.28s)
+2026-02-27 21:15:55.853 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.907608695652174, 'auroc': 0.9532545959018948, 'rmse': None, 'r2': None} (0.31s)
+2026-02-27 21:15:56.044 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.9543478260869566, 'auroc': 0.9912904135198897, 'rmse': None, 'r2': None} (0.19s)
+2026-02-27 21:15:56.207 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.9565217391304348, 'auroc': 0.9913942757096014, 'rmse': None, 'r2': None} (0.16s)
+2026-02-27 21:15:56.260 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.7032608695652174, 'auroc': 0.7676355525221201, 'rmse': None, 'r2': None}, erank=1.99, used=2/3 (0.05s)
+2026-02-27 21:15:56.327 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.717391304347826, 'auroc': 0.7759989317031916, 'rmse': None, 'r2': None}, erank=2.54, used=3/5 (0.06s)
+2026-02-27 21:15:56.786 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.7217391304347827, 'auroc': 0.7910886241227354, 'rmse': None, 'r2': None}, erank=2.98, used=3/8 (0.45s)
+2026-02-27 21:15:57.112 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.7423913043478261, 'auroc': 0.8052039902864124, 'rmse': None, 'r2': None}, erank=3.96, used=4/12 (0.32s)
+2026-02-27 21:15:57.593 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.7315217391304348, 'auroc': 0.8080700921405997, 'rmse': None, 'r2': None}, erank=4.96, used=5/20 (0.48s)
+2026-02-27 21:15:58.084 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.9293478260869565, 'auroc': 0.9662967194385508, 'rmse': None, 'r2': None} (0.49s)
+2026-02-27 21:15:58.183 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.9467391304347826, 'auroc': 0.9828751032439623, 'rmse': None, 'r2': None} (0.10s)
+2026-02-27 21:15:58.286 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.9521739130434783, 'auroc': 0.9835724636605981, 'rmse': None, 'r2': None} (0.10s)
+2026-02-27 21:15:58.338 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.6967391304347826, 'auroc': 0.7578057381386907, 'rmse': None, 'r2': None}, erank=1.29, used=3/3 (0.05s)
+2026-02-27 21:15:58.396 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.6989130434782609, 'auroc': 0.7645567804699517, 'rmse': None, 'r2': None}, erank=3.96, used=4/5 (0.05s)
+2026-02-27 21:15:58.776 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.7260869565217392, 'auroc': 0.7899782878565317, 'rmse': None, 'r2': None}, erank=4.08, used=5/8 (0.37s)
+2026-02-27 21:16:00.345 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.725, 'auroc': 0.7899807607658105, 'rmse': None, 'r2': None}, erank=4.94, used=5/12 (1.57s)
+2026-02-27 21:16:04.664 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.7130434782608696, 'auroc': 0.7802424440256985, 'rmse': None, 'r2': None}, erank=6.92, used=7/20 (4.31s)
+2026-02-27 21:16:05.224 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.9206521739130434, 'auroc': 0.9645636547258362, 'rmse': None, 'r2': None} (0.56s)
+2026-02-27 21:16:19.372 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.9532608695652174, 'auroc': 0.9881854096120716, 'rmse': None, 'r2': None} (14.15s)
+2026-02-27 21:16:41.108 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.9456521739130435, 'auroc': 0.9883636309629894, 'rmse': None, 'r2': None} (21.73s)
+2026-02-27 21:16:43.256 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.6869565217391305, 'auroc': 0.7681909542763223, 'rmse': None, 'r2': None}, erank=2.06, used=3/3 (2.14s)
+2026-02-27 21:16:44.176 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.6782608695652174, 'auroc': 0.7480321392502822, 'rmse': None, 'r2': None}, erank=1.66, used=3/5 (0.92s)
+2026-02-27 21:16:44.396 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.6934782608695652, 'auroc': 0.7512054694152359, 'rmse': None, 'r2': None}, erank=2.99, used=3/8 (0.22s)
+2026-02-27 21:16:45.045 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.7130434782608696, 'auroc': 0.7778767896393988, 'rmse': None, 'r2': None}, erank=7.87, used=8/12 (0.64s)
+2026-02-27 21:16:47.873 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.716304347826087, 'auroc': 0.7836640329511476, 'rmse': None, 'r2': None}, erank=5.90, used=6/20 (2.82s)
+2026-02-27 21:16:48.318 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.9021739130434783, 'auroc': 0.9387611635873976, 'rmse': None, 'r2': None} (0.44s)
+2026-02-27 21:16:58.752 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.9456521739130435, 'auroc': 0.9842298857403117, 'rmse': None, 'r2': None} (10.43s)
+2026-02-27 21:17:02.522 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.9423913043478261, 'auroc': 0.9839328501554486, 'rmse': None, 'r2': None} (3.77s)
+2026-02-27 21:17:04.596 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.6967391304347826, 'auroc': 0.749566823105408, 'rmse': None, 'r2': None}, erank=2.07, used=3/3 (2.07s)
+2026-02-27 21:17:07.365 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.6967391304347826, 'auroc': 0.7489430483771955, 'rmse': None, 'r2': None}, erank=2.61, used=4/5 (2.77s)
+2026-02-27 21:17:11.430 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.7130434782608696, 'auroc': 0.7741737460147726, 'rmse': None, 'r2': None}, erank=4.54, used=5/8 (4.05s)
+2026-02-27 21:17:18.493 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.7228260869565217, 'auroc': 0.786322501435672, 'rmse': None, 'r2': None}, erank=4.97, used=5/12 (7.06s)
+2026-02-27 21:17:26.300 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.7217391304347827, 'auroc': 0.7844734549198994, 'rmse': None, 'r2': None}, erank=4.98, used=5/20 (7.79s)
+2026-02-27 21:17:26.300 | INFO     | __main__:main:941 - 
+=== Dataset: diabetes_regression (regression, n=442, d=10) ===
+2026-02-27 21:17:26.376 | INFO     | __main__:main:990 -   figs fold=0: {'rmse': 62.39555837406162, 'r2': 0.2651766333606871, 'accuracy': None, 'auroc': None} (0.07s)
+2026-02-27 21:17:53.749 | INFO     | __main__:main:990 -   xgboost fold=0: {'rmse': 58.5665539847778, 'r2': 0.3525966396465995, 'accuracy': None, 'auroc': None} (27.37s)
+2026-02-27 21:18:21.583 | INFO     | __main__:main:990 -   lightgbm fold=0: {'rmse': 53.86428065045534, 'r2': 0.4523824783230581, 'accuracy': None, 'auroc': None} (27.83s)
+2026-02-27 21:18:21.656 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'rmse': 56.11028806196371, 'r2': 0.40576174941043575, 'accuracy': None, 'auroc': None}, erank=1.99, used=3/3 (0.06s)
+2026-02-27 21:18:21.729 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'rmse': 62.347141341083926, 'r2': 0.2663165915371447, 'accuracy': None, 'auroc': None}, erank=3.02, used=4/5 (0.07s)
+2026-02-27 21:18:21.806 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'rmse': 66.6872849915507, 'r2': 0.16061408003471278, 'accuracy': None, 'auroc': None}, erank=3.44, used=5/8 (0.07s)
+2026-02-27 21:18:21.888 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'rmse': 65.56625062379698, 'r2': 0.18859756667668293, 'accuracy': None, 'auroc': None}, erank=5.11, used=6/10 (0.06s)
+2026-02-27 21:18:21.963 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'rmse': 65.56625062379698, 'r2': 0.18859756667668293, 'accuracy': None, 'auroc': None}, erank=5.11, used=6/10 (0.07s)
+2026-02-27 21:18:22.102 | INFO     | __main__:main:990 -   figs fold=1: {'rmse': 56.6488036961065, 'r2': 0.48560861992940774, 'accuracy': None, 'auroc': None} (0.13s)
+2026-02-27 21:18:49.941 | INFO     | __main__:main:990 -   xgboost fold=1: {'rmse': 54.68700252327203, 'r2': 0.5206194207423835, 'accuracy': None, 'auroc': None} (27.84s)
+2026-02-27 21:19:14.447 | INFO     | __main__:main:990 -   lightgbm fold=1: {'rmse': 56.56832924090046, 'r2': 0.48706905547443535, 'accuracy': None, 'auroc': None} (24.50s)
+2026-02-27 21:19:14.565 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'rmse': 71.21017249473091, 'r2': 0.1871764611512261, 'accuracy': None, 'auroc': None}, erank=2.19, used=3/3 (0.12s)
+2026-02-27 21:19:14.606 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'rmse': 69.26139602519505, 'r2': 0.2310560606896661, 'accuracy': None, 'auroc': None}, erank=3.65, used=5/5 (0.04s)
+2026-02-27 21:19:14.676 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'rmse': 69.4003095850556, 'r2': 0.22796851512618888, 'accuracy': None, 'auroc': None}, erank=6.22, used=8/8 (0.06s)
+2026-02-27 21:19:14.800 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'rmse': 64.15761141848309, 'r2': 0.34020568359200953, 'accuracy': None, 'auroc': None}, erank=6.98, used=8/10 (0.12s)
+2026-02-27 21:19:14.866 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'rmse': 64.15761141848309, 'r2': 0.34020568359200953, 'accuracy': None, 'auroc': None}, erank=6.98, used=8/10 (0.06s)
+2026-02-27 21:19:15.001 | INFO     | __main__:main:990 -   figs fold=2: {'rmse': 68.88912523612544, 'r2': 0.12809593265182595, 'accuracy': None, 'auroc': None} (0.13s)
+2026-02-27 21:19:45.120 | INFO     | __main__:main:990 -   xgboost fold=2: {'rmse': 65.97435614983824, 'r2': 0.20031732962992377, 'accuracy': None, 'auroc': None} (30.12s)
+2026-02-27 21:20:13.923 | INFO     | __main__:main:990 -   lightgbm fold=2: {'rmse': 63.084846827032685, 'r2': 0.26883150615047546, 'accuracy': None, 'auroc': None} (28.80s)
+2026-02-27 21:20:13.966 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'rmse': 71.81518647057848, 'r2': 0.05245477271245602, 'accuracy': None, 'auroc': None}, erank=1.56, used=3/3 (0.04s)
+2026-02-27 21:20:14.020 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'rmse': 63.871096761860024, 'r2': 0.2504922792573694, 'accuracy': None, 'auroc': None}, erank=3.13, used=4/5 (0.05s)
+2026-02-27 21:20:14.081 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'rmse': 69.31148098815235, 'r2': 0.1173719593333078, 'accuracy': None, 'auroc': None}, erank=4.66, used=6/8 (0.06s)
+2026-02-27 21:20:14.174 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'rmse': 67.06133006518348, 'r2': 0.17374958795593742, 'accuracy': None, 'auroc': None}, erank=4.32, used=5/10 (0.08s)
+2026-02-27 21:20:14.255 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'rmse': 67.06133006518348, 'r2': 0.17374958795593742, 'accuracy': None, 'auroc': None}, erank=4.32, used=5/10 (0.08s)
+2026-02-27 21:20:14.423 | INFO     | __main__:main:990 -   figs fold=3: {'rmse': 67.88180079275666, 'r2': 0.31534984049941794, 'accuracy': None, 'auroc': None} (0.16s)
+2026-02-27 21:20:41.895 | INFO     | __main__:main:990 -   xgboost fold=3: {'rmse': 62.00998814268359, 'r2': 0.42867227405114494, 'accuracy': None, 'auroc': None} (27.45s)
+2026-02-27 21:21:10.134 | INFO     | __main__:main:990 -   lightgbm fold=3: {'rmse': 57.95837242309015, 'r2': 0.5008921894439433, 'accuracy': None, 'auroc': None} (28.24s)
+2026-02-27 21:21:10.155 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'rmse': 69.50268836289229, 'r2': 0.28226320561955254, 'accuracy': None, 'auroc': None}, erank=2.47, used=3/3 (0.02s)
+2026-02-27 21:21:10.179 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'rmse': 67.19187823316226, 'r2': 0.3291961195170854, 'accuracy': None, 'auroc': None}, erank=2.50, used=5/5 (0.02s)
+2026-02-27 21:21:10.216 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'rmse': 59.05236015173254, 'r2': 0.4818726431521164, 'accuracy': None, 'auroc': None}, erank=4.17, used=5/8 (0.03s)
+2026-02-27 21:21:10.301 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'rmse': 65.42552668541828, 'r2': 0.36400096197959686, 'accuracy': None, 'auroc': None}, erank=3.96, used=5/10 (0.08s)
+2026-02-27 21:21:10.389 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'rmse': 65.42552668541828, 'r2': 0.36400096197959686, 'accuracy': None, 'auroc': None}, erank=3.96, used=5/10 (0.09s)
+2026-02-27 21:21:10.548 | INFO     | __main__:main:990 -   figs fold=4: {'rmse': 65.73865385997946, 'r2': 0.22657569754944962, 'accuracy': None, 'auroc': None} (0.15s)
+2026-02-27 21:21:41.669 | INFO     | __main__:main:990 -   xgboost fold=4: {'rmse': 58.900407017350574, 'r2': 0.379112677112713, 'accuracy': None, 'auroc': None} (31.12s)
+2026-02-27 21:22:08.578 | INFO     | __main__:main:990 -   lightgbm fold=4: {'rmse': 56.850940819510434, 'r2': 0.4215690625576708, 'accuracy': None, 'auroc': None} (26.90s)
+2026-02-27 21:22:08.599 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'rmse': 66.14208868709055, 'r2': 0.21705363628855912, 'accuracy': None, 'auroc': None}, erank=1.49, used=3/3 (0.02s)
+2026-02-27 21:22:08.645 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'rmse': 63.239073304938266, 'r2': 0.2842733386527603, 'accuracy': None, 'auroc': None}, erank=4.17, used=5/5 (0.04s)
+2026-02-27 21:22:08.679 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'rmse': 61.27587421218683, 'r2': 0.3280217246607692, 'accuracy': None, 'auroc': None}, erank=5.88, used=7/8 (0.03s)
+2026-02-27 21:22:08.712 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'rmse': 65.58453702060984, 'r2': 0.23019785830938233, 'accuracy': None, 'auroc': None}, erank=6.13, used=7/10 (0.03s)
+2026-02-27 21:22:08.756 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'rmse': 65.58453702060984, 'r2': 0.23019785830938233, 'accuracy': None, 'auroc': None}, erank=6.13, used=7/10 (0.04s)
+2026-02-27 21:22:08.756 | INFO     | __main__:main:941 - 
+=== Dataset: california_housing (regression, n=20640, d=8) ===
+2026-02-27 21:22:11.570 | INFO     | __main__:main:990 -   figs fold=0: {'rmse': 0.6707662293624069, 'r2': 0.6566512120078374, 'accuracy': None, 'auroc': None} (2.81s)
+2026-02-27 21:22:36.322 | INFO     | __main__:main:990 -   xgboost fold=0: {'rmse': 0.5100851335878522, 'r2': 0.8014460768907328, 'accuracy': None, 'auroc': None} (24.75s)
+2026-02-27 21:23:33.091 | INFO     | __main__:main:990 -   lightgbm fold=0: {'rmse': 0.5088853748332481, 'r2': 0.8023790060818947, 'accuracy': None, 'auroc': None} (56.77s)
+2026-02-27 21:23:33.194 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'rmse': 1.1473176623224135, 'r2': -0.00452441957779226, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/3 (0.09s)
+2026-02-27 21:23:33.400 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'rmse': 1.140816442950319, 'r2': 0.006827503385310907, 'accuracy': None, 'auroc': None}, erank=3.88, used=4/5 (0.20s)
+2026-02-27 21:23:33.927 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'rmse': 1.1432799431043432, 'r2': 0.002533521970130348, 'accuracy': None, 'auroc': None}, erank=3.72, used=4/8 (0.50s)
+2026-02-27 21:23:34.352 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'rmse': 1.1432799431043432, 'r2': 0.002533521970130348, 'accuracy': None, 'auroc': None}, erank=3.72, used=4/8 (0.41s)
+2026-02-27 21:23:34.825 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'rmse': 1.1432799431043432, 'r2': 0.002533521970130348, 'accuracy': None, 'auroc': None}, erank=3.72, used=4/8 (0.47s)
+2026-02-27 21:23:37.987 | INFO     | __main__:main:990 -   figs fold=1: {'rmse': 0.6699025696368702, 'r2': 0.6714944671337205, 'accuracy': None, 'auroc': None} (3.14s)
+2026-02-27 21:24:05.153 | INFO     | __main__:main:990 -   xgboost fold=1: {'rmse': 0.5009663921705614, 'r2': 0.8162883978134705, 'accuracy': None, 'auroc': None} (27.16s)
+2026-02-27 21:25:00.681 | INFO     | __main__:main:990 -   lightgbm fold=1: {'rmse': 0.49740760430689945, 'r2': 0.8188892445635539, 'accuracy': None, 'auroc': None} (55.53s)
+2026-02-27 21:25:00.837 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'rmse': 1.1692196905329741, 'r2': -0.0007178406799781545, 'accuracy': None, 'auroc': None}, erank=1.96, used=3/3 (0.15s)
+2026-02-27 21:25:01.056 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'rmse': 1.1658663536396112, 'r2': 0.005014070822859651, 'accuracy': None, 'auroc': None}, erank=2.88, used=3/5 (0.19s)
+2026-02-27 21:25:01.492 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'rmse': 1.1636250525393976, 'r2': 0.008835983130906055, 'accuracy': None, 'auroc': None}, erank=2.89, used=3/8 (0.43s)
+2026-02-27 21:25:01.896 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'rmse': 1.1636250525393976, 'r2': 0.008835983130906055, 'accuracy': None, 'auroc': None}, erank=2.89, used=3/8 (0.40s)
+2026-02-27 21:25:02.333 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'rmse': 1.1636250525393976, 'r2': 0.008835983130906055, 'accuracy': None, 'auroc': None}, erank=2.89, used=3/8 (0.43s)
+2026-02-27 21:25:05.432 | INFO     | __main__:main:990 -   figs fold=2: {'rmse': 0.6488534631103617, 'r2': 0.6764073727354978, 'accuracy': None, 'auroc': None} (3.10s)
+2026-02-27 21:25:34.927 | INFO     | __main__:main:990 -   xgboost fold=2: {'rmse': 0.5030394797524839, 'r2': 0.8055045231187343, 'accuracy': None, 'auroc': None} (29.49s)
+2026-02-27 21:26:22.909 | INFO     | __main__:main:990 -   lightgbm fold=2: {'rmse': 0.5048515904122394, 'r2': 0.8041007281655004, 'accuracy': None, 'auroc': None} (47.98s)
+2026-02-27 21:26:22.986 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'rmse': 1.1397894205853563, 'r2': 0.0014849677499703118, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/3 (0.07s)
+2026-02-27 21:26:23.073 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'rmse': 1.14149283021382, 'r2': -0.001501813962168308, 'accuracy': None, 'auroc': None}, erank=2.88, used=3/5 (0.09s)
+2026-02-27 21:26:23.204 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'rmse': 1.1400498377924004, 'r2': 0.0010286374895506212, 'accuracy': None, 'auroc': None}, erank=3.79, used=4/8 (0.13s)
+2026-02-27 21:26:23.338 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'rmse': 1.1400498377924004, 'r2': 0.0010286374895506212, 'accuracy': None, 'auroc': None}, erank=3.79, used=4/8 (0.13s)
+2026-02-27 21:26:23.457 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'rmse': 1.1400498377924004, 'r2': 0.0010286374895506212, 'accuracy': None, 'auroc': None}, erank=3.79, used=4/8 (0.12s)
+2026-02-27 21:26:24.836 | INFO     | __main__:main:990 -   figs fold=3: {'rmse': 0.6484432255716828, 'r2': 0.6845602715092776, 'accuracy': None, 'auroc': None} (1.38s)
+2026-02-27 21:26:42.536 | INFO     | __main__:main:990 -   xgboost fold=3: {'rmse': 0.478486657278357, 'r2': 0.8282439122894932, 'accuracy': None, 'auroc': None} (17.70s)
+2026-02-27 21:27:30.042 | INFO     | __main__:main:990 -   lightgbm fold=3: {'rmse': 0.4762242646965404, 'r2': 0.8298642753516418, 'accuracy': None, 'auroc': None} (47.50s)
+2026-02-27 21:27:30.193 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'rmse': 1.1538422553269594, 'r2': 0.0012303101261469385, 'accuracy': None, 'auroc': None}, erank=1.95, used=2/3 (0.15s)
+2026-02-27 21:27:30.420 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'rmse': 1.1508468565199366, 'r2': 0.006409233411465043, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/5 (0.21s)
+2026-02-27 21:27:30.870 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'rmse': 1.1518092481852489, 'r2': 0.004746764966864436, 'accuracy': None, 'auroc': None}, erank=2.83, used=3/8 (0.45s)
+2026-02-27 21:27:31.211 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'rmse': 1.1518092481852489, 'r2': 0.004746764966864436, 'accuracy': None, 'auroc': None}, erank=2.83, used=3/8 (0.32s)
+2026-02-27 21:27:31.583 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'rmse': 1.1518092481852489, 'r2': 0.004746764966864436, 'accuracy': None, 'auroc': None}, erank=2.83, used=3/8 (0.37s)
+2026-02-27 21:27:34.487 | INFO     | __main__:main:990 -   figs fold=4: {'rmse': 0.6793473979264103, 'r2': 0.6571194481025664, 'accuracy': None, 'auroc': None} (2.90s)
+2026-02-27 21:28:00.933 | INFO     | __main__:main:990 -   xgboost fold=4: {'rmse': 0.5179421140237798, 'r2': 0.8006934964747212, 'accuracy': None, 'auroc': None} (26.44s)
+2026-02-27 21:28:36.629 | INFO     | __main__:main:990 -   lightgbm fold=4: {'rmse': 0.5187813788992953, 'r2': 0.8000470672121335, 'accuracy': None, 'auroc': None} (35.69s)
+2026-02-27 21:28:36.768 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'rmse': 1.1572703689859636, 'r2': 0.004987155241905961, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/3 (0.13s)
+2026-02-27 21:28:36.961 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'rmse': 1.1536126179964659, 'r2': 0.011267031870722644, 'accuracy': None, 'auroc': None}, erank=2.95, used=3/5 (0.18s)
+2026-02-27 21:28:37.229 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'rmse': 1.1493711757689957, 'r2': 0.018524137724681977, 'accuracy': None, 'auroc': None}, erank=3.91, used=4/8 (0.26s)
+2026-02-27 21:28:37.551 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'rmse': 1.1493711757689957, 'r2': 0.018524137724681977, 'accuracy': None, 'auroc': None}, erank=3.91, used=4/8 (0.30s)
+2026-02-27 21:28:37.800 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'rmse': 1.1493711757689957, 'r2': 0.018524137724681977, 'accuracy': None, 'auroc': None}, erank=3.91, used=4/8 (0.25s)
+2026-02-27 21:28:37.805 | INFO     | __main__:main:941 - 
+=== Dataset: auto_mpg (regression, n=392, d=25) ===
+2026-02-27 21:28:37.919 | INFO     | __main__:main:990 -   figs fold=0: {'rmse': 3.2553490432201597, 'r2': 0.7923750725301791, 'accuracy': None, 'auroc': None} (0.11s)
+2026-02-27 21:28:43.531 | INFO     | __main__:main:990 -   xgboost fold=0: {'rmse': 3.211994165293165, 'r2': 0.797868561387847, 'accuracy': None, 'auroc': None} (5.60s)
+2026-02-27 21:28:59.756 | INFO     | __main__:main:990 -   lightgbm fold=0: {'rmse': 2.7339951318634683, 'r2': 0.8535532138038935, 'accuracy': None, 'auroc': None} (16.22s)
+2026-02-27 21:28:59.789 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'rmse': 4.0852193127479195, 'r2': 0.6730245664549228, 'accuracy': None, 'auroc': None}, erank=2.97, used=3/3 (0.03s)
+2026-02-27 21:28:59.836 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'rmse': 3.7371617238462456, 'r2': 0.7263671991257152, 'accuracy': None, 'auroc': None}, erank=2.99, used=3/5 (0.04s)
+2026-02-27 21:28:59.917 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'rmse': 4.117207842838706, 'r2': 0.6678838809213956, 'accuracy': None, 'auroc': None}, erank=3.97, used=4/8 (0.07s)
+2026-02-27 21:29:00.030 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'rmse': 4.234343569646559, 'r2': 0.6487174650503769, 'accuracy': None, 'auroc': None}, erank=5.87, used=6/12 (0.10s)
+2026-02-27 21:29:00.228 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'rmse': 4.071245748850701, 'r2': 0.6752575912065809, 'accuracy': None, 'auroc': None}, erank=5.73, used=6/20 (0.20s)
+2026-02-27 21:29:00.443 | INFO     | __main__:main:990 -   figs fold=1: {'rmse': 3.588094039812353, 'r2': 0.772193732313849, 'accuracy': None, 'auroc': None} (0.18s)
+2026-02-27 21:29:29.121 | INFO     | __main__:main:990 -   xgboost fold=1: {'rmse': 3.356804508802229, 'r2': 0.8006160779460382, 'accuracy': None, 'auroc': None} (28.68s)
+2026-02-27 21:29:54.551 | INFO     | __main__:main:990 -   lightgbm fold=1: {'rmse': 2.9642972310607285, 'r2': 0.844517494039847, 'accuracy': None, 'auroc': None} (25.42s)
+2026-02-27 21:29:54.569 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'rmse': 4.498285185484745, 'r2': 0.6419596224972193, 'accuracy': None, 'auroc': None}, erank=2.97, used=3/3 (0.02s)
+2026-02-27 21:29:54.592 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'rmse': 4.365134077826744, 'r2': 0.6628422004694627, 'accuracy': None, 'auroc': None}, erank=3.97, used=4/5 (0.02s)
+2026-02-27 21:29:54.661 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'rmse': 4.36008845734543, 'r2': 0.6636211855290111, 'accuracy': None, 'auroc': None}, erank=4.89, used=5/8 (0.07s)
+2026-02-27 21:29:54.775 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'rmse': 4.289609045956852, 'r2': 0.6744081990474025, 'accuracy': None, 'auroc': None}, erank=4.89, used=5/12 (0.11s)
+2026-02-27 21:29:54.925 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'rmse': 4.844473596270292, 'r2': 0.5847293655030678, 'accuracy': None, 'auroc': None}, erank=5.71, used=6/20 (0.15s)
+2026-02-27 21:29:55.090 | INFO     | __main__:main:990 -   figs fold=2: {'rmse': 3.993954007549324, 'r2': 0.7851863222383241, 'accuracy': None, 'auroc': None} (0.16s)
+2026-02-27 21:30:24.698 | INFO     | __main__:main:990 -   xgboost fold=2: {'rmse': 3.4841280766685623, 'r2': 0.836527752207884, 'accuracy': None, 'auroc': None} (29.61s)
+2026-02-27 21:30:49.227 | INFO     | __main__:main:990 -   lightgbm fold=2: {'rmse': 3.4284007995521653, 'r2': 0.8417152818796689, 'accuracy': None, 'auroc': None} (24.53s)
+2026-02-27 21:30:49.259 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'rmse': 4.7471708128590375, 'r2': 0.6965231767255913, 'accuracy': None, 'auroc': None}, erank=2.97, used=3/3 (0.03s)
+2026-02-27 21:30:49.286 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'rmse': 5.009539652117214, 'r2': 0.6620507797009866, 'accuracy': None, 'auroc': None}, erank=1.96, used=2/5 (0.02s)
+2026-02-27 21:30:49.322 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'rmse': 4.52517661398202, 'r2': 0.7242427878492026, 'accuracy': None, 'auroc': None}, erank=4.88, used=5/8 (0.03s)
+2026-02-27 21:30:49.357 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'rmse': 4.52517661398202, 'r2': 0.7242427878492026, 'accuracy': None, 'auroc': None}, erank=5.80, used=6/12 (0.03s)
+2026-02-27 21:30:49.421 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'rmse': 4.7267355848083685, 'r2': 0.6991303169484699, 'accuracy': None, 'auroc': None}, erank=7.80, used=8/20 (0.06s)
+2026-02-27 21:30:49.489 | INFO     | __main__:main:990 -   figs fold=3: {'rmse': 3.4513696992814737, 'r2': 0.813955974511004, 'accuracy': None, 'auroc': None} (0.07s)
+2026-02-27 21:31:17.669 | INFO     | __main__:main:990 -   xgboost fold=3: {'rmse': 3.022125681285836, 'r2': 0.8573545883101369, 'accuracy': None, 'auroc': None} (28.18s)
+2026-02-27 21:31:41.461 | INFO     | __main__:main:990 -   lightgbm fold=3: {'rmse': 2.750426016077163, 'r2': 0.8818502794943889, 'accuracy': None, 'auroc': None} (23.78s)
+2026-02-27 21:31:41.484 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'rmse': 4.367011218518962, 'r2': 0.7021474111980974, 'accuracy': None, 'auroc': None}, erank=2.16, used=3/3 (0.02s)
+2026-02-27 21:31:41.508 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'rmse': 4.226461336024162, 'r2': 0.7210113311606856, 'accuracy': None, 'auroc': None}, erank=3.86, used=4/5 (0.02s)
+2026-02-27 21:31:41.542 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'rmse': 4.260769804497382, 'r2': 0.7164635440604581, 'accuracy': None, 'auroc': None}, erank=4.90, used=5/8 (0.03s)
+2026-02-27 21:31:41.595 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'rmse': 4.312577912982566, 'r2': 0.7095263964022334, 'accuracy': None, 'auroc': None}, erank=4.96, used=5/12 (0.04s)
+2026-02-27 21:31:41.768 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'rmse': 4.390027236843298, 'r2': 0.6989995163597209, 'accuracy': None, 'auroc': None}, erank=7.63, used=8/20 (0.17s)
+2026-02-27 21:31:41.876 | INFO     | __main__:main:990 -   figs fold=4: {'rmse': 3.755862414411135, 'r2': 0.7463685609411832, 'accuracy': None, 'auroc': None} (0.11s)
+2026-02-27 21:31:56.129 | INFO     | __main__:main:853 - ======================================================================
+2026-02-27 21:31:56.131 | INFO     | __main__:main:854 - Codebook-FIGS Benchmark Starting
+2026-02-27 21:31:56.131 | INFO     | __main__:main:855 - ======================================================================
+2026-02-27 21:31:56.131 | INFO     | __main__:main:870 - Data directory: /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus
+2026-02-27 21:31:56.131 | INFO     | __main__:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   heart_disease: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   heart_disease_mini: n=3, d=25, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima_mini: n=3, d=8, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc: n=3, d=30, task=classification, classes=2, folds=3
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc_mini: n=3, d=30, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   credit_german: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   credit_german_mini: n=3, d=61, task=classification, classes=2, folds=3
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   ionosphere: n=3, d=33, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.132 | DEBUG    | __main__:load_datasets:103 -   ionosphere_mini: n=3, d=33, task=classification, classes=2, folds=3
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   spambase: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   spambase_mini: n=3, d=57, task=classification, classes=2, folds=2
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression: n=3, d=10, task=regression, classes=0, folds=3
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression_mini: n=3, d=10, task=regression, classes=0, folds=2
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   california_housing: n=3, d=8, task=regression, classes=0, folds=3
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   california_housing_mini: n=3, d=8, task=regression, classes=0, folds=2
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   auto_mpg: n=3, d=25, task=regression, classes=0, folds=3
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   auto_mpg_mini: n=3, d=25, task=regression, classes=0, folds=2
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:31:56.133 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red_mini: n=3, d=11, task=regression, classes=0, folds=2
+2026-02-27 21:31:56.133 | INFO     | __main__:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:31:56.133 | INFO     | __main__:load_datasets:64 - Loading datasets from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:31:56.269 | DEBUG    | __main__:load_datasets:103 -   heart_disease: n=296, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.278 | DEBUG    | __main__:load_datasets:103 -   heart_disease_mini: n=200, d=25, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.281 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima: n=768, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.284 | DEBUG    | __main__:load_datasets:103 -   diabetes_pima_mini: n=200, d=8, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.288 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc: n=569, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.296 | DEBUG    | __main__:load_datasets:103 -   breast_cancer_wdbc_mini: n=200, d=30, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.325 | DEBUG    | __main__:load_datasets:103 -   credit_german: n=1000, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.336 | DEBUG    | __main__:load_datasets:103 -   credit_german_mini: n=200, d=61, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.341 | DEBUG    | __main__:load_datasets:103 -   ionosphere: n=351, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.345 | DEBUG    | __main__:load_datasets:103 -   ionosphere_mini: n=200, d=33, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.446 | DEBUG    | __main__:load_datasets:103 -   spambase: n=4601, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.459 | DEBUG    | __main__:load_datasets:103 -   spambase_mini: n=200, d=57, task=classification, classes=2, folds=5
+2026-02-27 21:31:56.467 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression: n=442, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.472 | DEBUG    | __main__:load_datasets:103 -   diabetes_regression_mini: n=200, d=10, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.820 | DEBUG    | __main__:load_datasets:103 -   california_housing: n=20640, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.831 | DEBUG    | __main__:load_datasets:103 -   california_housing_mini: n=200, d=8, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.837 | DEBUG    | __main__:load_datasets:103 -   auto_mpg: n=392, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.847 | DEBUG    | __main__:load_datasets:103 -   auto_mpg_mini: n=200, d=25, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.884 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red: n=1599, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.889 | DEBUG    | __main__:load_datasets:103 -   wine_quality_red_mini: n=200, d=11, task=regression, classes=0, folds=5
+2026-02-27 21:31:56.890 | INFO     | __main__:load_datasets:108 - Loaded 20 datasets
+2026-02-27 21:31:56.896 | INFO     | __main__:main:883 - Full datasets: ['heart_disease', 'diabetes_pima', 'breast_cancer_wdbc', 'credit_german', 'ionosphere', 'spambase', 'diabetes_regression', 'california_housing', 'auto_mpg', 'wine_quality_red']
+2026-02-27 21:31:56.904 | INFO     | __main__:main:884 - Mini datasets: ['heart_disease_mini', 'diabetes_pima_mini', 'breast_cancer_wdbc_mini', 'credit_german_mini', 'ionosphere_mini', 'spambase_mini', 'diabetes_regression_mini', 'california_housing_mini', 'auto_mpg_mini', 'wine_quality_red_mini']
+2026-02-27 21:31:56.904 | INFO     | __main__:main:890 - 
+=== SMOKE TEST on mini dataset ===
+2026-02-27 21:31:56.909 | INFO     | __main__:main:910 - Smoke test PASSED: acc=0.725, complexity=4, codebook shape=(5, 25), n_trees=1
+2026-02-27 21:31:56.909 | INFO     | __main__:main:933 - 
+=== FULL BENCHMARK ===
+2026-02-27 21:31:56.909 | INFO     | __main__:main:941 - 
+=== Dataset: heart_disease (classification, n=296, d=25) ===
+2026-02-27 21:31:58.699 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.8666666666666667, 'auroc': 0.9012276785714286, 'rmse': None, 'r2': None} (1.78s)
+2026-02-27 21:32:29.562 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.8333333333333334, 'auroc': 0.9464285714285714, 'rmse': None, 'r2': None} (30.86s)
+2026-02-27 21:33:00.435 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9, 'auroc': 0.9642857142857143, 'rmse': None, 'r2': None} (30.86s)
+2026-02-27 21:33:00.470 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.55, 'auroc': 0.5446428571428571, 'rmse': None, 'r2': None}, erank=1.09, used=2/3 (0.03s)
+2026-02-27 21:33:00.526 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.8, 'auroc': 0.7873883928571429, 'rmse': None, 'r2': None}, erank=3.04, used=4/5 (0.05s)
+2026-02-27 21:33:00.577 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.7333333333333333, 'auroc': 0.7226562500000001, 'rmse': None, 'r2': None}, erank=4.00, used=4/8 (0.05s)
+2026-02-27 21:33:00.617 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.7666666666666667, 'auroc': 0.7667410714285715, 'rmse': None, 'r2': None}, erank=6.18, used=8/12 (0.04s)
+2026-02-27 21:33:00.701 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.7, 'auroc': 0.7114955357142858, 'rmse': None, 'r2': None}, erank=7.79, used=10/20 (0.08s)
+2026-02-27 21:33:00.832 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.711864406779661, 'auroc': 0.7685185185185186, 'rmse': None, 'r2': None} (0.11s)
+2026-02-27 21:33:29.668 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.7627118644067796, 'auroc': 0.8460648148148149, 'rmse': None, 'r2': None} (28.83s)
+2026-02-27 21:33:50.813 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.8135593220338984, 'auroc': 0.861111111111111, 'rmse': None, 'r2': None} (21.14s)
+2026-02-27 21:33:50.840 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.6271186440677966, 'auroc': 0.6574074074074073, 'rmse': None, 'r2': None}, erank=1.90, used=2/3 (0.02s)
+2026-02-27 21:33:50.867 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.6779661016949152, 'auroc': 0.7488425925925926, 'rmse': None, 'r2': None}, erank=3.14, used=4/5 (0.02s)
+2026-02-27 21:33:50.903 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.6610169491525424, 'auroc': 0.6603009259259259, 'rmse': None, 'r2': None}, erank=4.24, used=5/8 (0.03s)
+2026-02-27 21:33:50.960 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.6271186440677966, 'auroc': 0.6574074074074074, 'rmse': None, 'r2': None}, erank=6.86, used=7/12 (0.05s)
+2026-02-27 21:33:51.103 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.6271186440677966, 'auroc': 0.5729166666666666, 'rmse': None, 'r2': None}, erank=6.32, used=7/20 (0.14s)
+2026-02-27 21:33:51.266 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.7966101694915254, 'auroc': 0.8506944444444444, 'rmse': None, 'r2': None} (0.15s)
+2026-02-27 21:34:11.879 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.7796610169491526, 'auroc': 0.8402777777777777, 'rmse': None, 'r2': None} (20.61s)
+2026-02-27 21:34:30.302 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.7966101694915254, 'auroc': 0.8530092592592593, 'rmse': None, 'r2': None} (18.42s)
+2026-02-27 21:34:30.320 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.711864406779661, 'auroc': 0.7523148148148148, 'rmse': None, 'r2': None}, erank=1.88, used=2/3 (0.01s)
+2026-02-27 21:34:30.357 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.6949152542372882, 'auroc': 0.654513888888889, 'rmse': None, 'r2': None}, erank=3.73, used=4/5 (0.03s)
+2026-02-27 21:34:30.434 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.6271186440677966, 'auroc': 0.6099537037037037, 'rmse': None, 'r2': None}, erank=5.29, used=6/8 (0.07s)
+2026-02-27 21:34:30.550 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.6779661016949152, 'auroc': 0.6585648148148148, 'rmse': None, 'r2': None}, erank=5.25, used=6/12 (0.11s)
+2026-02-27 21:34:30.604 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.6271186440677966, 'auroc': 0.6649305555555555, 'rmse': None, 'r2': None}, erank=7.73, used=8/20 (0.05s)
+2026-02-27 21:34:30.716 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.7966101694915254, 'auroc': 0.8506944444444444, 'rmse': None, 'r2': None} (0.11s)
+2026-02-27 21:35:04.166 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.7966101694915254, 'auroc': 0.8773148148148148, 'rmse': None, 'r2': None} (33.45s)
+2026-02-27 21:35:23.478 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.847457627118644, 'auroc': 0.886574074074074, 'rmse': None, 'r2': None} (19.31s)
+2026-02-27 21:35:23.508 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.5084745762711864, 'auroc': 0.5040509259259258, 'rmse': None, 'r2': None}, erank=1.06, used=2/3 (0.02s)
+2026-02-27 21:35:23.553 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.6440677966101694, 'auroc': 0.6296296296296297, 'rmse': None, 'r2': None}, erank=2.98, used=3/5 (0.04s)
+2026-02-27 21:35:23.611 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.6101694915254238, 'auroc': 0.6244212962962963, 'rmse': None, 'r2': None}, erank=5.09, used=6/8 (0.04s)
+2026-02-27 21:35:23.673 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.5932203389830508, 'auroc': 0.6354166666666665, 'rmse': None, 'r2': None}, erank=5.91, used=6/12 (0.06s)
+2026-02-27 21:35:23.730 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.6271186440677966, 'auroc': 0.6273148148148148, 'rmse': None, 'r2': None}, erank=5.86, used=6/20 (0.05s)
+2026-02-27 21:35:23.806 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.7796610169491526, 'auroc': 0.8559027777777777, 'rmse': None, 'r2': None} (0.07s)
+2026-02-27 21:35:30.548 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.8135593220338984, 'auroc': 0.8472222222222221, 'rmse': None, 'r2': None} (6.74s)
+2026-02-27 21:35:59.287 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.7966101694915254, 'auroc': 0.8657407407407408, 'rmse': None, 'r2': None} (28.74s)
+2026-02-27 21:35:59.308 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.6610169491525424, 'auroc': 0.6493055555555556, 'rmse': None, 'r2': None}, erank=1.99, used=2/3 (0.02s)
+2026-02-27 21:35:59.337 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.6440677966101694, 'auroc': 0.6151620370370371, 'rmse': None, 'r2': None}, erank=2.00, used=3/5 (0.03s)
+2026-02-27 21:35:59.369 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.576271186440678, 'auroc': 0.6608796296296297, 'rmse': None, 'r2': None}, erank=3.31, used=5/8 (0.03s)
+2026-02-27 21:35:59.427 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.6271186440677966, 'auroc': 0.6649305555555555, 'rmse': None, 'r2': None}, erank=5.12, used=6/12 (0.06s)
+2026-02-27 21:35:59.556 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.5932203389830508, 'auroc': 0.640625, 'rmse': None, 'r2': None}, erank=7.71, used=8/20 (0.12s)
+2026-02-27 21:35:59.556 | INFO     | __main__:main:941 - 
+=== Dataset: diabetes_pima (classification, n=768, d=8) ===
+2026-02-27 21:35:59.643 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.7272727272727273, 'auroc': 0.7912962962962962, 'rmse': None, 'r2': None} (0.08s)
+2026-02-27 21:36:22.086 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.7532467532467533, 'auroc': 0.8381481481481481, 'rmse': None, 'r2': None} (22.44s)
+2026-02-27 21:36:51.177 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.7792207792207793, 'auroc': 0.8466666666666667, 'rmse': None, 'r2': None} (29.08s)
+2026-02-27 21:36:51.226 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.7077922077922078, 'auroc': 0.7403703703703705, 'rmse': None, 'r2': None}, erank=2.02, used=3/3 (0.05s)
+2026-02-27 21:36:51.277 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.7012987012987013, 'auroc': 0.6935185185185185, 'rmse': None, 'r2': None}, erank=3.02, used=4/5 (0.04s)
+2026-02-27 21:36:51.374 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.7402597402597403, 'auroc': 0.7831481481481481, 'rmse': None, 'r2': None}, erank=3.81, used=5/8 (0.08s)
+2026-02-27 21:36:51.467 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.7402597402597403, 'auroc': 0.7831481481481481, 'rmse': None, 'r2': None}, erank=3.81, used=5/8 (0.08s)
+2026-02-27 21:36:51.528 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.7402597402597403, 'auroc': 0.7831481481481481, 'rmse': None, 'r2': None}, erank=3.81, used=5/8 (0.05s)
+2026-02-27 21:36:51.728 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.7597402597402597, 'auroc': 0.8326851851851852, 'rmse': None, 'r2': None} (0.19s)
+2026-02-27 21:37:17.820 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.7662337662337663, 'auroc': 0.8453703703703703, 'rmse': None, 'r2': None} (26.08s)
+2026-02-27 21:37:46.265 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.7402597402597403, 'auroc': 0.8272222222222222, 'rmse': None, 'r2': None} (28.44s)
+2026-02-27 21:37:46.315 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.6688311688311688, 'auroc': 0.7119444444444444, 'rmse': None, 'r2': None}, erank=2.06, used=3/3 (0.05s)
+2026-02-27 21:37:46.406 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.7012987012987013, 'auroc': 0.7393518518518518, 'rmse': None, 'r2': None}, erank=3.22, used=4/5 (0.08s)
+2026-02-27 21:37:46.480 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.7727272727272727, 'auroc': 0.7386111111111112, 'rmse': None, 'r2': None}, erank=3.66, used=4/8 (0.07s)
+2026-02-27 21:37:46.573 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.7727272727272727, 'auroc': 0.7386111111111112, 'rmse': None, 'r2': None}, erank=3.66, used=4/8 (0.08s)
+2026-02-27 21:37:46.663 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.7727272727272727, 'auroc': 0.7386111111111112, 'rmse': None, 'r2': None}, erank=3.66, used=4/8 (0.08s)
+2026-02-27 21:37:46.920 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.7402597402597403, 'auroc': 0.7407407407407408, 'rmse': None, 'r2': None} (0.23s)
+2026-02-27 21:37:49.607 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.7727272727272727, 'auroc': 0.8233333333333334, 'rmse': None, 'r2': None} (2.69s)
+2026-02-27 21:38:10.956 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.7402597402597403, 'auroc': 0.8009259259259259, 'rmse': None, 'r2': None} (21.34s)
+2026-02-27 21:38:10.982 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.6558441558441559, 'auroc': 0.6068518518518519, 'rmse': None, 'r2': None}, erank=1.19, used=3/3 (0.02s)
+2026-02-27 21:38:11.009 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.6948051948051948, 'auroc': 0.7457407407407407, 'rmse': None, 'r2': None}, erank=2.87, used=5/5 (0.02s)
+2026-02-27 21:38:11.043 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.7207792207792207, 'auroc': 0.7074074074074075, 'rmse': None, 'r2': None}, erank=2.24, used=4/8 (0.03s)
+2026-02-27 21:38:11.101 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.7207792207792207, 'auroc': 0.7074074074074075, 'rmse': None, 'r2': None}, erank=2.24, used=4/8 (0.05s)
+2026-02-27 21:38:11.150 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.7207792207792207, 'auroc': 0.7074074074074075, 'rmse': None, 'r2': None}, erank=2.24, used=4/8 (0.04s)
+2026-02-27 21:38:11.373 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.7320261437908496, 'auroc': 0.765, 'rmse': None, 'r2': None} (0.22s)
+2026-02-27 21:38:36.877 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.7647058823529411, 'auroc': 0.8054716981132075, 'rmse': None, 'r2': None} (25.49s)
+2026-02-27 21:39:14.176 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.7450980392156863, 'auroc': 0.7871698113207547, 'rmse': None, 'r2': None} (37.30s)
+2026-02-27 21:39:14.219 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.6078431372549019, 'auroc': 0.6814150943396226, 'rmse': None, 'r2': None}, erank=1.07, used=3/3 (0.03s)
+2026-02-27 21:39:14.284 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.6666666666666666, 'auroc': 0.6603773584905661, 'rmse': None, 'r2': None}, erank=3.07, used=5/5 (0.05s)
+2026-02-27 21:39:14.351 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.6535947712418301, 'auroc': 0.6883018867924529, 'rmse': None, 'r2': None}, erank=3.78, used=6/8 (0.04s)
+2026-02-27 21:39:14.398 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.6535947712418301, 'auroc': 0.6883018867924529, 'rmse': None, 'r2': None}, erank=3.78, used=6/8 (0.04s)
+2026-02-27 21:39:14.435 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.6535947712418301, 'auroc': 0.6883018867924529, 'rmse': None, 'r2': None}, erank=3.78, used=6/8 (0.03s)
+2026-02-27 21:39:14.555 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.6601307189542484, 'auroc': 0.7501886792452831, 'rmse': None, 'r2': None} (0.12s)
+2026-02-27 21:39:33.673 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.738562091503268, 'auroc': 0.7877358490566038, 'rmse': None, 'r2': None} (19.11s)
+2026-02-27 21:40:10.911 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.7058823529411765, 'auroc': 0.7633962264150944, 'rmse': None, 'r2': None} (37.23s)
+2026-02-27 21:40:10.951 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.738562091503268, 'auroc': 0.7546226415094339, 'rmse': None, 'r2': None}, erank=1.98, used=3/3 (0.02s)
+2026-02-27 21:40:11.013 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.7320261437908496, 'auroc': 0.7382075471698114, 'rmse': None, 'r2': None}, erank=3.11, used=5/5 (0.05s)
+2026-02-27 21:40:11.074 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.6928104575163399, 'auroc': 0.7290566037735849, 'rmse': None, 'r2': None}, erank=3.87, used=6/8 (0.06s)
+2026-02-27 21:40:11.132 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.6928104575163399, 'auroc': 0.7290566037735849, 'rmse': None, 'r2': None}, erank=3.87, used=6/8 (0.05s)
+2026-02-27 21:40:11.225 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.6928104575163399, 'auroc': 0.7290566037735849, 'rmse': None, 'r2': None}, erank=3.87, used=6/8 (0.07s)
+2026-02-27 21:40:11.226 | INFO     | __main__:main:941 - 
+=== Dataset: breast_cancer_wdbc (classification, n=569, d=30) ===
+2026-02-27 21:40:11.373 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.956140350877193, 'auroc': 0.9769079593842123, 'rmse': None, 'r2': None} (0.14s)
+2026-02-27 21:40:36.432 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.9649122807017544, 'auroc': 0.9980347199475925, 'rmse': None, 'r2': None} (25.05s)
+2026-02-27 21:41:09.506 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9824561403508771, 'auroc': 0.9993449066491975, 'rmse': None, 'r2': None} (33.07s)
+2026-02-27 21:41:09.559 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.9298245614035088, 'auroc': 0.9721585325908941, 'rmse': None, 'r2': None}, erank=2.00, used=2/3 (0.04s)
+2026-02-27 21:41:09.612 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.9210526315789473, 'auroc': 0.977890599410416, 'rmse': None, 'r2': None}, erank=3.90, used=4/5 (0.05s)
+2026-02-27 21:41:09.690 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.8596491228070176, 'auroc': 0.9500491320013102, 'rmse': None, 'r2': None}, erank=5.42, used=6/8 (0.06s)
+2026-02-27 21:41:09.812 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.8596491228070176, 'auroc': 0.9500491320013102, 'rmse': None, 'r2': None}, erank=5.77, used=6/12 (0.11s)
+2026-02-27 21:41:09.984 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.9298245614035088, 'auroc': 0.9777268260727153, 'rmse': None, 'r2': None}, erank=5.80, used=6/20 (0.17s)
+2026-02-27 21:41:10.168 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.8771929824561403, 'auroc': 0.769734687192925, 'rmse': None, 'r2': None} (0.16s)
+2026-02-27 21:41:34.935 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.9385964912280702, 'auroc': 0.9908286930887652, 'rmse': None, 'r2': None} (24.76s)
+2026-02-27 21:42:03.765 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.9473684210526315, 'auroc': 0.9927939731411726, 'rmse': None, 'r2': None} (28.82s)
+2026-02-27 21:42:03.857 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.8771929824561403, 'auroc': 0.9156567310841796, 'rmse': None, 'r2': None}, erank=2.08, used=3/3 (0.06s)
+2026-02-27 21:42:03.947 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.962332132328857, 'rmse': None, 'r2': None}, erank=2.93, used=3/5 (0.09s)
+2026-02-27 21:42:04.058 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.9059941041598427, 'rmse': None, 'r2': None}, erank=3.90, used=4/8 (0.08s)
+2026-02-27 21:42:04.209 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.9059941041598427, 'rmse': None, 'r2': None}, erank=3.90, used=4/12 (0.12s)
+2026-02-27 21:42:04.376 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.9035087719298246, 'auroc': 0.9344906649197512, 'rmse': None, 'r2': None}, erank=5.93, used=6/20 (0.15s)
+2026-02-27 21:42:04.542 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.9210526315789473, 'auroc': 0.8715277777777779, 'rmse': None, 'r2': None} (0.16s)
+2026-02-27 21:42:26.991 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.9649122807017544, 'auroc': 0.9894179894179894, 'rmse': None, 'r2': None} (22.45s)
+2026-02-27 21:43:01.905 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.9473684210526315, 'auroc': 0.9824735449735449, 'rmse': None, 'r2': None} (34.91s)
+2026-02-27 21:43:01.951 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.8771929824561403, 'auroc': 0.8791335978835978, 'rmse': None, 'r2': None}, erank=2.07, used=3/3 (0.03s)
+2026-02-27 21:43:02.008 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.9210526315789473, 'auroc': 0.9606481481481481, 'rmse': None, 'r2': None}, erank=2.93, used=3/5 (0.04s)
+2026-02-27 21:43:02.098 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.8947368421052632, 'auroc': 0.9485780423280423, 'rmse': None, 'r2': None}, erank=4.83, used=5/8 (0.07s)
+2026-02-27 21:43:02.203 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.8771929824561403, 'auroc': 0.9158399470899471, 'rmse': None, 'r2': None}, erank=5.81, used=6/12 (0.09s)
+2026-02-27 21:43:02.467 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.9035087719298246, 'auroc': 0.8928571428571428, 'rmse': None, 'r2': None}, erank=6.73, used=7/20 (0.25s)
+2026-02-27 21:43:02.593 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.9298245614035088, 'auroc': 0.9222883597883598, 'rmse': None, 'r2': None} (0.12s)
+2026-02-27 21:43:26.927 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.9649122807017544, 'auroc': 0.9966931216931217, 'rmse': None, 'r2': None} (24.33s)
+2026-02-27 21:43:31.469 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.9736842105263158, 'auroc': 0.9993386243386243, 'rmse': None, 'r2': None} (4.53s)
+2026-02-27 21:43:31.516 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.9385964912280702, 'auroc': 0.9765211640211641, 'rmse': None, 'r2': None}, erank=2.97, used=3/3 (0.03s)
+2026-02-27 21:43:31.560 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.9473684210526315, 'auroc': 0.9733796296296297, 'rmse': None, 'r2': None}, erank=2.93, used=3/5 (0.04s)
+2026-02-27 21:43:31.595 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.9473684210526315, 'auroc': 0.978670634920635, 'rmse': None, 'r2': None}, erank=3.90, used=4/8 (0.03s)
+2026-02-27 21:43:31.665 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.9210526315789473, 'auroc': 0.9456018518518519, 'rmse': None, 'r2': None}, erank=4.88, used=5/12 (0.07s)
+2026-02-27 21:43:31.861 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.9385964912280702, 'auroc': 0.972883597883598, 'rmse': None, 'r2': None}, erank=5.88, used=6/20 (0.19s)
+2026-02-27 21:43:31.960 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.9380530973451328, 'auroc': 0.8896713615023475, 'rmse': None, 'r2': None} (0.10s)
+2026-02-27 21:43:37.287 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.9557522123893806, 'auroc': 0.9916163648558015, 'rmse': None, 'r2': None} (5.32s)
+2026-02-27 21:44:00.969 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.9734513274336283, 'auroc': 0.9926224010731053, 'rmse': None, 'r2': None} (23.67s)
+2026-02-27 21:44:01.016 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.9380530973451328, 'auroc': 0.970824949698189, 'rmse': None, 'r2': None}, erank=2.00, used=2/3 (0.04s)
+2026-02-27 21:44:01.041 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9731723675385647, 'rmse': None, 'r2': None}, erank=2.99, used=3/5 (0.02s)
+2026-02-27 21:44:01.076 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9879275653923542, 'rmse': None, 'r2': None}, erank=3.92, used=4/8 (0.03s)
+2026-02-27 21:44:01.131 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9726693494299128, 'rmse': None, 'r2': None}, erank=5.79, used=6/12 (0.05s)
+2026-02-27 21:44:01.250 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.9469026548672567, 'auroc': 0.9423205902079141, 'rmse': None, 'r2': None}, erank=8.61, used=9/20 (0.11s)
+2026-02-27 21:44:01.255 | INFO     | __main__:main:941 - 
+=== Dataset: credit_german (classification, n=1000, d=61) ===
+2026-02-27 21:44:01.476 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.7, 'auroc': 0.7055952380952379, 'rmse': None, 'r2': None} (0.22s)
+2026-02-27 21:44:20.576 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.735, 'auroc': 0.7721428571428572, 'rmse': None, 'r2': None} (19.09s)
+2026-02-27 21:44:49.020 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.75, 'auroc': 0.7714285714285714, 'rmse': None, 'r2': None} (28.44s)
+2026-02-27 21:44:49.767 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.685, 'auroc': 0.595952380952381, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.74s)
+2026-02-27 21:44:51.245 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.685, 'auroc': 0.6483333333333333, 'rmse': None, 'r2': None}, erank=4.98, used=5/5 (1.47s)
+2026-02-27 21:44:58.115 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.69, 'auroc': 0.5980357142857143, 'rmse': None, 'r2': None}, erank=4.98, used=5/8 (6.86s)
+2026-02-27 21:45:08.556 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.675, 'auroc': 0.6135714285714285, 'rmse': None, 'r2': None}, erank=5.97, used=6/12 (10.42s)
+2026-02-27 21:45:20.492 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.675, 'auroc': 0.6135714285714285, 'rmse': None, 'r2': None}, erank=5.97, used=6/20 (11.89s)
+2026-02-27 21:45:20.801 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.72, 'auroc': 0.6807142857142858, 'rmse': None, 'r2': None} (0.31s)
+2026-02-27 21:45:49.905 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.765, 'auroc': 0.7544047619047619, 'rmse': None, 'r2': None} (29.10s)
+2026-02-27 21:46:34.827 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.75, 'auroc': 0.7526190476190476, 'rmse': None, 'r2': None} (44.92s)
+2026-02-27 21:46:36.501 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.67, 'auroc': 0.540952380952381, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (1.67s)
+2026-02-27 21:46:38.524 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.68, 'auroc': 0.5788690476190477, 'rmse': None, 'r2': None}, erank=4.98, used=5/5 (1.99s)
+2026-02-27 21:46:46.807 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.67, 'auroc': 0.5531547619047619, 'rmse': None, 'r2': None}, erank=5.96, used=6/8 (8.25s)
+2026-02-27 21:46:58.301 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.675, 'auroc': 0.5530952380952382, 'rmse': None, 'r2': None}, erank=6.95, used=7/12 (11.49s)
+2026-02-27 21:47:14.563 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.67, 'auroc': 0.5531547619047619, 'rmse': None, 'r2': None}, erank=5.96, used=6/20 (16.24s)
+2026-02-27 21:47:14.830 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.71, 'auroc': 0.6964880952380952, 'rmse': None, 'r2': None} (0.25s)
+2026-02-27 21:47:44.594 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.745, 'auroc': 0.7761904761904763, 'rmse': None, 'r2': None} (29.76s)
+2026-02-27 21:48:14.729 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.745, 'auroc': 0.7642857142857142, 'rmse': None, 'r2': None} (30.12s)
+2026-02-27 21:48:15.521 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.69, 'auroc': 0.5686904761904763, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.78s)
+2026-02-27 21:48:16.516 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.695, 'auroc': 0.5120833333333332, 'rmse': None, 'r2': None}, erank=3.00, used=3/5 (0.98s)
+2026-02-27 21:48:27.444 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.66, 'auroc': 0.5394642857142857, 'rmse': None, 'r2': None}, erank=5.95, used=6/8 (10.92s)
+2026-02-27 21:48:42.867 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.66, 'auroc': 0.5394642857142857, 'rmse': None, 'r2': None}, erank=5.95, used=6/12 (15.42s)
+2026-02-27 21:48:56.523 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.655, 'auroc': 0.5325595238095239, 'rmse': None, 'r2': None}, erank=5.95, used=6/20 (13.62s)
+2026-02-27 21:48:56.938 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.715, 'auroc': 0.7773214285714285, 'rmse': None, 'r2': None} (0.41s)
+2026-02-27 21:49:25.826 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.75, 'auroc': 0.8047619047619048, 'rmse': None, 'r2': None} (28.87s)
+2026-02-27 21:49:37.997 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.76, 'auroc': 0.8158333333333334, 'rmse': None, 'r2': None} (12.16s)
+2026-02-27 21:49:38.729 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.715, 'auroc': 0.6183928571428572, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.72s)
+2026-02-27 21:49:39.258 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.715, 'auroc': 0.6783333333333333, 'rmse': None, 'r2': None}, erank=3.99, used=4/5 (0.51s)
+2026-02-27 21:49:40.419 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.695, 'auroc': 0.6152380952380953, 'rmse': None, 'r2': None}, erank=5.95, used=6/8 (1.16s)
+2026-02-27 21:49:41.206 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.695, 'auroc': 0.6152380952380953, 'rmse': None, 'r2': None}, erank=5.95, used=6/12 (0.76s)
+2026-02-27 21:49:47.697 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.68, 'auroc': 0.5667261904761904, 'rmse': None, 'r2': None}, erank=6.94, used=7/20 (6.48s)
+2026-02-27 21:49:47.816 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.75, 'auroc': 0.7208928571428572, 'rmse': None, 'r2': None} (0.12s)
+2026-02-27 21:50:02.118 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.79, 'auroc': 0.8021428571428572, 'rmse': None, 'r2': None} (14.30s)
+2026-02-27 21:50:27.351 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.78, 'auroc': 0.7903571428571429, 'rmse': None, 'r2': None} (25.23s)
+2026-02-27 21:50:27.450 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.67, 'auroc': 0.5252380952380953, 'rmse': None, 'r2': None}, erank=3.00, used=3/3 (0.09s)
+2026-02-27 21:50:27.645 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.7, 'auroc': 0.5255952380952381, 'rmse': None, 'r2': None}, erank=4.98, used=5/5 (0.19s)
+2026-02-27 21:50:30.109 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.695, 'auroc': 0.5232738095238095, 'rmse': None, 'r2': None}, erank=4.99, used=5/8 (2.45s)
+2026-02-27 21:50:30.817 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.695, 'auroc': 0.5357738095238095, 'rmse': None, 'r2': None}, erank=5.96, used=6/12 (0.69s)
+2026-02-27 21:50:40.961 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.675, 'auroc': 0.564047619047619, 'rmse': None, 'r2': None}, erank=4.97, used=5/20 (10.14s)
+2026-02-27 21:50:40.964 | INFO     | __main__:main:941 - 
+=== Dataset: ionosphere (classification, n=351, d=33) ===
+2026-02-27 21:50:41.056 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.9154929577464789, 'auroc': 0.9106837606837608, 'rmse': None, 'r2': None} (0.08s)
+2026-02-27 21:51:00.597 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.9436619718309859, 'auroc': 0.9931623931623932, 'rmse': None, 'r2': None} (19.54s)
+2026-02-27 21:51:00.904 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9436619718309859, 'auroc': 0.9871794871794872, 'rmse': None, 'r2': None} (0.30s)
+2026-02-27 21:51:01.108 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.8169014084507042, 'auroc': 0.8910256410256411, 'rmse': None, 'r2': None}, erank=1.80, used=3/3 (0.19s)
+2026-02-27 21:51:01.188 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.9154929577464789, 'auroc': 0.9059829059829059, 'rmse': None, 'r2': None}, erank=3.49, used=4/5 (0.08s)
+2026-02-27 21:51:01.290 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.8309859154929577, 'auroc': 0.8722222222222222, 'rmse': None, 'r2': None}, erank=4.87, used=6/8 (0.10s)
+2026-02-27 21:51:01.444 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.9154929577464789, 'auroc': 0.9282051282051282, 'rmse': None, 'r2': None}, erank=7.35, used=8/12 (0.14s)
+2026-02-27 21:51:01.648 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.8450704225352113, 'auroc': 0.8098290598290598, 'rmse': None, 'r2': None}, erank=9.10, used=10/20 (0.18s)
+2026-02-27 21:51:01.786 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.9142857142857143, 'auroc': 0.916, 'rmse': None, 'r2': None} (0.14s)
+2026-02-27 21:51:02.026 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.9428571428571428, 'auroc': 0.96, 'rmse': None, 'r2': None} (0.23s)
+2026-02-27 21:51:11.721 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.9428571428571428, 'auroc': 0.9635555555555555, 'rmse': None, 'r2': None} (9.68s)
+2026-02-27 21:51:12.089 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.7857142857142857, 'auroc': 0.772888888888889, 'rmse': None, 'r2': None}, erank=2.11, used=3/3 (0.36s)
+2026-02-27 21:51:12.257 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.8285714285714286, 'auroc': 0.8346666666666667, 'rmse': None, 'r2': None}, erank=2.78, used=4/5 (0.15s)
+2026-02-27 21:51:12.898 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.8714285714285714, 'auroc': 0.8924444444444445, 'rmse': None, 'r2': None}, erank=4.83, used=6/8 (0.62s)
+2026-02-27 21:51:13.568 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.7571428571428571, 'auroc': 0.7826666666666667, 'rmse': None, 'r2': None}, erank=7.69, used=8/12 (0.66s)
+2026-02-27 21:51:14.444 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.8428571428571429, 'auroc': 0.8235555555555556, 'rmse': None, 'r2': None}, erank=7.72, used=8/20 (0.85s)
+2026-02-27 21:51:14.566 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.8428571428571429, 'auroc': 0.7764444444444445, 'rmse': None, 'r2': None} (0.12s)
+2026-02-27 21:51:36.123 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.9142857142857143, 'auroc': 0.951111111111111, 'rmse': None, 'r2': None} (21.54s)
+2026-02-27 21:51:55.216 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.9285714285714286, 'auroc': 0.9608888888888889, 'rmse': None, 'r2': None} (19.09s)
+2026-02-27 21:51:55.353 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.7428571428571429, 'auroc': 0.812, 'rmse': None, 'r2': None}, erank=1.54, used=3/3 (0.13s)
+2026-02-27 21:51:55.578 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.8142857142857143, 'auroc': 0.8142222222222221, 'rmse': None, 'r2': None}, erank=2.52, used=4/5 (0.22s)
+2026-02-27 21:51:55.944 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.8285714285714286, 'auroc': 0.9217777777777778, 'rmse': None, 'r2': None}, erank=5.45, used=6/8 (0.36s)
+2026-02-27 21:51:56.506 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.8571428571428571, 'auroc': 0.9142222222222223, 'rmse': None, 'r2': None}, erank=7.35, used=9/12 (0.52s)
+2026-02-27 21:51:56.979 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.8857142857142857, 'auroc': 0.8462222222222223, 'rmse': None, 'r2': None}, erank=9.21, used=10/20 (0.47s)
+2026-02-27 21:51:57.079 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.9571428571428572, 'auroc': 0.9542222222222222, 'rmse': None, 'r2': None} (0.10s)
+2026-02-27 21:52:18.118 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.9571428571428572, 'auroc': 0.9733333333333334, 'rmse': None, 'r2': None} (21.04s)
+2026-02-27 21:52:21.552 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.9571428571428572, 'auroc': 0.991111111111111, 'rmse': None, 'r2': None} (3.43s)
+2026-02-27 21:52:21.678 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.8142857142857143, 'auroc': 0.8115555555555556, 'rmse': None, 'r2': None}, erank=1.46, used=3/3 (0.12s)
+2026-02-27 21:52:22.000 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.9142857142857143, 'auroc': 0.8951111111111112, 'rmse': None, 'r2': None}, erank=3.75, used=5/5 (0.31s)
+2026-02-27 21:52:22.246 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.8285714285714286, 'auroc': 0.864, 'rmse': None, 'r2': None}, erank=4.73, used=7/8 (0.24s)
+2026-02-27 21:52:22.724 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.8428571428571429, 'auroc': 0.8795555555555555, 'rmse': None, 'r2': None}, erank=7.45, used=8/12 (0.47s)
+2026-02-27 21:52:23.376 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.8714285714285714, 'auroc': 0.9062222222222223, 'rmse': None, 'r2': None}, erank=7.86, used=9/20 (0.64s)
+2026-02-27 21:52:23.491 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.8428571428571429, 'auroc': 0.8248888888888889, 'rmse': None, 'r2': None} (0.09s)
+2026-02-27 21:52:40.684 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.8714285714285714, 'auroc': 0.9306666666666666, 'rmse': None, 'r2': None} (17.19s)
+2026-02-27 21:52:44.705 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.9285714285714286, 'auroc': 0.9546666666666666, 'rmse': None, 'r2': None} (4.02s)
+2026-02-27 21:52:45.023 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.8285714285714286, 'auroc': 0.8457777777777777, 'rmse': None, 'r2': None}, erank=1.66, used=2/3 (0.31s)
+2026-02-27 21:52:45.104 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.8285714285714286, 'auroc': 0.8226666666666667, 'rmse': None, 'r2': None}, erank=3.65, used=5/5 (0.08s)
+2026-02-27 21:52:45.161 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.7857142857142857, 'auroc': 0.7653333333333332, 'rmse': None, 'r2': None}, erank=4.76, used=5/8 (0.05s)
+2026-02-27 21:52:45.257 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.8, 'auroc': 0.7702222222222221, 'rmse': None, 'r2': None}, erank=6.75, used=9/12 (0.09s)
+2026-02-27 21:52:45.362 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.7857142857142857, 'auroc': 0.7822222222222223, 'rmse': None, 'r2': None}, erank=8.19, used=9/20 (0.10s)
+2026-02-27 21:52:45.362 | INFO     | __main__:main:941 - 
+=== Dataset: spambase (classification, n=4601, d=57) ===
+2026-02-27 21:52:45.687 | INFO     | __main__:main:990 -   figs fold=0: {'accuracy': 0.8914223669923995, 'auroc': 0.9102535620130928, 'rmse': None, 'r2': None} (0.32s)
+2026-02-27 21:52:48.433 | INFO     | __main__:main:990 -   xgboost fold=0: {'accuracy': 0.9424538545059717, 'auroc': 0.9853816759975116, 'rmse': None, 'r2': None} (2.74s)
+2026-02-27 21:52:51.382 | INFO     | __main__:main:990 -   lightgbm fold=0: {'accuracy': 0.9467969598262758, 'auroc': 0.9859741106075416, 'rmse': None, 'r2': None} (2.95s)
+2026-02-27 21:52:54.191 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'accuracy': 0.6862106406080347, 'auroc': 0.744440988575886, 'rmse': None, 'r2': None}, erank=1.22, used=3/3 (2.80s)
+2026-02-27 21:52:55.895 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'accuracy': 0.6981541802388708, 'auroc': 0.7873974347581385, 'rmse': None, 'r2': None}, erank=3.96, used=4/5 (1.69s)
+2026-02-27 21:52:57.530 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'accuracy': 0.6905537459283387, 'auroc': 0.7558873189371724, 'rmse': None, 'r2': None}, erank=3.99, used=4/8 (1.63s)
+2026-02-27 21:52:58.800 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'accuracy': 0.7079261672095548, 'auroc': 0.7767558280754762, 'rmse': None, 'r2': None}, erank=6.92, used=7/12 (1.26s)
+2026-02-27 21:53:00.477 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'accuracy': 0.7144408251900108, 'auroc': 0.7888217462997521, 'rmse': None, 'r2': None}, erank=5.92, used=6/20 (1.67s)
+2026-02-27 21:53:00.849 | INFO     | __main__:main:990 -   figs fold=1: {'accuracy': 0.907608695652174, 'auroc': 0.9532545959018948, 'rmse': None, 'r2': None} (0.37s)
+2026-02-27 21:53:05.581 | INFO     | __main__:main:990 -   xgboost fold=1: {'accuracy': 0.9543478260869566, 'auroc': 0.9912904135198897, 'rmse': None, 'r2': None} (4.73s)
+2026-02-27 21:53:06.992 | INFO     | __main__:main:990 -   lightgbm fold=1: {'accuracy': 0.9565217391304348, 'auroc': 0.9913942757096014, 'rmse': None, 'r2': None} (1.41s)
+2026-02-27 21:53:07.089 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'accuracy': 0.7032608695652174, 'auroc': 0.7676355525221201, 'rmse': None, 'r2': None}, erank=1.99, used=2/3 (0.09s)
+2026-02-27 21:53:07.231 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'accuracy': 0.717391304347826, 'auroc': 0.7759989317031916, 'rmse': None, 'r2': None}, erank=2.54, used=3/5 (0.14s)
+2026-02-27 21:53:08.196 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'accuracy': 0.7217391304347827, 'auroc': 0.7910886241227354, 'rmse': None, 'r2': None}, erank=2.98, used=3/8 (0.96s)
+2026-02-27 21:53:08.439 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'accuracy': 0.7423913043478261, 'auroc': 0.8052039902864124, 'rmse': None, 'r2': None}, erank=3.96, used=4/12 (0.23s)
+2026-02-27 21:53:09.578 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'accuracy': 0.7315217391304348, 'auroc': 0.8080700921405997, 'rmse': None, 'r2': None}, erank=4.96, used=5/20 (1.14s)
+2026-02-27 21:53:10.024 | INFO     | __main__:main:990 -   figs fold=2: {'accuracy': 0.9293478260869565, 'auroc': 0.9662967194385508, 'rmse': None, 'r2': None} (0.44s)
+2026-02-27 21:53:14.245 | INFO     | __main__:main:990 -   xgboost fold=2: {'accuracy': 0.9467391304347826, 'auroc': 0.9828751032439623, 'rmse': None, 'r2': None} (4.22s)
+2026-02-27 21:53:18.305 | INFO     | __main__:main:990 -   lightgbm fold=2: {'accuracy': 0.9521739130434783, 'auroc': 0.9835724636605981, 'rmse': None, 'r2': None} (4.06s)
+2026-02-27 21:53:18.366 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'accuracy': 0.6967391304347826, 'auroc': 0.7578057381386907, 'rmse': None, 'r2': None}, erank=1.29, used=3/3 (0.05s)
+2026-02-27 21:53:18.486 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'accuracy': 0.6989130434782609, 'auroc': 0.7645567804699517, 'rmse': None, 'r2': None}, erank=3.96, used=4/5 (0.11s)
+2026-02-27 21:53:18.858 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'accuracy': 0.7260869565217392, 'auroc': 0.7899782878565317, 'rmse': None, 'r2': None}, erank=4.08, used=5/8 (0.37s)
+2026-02-27 21:53:19.469 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'accuracy': 0.725, 'auroc': 0.7899807607658105, 'rmse': None, 'r2': None}, erank=4.94, used=5/12 (0.61s)
+2026-02-27 21:53:20.540 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'accuracy': 0.7130434782608696, 'auroc': 0.7802424440256985, 'rmse': None, 'r2': None}, erank=6.92, used=7/20 (1.07s)
+2026-02-27 21:53:20.996 | INFO     | __main__:main:990 -   figs fold=3: {'accuracy': 0.9206521739130434, 'auroc': 0.9645636547258362, 'rmse': None, 'r2': None} (0.45s)
+2026-02-27 21:53:25.734 | INFO     | __main__:main:990 -   xgboost fold=3: {'accuracy': 0.9532608695652174, 'auroc': 0.9881854096120716, 'rmse': None, 'r2': None} (4.73s)
+2026-02-27 21:53:27.117 | INFO     | __main__:main:990 -   lightgbm fold=3: {'accuracy': 0.9456521739130435, 'auroc': 0.9883636309629894, 'rmse': None, 'r2': None} (1.38s)
+2026-02-27 21:53:27.222 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'accuracy': 0.6869565217391305, 'auroc': 0.7681909542763223, 'rmse': None, 'r2': None}, erank=2.06, used=3/3 (0.10s)
+2026-02-27 21:53:27.390 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'accuracy': 0.6782608695652174, 'auroc': 0.7480321392502822, 'rmse': None, 'r2': None}, erank=1.66, used=3/5 (0.16s)
+2026-02-27 21:53:28.913 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'accuracy': 0.6934782608695652, 'auroc': 0.7512054694152359, 'rmse': None, 'r2': None}, erank=2.99, used=3/8 (1.51s)
+2026-02-27 21:53:30.257 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'accuracy': 0.7130434782608696, 'auroc': 0.7778767896393988, 'rmse': None, 'r2': None}, erank=7.87, used=8/12 (1.34s)
+2026-02-27 21:53:31.724 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'accuracy': 0.716304347826087, 'auroc': 0.7836640329511476, 'rmse': None, 'r2': None}, erank=5.90, used=6/20 (1.46s)
+2026-02-27 21:53:32.160 | INFO     | __main__:main:990 -   figs fold=4: {'accuracy': 0.9021739130434783, 'auroc': 0.9387611635873976, 'rmse': None, 'r2': None} (0.43s)
+2026-02-27 21:53:33.688 | INFO     | __main__:main:990 -   xgboost fold=4: {'accuracy': 0.9456521739130435, 'auroc': 0.9842298857403117, 'rmse': None, 'r2': None} (1.52s)
+2026-02-27 21:53:35.890 | INFO     | __main__:main:990 -   lightgbm fold=4: {'accuracy': 0.9423913043478261, 'auroc': 0.9839328501554486, 'rmse': None, 'r2': None} (2.20s)
+2026-02-27 21:53:36.094 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'accuracy': 0.6967391304347826, 'auroc': 0.749566823105408, 'rmse': None, 'r2': None}, erank=2.07, used=3/3 (0.20s)
+2026-02-27 21:53:36.617 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'accuracy': 0.6967391304347826, 'auroc': 0.7489430483771955, 'rmse': None, 'r2': None}, erank=2.61, used=4/5 (0.52s)
+2026-02-27 21:53:37.695 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'accuracy': 0.7130434782608696, 'auroc': 0.7741737460147726, 'rmse': None, 'r2': None}, erank=4.54, used=5/8 (1.06s)
+2026-02-27 21:53:39.045 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'accuracy': 0.7228260869565217, 'auroc': 0.786322501435672, 'rmse': None, 'r2': None}, erank=4.97, used=5/12 (1.33s)
+2026-02-27 21:53:42.147 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'accuracy': 0.7217391304347827, 'auroc': 0.7844734549198994, 'rmse': None, 'r2': None}, erank=4.98, used=5/20 (3.10s)
+2026-02-27 21:53:42.148 | INFO     | __main__:main:941 - 
+=== Dataset: diabetes_regression (regression, n=442, d=10) ===
+2026-02-27 21:53:42.256 | INFO     | __main__:main:990 -   figs fold=0: {'rmse': 62.39555837406163, 'r2': 0.26517663336068686, 'accuracy': None, 'auroc': None} (0.11s)
+2026-02-27 21:53:53.505 | INFO     | __main__:main:990 -   xgboost fold=0: {'rmse': 58.5665539847778, 'r2': 0.3525966396465995, 'accuracy': None, 'auroc': None} (11.25s)
+2026-02-27 21:53:54.264 | INFO     | __main__:main:990 -   lightgbm fold=0: {'rmse': 53.86428065045534, 'r2': 0.4523824783230581, 'accuracy': None, 'auroc': None} (0.76s)
+2026-02-27 21:53:54.283 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'rmse': 56.11028806196371, 'r2': 0.40576174941043575, 'accuracy': None, 'auroc': None}, erank=1.99, used=3/3 (0.02s)
+2026-02-27 21:53:54.306 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'rmse': 62.347141341083926, 'r2': 0.2663165915371447, 'accuracy': None, 'auroc': None}, erank=3.02, used=4/5 (0.02s)
+2026-02-27 21:53:54.336 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'rmse': 66.6872849915507, 'r2': 0.16061408003471278, 'accuracy': None, 'auroc': None}, erank=3.44, used=5/8 (0.03s)
+2026-02-27 21:53:54.371 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'rmse': 65.56625062379698, 'r2': 0.18859756667668293, 'accuracy': None, 'auroc': None}, erank=5.11, used=6/10 (0.03s)
+2026-02-27 21:53:54.405 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'rmse': 65.56625062379698, 'r2': 0.18859756667668293, 'accuracy': None, 'auroc': None}, erank=5.11, used=6/10 (0.03s)
+2026-02-27 21:53:54.473 | INFO     | __main__:main:990 -   figs fold=1: {'rmse': 56.648803696106505, 'r2': 0.4856086199294076, 'accuracy': None, 'auroc': None} (0.07s)
+2026-02-27 21:53:57.976 | INFO     | __main__:main:990 -   xgboost fold=1: {'rmse': 54.68700252327203, 'r2': 0.5206194207423835, 'accuracy': None, 'auroc': None} (3.50s)
+2026-02-27 21:53:58.193 | INFO     | __main__:main:990 -   lightgbm fold=1: {'rmse': 56.56832924090046, 'r2': 0.48706905547443535, 'accuracy': None, 'auroc': None} (0.22s)
+2026-02-27 21:53:58.214 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'rmse': 71.21017249473091, 'r2': 0.1871764611512261, 'accuracy': None, 'auroc': None}, erank=2.19, used=3/3 (0.02s)
+2026-02-27 21:53:58.239 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'rmse': 69.26139602519505, 'r2': 0.2310560606896661, 'accuracy': None, 'auroc': None}, erank=3.65, used=5/5 (0.02s)
+2026-02-27 21:53:58.280 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'rmse': 69.4003095850556, 'r2': 0.22796851512618888, 'accuracy': None, 'auroc': None}, erank=6.22, used=8/8 (0.04s)
+2026-02-27 21:53:58.319 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'rmse': 64.15761141848309, 'r2': 0.34020568359200953, 'accuracy': None, 'auroc': None}, erank=6.98, used=8/10 (0.04s)
+2026-02-27 21:53:58.364 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'rmse': 64.15761141848309, 'r2': 0.34020568359200953, 'accuracy': None, 'auroc': None}, erank=6.98, used=8/10 (0.04s)
+2026-02-27 21:53:58.439 | INFO     | __main__:main:990 -   figs fold=2: {'rmse': 68.88912523612544, 'r2': 0.12809593265182595, 'accuracy': None, 'auroc': None} (0.07s)
+2026-02-27 21:54:01.088 | INFO     | __main__:main:990 -   xgboost fold=2: {'rmse': 65.97435614983824, 'r2': 0.20031732962992377, 'accuracy': None, 'auroc': None} (2.65s)
+2026-02-27 21:54:01.971 | INFO     | __main__:main:990 -   lightgbm fold=2: {'rmse': 63.084846827032685, 'r2': 0.26883150615047546, 'accuracy': None, 'auroc': None} (0.88s)
+2026-02-27 21:54:01.988 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'rmse': 71.81518647057848, 'r2': 0.05245477271245602, 'accuracy': None, 'auroc': None}, erank=1.56, used=3/3 (0.02s)
+2026-02-27 21:54:02.011 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'rmse': 63.871096761860024, 'r2': 0.2504922792573694, 'accuracy': None, 'auroc': None}, erank=3.13, used=4/5 (0.02s)
+2026-02-27 21:54:02.049 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'rmse': 69.31148098815235, 'r2': 0.1173719593333078, 'accuracy': None, 'auroc': None}, erank=4.66, used=6/8 (0.04s)
+2026-02-27 21:54:02.093 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'rmse': 67.06133006518348, 'r2': 0.17374958795593742, 'accuracy': None, 'auroc': None}, erank=4.32, used=5/10 (0.04s)
+2026-02-27 21:54:02.130 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'rmse': 67.06133006518348, 'r2': 0.17374958795593742, 'accuracy': None, 'auroc': None}, erank=4.32, used=5/10 (0.04s)
+2026-02-27 21:54:02.206 | INFO     | __main__:main:990 -   figs fold=3: {'rmse': 67.88180079275666, 'r2': 0.31534984049941794, 'accuracy': None, 'auroc': None} (0.07s)
+2026-02-27 21:54:04.359 | INFO     | __main__:main:990 -   xgboost fold=3: {'rmse': 62.00998814268359, 'r2': 0.42867227405114494, 'accuracy': None, 'auroc': None} (2.15s)
+2026-02-27 21:54:04.952 | INFO     | __main__:main:990 -   lightgbm fold=3: {'rmse': 57.95837242309015, 'r2': 0.5008921894439433, 'accuracy': None, 'auroc': None} (0.59s)
+2026-02-27 21:54:04.968 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'rmse': 69.50268836289229, 'r2': 0.28226320561955254, 'accuracy': None, 'auroc': None}, erank=2.47, used=3/3 (0.01s)
+2026-02-27 21:54:04.987 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'rmse': 67.19187823316226, 'r2': 0.3291961195170854, 'accuracy': None, 'auroc': None}, erank=2.50, used=5/5 (0.02s)
+2026-02-27 21:54:05.017 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'rmse': 59.05236015173254, 'r2': 0.4818726431521164, 'accuracy': None, 'auroc': None}, erank=4.17, used=5/8 (0.03s)
+2026-02-27 21:54:05.057 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'rmse': 65.42552668541828, 'r2': 0.36400096197959686, 'accuracy': None, 'auroc': None}, erank=3.96, used=5/10 (0.04s)
+2026-02-27 21:54:05.098 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'rmse': 65.42552668541828, 'r2': 0.36400096197959686, 'accuracy': None, 'auroc': None}, erank=3.96, used=5/10 (0.03s)
+2026-02-27 21:54:05.176 | INFO     | __main__:main:990 -   figs fold=4: {'rmse': 65.73865385997948, 'r2': 0.2265756975494495, 'accuracy': None, 'auroc': None} (0.08s)
+2026-02-27 21:54:09.497 | INFO     | __main__:main:990 -   xgboost fold=4: {'rmse': 58.900407017350574, 'r2': 0.379112677112713, 'accuracy': None, 'auroc': None} (4.32s)
+2026-02-27 21:54:14.118 | INFO     | __main__:main:990 -   lightgbm fold=4: {'rmse': 56.850940819510434, 'r2': 0.4215690625576708, 'accuracy': None, 'auroc': None} (4.62s)
+2026-02-27 21:54:14.138 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'rmse': 66.14208868709055, 'r2': 0.21705363628855912, 'accuracy': None, 'auroc': None}, erank=1.49, used=3/3 (0.02s)
+2026-02-27 21:54:14.160 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'rmse': 63.239073304938266, 'r2': 0.2842733386527603, 'accuracy': None, 'auroc': None}, erank=4.17, used=5/5 (0.02s)
+2026-02-27 21:54:14.187 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'rmse': 61.27587421218683, 'r2': 0.3280217246607692, 'accuracy': None, 'auroc': None}, erank=5.88, used=7/8 (0.03s)
+2026-02-27 21:54:14.225 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'rmse': 65.58453702060984, 'r2': 0.23019785830938233, 'accuracy': None, 'auroc': None}, erank=6.13, used=7/10 (0.04s)
+2026-02-27 21:54:14.256 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'rmse': 65.58453702060984, 'r2': 0.23019785830938233, 'accuracy': None, 'auroc': None}, erank=6.13, used=7/10 (0.03s)
+2026-02-27 21:54:14.256 | INFO     | __main__:main:941 - 
+=== Dataset: california_housing (regression, n=20640, d=8) ===
+2026-02-27 21:54:15.586 | INFO     | __main__:main:990 -   figs fold=0: {'rmse': 0.6707662293624067, 'r2': 0.6566512120078376, 'accuracy': None, 'auroc': None} (1.33s)
+2026-02-27 21:54:29.172 | INFO     | __main__:main:990 -   xgboost fold=0: {'rmse': 0.5100851335878522, 'r2': 0.8014460768907328, 'accuracy': None, 'auroc': None} (13.57s)
+2026-02-27 21:54:57.670 | INFO     | __main__:main:990 -   lightgbm fold=0: {'rmse': 0.5088853748332481, 'r2': 0.8023790060818947, 'accuracy': None, 'auroc': None} (28.50s)
+2026-02-27 21:54:57.765 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'rmse': 1.1473176623224135, 'r2': -0.00452441957779226, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/3 (0.09s)
+2026-02-27 21:54:57.873 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'rmse': 1.140816442950319, 'r2': 0.006827503385310907, 'accuracy': None, 'auroc': None}, erank=3.88, used=4/5 (0.11s)
+2026-02-27 21:54:57.997 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'rmse': 1.1432799431043432, 'r2': 0.002533521970130348, 'accuracy': None, 'auroc': None}, erank=3.72, used=4/8 (0.12s)
+2026-02-27 21:54:58.140 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'rmse': 1.1432799431043432, 'r2': 0.002533521970130348, 'accuracy': None, 'auroc': None}, erank=3.72, used=4/8 (0.14s)
+2026-02-27 21:54:58.268 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'rmse': 1.1432799431043432, 'r2': 0.002533521970130348, 'accuracy': None, 'auroc': None}, erank=3.72, used=4/8 (0.12s)
+2026-02-27 21:54:59.895 | INFO     | __main__:main:990 -   figs fold=1: {'rmse': 0.6699025696368701, 'r2': 0.6714944671337206, 'accuracy': None, 'auroc': None} (1.62s)
+2026-02-27 21:55:16.356 | INFO     | __main__:main:990 -   xgboost fold=1: {'rmse': 0.5009663921705614, 'r2': 0.8162883978134705, 'accuracy': None, 'auroc': None} (16.46s)
+2026-02-27 21:55:31.458 | INFO     | __main__:main:990 -   lightgbm fold=1: {'rmse': 0.49740760430689945, 'r2': 0.8188892445635539, 'accuracy': None, 'auroc': None} (15.10s)
+2026-02-27 21:55:31.529 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'rmse': 1.1692196905329741, 'r2': -0.0007178406799781545, 'accuracy': None, 'auroc': None}, erank=1.96, used=3/3 (0.07s)
+2026-02-27 21:55:31.656 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'rmse': 1.1658663536396112, 'r2': 0.005014070822859651, 'accuracy': None, 'auroc': None}, erank=2.88, used=3/5 (0.13s)
+2026-02-27 21:55:31.791 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'rmse': 1.1636250525393976, 'r2': 0.008835983130906055, 'accuracy': None, 'auroc': None}, erank=2.89, used=3/8 (0.13s)
+2026-02-27 21:55:31.913 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'rmse': 1.1636250525393976, 'r2': 0.008835983130906055, 'accuracy': None, 'auroc': None}, erank=2.89, used=3/8 (0.12s)
+2026-02-27 21:55:32.041 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'rmse': 1.1636250525393976, 'r2': 0.008835983130906055, 'accuracy': None, 'auroc': None}, erank=2.89, used=3/8 (0.13s)
+2026-02-27 21:55:33.391 | INFO     | __main__:main:990 -   figs fold=2: {'rmse': 0.6488534631103615, 'r2': 0.676407372735498, 'accuracy': None, 'auroc': None} (1.34s)
+2026-02-27 21:55:48.418 | INFO     | __main__:main:990 -   xgboost fold=2: {'rmse': 0.5030394797524839, 'r2': 0.8055045231187343, 'accuracy': None, 'auroc': None} (15.03s)
+2026-02-27 21:55:50.253 | INFO     | __main__:main:990 -   lightgbm fold=2: {'rmse': 0.5048515904122394, 'r2': 0.8041007281655004, 'accuracy': None, 'auroc': None} (1.83s)
+2026-02-27 21:55:50.324 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'rmse': 1.1397894205853563, 'r2': 0.0014849677499703118, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/3 (0.07s)
+2026-02-27 21:55:50.408 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'rmse': 1.14149283021382, 'r2': -0.001501813962168308, 'accuracy': None, 'auroc': None}, erank=2.88, used=3/5 (0.08s)
+2026-02-27 21:55:50.530 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'rmse': 1.1400498377924004, 'r2': 0.0010286374895506212, 'accuracy': None, 'auroc': None}, erank=3.79, used=4/8 (0.12s)
+2026-02-27 21:55:50.690 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'rmse': 1.1400498377924004, 'r2': 0.0010286374895506212, 'accuracy': None, 'auroc': None}, erank=3.79, used=4/8 (0.16s)
+2026-02-27 21:55:50.816 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'rmse': 1.1400498377924004, 'r2': 0.0010286374895506212, 'accuracy': None, 'auroc': None}, erank=3.79, used=4/8 (0.12s)
+2026-02-27 21:55:52.146 | INFO     | __main__:main:990 -   figs fold=3: {'rmse': 0.6484432255716829, 'r2': 0.6845602715092776, 'accuracy': None, 'auroc': None} (1.33s)
+2026-02-27 21:56:02.255 | INFO     | __main__:main:990 -   xgboost fold=3: {'rmse': 0.478486657278357, 'r2': 0.8282439122894932, 'accuracy': None, 'auroc': None} (10.11s)
+2026-02-27 21:56:37.567 | INFO     | __main__:main:990 -   lightgbm fold=3: {'rmse': 0.4762242646965404, 'r2': 0.8298642753516418, 'accuracy': None, 'auroc': None} (35.31s)
+2026-02-27 21:56:37.694 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'rmse': 1.1538422553269594, 'r2': 0.0012303101261469385, 'accuracy': None, 'auroc': None}, erank=1.95, used=2/3 (0.12s)
+2026-02-27 21:56:37.817 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'rmse': 1.1508468565199366, 'r2': 0.006409233411465043, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/5 (0.12s)
+2026-02-27 21:56:37.956 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'rmse': 1.1518092481852489, 'r2': 0.004746764966864436, 'accuracy': None, 'auroc': None}, erank=2.83, used=3/8 (0.14s)
+2026-02-27 21:56:38.110 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'rmse': 1.1518092481852489, 'r2': 0.004746764966864436, 'accuracy': None, 'auroc': None}, erank=2.83, used=3/8 (0.15s)
+2026-02-27 21:56:38.242 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'rmse': 1.1518092481852489, 'r2': 0.004746764966864436, 'accuracy': None, 'auroc': None}, erank=2.83, used=3/8 (0.13s)
+2026-02-27 21:56:39.538 | INFO     | __main__:main:990 -   figs fold=4: {'rmse': 0.6793473979264103, 'r2': 0.6571194481025664, 'accuracy': None, 'auroc': None} (1.29s)
+2026-02-27 21:57:00.966 | INFO     | __main__:main:990 -   xgboost fold=4: {'rmse': 0.5179421140237798, 'r2': 0.8006934964747212, 'accuracy': None, 'auroc': None} (21.43s)
+2026-02-27 21:57:25.170 | INFO     | __main__:main:990 -   lightgbm fold=4: {'rmse': 0.5187813788992953, 'r2': 0.8000470672121335, 'accuracy': None, 'auroc': None} (24.20s)
+2026-02-27 21:57:25.235 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'rmse': 1.1572703689859636, 'r2': 0.004987155241905961, 'accuracy': None, 'auroc': None}, erank=2.92, used=3/3 (0.06s)
+2026-02-27 21:57:25.331 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'rmse': 1.1536126179964659, 'r2': 0.011267031870722644, 'accuracy': None, 'auroc': None}, erank=2.95, used=3/5 (0.09s)
+2026-02-27 21:57:25.455 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'rmse': 1.1493711757689957, 'r2': 0.018524137724681977, 'accuracy': None, 'auroc': None}, erank=3.91, used=4/8 (0.12s)
+2026-02-27 21:57:25.594 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'rmse': 1.1493711757689957, 'r2': 0.018524137724681977, 'accuracy': None, 'auroc': None}, erank=3.91, used=4/8 (0.14s)
+2026-02-27 21:57:25.728 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'rmse': 1.1493711757689957, 'r2': 0.018524137724681977, 'accuracy': None, 'auroc': None}, erank=3.91, used=4/8 (0.13s)
+2026-02-27 21:57:25.728 | INFO     | __main__:main:941 - 
+=== Dataset: auto_mpg (regression, n=392, d=25) ===
+2026-02-27 21:57:25.790 | INFO     | __main__:main:990 -   figs fold=0: {'rmse': 3.2553490432201584, 'r2': 0.7923750725301792, 'accuracy': None, 'auroc': None} (0.06s)
+2026-02-27 21:57:38.384 | INFO     | __main__:main:990 -   xgboost fold=0: {'rmse': 3.211994165293165, 'r2': 0.797868561387847, 'accuracy': None, 'auroc': None} (12.59s)
+2026-02-27 21:57:39.623 | INFO     | __main__:main:990 -   lightgbm fold=0: {'rmse': 2.7339951318634683, 'r2': 0.8535532138038935, 'accuracy': None, 'auroc': None} (1.24s)
+2026-02-27 21:57:39.641 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'rmse': 4.0852193127479195, 'r2': 0.6730245664549228, 'accuracy': None, 'auroc': None}, erank=2.97, used=3/3 (0.02s)
+2026-02-27 21:57:39.666 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'rmse': 3.7371617238462456, 'r2': 0.7263671991257152, 'accuracy': None, 'auroc': None}, erank=2.99, used=3/5 (0.02s)
+2026-02-27 21:57:39.699 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'rmse': 4.117207842838706, 'r2': 0.6678838809213956, 'accuracy': None, 'auroc': None}, erank=3.97, used=4/8 (0.03s)
+2026-02-27 21:57:39.734 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'rmse': 4.234343569646559, 'r2': 0.6487174650503769, 'accuracy': None, 'auroc': None}, erank=5.87, used=6/12 (0.03s)
+2026-02-27 21:57:39.786 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'rmse': 4.071245748850701, 'r2': 0.6752575912065809, 'accuracy': None, 'auroc': None}, erank=5.73, used=6/20 (0.05s)
+2026-02-27 21:57:39.856 | INFO     | __main__:main:990 -   figs fold=1: {'rmse': 3.5880940398123533, 'r2': 0.772193732313849, 'accuracy': None, 'auroc': None} (0.07s)
+2026-02-27 21:57:40.990 | INFO     | __main__:main:990 -   xgboost fold=1: {'rmse': 3.356804508802229, 'r2': 0.8006160779460382, 'accuracy': None, 'auroc': None} (1.13s)
+2026-02-27 21:57:42.051 | INFO     | __main__:main:990 -   lightgbm fold=1: {'rmse': 2.9642972310607285, 'r2': 0.844517494039847, 'accuracy': None, 'auroc': None} (1.06s)
+2026-02-27 21:57:42.070 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'rmse': 4.498285185484745, 'r2': 0.6419596224972193, 'accuracy': None, 'auroc': None}, erank=2.97, used=3/3 (0.02s)
+2026-02-27 21:57:42.090 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'rmse': 4.365134077826744, 'r2': 0.6628422004694627, 'accuracy': None, 'auroc': None}, erank=3.97, used=4/5 (0.02s)
+2026-02-27 21:57:42.121 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'rmse': 4.36008845734543, 'r2': 0.6636211855290111, 'accuracy': None, 'auroc': None}, erank=4.89, used=5/8 (0.03s)
+2026-02-27 21:57:42.158 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'rmse': 4.289609045956852, 'r2': 0.6744081990474025, 'accuracy': None, 'auroc': None}, erank=4.89, used=5/12 (0.04s)
+2026-02-27 21:57:42.211 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'rmse': 4.844473596270292, 'r2': 0.5847293655030678, 'accuracy': None, 'auroc': None}, erank=5.71, used=6/20 (0.05s)
+2026-02-27 21:57:42.299 | INFO     | __main__:main:990 -   figs fold=2: {'rmse': 3.9939540075493225, 'r2': 0.7851863222383242, 'accuracy': None, 'auroc': None} (0.08s)
+2026-02-27 21:57:44.243 | INFO     | __main__:main:990 -   xgboost fold=2: {'rmse': 3.4841280766685623, 'r2': 0.836527752207884, 'accuracy': None, 'auroc': None} (1.94s)
+2026-02-27 21:57:45.764 | INFO     | __main__:main:990 -   lightgbm fold=2: {'rmse': 3.4284007995521653, 'r2': 0.8417152818796689, 'accuracy': None, 'auroc': None} (1.52s)
+2026-02-27 21:57:45.780 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'rmse': 4.7471708128590375, 'r2': 0.6965231767255913, 'accuracy': None, 'auroc': None}, erank=2.97, used=3/3 (0.01s)
+2026-02-27 21:57:45.799 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'rmse': 5.009539652117214, 'r2': 0.6620507797009866, 'accuracy': None, 'auroc': None}, erank=1.96, used=2/5 (0.02s)
+2026-02-27 21:57:45.831 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'rmse': 4.52517661398202, 'r2': 0.7242427878492026, 'accuracy': None, 'auroc': None}, erank=4.88, used=5/8 (0.03s)
+2026-02-27 21:57:45.878 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'rmse': 4.52517661398202, 'r2': 0.7242427878492026, 'accuracy': None, 'auroc': None}, erank=5.80, used=6/12 (0.04s)
+2026-02-27 21:57:45.948 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'rmse': 4.7267355848083685, 'r2': 0.6991303169484699, 'accuracy': None, 'auroc': None}, erank=7.80, used=8/20 (0.07s)
+2026-02-27 21:57:46.015 | INFO     | __main__:main:990 -   figs fold=3: {'rmse': 3.451369699281474, 'r2': 0.8139559745110039, 'accuracy': None, 'auroc': None} (0.07s)
+2026-02-27 21:57:46.693 | INFO     | __main__:main:990 -   xgboost fold=3: {'rmse': 3.022125681285836, 'r2': 0.8573545883101369, 'accuracy': None, 'auroc': None} (0.68s)
+2026-02-27 21:57:47.014 | INFO     | __main__:main:990 -   lightgbm fold=3: {'rmse': 2.750426016077163, 'r2': 0.8818502794943889, 'accuracy': None, 'auroc': None} (0.30s)
+2026-02-27 21:57:47.034 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'rmse': 4.367011218518962, 'r2': 0.7021474111980974, 'accuracy': None, 'auroc': None}, erank=2.16, used=3/3 (0.02s)
+2026-02-27 21:57:47.061 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'rmse': 4.226461336024162, 'r2': 0.7210113311606856, 'accuracy': None, 'auroc': None}, erank=3.86, used=4/5 (0.03s)
+2026-02-27 21:57:47.104 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'rmse': 4.260769804497382, 'r2': 0.7164635440604581, 'accuracy': None, 'auroc': None}, erank=4.90, used=5/8 (0.04s)
+2026-02-27 21:57:47.157 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'rmse': 4.312577912982566, 'r2': 0.7095263964022334, 'accuracy': None, 'auroc': None}, erank=4.96, used=5/12 (0.05s)
+2026-02-27 21:57:47.257 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'rmse': 4.390027236843298, 'r2': 0.6989995163597209, 'accuracy': None, 'auroc': None}, erank=7.63, used=8/20 (0.10s)
+2026-02-27 21:57:47.342 | INFO     | __main__:main:990 -   figs fold=4: {'rmse': 3.755862414411136, 'r2': 0.746368560941183, 'accuracy': None, 'auroc': None} (0.08s)
+2026-02-27 21:57:48.896 | INFO     | __main__:main:990 -   xgboost fold=4: {'rmse': 2.934564176218896, 'r2': 0.8451643507408746, 'accuracy': None, 'auroc': None} (1.55s)
+2026-02-27 21:57:49.498 | INFO     | __main__:main:990 -   lightgbm fold=4: {'rmse': 2.6278228913106263, 'r2': 0.8758416537135006, 'accuracy': None, 'auroc': None} (0.60s)
+2026-02-27 21:57:49.518 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'rmse': 4.168510584670062, 'r2': 0.6875751618020414, 'accuracy': None, 'auroc': None}, erank=2.00, used=2/3 (0.02s)
+2026-02-27 21:57:49.541 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'rmse': 4.332581869370119, 'r2': 0.6624972682572716, 'accuracy': None, 'auroc': None}, erank=2.99, used=3/5 (0.02s)
+2026-02-27 21:57:49.570 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'rmse': 4.227620920859392, 'r2': 0.6786518432318889, 'accuracy': None, 'auroc': None}, erank=5.88, used=6/8 (0.03s)
+2026-02-27 21:57:49.606 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'rmse': 3.991573272411187, 'r2': 0.7135347491156707, 'accuracy': None, 'auroc': None}, erank=3.96, used=4/12 (0.03s)
+2026-02-27 21:57:49.661 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'rmse': 4.215571978321744, 'r2': 0.6804809513664523, 'accuracy': None, 'auroc': None}, erank=5.84, used=6/20 (0.05s)
+2026-02-27 21:57:49.662 | INFO     | __main__:main:941 - 
+=== Dataset: wine_quality_red (regression, n=1599, d=11) ===
+2026-02-27 21:57:49.792 | INFO     | __main__:main:990 -   figs fold=0: {'rmse': 0.6546702604522145, 'r2': 0.3441632637686396, 'accuracy': None, 'auroc': None} (0.13s)
+2026-02-27 21:57:52.463 | INFO     | __main__:main:990 -   xgboost fold=0: {'rmse': 0.6030730343699764, 'r2': 0.44346775232888747, 'accuracy': None, 'auroc': None} (2.67s)
+2026-02-27 21:57:53.582 | INFO     | __main__:main:990 -   lightgbm fold=0: {'rmse': 0.583905040975695, 'r2': 0.47828302992891125, 'accuracy': None, 'auroc': None} (1.12s)
+2026-02-27 21:57:53.615 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=0: {'rmse': 0.8109889560233915, 'r2': -0.006422631651573196, 'accuracy': None, 'auroc': None}, erank=1.30, used=2/3 (0.03s)
+2026-02-27 21:57:53.642 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=0: {'rmse': 0.7752136780540346, 'r2': 0.08041184631946985, 'accuracy': None, 'auroc': None}, erank=3.32, used=5/5 (0.03s)
+2026-02-27 21:57:53.682 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=0: {'rmse': 0.7876828075439597, 'r2': 0.05059121291779212, 'accuracy': None, 'auroc': None}, erank=4.16, used=6/8 (0.04s)
+2026-02-27 21:57:53.743 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=0: {'rmse': 0.7756732825653937, 'r2': 0.07932112213776132, 'accuracy': None, 'auroc': None}, erank=5.80, used=8/11 (0.06s)
+2026-02-27 21:57:53.788 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=0: {'rmse': 0.7756732825653937, 'r2': 0.07932112213776132, 'accuracy': None, 'auroc': None}, erank=5.80, used=8/11 (0.04s)
+2026-02-27 21:57:53.939 | INFO     | __main__:main:990 -   figs fold=1: {'rmse': 0.6718973487858155, 'r2': 0.2971893206629507, 'accuracy': None, 'auroc': None} (0.15s)
+2026-02-27 21:57:55.080 | INFO     | __main__:main:990 -   xgboost fold=1: {'rmse': 0.6340654565781001, 'r2': 0.3741061491987824, 'accuracy': None, 'auroc': None} (1.14s)
+2026-02-27 21:57:55.254 | INFO     | __main__:main:990 -   lightgbm fold=1: {'rmse': 0.6334803843864756, 'r2': 0.3752606802783761, 'accuracy': None, 'auroc': None} (0.17s)
+2026-02-27 21:57:55.272 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=1: {'rmse': 0.7857103204348662, 'r2': 0.03892470715584917, 'accuracy': None, 'auroc': None}, erank=2.06, used=3/3 (0.02s)
+2026-02-27 21:57:55.296 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=1: {'rmse': 0.7920002690233986, 'r2': 0.023475473789329016, 'accuracy': None, 'auroc': None}, erank=3.15, used=5/5 (0.02s)
+2026-02-27 21:57:55.328 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=1: {'rmse': 0.7933412051122025, 'r2': 0.02016596607520249, 'accuracy': None, 'auroc': None}, erank=4.55, used=7/8 (0.03s)
+2026-02-27 21:57:55.370 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=1: {'rmse': 0.8101131456757724, 'r2': -0.02170108885887867, 'accuracy': None, 'auroc': None}, erank=5.59, used=6/11 (0.04s)
+2026-02-27 21:57:55.420 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=1: {'rmse': 0.8101131456757724, 'r2': -0.02170108885887867, 'accuracy': None, 'auroc': None}, erank=5.59, used=6/11 (0.05s)
+2026-02-27 21:57:55.577 | INFO     | __main__:main:990 -   figs fold=2: {'rmse': 0.6652318467040362, 'r2': 0.3343700528707463, 'accuracy': None, 'auroc': None} (0.16s)
+2026-02-27 21:58:03.271 | INFO     | __main__:main:990 -   xgboost fold=2: {'rmse': 0.618021574358619, 'r2': 0.4254946718288297, 'accuracy': None, 'auroc': None} (7.69s)
+2026-02-27 21:58:03.946 | INFO     | __main__:main:990 -   lightgbm fold=2: {'rmse': 0.6258898363604788, 'r2': 0.4107730704717003, 'accuracy': None, 'auroc': None} (0.67s)
+2026-02-27 21:58:03.965 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=2: {'rmse': 0.8008954384103167, 'r2': 0.035197480361274125, 'accuracy': None, 'auroc': None}, erank=1.77, used=3/3 (0.02s)
+2026-02-27 21:58:03.991 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=2: {'rmse': 0.8023752323277675, 'r2': 0.03162890498404547, 'accuracy': None, 'auroc': None}, erank=2.27, used=5/5 (0.03s)
+2026-02-27 21:58:04.025 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=2: {'rmse': 0.8001198612529355, 'r2': 0.037065181056815444, 'accuracy': None, 'auroc': None}, erank=4.01, used=5/8 (0.03s)
+2026-02-27 21:58:04.080 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=2: {'rmse': 0.7975483311634542, 'r2': 0.0432448468476192, 'accuracy': None, 'auroc': None}, erank=4.96, used=7/11 (0.05s)
+2026-02-27 21:58:04.135 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=2: {'rmse': 0.7975483311634542, 'r2': 0.0432448468476192, 'accuracy': None, 'auroc': None}, erank=4.96, used=7/11 (0.05s)
+2026-02-27 21:58:04.289 | INFO     | __main__:main:990 -   figs fold=3: {'rmse': 0.6577754546071343, 'r2': 0.3697238866889123, 'accuracy': None, 'auroc': None} (0.15s)
+2026-02-27 21:58:04.675 | INFO     | __main__:main:990 -   xgboost fold=3: {'rmse': 0.6345147421491969, 'r2': 0.413512237005799, 'accuracy': None, 'auroc': None} (0.38s)
+2026-02-27 21:58:05.541 | INFO     | __main__:main:990 -   lightgbm fold=3: {'rmse': 0.6456632709605336, 'r2': 0.3927218082442929, 'accuracy': None, 'auroc': None} (0.86s)
+2026-02-27 21:58:05.560 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=3: {'rmse': 0.8051897767540752, 'r2': 0.05556510359567535, 'accuracy': None, 'auroc': None}, erank=1.19, used=3/3 (0.02s)
+2026-02-27 21:58:05.591 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=3: {'rmse': 0.8084393153524909, 'r2': 0.04792672928915742, 'accuracy': None, 'auroc': None}, erank=2.32, used=3/5 (0.03s)
+2026-02-27 21:58:05.630 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=3: {'rmse': 0.802611287139875, 'r2': 0.06160421748034628, 'accuracy': None, 'auroc': None}, erank=4.59, used=6/8 (0.04s)
+2026-02-27 21:58:05.685 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=3: {'rmse': 0.8003568633974198, 'r2': 0.066868460917202, 'accuracy': None, 'auroc': None}, erank=6.43, used=8/11 (0.05s)
+2026-02-27 21:58:05.734 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=3: {'rmse': 0.8003568633974198, 'r2': 0.066868460917202, 'accuracy': None, 'auroc': None}, erank=6.43, used=8/11 (0.05s)
+2026-02-27 21:58:05.841 | INFO     | __main__:main:990 -   figs fold=4: {'rmse': 0.5917286594513126, 'r2': 0.4228882066131615, 'accuracy': None, 'auroc': None} (0.11s)
+2026-02-27 21:58:07.321 | INFO     | __main__:main:990 -   xgboost fold=4: {'rmse': 0.5878747388279553, 'r2': 0.4303811684651151, 'accuracy': None, 'auroc': None} (1.48s)
+2026-02-27 21:58:07.930 | INFO     | __main__:main:990 -   lightgbm fold=4: {'rmse': 0.5732192107015536, 'r2': 0.4584279851670685, 'accuracy': None, 'auroc': None} (0.61s)
+2026-02-27 21:58:07.959 | INFO     | __main__:main:1057 -   CB-FIGS K=3 fold=4: {'rmse': 0.7888422300840422, 'r2': -0.025640225154471175, 'accuracy': None, 'auroc': None}, erank=2.32, used=3/3 (0.03s)
+2026-02-27 21:58:07.988 | INFO     | __main__:main:1057 -   CB-FIGS K=5 fold=4: {'rmse': 0.7918906361961111, 'r2': -0.03358252077342394, 'accuracy': None, 'auroc': None}, erank=2.06, used=4/5 (0.03s)
+2026-02-27 21:58:08.028 | INFO     | __main__:main:1057 -   CB-FIGS K=8 fold=4: {'rmse': 0.7850689387154429, 'r2': -0.015851744195670703, 'accuracy': None, 'auroc': None}, erank=4.23, used=6/8 (0.04s)
+2026-02-27 21:58:08.080 | INFO     | __main__:main:1057 -   CB-FIGS K=12 fold=4: {'rmse': 0.7651883370308687, 'r2': 0.03494642302586404, 'accuracy': None, 'auroc': None}, erank=4.88, used=5/11 (0.05s)
+2026-02-27 21:58:08.131 | INFO     | __main__:main:1057 -   CB-FIGS K=20 fold=4: {'rmse': 0.7651883370308687, 'r2': 0.03494642302586404, 'accuracy': None, 'auroc': None}, erank=4.88, used=5/11 (0.05s)
+2026-02-27 21:58:08.132 | INFO     | __main__:main:1094 - 
+=== AGGREGATING RESULTS ===
+2026-02-27 21:58:08.162 | INFO     | __main__:main:1108 - 
+=== WRITING OUTPUT ===
+2026-02-27 21:58:08.177 | INFO     | __main__:main:1114 - Schema-compliant output written to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/method_out.json
+2026-02-27 21:58:08.188 | INFO     | __main__:main:1129 - Detailed results written to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/detailed_results.json
+2026-02-27 21:58:08.188 | INFO     | __main__:main:1132 - 
+Total runtime: 1572.1s (26.2min)
+2026-02-27 21:58:08.188 | INFO     | __main__:main:1133 - Total result rows: 400
+2026-02-27 21:58:08.188 | INFO     | __main__:main:1134 - Done!

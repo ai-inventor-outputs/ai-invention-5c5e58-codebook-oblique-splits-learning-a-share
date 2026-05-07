@@ -1,0 +1,360 @@
+2026-02-27 21:10:19.349 | INFO     | method:load_datasets:726 - Loading data from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/mini_data_out.json
+2026-02-27 21:10:19.350 | INFO     | method:load_datasets:754 -   heart_disease: X=(3, 25), task=classification, folds=[0, 3]
+2026-02-27 21:10:19.350 | INFO     | method:load_datasets:754 -   diabetes_pima: X=(3, 8), task=classification, folds=[2, 3]
+2026-02-27 21:10:19.350 | INFO     | method:load_datasets:754 -   breast_cancer_wdbc: X=(3, 30), task=classification, folds=[0, 3, 4]
+2026-02-27 21:10:19.350 | INFO     | method:load_datasets:754 -   credit_german: X=(3, 61), task=classification, folds=[0, 1, 3]
+2026-02-27 21:10:19.350 | INFO     | method:load_datasets:754 -   ionosphere: X=(3, 33), task=classification, folds=[0, 4]
+2026-02-27 21:10:19.350 | INFO     | method:load_datasets:754 -   spambase: X=(3, 57), task=classification, folds=[2, 4]
+2026-02-27 21:10:19.350 | INFO     | method:load_datasets:754 -   diabetes_regression: X=(3, 10), task=regression, folds=[0, 2, 4]
+2026-02-27 21:10:19.351 | INFO     | method:load_datasets:754 -   california_housing: X=(3, 8), task=regression, folds=[0, 2, 3]
+2026-02-27 21:10:19.351 | INFO     | method:load_datasets:754 -   auto_mpg: X=(3, 25), task=regression, folds=[0, 2, 4]
+2026-02-27 21:10:19.351 | INFO     | method:load_datasets:754 -   wine_quality_red: X=(3, 11), task=regression, folds=[2, 4]
+2026-02-27 21:10:19.351 | INFO     | method:load_datasets:759 - Loaded 10 datasets
+2026-02-27 21:16:00.809 | INFO     | __main__:main:1110 - ======================================================================
+2026-02-27 21:16:00.809 | INFO     | __main__:main:1111 - Unconstrained Oblique Baselines Experiment
+2026-02-27 21:16:00.809 | INFO     | __main__:main:1112 - ======================================================================
+2026-02-27 21:16:00.809 | INFO     | __main__:load_datasets:778 - Loading data from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:16:00.877 | INFO     | __main__:load_datasets:806 -   heart_disease: X=(296, 25), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:00.882 | INFO     | __main__:load_datasets:806 -   diabetes_pima: X=(768, 8), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:00.886 | INFO     | __main__:load_datasets:806 -   breast_cancer_wdbc: X=(569, 30), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:00.900 | INFO     | __main__:load_datasets:806 -   credit_german: X=(1000, 61), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:00.904 | INFO     | __main__:load_datasets:806 -   ionosphere: X=(351, 33), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:00.966 | INFO     | __main__:load_datasets:806 -   spambase: X=(4601, 57), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:00.970 | INFO     | __main__:load_datasets:806 -   diabetes_regression: X=(442, 10), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:01.129 | INFO     | __main__:load_datasets:806 -   california_housing: X=(20640, 8), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:01.133 | INFO     | __main__:load_datasets:806 -   auto_mpg: X=(392, 25), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:01.144 | INFO     | __main__:load_datasets:806 -   wine_quality_red: X=(1599, 11), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:16:01.144 | INFO     | __main__:load_datasets:811 - Loaded 10 datasets
+2026-02-27 21:16:01.148 | INFO     | __main__:main:1127 - 
+======================================================================
+2026-02-27 21:16:01.148 | INFO     | __main__:main:1128 - METHOD 1: ManualSPORF Matched (n_estimators=6, max_depth=2)
+2026-02-27 21:16:01.148 | INFO     | __main__:main:1129 - ======================================================================
+2026-02-27 21:16:01.148 | INFO     | __main__:main:1133 -   Running SPORF_matched on heart_disease...
+2026-02-27 21:16:01.267 | INFO     | __main__:main:1146 -     heart_disease: mean_accuracy=0.8175, mean_erank=11.33, time=0.1s
+2026-02-27 21:16:01.267 | INFO     | __main__:main:1133 -   Running SPORF_matched on diabetes_pima...
+2026-02-27 21:16:01.414 | INFO     | __main__:main:1146 -     diabetes_pima: mean_accuracy=0.6810, mean_erank=5.95, time=0.1s
+2026-02-27 21:16:01.414 | INFO     | __main__:main:1133 -   Running SPORF_matched on breast_cancer_wdbc...
+2026-02-27 21:16:01.584 | INFO     | __main__:main:1146 -     breast_cancer_wdbc: mean_accuracy=0.9279, mean_erank=12.23, time=0.2s
+2026-02-27 21:16:01.585 | INFO     | __main__:main:1133 -   Running SPORF_matched on credit_german...
+2026-02-27 21:16:03.287 | INFO     | __main__:main:1146 -     credit_german: mean_accuracy=0.6990, mean_erank=15.29, time=1.7s
+2026-02-27 21:16:03.287 | INFO     | __main__:main:1133 -   Running SPORF_matched on ionosphere...
+2026-02-27 21:16:03.455 | INFO     | __main__:main:1146 -     ionosphere: mean_accuracy=0.8746, mean_erank=12.34, time=0.2s
+2026-02-27 21:16:03.456 | INFO     | __main__:main:1133 -   Running SPORF_matched on spambase...
+2026-02-27 21:16:04.813 | INFO     | __main__:main:1146 -     spambase: mean_accuracy=0.8394, mean_erank=13.50, time=1.4s
+2026-02-27 21:16:04.816 | INFO     | __main__:main:1133 -   Running SPORF_matched on diabetes_regression...
+2026-02-27 21:16:04.908 | INFO     | __main__:main:1146 -     diabetes_regression: mean_r2=0.3685, mean_erank=6.73, time=0.1s
+2026-02-27 21:16:04.909 | INFO     | __main__:main:1133 -   Running SPORF_matched on california_housing...
+2026-02-27 21:16:05.192 | INFO     | __main__:main:1146 -     california_housing: mean_r2=0.3894, mean_erank=6.23, time=0.3s
+2026-02-27 21:16:05.192 | INFO     | __main__:main:1133 -   Running SPORF_matched on auto_mpg...
+2026-02-27 21:16:05.261 | INFO     | __main__:main:1146 -     auto_mpg: mean_r2=0.7072, mean_erank=10.46, time=0.1s
+2026-02-27 21:16:05.263 | INFO     | __main__:main:1133 -   Running SPORF_matched on wine_quality_red...
+2026-02-27 21:16:05.331 | INFO     | __main__:main:1146 -     wine_quality_red: mean_r2=0.2402, mean_erank=7.18, time=0.1s
+2026-02-27 21:16:05.331 | INFO     | __main__:main:1154 - 
+======================================================================
+2026-02-27 21:16:05.332 | INFO     | __main__:main:1155 - METHOD 2: ManualSPORF Full (n_estimators=50, max_depth=10)
+2026-02-27 21:16:05.332 | INFO     | __main__:main:1156 - ======================================================================
+2026-02-27 21:16:05.332 | INFO     | __main__:main:1160 -   Running SPORF_full on heart_disease...
+2026-02-27 21:16:06.370 | INFO     | __main__:main:1174 -     heart_disease: mean_accuracy=0.8108, mean_erank=22.06, time=1.0s
+2026-02-27 21:16:06.372 | INFO     | __main__:main:1160 -   Running SPORF_full on diabetes_pima...
+2026-02-27 21:16:07.096 | INFO     | __main__:main:1174 -     diabetes_pima: mean_accuracy=0.7539, mean_erank=7.87, time=0.7s
+2026-02-27 21:16:07.096 | INFO     | __main__:main:1160 -   Running SPORF_full on breast_cancer_wdbc...
+2026-02-27 21:16:08.142 | INFO     | __main__:main:1174 -     breast_cancer_wdbc: mean_accuracy=0.9631, mean_erank=28.10, time=1.0s
+2026-02-27 21:16:08.142 | INFO     | __main__:main:1160 -   Running SPORF_full on credit_german...
+2026-02-27 21:16:13.501 | INFO     | __main__:main:1174 -     credit_german: mean_accuracy=0.7590, mean_erank=53.94, time=5.4s
+2026-02-27 21:16:13.501 | INFO     | __main__:main:1160 -   Running SPORF_full on ionosphere...
+2026-02-27 21:16:16.411 | INFO     | __main__:main:1174 -     ionosphere: mean_accuracy=0.9458, mean_erank=31.52, time=2.9s
+2026-02-27 21:16:16.412 | INFO     | __main__:main:1160 -   Running SPORF_full on spambase...
+2026-02-27 21:16:22.590 | INFO     | __main__:main:1174 -     spambase: mean_accuracy=0.9413, mean_erank=49.84, time=6.2s
+2026-02-27 21:16:22.591 | INFO     | __main__:main:1160 -   Running SPORF_full on diabetes_regression...
+2026-02-27 21:16:23.475 | INFO     | __main__:main:1174 -     diabetes_regression: mean_r2=0.4454, mean_erank=9.78, time=0.9s
+2026-02-27 21:16:23.475 | INFO     | __main__:main:1160 -   Running SPORF_full on california_housing...
+2026-02-27 21:16:35.419 | INFO     | __main__:main:1174 -     california_housing: mean_r2=0.7268, mean_erank=7.91, time=11.9s
+2026-02-27 21:16:35.420 | INFO     | __main__:main:1160 -   Running SPORF_full on auto_mpg...
+2026-02-27 21:16:36.226 | INFO     | __main__:main:1174 -     auto_mpg: mean_r2=0.8415, mean_erank=19.13, time=0.8s
+2026-02-27 21:16:36.226 | INFO     | __main__:main:1160 -   Running SPORF_full on wine_quality_red...
+2026-02-27 21:16:38.836 | INFO     | __main__:main:1174 -     wine_quality_red: mean_r2=0.4525, mean_erank=10.89, time=2.6s
+2026-02-27 21:16:38.837 | INFO     | __main__:main:1188 - 
+======================================================================
+2026-02-27 21:16:38.837 | INFO     | __main__:main:1189 - METHOD 3: Oblique FIGS (max_rules=12, max_trees=5, max_depth=4)
+2026-02-27 21:16:38.837 | INFO     | __main__:main:1190 - ======================================================================
+2026-02-27 21:16:38.838 | INFO     | __main__:main:1194 -   Running ObliqueFIGS on heart_disease...
+2026-02-27 21:16:46.364 | INFO     | __main__:main:1207 -     heart_disease: mean_accuracy=0.7904, mean_erank=8.65, time=7.5s
+2026-02-27 21:16:46.365 | INFO     | __main__:main:1194 -   Running ObliqueFIGS on diabetes_pima...
+2026-02-27 21:16:59.342 | INFO     | __main__:main:1207 -     diabetes_pima: mean_accuracy=0.7265, mean_erank=5.82, time=13.0s
+2026-02-27 21:16:59.342 | INFO     | __main__:main:1194 -   Running ObliqueFIGS on breast_cancer_wdbc...
+2026-02-27 21:17:13.147 | INFO     | __main__:main:1207 -     breast_cancer_wdbc: mean_accuracy=0.9456, mean_erank=9.27, time=13.8s
+2026-02-27 21:17:13.149 | INFO     | __main__:main:1194 -   Running ObliqueFIGS on credit_german...
+2026-02-27 21:21:46.843 | INFO     | __main__:main:1207 -     credit_german: mean_accuracy=0.7100, mean_erank=10.58, time=273.7s
+2026-02-27 21:21:46.845 | INFO     | __main__:main:1194 -   Running ObliqueFIGS on ionosphere...
+2026-02-27 21:22:23.090 | INFO     | __main__:main:1207 -     ionosphere: mean_accuracy=0.8547, mean_erank=9.05, time=36.2s
+2026-02-27 21:22:23.093 | INFO     | __main__:main:1194 -   Running ObliqueFIGS on spambase...
+2026-02-27 21:39:31.554 | INFO     | __main__:main:1181 - ======================================================================
+2026-02-27 21:39:31.554 | INFO     | __main__:main:1182 - Unconstrained Oblique Baselines Experiment
+2026-02-27 21:39:31.555 | INFO     | __main__:main:1183 - ======================================================================
+2026-02-27 21:39:31.555 | INFO     | __main__:load_datasets:849 - Loading data from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:39:31.638 | INFO     | __main__:load_datasets:877 -   heart_disease: X=(296, 25), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:31.645 | INFO     | __main__:load_datasets:877 -   diabetes_pima: X=(768, 8), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:31.649 | INFO     | __main__:load_datasets:877 -   breast_cancer_wdbc: X=(569, 30), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:31.660 | INFO     | __main__:load_datasets:877 -   credit_german: X=(1000, 61), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:31.662 | INFO     | __main__:load_datasets:877 -   ionosphere: X=(351, 33), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:31.735 | INFO     | __main__:load_datasets:877 -   spambase: X=(4601, 57), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:31.739 | INFO     | __main__:load_datasets:877 -   diabetes_regression: X=(442, 10), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:32.027 | INFO     | __main__:load_datasets:877 -   california_housing: X=(20640, 8), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:32.039 | INFO     | __main__:load_datasets:877 -   auto_mpg: X=(392, 25), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:32.054 | INFO     | __main__:load_datasets:877 -   wine_quality_red: X=(1599, 11), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:39:32.056 | INFO     | __main__:load_datasets:882 - Loaded 10 datasets
+2026-02-27 21:39:32.066 | INFO     | __main__:main:1198 - 
+======================================================================
+2026-02-27 21:39:32.068 | INFO     | __main__:main:1199 - METHOD 1: ManualSPORF Matched (n_estimators=6, max_depth=2)
+2026-02-27 21:39:32.069 | INFO     | __main__:main:1200 - ======================================================================
+2026-02-27 21:39:32.069 | INFO     | __main__:main:1204 -   Running SPORF_matched on heart_disease...
+2026-02-27 21:39:32.331 | INFO     | __main__:main:1217 -     heart_disease: mean_accuracy=0.8175, mean_erank=11.33, time=0.3s
+2026-02-27 21:39:32.339 | INFO     | __main__:main:1204 -   Running SPORF_matched on diabetes_pima...
+2026-02-27 21:39:32.616 | INFO     | __main__:main:1217 -     diabetes_pima: mean_accuracy=0.6810, mean_erank=5.95, time=0.3s
+2026-02-27 21:39:32.623 | INFO     | __main__:main:1204 -   Running SPORF_matched on breast_cancer_wdbc...
+2026-02-27 21:39:32.987 | INFO     | __main__:main:1217 -     breast_cancer_wdbc: mean_accuracy=0.9279, mean_erank=12.23, time=0.4s
+2026-02-27 21:39:32.987 | INFO     | __main__:main:1204 -   Running SPORF_matched on credit_german...
+2026-02-27 21:39:34.970 | INFO     | __main__:main:1217 -     credit_german: mean_accuracy=0.6990, mean_erank=15.29, time=2.0s
+2026-02-27 21:39:34.991 | INFO     | __main__:main:1204 -   Running SPORF_matched on ionosphere...
+2026-02-27 21:39:35.484 | INFO     | __main__:main:1217 -     ionosphere: mean_accuracy=0.8746, mean_erank=12.34, time=0.5s
+2026-02-27 21:39:35.484 | INFO     | __main__:main:1204 -   Running SPORF_matched on spambase...
+2026-02-27 21:39:41.308 | INFO     | __main__:main:1217 -     spambase: mean_accuracy=0.8394, mean_erank=13.50, time=5.8s
+2026-02-27 21:39:41.309 | INFO     | __main__:main:1204 -   Running SPORF_matched on diabetes_regression...
+2026-02-27 21:39:41.414 | INFO     | __main__:main:1217 -     diabetes_regression: mean_r2=0.3685, mean_erank=6.73, time=0.1s
+2026-02-27 21:39:41.414 | INFO     | __main__:main:1204 -   Running SPORF_matched on california_housing...
+2026-02-27 21:39:42.624 | INFO     | __main__:main:1217 -     california_housing: mean_r2=0.3894, mean_erank=6.23, time=1.2s
+2026-02-27 21:39:42.629 | INFO     | __main__:main:1204 -   Running SPORF_matched on auto_mpg...
+2026-02-27 21:39:42.751 | INFO     | __main__:main:1217 -     auto_mpg: mean_r2=0.7072, mean_erank=10.46, time=0.1s
+2026-02-27 21:39:42.752 | INFO     | __main__:main:1204 -   Running SPORF_matched on wine_quality_red...
+2026-02-27 21:39:42.910 | INFO     | __main__:main:1217 -     wine_quality_red: mean_r2=0.2402, mean_erank=7.18, time=0.2s
+2026-02-27 21:39:42.910 | INFO     | __main__:main:1225 - 
+======================================================================
+2026-02-27 21:39:42.911 | INFO     | __main__:main:1226 - METHOD 2: ManualSPORF Full (n_estimators=50, max_depth=10)
+2026-02-27 21:39:42.911 | INFO     | __main__:main:1227 - ======================================================================
+2026-02-27 21:39:42.911 | INFO     | __main__:main:1231 -   Running SPORF_full on heart_disease...
+2026-02-27 21:39:47.205 | INFO     | __main__:main:1245 -     heart_disease: mean_accuracy=0.8108, mean_erank=22.06, time=4.3s
+2026-02-27 21:39:47.209 | INFO     | __main__:main:1231 -   Running SPORF_full on diabetes_pima...
+2026-02-27 21:39:49.032 | INFO     | __main__:main:1245 -     diabetes_pima: mean_accuracy=0.7539, mean_erank=7.87, time=1.8s
+2026-02-27 21:39:49.033 | INFO     | __main__:main:1231 -   Running SPORF_full on breast_cancer_wdbc...
+2026-02-27 21:39:54.880 | INFO     | __main__:main:1245 -     breast_cancer_wdbc: mean_accuracy=0.9631, mean_erank=28.10, time=5.8s
+2026-02-27 21:39:54.880 | INFO     | __main__:main:1231 -   Running SPORF_full on credit_german...
+2026-02-27 21:40:27.749 | INFO     | __main__:main:1245 -     credit_german: mean_accuracy=0.7590, mean_erank=53.94, time=32.9s
+2026-02-27 21:40:27.752 | INFO     | __main__:main:1231 -   Running SPORF_full on ionosphere...
+2026-02-27 21:40:35.700 | INFO     | __main__:main:1245 -     ionosphere: mean_accuracy=0.9458, mean_erank=31.52, time=7.9s
+2026-02-27 21:40:35.703 | INFO     | __main__:main:1231 -   Running SPORF_full on spambase...
+2026-02-27 21:41:24.556 | INFO     | __main__:main:1245 -     spambase: mean_accuracy=0.9413, mean_erank=49.84, time=48.9s
+2026-02-27 21:41:24.565 | INFO     | __main__:main:1231 -   Running SPORF_full on diabetes_regression...
+2026-02-27 21:41:27.051 | INFO     | __main__:main:1245 -     diabetes_regression: mean_r2=0.4454, mean_erank=9.78, time=2.5s
+2026-02-27 21:41:27.051 | INFO     | __main__:main:1231 -   Running SPORF_full on california_housing...
+2026-02-27 21:41:51.517 | INFO     | __main__:main:1245 -     california_housing: mean_r2=0.7268, mean_erank=7.91, time=24.5s
+2026-02-27 21:41:51.517 | INFO     | __main__:main:1231 -   Running SPORF_full on auto_mpg...
+2026-02-27 21:41:57.350 | INFO     | __main__:main:1245 -     auto_mpg: mean_r2=0.8415, mean_erank=19.13, time=5.8s
+2026-02-27 21:41:57.350 | INFO     | __main__:main:1231 -   Running SPORF_full on wine_quality_red...
+2026-02-27 21:42:00.898 | INFO     | __main__:main:1245 -     wine_quality_red: mean_r2=0.4525, mean_erank=10.89, time=3.5s
+2026-02-27 21:42:00.906 | INFO     | __main__:main:1259 - 
+======================================================================
+2026-02-27 21:42:00.907 | INFO     | __main__:main:1260 - METHOD 3: Oblique FIGS (max_rules=12, max_trees=5, max_depth=4)
+2026-02-27 21:42:00.907 | INFO     | __main__:main:1261 - ======================================================================
+2026-02-27 21:42:00.907 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on heart_disease...
+2026-02-27 21:42:03.080 | INFO     | __main__:main:1278 -     heart_disease: mean_accuracy=0.7668, mean_erank=6.36, time=2.2s
+2026-02-27 21:42:03.080 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on diabetes_pima...
+2026-02-27 21:42:04.756 | INFO     | __main__:main:1278 -     diabetes_pima: mean_accuracy=0.7630, mean_erank=4.43, time=1.7s
+2026-02-27 21:42:04.756 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on breast_cancer_wdbc...
+2026-02-27 21:42:07.294 | INFO     | __main__:main:1278 -     breast_cancer_wdbc: mean_accuracy=0.9385, mean_erank=7.98, time=2.5s
+2026-02-27 21:42:07.294 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on credit_german...
+2026-02-27 21:42:22.594 | INFO     | __main__:main:1278 -     credit_german: mean_accuracy=0.7080, mean_erank=8.00, time=15.3s
+2026-02-27 21:42:22.594 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on ionosphere...
+2026-02-27 21:42:23.772 | INFO     | __main__:main:1278 -     ionosphere: mean_accuracy=0.8803, mean_erank=6.12, time=1.2s
+2026-02-27 21:42:23.773 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on spambase...
+2026-02-27 21:43:20.153 | INFO     | __main__:main:1278 -     spambase: mean_accuracy=0.7333, mean_erank=3.43, time=56.4s
+2026-02-27 21:43:20.153 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on diabetes_regression...
+2026-02-27 21:43:21.743 | INFO     | __main__:main:1278 -     diabetes_regression: mean_r2=0.2836, mean_erank=6.23, time=1.6s
+2026-02-27 21:43:21.744 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on california_housing...
+2026-02-27 21:43:25.438 | INFO     | __main__:main:1278 -     california_housing: mean_r2=0.4670, mean_erank=5.18, time=3.7s
+2026-02-27 21:43:25.445 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on auto_mpg...
+2026-02-27 21:43:27.180 | INFO     | __main__:main:1278 -     auto_mpg: mean_r2=0.6911, mean_erank=6.80, time=1.7s
+2026-02-27 21:43:27.182 | INFO     | __main__:main:1265 -   Running ObliqueFIGS on wine_quality_red...
+2026-02-27 21:43:29.111 | INFO     | __main__:main:1278 -     wine_quality_red: mean_r2=0.2406, mean_erank=7.01, time=1.9s
+2026-02-27 21:43:29.112 | INFO     | __main__:main:1286 - 
+======================================================================
+2026-02-27 21:43:29.112 | INFO     | __main__:main:1287 - METHOD 4: FIGS Axis-Aligned (max_rules=12, max_trees=5)
+2026-02-27 21:43:29.112 | INFO     | __main__:main:1288 - ======================================================================
+2026-02-27 21:43:29.112 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on heart_disease...
+2026-02-27 21:43:29.695 | INFO     | __main__:main:1305 -     heart_disease: mean_accuracy=0.7903, mean_erank=8.78, time=0.6s
+2026-02-27 21:43:29.695 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on diabetes_pima...
+2026-02-27 21:43:30.275 | INFO     | __main__:main:1305 -     diabetes_pima: mean_accuracy=0.7239, mean_erank=5.12, time=0.6s
+2026-02-27 21:43:30.280 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on breast_cancer_wdbc...
+2026-02-27 21:43:30.902 | INFO     | __main__:main:1305 -     breast_cancer_wdbc: mean_accuracy=0.9262, mean_erank=8.81, time=0.6s
+2026-02-27 21:43:30.903 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on credit_german...
+2026-02-27 21:43:32.105 | INFO     | __main__:main:1305 -     credit_german: mean_accuracy=0.7190, mean_erank=10.49, time=1.2s
+2026-02-27 21:43:32.105 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on ionosphere...
+2026-02-27 21:43:32.831 | INFO     | __main__:main:1305 -     ionosphere: mean_accuracy=0.8917, mean_erank=9.94, time=0.7s
+2026-02-27 21:43:32.834 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on spambase...
+2026-02-27 21:43:36.839 | INFO     | __main__:main:1305 -     spambase: mean_accuracy=0.9102, mean_erank=8.92, time=4.0s
+2026-02-27 21:43:36.844 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on diabetes_regression...
+2026-02-27 21:43:37.505 | INFO     | __main__:main:1305 -     diabetes_regression: mean_r2=0.2842, mean_erank=7.06, time=0.7s
+2026-02-27 21:43:37.505 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on california_housing...
+2026-02-27 21:43:48.379 | INFO     | __main__:main:1305 -     california_housing: mean_r2=0.6692, mean_erank=3.78, time=10.9s
+2026-02-27 21:43:48.379 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on auto_mpg...
+2026-02-27 21:43:49.185 | INFO     | __main__:main:1305 -     auto_mpg: mean_r2=0.7820, mean_erank=7.52, time=0.8s
+2026-02-27 21:43:49.189 | INFO     | __main__:main:1292 -   Running FIGS axis-aligned on wine_quality_red...
+2026-02-27 21:43:50.598 | INFO     | __main__:main:1305 -     wine_quality_red: mean_r2=0.3537, mean_erank=6.23, time=1.4s
+2026-02-27 21:43:50.602 | INFO     | __main__:main:1313 - 
+======================================================================
+2026-02-27 21:43:50.603 | INFO     | __main__:main:1314 - Building output JSON
+2026-02-27 21:43:50.603 | INFO     | __main__:main:1315 - ======================================================================
+2026-02-27 21:43:50.620 | INFO     | __main__:main:1322 - Wrote /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id2_it2__opus/method_out.json (139.8 KB)
+2026-02-27 21:43:50.640 | INFO     | __main__:main:1378 - Wrote /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id2_it2__opus/method_out_extra.json (168.6 KB)
+2026-02-27 21:43:50.641 | INFO     | __main__:main:1381 - 
+Total runtime: 259.1s (4.3 min)
+2026-02-27 21:43:50.641 | INFO     | __main__:main:1384 - 
+======================================================================
+2026-02-27 21:43:50.641 | INFO     | __main__:main:1385 - SUMMARY TABLE
+2026-02-27 21:43:50.641 | INFO     | __main__:main:1386 - ======================================================================
+2026-02-27 21:43:50.641 | INFO     | __main__:main:1390 - Dataset                   Task   sporf_matche  eRank   sporf_full  eRank oblique_figs  eRank figs_axis_al  eRank
+2026-02-27 21:43:50.641 | INFO     | __main__:main:1391 - ----------------------------------------------------------------------------------------------------------------
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - heart_disease             classi       0.8175  11.33       0.8108  22.06       0.7668   6.36       0.7903   8.78
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - diabetes_pima             classi       0.6810   5.95       0.7539   7.87       0.7630   4.43       0.7239   5.12
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - breast_cancer_wdbc        classi       0.9279  12.23       0.9631  28.10       0.9385   7.98       0.9262   8.81
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - credit_german             classi       0.6990  15.29       0.7590  53.94       0.7080   8.00       0.7190  10.49
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - ionosphere                classi       0.8746  12.34       0.9458  31.52       0.8803   6.12       0.8917   9.94
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - spambase                  classi       0.8394  13.50       0.9413  49.84       0.7333   3.43       0.9102   8.92
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - diabetes_regression       regres       0.3685   6.73       0.4454   9.78       0.2836   6.23       0.2842   7.06
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - california_housing        regres       0.3894   6.23       0.7268   7.91       0.4670   5.18       0.6692   3.78
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - auto_mpg                  regres       0.7072  10.46       0.8415  19.13       0.6911   6.80       0.7820   7.52
+2026-02-27 21:43:50.642 | INFO     | __main__:main:1404 - wine_quality_red          regres       0.2402   7.18       0.4525  10.89       0.2406   7.01       0.3537   6.23
+2026-02-27 21:45:07.574 | INFO     | __main__:main:1196 - ======================================================================
+2026-02-27 21:45:07.577 | INFO     | __main__:main:1197 - Unconstrained Oblique Baselines Experiment
+2026-02-27 21:45:07.577 | INFO     | __main__:main:1198 - ======================================================================
+2026-02-27 21:45:07.577 | INFO     | __main__:load_datasets:849 - Loading data from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_1/gen_art/data_id2_it1__opus/full_data_out.json
+2026-02-27 21:45:07.757 | INFO     | __main__:load_datasets:877 -   heart_disease: X=(296, 25), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:07.761 | INFO     | __main__:load_datasets:877 -   diabetes_pima: X=(768, 8), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:07.777 | INFO     | __main__:load_datasets:877 -   breast_cancer_wdbc: X=(569, 30), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:07.812 | INFO     | __main__:load_datasets:877 -   credit_german: X=(1000, 61), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:07.823 | INFO     | __main__:load_datasets:877 -   ionosphere: X=(351, 33), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:08.115 | INFO     | __main__:load_datasets:877 -   spambase: X=(4601, 57), task=classification, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:08.127 | INFO     | __main__:load_datasets:877 -   diabetes_regression: X=(442, 10), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:08.693 | INFO     | __main__:load_datasets:877 -   california_housing: X=(20640, 8), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:08.720 | INFO     | __main__:load_datasets:877 -   auto_mpg: X=(392, 25), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:08.741 | INFO     | __main__:load_datasets:877 -   wine_quality_red: X=(1599, 11), task=regression, folds=[0, 1, 2, 3, 4]
+2026-02-27 21:45:08.741 | INFO     | __main__:load_datasets:882 - Loaded 10 datasets
+2026-02-27 21:45:08.751 | INFO     | __main__:main:1213 - 
+======================================================================
+2026-02-27 21:45:08.752 | INFO     | __main__:main:1214 - METHOD 1: ManualSPORF Matched (n_estimators=6, max_depth=2)
+2026-02-27 21:45:08.752 | INFO     | __main__:main:1215 - ======================================================================
+2026-02-27 21:45:08.753 | INFO     | __main__:main:1219 -   Running SPORF_matched on heart_disease...
+2026-02-27 21:45:08.976 | INFO     | __main__:main:1232 -     heart_disease: mean_accuracy=0.8175, mean_erank=11.33, time=0.2s
+2026-02-27 21:45:08.981 | INFO     | __main__:main:1219 -   Running SPORF_matched on diabetes_pima...
+2026-02-27 21:45:09.272 | INFO     | __main__:main:1232 -     diabetes_pima: mean_accuracy=0.6810, mean_erank=5.95, time=0.3s
+2026-02-27 21:45:09.272 | INFO     | __main__:main:1219 -   Running SPORF_matched on breast_cancer_wdbc...
+2026-02-27 21:45:09.767 | INFO     | __main__:main:1232 -     breast_cancer_wdbc: mean_accuracy=0.9279, mean_erank=12.23, time=0.5s
+2026-02-27 21:45:09.767 | INFO     | __main__:main:1219 -   Running SPORF_matched on credit_german...
+2026-02-27 21:45:12.946 | INFO     | __main__:main:1232 -     credit_german: mean_accuracy=0.6990, mean_erank=15.29, time=3.2s
+2026-02-27 21:45:12.952 | INFO     | __main__:main:1219 -   Running SPORF_matched on ionosphere...
+2026-02-27 21:45:13.112 | INFO     | __main__:main:1232 -     ionosphere: mean_accuracy=0.8746, mean_erank=12.34, time=0.2s
+2026-02-27 21:45:13.112 | INFO     | __main__:main:1219 -   Running SPORF_matched on spambase...
+2026-02-27 21:45:20.645 | INFO     | __main__:main:1232 -     spambase: mean_accuracy=0.8394, mean_erank=13.50, time=7.5s
+2026-02-27 21:45:20.645 | INFO     | __main__:main:1219 -   Running SPORF_matched on diabetes_regression...
+2026-02-27 21:45:20.774 | INFO     | __main__:main:1232 -     diabetes_regression: mean_r2=0.3685, mean_erank=6.73, time=0.1s
+2026-02-27 21:45:20.786 | INFO     | __main__:main:1219 -   Running SPORF_matched on california_housing...
+2026-02-27 21:45:22.179 | INFO     | __main__:main:1232 -     california_housing: mean_r2=0.3894, mean_erank=6.23, time=1.4s
+2026-02-27 21:45:22.188 | INFO     | __main__:main:1219 -   Running SPORF_matched on auto_mpg...
+2026-02-27 21:45:22.342 | INFO     | __main__:main:1232 -     auto_mpg: mean_r2=0.7072, mean_erank=10.46, time=0.2s
+2026-02-27 21:45:22.348 | INFO     | __main__:main:1219 -   Running SPORF_matched on wine_quality_red...
+2026-02-27 21:45:22.517 | INFO     | __main__:main:1232 -     wine_quality_red: mean_r2=0.2402, mean_erank=7.18, time=0.2s
+2026-02-27 21:45:22.528 | INFO     | __main__:main:1240 - 
+======================================================================
+2026-02-27 21:45:22.528 | INFO     | __main__:main:1241 - METHOD 2: ManualSPORF Full (n_estimators=50, max_depth=10)
+2026-02-27 21:45:22.529 | INFO     | __main__:main:1242 - ======================================================================
+2026-02-27 21:45:22.529 | INFO     | __main__:main:1246 -   Running SPORF_full on heart_disease...
+2026-02-27 21:45:27.808 | INFO     | __main__:main:1260 -     heart_disease: mean_accuracy=0.8108, mean_erank=22.06, time=5.3s
+2026-02-27 21:45:27.808 | INFO     | __main__:main:1246 -   Running SPORF_full on diabetes_pima...
+2026-02-27 21:45:29.685 | INFO     | __main__:main:1260 -     diabetes_pima: mean_accuracy=0.7539, mean_erank=7.87, time=1.9s
+2026-02-27 21:45:29.686 | INFO     | __main__:main:1246 -   Running SPORF_full on breast_cancer_wdbc...
+2026-02-27 21:45:37.439 | INFO     | __main__:main:1260 -     breast_cancer_wdbc: mean_accuracy=0.9631, mean_erank=28.10, time=7.8s
+2026-02-27 21:45:37.442 | INFO     | __main__:main:1246 -   Running SPORF_full on credit_german...
+2026-02-27 21:46:07.780 | INFO     | __main__:main:1260 -     credit_german: mean_accuracy=0.7590, mean_erank=53.94, time=30.3s
+2026-02-27 21:46:07.791 | INFO     | __main__:main:1246 -   Running SPORF_full on ionosphere...
+2026-02-27 21:46:15.363 | INFO     | __main__:main:1260 -     ionosphere: mean_accuracy=0.9458, mean_erank=31.52, time=7.6s
+2026-02-27 21:46:15.364 | INFO     | __main__:main:1246 -   Running SPORF_full on spambase...
+2026-02-27 21:47:27.059 | INFO     | __main__:main:1260 -     spambase: mean_accuracy=0.9413, mean_erank=49.84, time=71.7s
+2026-02-27 21:47:27.060 | INFO     | __main__:main:1246 -   Running SPORF_full on diabetes_regression...
+2026-02-27 21:47:28.883 | INFO     | __main__:main:1260 -     diabetes_regression: mean_r2=0.4454, mean_erank=9.78, time=1.8s
+2026-02-27 21:47:28.888 | INFO     | __main__:main:1246 -   Running SPORF_full on california_housing...
+2026-02-27 21:47:58.246 | INFO     | __main__:main:1260 -     california_housing: mean_r2=0.7268, mean_erank=7.91, time=29.4s
+2026-02-27 21:47:58.246 | INFO     | __main__:main:1246 -   Running SPORF_full on auto_mpg...
+2026-02-27 21:48:03.524 | INFO     | __main__:main:1260 -     auto_mpg: mean_r2=0.8415, mean_erank=19.13, time=5.3s
+2026-02-27 21:48:03.531 | INFO     | __main__:main:1246 -   Running SPORF_full on wine_quality_red...
+2026-02-27 21:48:06.721 | INFO     | __main__:main:1260 -     wine_quality_red: mean_r2=0.4525, mean_erank=10.89, time=3.2s
+2026-02-27 21:48:06.721 | INFO     | __main__:main:1274 - 
+======================================================================
+2026-02-27 21:48:06.721 | INFO     | __main__:main:1275 - METHOD 3: Oblique FIGS (max_rules=12, max_trees=5, max_depth=4)
+2026-02-27 21:48:06.721 | INFO     | __main__:main:1276 - ======================================================================
+2026-02-27 21:48:06.721 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on heart_disease...
+2026-02-27 21:48:08.294 | INFO     | __main__:main:1293 -     heart_disease: mean_accuracy=0.7940, mean_erank=6.35, time=1.6s
+2026-02-27 21:48:08.294 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on diabetes_pima...
+2026-02-27 21:48:10.003 | INFO     | __main__:main:1293 -     diabetes_pima: mean_accuracy=0.7669, mean_erank=4.57, time=1.7s
+2026-02-27 21:48:10.004 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on breast_cancer_wdbc...
+2026-02-27 21:48:11.366 | INFO     | __main__:main:1293 -     breast_cancer_wdbc: mean_accuracy=0.9385, mean_erank=8.01, time=1.4s
+2026-02-27 21:48:11.371 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on credit_german...
+2026-02-27 21:48:32.843 | INFO     | __main__:main:1293 -     credit_german: mean_accuracy=0.7080, mean_erank=8.00, time=21.5s
+2026-02-27 21:48:32.848 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on ionosphere...
+2026-02-27 21:48:35.037 | INFO     | __main__:main:1293 -     ionosphere: mean_accuracy=0.8662, mean_erank=6.16, time=2.2s
+2026-02-27 21:48:35.042 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on spambase...
+2026-02-27 21:49:30.141 | INFO     | __main__:main:1293 -     spambase: mean_accuracy=0.6988, mean_erank=4.36, time=55.1s
+2026-02-27 21:49:30.152 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on diabetes_regression...
+2026-02-27 21:49:31.217 | INFO     | __main__:main:1293 -     diabetes_regression: mean_r2=0.2578, mean_erank=5.90, time=1.1s
+2026-02-27 21:49:31.217 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on california_housing...
+2026-02-27 21:49:33.311 | INFO     | __main__:main:1293 -     california_housing: mean_r2=0.4828, mean_erank=4.64, time=2.1s
+2026-02-27 21:49:33.311 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on auto_mpg...
+2026-02-27 21:49:35.586 | INFO     | __main__:main:1293 -     auto_mpg: mean_r2=0.6844, mean_erank=7.33, time=2.3s
+2026-02-27 21:49:35.586 | INFO     | __main__:main:1280 -   Running ObliqueFIGS on wine_quality_red...
+2026-02-27 21:49:37.878 | INFO     | __main__:main:1293 -     wine_quality_red: mean_r2=0.2594, mean_erank=7.29, time=2.3s
+2026-02-27 21:49:37.880 | INFO     | __main__:main:1301 - 
+======================================================================
+2026-02-27 21:49:37.880 | INFO     | __main__:main:1302 - METHOD 4: FIGS Axis-Aligned (max_rules=12, max_trees=5)
+2026-02-27 21:49:37.881 | INFO     | __main__:main:1303 - ======================================================================
+2026-02-27 21:49:37.888 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on heart_disease...
+2026-02-27 21:49:38.664 | INFO     | __main__:main:1320 -     heart_disease: mean_accuracy=0.7937, mean_erank=8.78, time=0.8s
+2026-02-27 21:49:38.664 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on diabetes_pima...
+2026-02-27 21:49:39.575 | INFO     | __main__:main:1320 -     diabetes_pima: mean_accuracy=0.7239, mean_erank=5.12, time=0.9s
+2026-02-27 21:49:39.575 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on breast_cancer_wdbc...
+2026-02-27 21:49:40.694 | INFO     | __main__:main:1320 -     breast_cancer_wdbc: mean_accuracy=0.9227, mean_erank=9.03, time=1.1s
+2026-02-27 21:49:40.694 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on credit_german...
+2026-02-27 21:49:42.129 | INFO     | __main__:main:1320 -     credit_german: mean_accuracy=0.7190, mean_erank=10.49, time=1.4s
+2026-02-27 21:49:42.129 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on ionosphere...
+2026-02-27 21:49:42.985 | INFO     | __main__:main:1320 -     ionosphere: mean_accuracy=0.9002, mean_erank=9.71, time=0.9s
+2026-02-27 21:49:42.996 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on spambase...
+2026-02-27 21:49:48.825 | INFO     | __main__:main:1320 -     spambase: mean_accuracy=0.9102, mean_erank=8.92, time=5.8s
+2026-02-27 21:49:48.832 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on diabetes_regression...
+2026-02-27 21:49:49.659 | INFO     | __main__:main:1320 -     diabetes_regression: mean_r2=0.2842, mean_erank=7.06, time=0.8s
+2026-02-27 21:49:49.659 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on california_housing...
+2026-02-27 21:50:03.593 | INFO     | __main__:main:1320 -     california_housing: mean_r2=0.6692, mean_erank=3.78, time=13.9s
+2026-02-27 21:50:03.593 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on auto_mpg...
+2026-02-27 21:50:04.043 | INFO     | __main__:main:1320 -     auto_mpg: mean_r2=0.7820, mean_erank=7.50, time=0.5s
+2026-02-27 21:50:04.044 | INFO     | __main__:main:1307 -   Running FIGS axis-aligned on wine_quality_red...
+2026-02-27 21:50:04.954 | INFO     | __main__:main:1320 -     wine_quality_red: mean_r2=0.3537, mean_erank=6.23, time=0.9s
+2026-02-27 21:50:04.955 | INFO     | __main__:main:1328 - 
+======================================================================
+2026-02-27 21:50:04.955 | INFO     | __main__:main:1329 - Building output JSON
+2026-02-27 21:50:04.955 | INFO     | __main__:main:1330 - ======================================================================
+2026-02-27 21:50:04.964 | INFO     | __main__:main:1337 - Wrote /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id2_it2__opus/method_out.json (73.9 KB)
+2026-02-27 21:50:04.980 | INFO     | __main__:main:1393 - Wrote /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id2_it2__opus/method_out_extra.json (168.6 KB)
+2026-02-27 21:50:04.980 | INFO     | __main__:main:1396 - 
+Total runtime: 297.4s (5.0 min)
+2026-02-27 21:50:04.981 | INFO     | __main__:main:1399 - 
+======================================================================
+2026-02-27 21:50:04.981 | INFO     | __main__:main:1400 - SUMMARY TABLE
+2026-02-27 21:50:04.981 | INFO     | __main__:main:1401 - ======================================================================
+2026-02-27 21:50:04.982 | INFO     | __main__:main:1405 - Dataset                   Task   sporf_matche  eRank   sporf_full  eRank oblique_figs  eRank figs_axis_al  eRank
+2026-02-27 21:50:04.982 | INFO     | __main__:main:1406 - ----------------------------------------------------------------------------------------------------------------
+2026-02-27 21:50:04.982 | INFO     | __main__:main:1419 - heart_disease             classi       0.8175  11.33       0.8108  22.06       0.7940   6.35       0.7937   8.78
+2026-02-27 21:50:04.982 | INFO     | __main__:main:1419 - diabetes_pima             classi       0.6810   5.95       0.7539   7.87       0.7669   4.57       0.7239   5.12
+2026-02-27 21:50:04.982 | INFO     | __main__:main:1419 - breast_cancer_wdbc        classi       0.9279  12.23       0.9631  28.10       0.9385   8.01       0.9227   9.03
+2026-02-27 21:50:04.983 | INFO     | __main__:main:1419 - credit_german             classi       0.6990  15.29       0.7590  53.94       0.7080   8.00       0.7190  10.49
+2026-02-27 21:50:04.983 | INFO     | __main__:main:1419 - ionosphere                classi       0.8746  12.34       0.9458  31.52       0.8662   6.16       0.9002   9.71
+2026-02-27 21:50:04.983 | INFO     | __main__:main:1419 - spambase                  classi       0.8394  13.50       0.9413  49.84       0.6988   4.36       0.9102   8.92
+2026-02-27 21:50:04.983 | INFO     | __main__:main:1419 - diabetes_regression       regres       0.3685   6.73       0.4454   9.78       0.2578   5.90       0.2842   7.06
+2026-02-27 21:50:04.983 | INFO     | __main__:main:1419 - california_housing        regres       0.3894   6.23       0.7268   7.91       0.4828   4.64       0.6692   3.78
+2026-02-27 21:50:04.983 | INFO     | __main__:main:1419 - auto_mpg                  regres       0.7072  10.46       0.8415  19.13       0.6844   7.33       0.7820   7.50
+2026-02-27 21:50:04.983 | INFO     | __main__:main:1419 - wine_quality_red          regres       0.2402   7.18       0.4525  10.89       0.2594   7.29       0.3537   6.23

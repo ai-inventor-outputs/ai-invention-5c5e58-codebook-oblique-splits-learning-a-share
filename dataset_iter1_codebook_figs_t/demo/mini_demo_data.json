@@ -1,0 +1,430 @@
+{
+  "datasets": [
+    {
+      "dataset": "breast_cancer_wdbc",
+      "examples": [
+        {
+          "input": "[11.42, 20.38, 77.58, 386.1, 0.1425, 0.2839, 0.2414, 0.1052, 0.2597, 0.09744, 0.4956, 1.156, 3.445, 27.23, 0.00911, 0.07458, 0.05661, 0.01867, 0.05963, 0.009208, 14.91, 26.5, 98.87, 567.7, 0.2098, 0.8663, 0.6869, 0.2575, 0.6638, 0.173]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 3,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_n_samples": 50,
+          "metadata_n_features": 30,
+          "metadata_domain": "oncology",
+          "metadata_domain_description": "Predict malignant vs benign breast tumors from cell nucleus measurements",
+          "metadata_source": "sklearn load_breast_cancer() / UCI WDBC",
+          "metadata_feature_names": [
+            "mean radius",
+            "mean texture",
+            "mean perimeter",
+            "mean area",
+            "mean smoothness",
+            "mean compactness",
+            "mean concavity",
+            "mean concave points",
+            "mean symmetry",
+            "mean fractal dimension",
+            "radius error",
+            "texture error",
+            "perimeter error",
+            "area error",
+            "smoothness error",
+            "compactness error",
+            "concavity error",
+            "concave points error",
+            "symmetry error",
+            "fractal dimension error",
+            "worst radius",
+            "worst texture",
+            "worst perimeter",
+            "worst area",
+            "worst smoothness",
+            "worst compactness",
+            "worst concavity",
+            "worst concave points",
+            "worst symmetry",
+            "worst fractal dimension"
+          ],
+          "metadata_original_feature_names": [
+            "mean radius",
+            "mean texture",
+            "mean perimeter",
+            "mean area",
+            "mean smoothness",
+            "mean compactness",
+            "mean concavity",
+            "mean concave points",
+            "mean symmetry",
+            "mean fractal dimension",
+            "radius error",
+            "texture error",
+            "perimeter error",
+            "area error",
+            "smoothness error",
+            "compactness error",
+            "concavity error",
+            "concave points error",
+            "symmetry error",
+            "fractal dimension error",
+            "worst radius",
+            "worst texture",
+            "worst perimeter",
+            "worst area",
+            "worst smoothness",
+            "worst compactness",
+            "worst concavity",
+            "worst concave points",
+            "worst symmetry",
+            "worst fractal dimension"
+          ],
+          "metadata_feature_descriptions": "{\"mean radius\": \"Mean of radius measurements\", \"mean texture\": \"Mean of texture measurements\", \"mean perimeter\": \"Mean of perimeter measurements\", \"mean area\": \"Mean of area measurements\", \"mean smoothness\": \"Mean of smoothness measurements\", \"mean compactness\": \"Mean of compactness measurements\", \"mean concavity\": \"Mean of concavity measurements\", \"mean concave points\": \"Mean of concave points measurements\", \"mean symmetry\": \"Mean of symmetry measurements\", \"mean fractal dimension\": \"Mean of fractal dimension measurements\", \"radius error\": \"Standard error of radius\", \"texture error\": \"Standard error of texture\", \"perimeter error\": \"Standard error of perimeter\", \"area error\": \"Standard error of area\", \"smoothness error\": \"Standard error of smoothness\", \"compactness error\": \"Standard error of compactness\", \"concavity error\": \"Standard error of concavity\", \"concave points error\": \"Standard error of concave points\", \"symmetry error\": \"Standard error of symmetry\", \"fractal dimension error\": \"Standard error of fractal dimension\", \"worst radius\": \"Worst (largest) value of radius\", \"worst texture\": \"Worst (largest) value of texture\", \"worst perimeter\": \"Worst (largest) value of perimeter\", \"worst area\": \"Worst (largest) value of area\", \"worst smoothness\": \"Worst (largest) value of smoothness\", \"worst compactness\": \"Worst (largest) value of compactness\", \"worst concavity\": \"Worst (largest) value of concavity\", \"worst concave points\": \"Worst (largest) value of concave points\", \"worst symmetry\": \"Worst (largest) value of symmetry\", \"worst fractal dimension\": \"Worst (largest) value of fractal dimension\"}"
+        },
+        {
+          "input": "[12.45, 15.7, 82.57, 477.1, 0.1278, 0.17, 0.1578, 0.08089, 0.2087, 0.07613, 0.3345, 0.8902, 2.217, 27.19, 0.00751, 0.03345, 0.03672, 0.01137, 0.02165, 0.005082, 15.47, 23.75, 103.4, 741.6, 0.1791, 0.5249, 0.5355, 0.1741, 0.3985, 0.1244]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 5,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[15.85, 23.95, 103.7, 782.7, 0.08401, 0.1002, 0.09938, 0.05364, 0.1847, 0.05338, 0.4033, 1.078, 2.903, 36.58, 0.009769, 0.03126, 0.05051, 0.01992, 0.02981, 0.003002, 16.84, 27.66, 112.0, 876.5, 0.1131, 0.1924, 0.2322, 0.1119, 0.2809, 0.06287]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 13,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[16.65, 21.38, 110.0, 904.6, 0.1121, 0.1457, 0.1525, 0.0917, 0.1995, 0.0633, 0.8068, 0.9017, 5.455, 102.6, 0.006048, 0.01882, 0.02741, 0.0113, 0.01468, 0.002801, 26.46, 31.56, 177.0, 2215.0, 0.1805, 0.3578, 0.4695, 0.2095, 0.3613, 0.09564]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 24,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[19.27, 26.47, 127.9, 1162.0, 0.09401, 0.1719, 0.1657, 0.07593, 0.1853, 0.06261, 0.5558, 0.6062, 3.528, 68.17, 0.005015, 0.03318, 0.03497, 0.009643, 0.01543, 0.003896, 24.15, 30.9, 161.4, 1813.0, 0.1509, 0.659, 0.6091, 0.1785, 0.3672, 0.1123]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 33,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[15.1, 22.02, 97.26, 712.8, 0.09056, 0.07081, 0.05253, 0.03334, 0.1616, 0.05684, 0.3105, 0.8339, 2.097, 29.91, 0.004675, 0.0103, 0.01603, 0.009222, 0.01095, 0.001629, 18.1, 31.69, 117.7, 1030.0, 0.1389, 0.2057, 0.2712, 0.153, 0.2675, 0.07873]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 54,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[19.21, 18.57, 125.5, 1152.0, 0.1053, 0.1267, 0.1323, 0.08994, 0.1917, 0.05961, 0.7275, 1.193, 4.837, 102.5, 0.006458, 0.02306, 0.02945, 0.01538, 0.01852, 0.002608, 26.14, 28.14, 170.1, 2145.0, 0.1624, 0.3511, 0.3879, 0.2091, 0.3537, 0.08294]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 56,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[9.173, 13.86, 59.2, 260.9, 0.07721, 0.08751, 0.05988, 0.0218, 0.2341, 0.06963, 0.4098, 2.265, 2.608, 23.52, 0.008738, 0.03938, 0.04312, 0.0156, 0.04192, 0.005822, 10.01, 19.23, 65.59, 310.1, 0.09836, 0.1678, 0.1397, 0.05087, 0.3282, 0.0849]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 63,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[13.8, 15.79, 90.43, 584.1, 0.1007, 0.128, 0.07789, 0.05069, 0.1662, 0.06566, 0.2787, 0.6205, 1.957, 23.35, 0.004717, 0.02065, 0.01759, 0.009206, 0.0122, 0.00313, 16.57, 20.86, 110.3, 812.4, 0.1411, 0.3542, 0.2779, 0.1383, 0.2589, 0.103]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 73,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[19.02, 24.59, 122.0, 1076.0, 0.09029, 0.1206, 0.1468, 0.08271, 0.1953, 0.05629, 0.5495, 0.6636, 3.055, 57.65, 0.003872, 0.01842, 0.0371, 0.012, 0.01964, 0.003337, 24.56, 30.41, 152.9, 1623.0, 0.1249, 0.3206, 0.5755, 0.1956, 0.3956, 0.09288]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 87,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[14.42, 19.77, 94.48, 642.5, 0.09752, 0.1141, 0.09388, 0.05839, 0.1879, 0.0639, 0.2895, 1.851, 2.376, 26.85, 0.008005, 0.02895, 0.03321, 0.01424, 0.01462, 0.004452, 16.33, 30.86, 109.5, 826.4, 0.1431, 0.3026, 0.3194, 0.1565, 0.2718, 0.09353]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 99,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[11.43, 15.39, 73.06, 399.8, 0.09639, 0.06889, 0.03503, 0.02875, 0.1734, 0.05865, 0.1759, 0.9938, 1.143, 12.67, 0.005133, 0.01521, 0.01434, 0.008602, 0.01501, 0.001588, 12.32, 22.02, 79.93, 462.0, 0.119, 0.1648, 0.1399, 0.08476, 0.2676, 0.06765]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 137,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[9.738, 11.97, 61.24, 288.5, 0.0925, 0.04102, 0.0, 0.0, 0.1903, 0.06422, 0.1988, 0.496, 1.218, 12.26, 0.00604, 0.005656, 0.0, 0.0, 0.02277, 0.00322, 10.62, 14.1, 66.53, 342.9, 0.1234, 0.07204, 0.0, 0.0, 0.3105, 0.08151]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 140,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[10.9, 12.96, 68.69, 366.8, 0.07515, 0.03718, 0.00309, 0.006588, 0.1442, 0.05743, 0.2818, 0.7614, 1.808, 18.54, 0.006142, 0.006134, 0.001835, 0.003576, 0.01637, 0.002665, 12.36, 18.2, 78.07, 470.0, 0.1171, 0.08294, 0.01854, 0.03953, 0.2738, 0.07685]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 159,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.32, 12.39, 78.85, 464.1, 0.1028, 0.06981, 0.03987, 0.037, 0.1959, 0.05955, 0.236, 0.6656, 1.67, 17.43, 0.008045, 0.0118, 0.01683, 0.01241, 0.01924, 0.002248, 13.5, 15.64, 86.97, 549.1, 0.1385, 0.1266, 0.1242, 0.09391, 0.2827, 0.06771]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 170,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[10.66, 15.15, 67.49, 349.6, 0.08792, 0.04302, 0.0, 0.0, 0.1928, 0.05975, 0.3309, 1.925, 2.155, 21.98, 0.008713, 0.01017, 0.0, 0.0, 0.03265, 0.001002, 11.54, 19.2, 73.2, 408.3, 0.1076, 0.06791, 0.0, 0.0, 0.271, 0.06164]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 174,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[11.41, 14.92, 73.53, 402.0, 0.09059, 0.08155, 0.06181, 0.02361, 0.1167, 0.06217, 0.3344, 1.108, 1.902, 22.77, 0.007356, 0.03728, 0.05915, 0.01712, 0.02165, 0.004784, 12.37, 17.7, 79.12, 467.2, 0.1121, 0.161, 0.1648, 0.06296, 0.1811, 0.07427]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 183,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[20.51, 27.81, 134.4, 1319.0, 0.09159, 0.1074, 0.1554, 0.0834, 0.1448, 0.05592, 0.524, 1.189, 3.767, 70.01, 0.00502, 0.02062, 0.03457, 0.01091, 0.01298, 0.002887, 24.47, 37.38, 162.7, 1872.0, 0.1223, 0.2761, 0.4146, 0.1563, 0.2437, 0.08328]",
+          "output": "0",
+          "metadata_fold": 1,
+          "metadata_row_index": 233,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[23.21, 26.97, 153.5, 1670.0, 0.09509, 0.1682, 0.195, 0.1237, 0.1909, 0.06309, 1.058, 0.9635, 7.247, 155.8, 0.006428, 0.02863, 0.04497, 0.01716, 0.0159, 0.003053, 31.01, 34.51, 206.0, 2944.0, 0.1481, 0.4126, 0.582, 0.2593, 0.3103, 0.08677]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 236,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[13.2, 17.43, 84.13, 541.6, 0.07215, 0.04524, 0.04336, 0.01105, 0.1487, 0.05635, 0.163, 1.601, 0.873, 13.56, 0.006261, 0.01569, 0.03079, 0.005383, 0.01962, 0.00225, 13.94, 27.82, 88.28, 602.0, 0.1101, 0.1508, 0.2298, 0.0497, 0.2767, 0.07198]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 246,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[15.66, 23.2, 110.2, 773.5, 0.1109, 0.3114, 0.3176, 0.1377, 0.2495, 0.08104, 1.292, 2.454, 10.12, 138.5, 0.01236, 0.05995, 0.08232, 0.03024, 0.02337, 0.006042, 19.85, 31.64, 143.7, 1226.0, 0.1504, 0.5172, 0.6181, 0.2462, 0.3277, 0.1019]",
+          "output": "0",
+          "metadata_fold": 0,
+          "metadata_row_index": 258,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[10.71, 20.39, 69.5, 344.9, 0.1082, 0.1289, 0.08448, 0.02867, 0.1668, 0.06862, 0.3198, 1.489, 2.23, 20.74, 0.008902, 0.04785, 0.07339, 0.01745, 0.02728, 0.00761, 11.69, 25.21, 76.51, 410.4, 0.1335, 0.255, 0.2534, 0.086, 0.2605, 0.08701]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 269,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[17.93, 24.48, 115.2, 998.9, 0.08855, 0.07027, 0.05699, 0.04744, 0.1538, 0.0551, 0.4212, 1.433, 2.765, 45.81, 0.005444, 0.01169, 0.01622, 0.008522, 0.01419, 0.002751, 20.92, 34.69, 135.1, 1320.0, 0.1315, 0.1806, 0.208, 0.1136, 0.2504, 0.07948]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 274,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.58, 18.4, 79.83, 489.0, 0.08393, 0.04216, 0.00186, 0.002924, 0.1697, 0.05855, 0.2719, 1.35, 1.721, 22.45, 0.006383, 0.008008, 0.00186, 0.002924, 0.02571, 0.002015, 13.5, 23.08, 85.56, 564.1, 0.1038, 0.06624, 0.005579, 0.008772, 0.2505, 0.06431]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 285,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[11.6, 24.49, 74.23, 417.2, 0.07474, 0.05688, 0.01974, 0.01313, 0.1935, 0.05878, 0.2512, 1.786, 1.961, 18.21, 0.006122, 0.02337, 0.01596, 0.006998, 0.03194, 0.002211, 12.44, 31.62, 81.39, 476.5, 0.09545, 0.1361, 0.07239, 0.04815, 0.3244, 0.06745]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 305,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.86, 13.32, 82.82, 504.8, 0.1134, 0.08834, 0.038, 0.034, 0.1543, 0.06476, 0.2212, 1.042, 1.614, 16.57, 0.00591, 0.02016, 0.01902, 0.01011, 0.01202, 0.003107, 14.04, 21.08, 92.8, 599.5, 0.1547, 0.2231, 0.1791, 0.1155, 0.2382, 0.08553]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 322,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[9.606, 16.84, 61.64, 280.5, 0.08481, 0.09228, 0.08422, 0.02292, 0.2036, 0.07125, 0.1844, 0.9429, 1.429, 12.07, 0.005954, 0.03471, 0.05028, 0.00851, 0.0175, 0.004031, 10.75, 23.07, 71.25, 353.6, 0.1233, 0.3416, 0.4341, 0.0812, 0.2982, 0.09825]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 341,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.06, 18.9, 76.66, 445.3, 0.08386, 0.05794, 0.00751, 0.008488, 0.1555, 0.06048, 0.243, 1.152, 1.559, 18.02, 0.00718, 0.01096, 0.005832, 0.005495, 0.01982, 0.002754, 13.64, 27.06, 86.54, 562.6, 0.1289, 0.1352, 0.04506, 0.05093, 0.288, 0.08083]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 346,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[25.73, 17.46, 174.2, 2010.0, 0.1149, 0.2363, 0.3368, 0.1913, 0.1956, 0.06121, 0.9948, 0.8509, 7.222, 153.1, 0.006369, 0.04243, 0.04266, 0.01508, 0.02335, 0.003385, 33.13, 23.58, 229.3, 3234.0, 0.153, 0.5937, 0.6451, 0.2756, 0.369, 0.08815]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 352,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[16.5, 18.29, 106.6, 838.1, 0.09686, 0.08468, 0.05862, 0.04835, 0.1495, 0.05593, 0.3389, 1.439, 2.344, 33.58, 0.007257, 0.01805, 0.01832, 0.01033, 0.01694, 0.002001, 18.13, 25.45, 117.2, 1009.0, 0.1338, 0.1679, 0.1663, 0.09123, 0.2394, 0.06469]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 363,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[16.35, 23.29, 109.0, 840.4, 0.09742, 0.1497, 0.1811, 0.08773, 0.2175, 0.06218, 0.4312, 1.022, 2.972, 45.5, 0.005635, 0.03917, 0.06072, 0.01656, 0.03197, 0.004085, 19.38, 31.03, 129.3, 1165.0, 0.1415, 0.4665, 0.7087, 0.2248, 0.4824, 0.09614]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 370,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[13.46, 28.21, 85.89, 562.1, 0.07517, 0.04726, 0.01271, 0.01117, 0.1421, 0.05763, 0.1689, 1.15, 1.4, 14.91, 0.004942, 0.01203, 0.007508, 0.005179, 0.01442, 0.001684, 14.69, 35.63, 97.11, 680.6, 0.1108, 0.1457, 0.07934, 0.05781, 0.2694, 0.07061]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 377,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[19.55, 23.21, 128.9, 1174.0, 0.101, 0.1318, 0.1856, 0.1021, 0.1989, 0.05884, 0.6107, 2.836, 5.383, 70.1, 0.01124, 0.04097, 0.07469, 0.03441, 0.02768, 0.00624, 20.82, 30.44, 142.0, 1313.0, 0.1251, 0.2414, 0.3829, 0.1825, 0.2576, 0.07602]",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_row_index": 389,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.27, 17.92, 78.41, 466.1, 0.08685, 0.06526, 0.03211, 0.02653, 0.1966, 0.05597, 0.3342, 1.781, 2.079, 25.79, 0.005888, 0.0231, 0.02059, 0.01075, 0.02578, 0.002267, 14.1, 28.88, 89.0, 610.2, 0.124, 0.1795, 0.1377, 0.09532, 0.3455, 0.06896]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 409,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[9.742, 19.12, 61.93, 289.7, 0.1075, 0.08333, 0.008934, 0.01967, 0.2538, 0.07029, 0.6965, 1.747, 4.607, 43.52, 0.01307, 0.01885, 0.006021, 0.01052, 0.031, 0.004225, 11.21, 23.17, 71.79, 380.9, 0.1398, 0.1352, 0.02085, 0.04589, 0.3196, 0.08009]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 424,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.4, 17.68, 81.47, 467.8, 0.1054, 0.1316, 0.07741, 0.02799, 0.1811, 0.07102, 0.1767, 1.46, 2.204, 15.43, 0.01, 0.03295, 0.04861, 0.01167, 0.02187, 0.006005, 12.88, 22.91, 89.61, 515.8, 0.145, 0.2629, 0.2403, 0.0737, 0.2556, 0.09359]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 431,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.87, 19.54, 82.67, 509.2, 0.09136, 0.07883, 0.01797, 0.0209, 0.1861, 0.06347, 0.3665, 0.7693, 2.597, 26.5, 0.00591, 0.01362, 0.007066, 0.006502, 0.02223, 0.002378, 14.45, 24.38, 95.14, 626.9, 0.1214, 0.1652, 0.07127, 0.06384, 0.3313, 0.07735]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 436,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[9.755, 28.2, 61.68, 290.9, 0.07984, 0.04626, 0.01541, 0.01043, 0.1621, 0.05952, 0.1781, 1.687, 1.243, 11.28, 0.006588, 0.0127, 0.0145, 0.006104, 0.01574, 0.002268, 10.67, 36.92, 68.03, 349.9, 0.111, 0.1109, 0.0719, 0.04866, 0.2321, 0.07211]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 459,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[11.62, 18.18, 76.38, 408.8, 0.1175, 0.1483, 0.102, 0.05564, 0.1957, 0.07255, 0.4101, 1.74, 3.027, 27.85, 0.01459, 0.03206, 0.04961, 0.01841, 0.01807, 0.005217, 13.36, 25.4, 88.14, 528.1, 0.178, 0.2878, 0.3186, 0.1416, 0.266, 0.0927]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 469,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[14.2, 20.53, 92.41, 618.4, 0.08931, 0.1108, 0.05063, 0.03058, 0.1506, 0.06009, 0.3478, 1.018, 2.749, 31.01, 0.004107, 0.03288, 0.02821, 0.0135, 0.0161, 0.002744, 16.45, 27.26, 112.1, 828.5, 0.1153, 0.3429, 0.2512, 0.1339, 0.2534, 0.07858]",
+          "output": "1",
+          "metadata_fold": 0,
+          "metadata_row_index": 476,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[13.9, 16.62, 88.97, 599.4, 0.06828, 0.05319, 0.02224, 0.01339, 0.1813, 0.05536, 0.1555, 0.5762, 1.392, 14.03, 0.003308, 0.01315, 0.009904, 0.004832, 0.01316, 0.002095, 15.14, 21.8, 101.2, 718.9, 0.09384, 0.2006, 0.1384, 0.06222, 0.2679, 0.07698]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 477,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.16, 18.03, 78.29, 455.3, 0.09087, 0.07838, 0.02916, 0.01527, 0.1464, 0.06284, 0.2194, 1.19, 1.678, 16.26, 0.004911, 0.01666, 0.01397, 0.005161, 0.01454, 0.001858, 13.34, 27.87, 88.83, 547.4, 0.1208, 0.2279, 0.162, 0.0569, 0.2406, 0.07729]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 480,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[13.4, 20.52, 88.64, 556.7, 0.1106, 0.1469, 0.1445, 0.08172, 0.2116, 0.07325, 0.3906, 0.9306, 3.093, 33.67, 0.005414, 0.02265, 0.03452, 0.01334, 0.01705, 0.004005, 16.41, 29.66, 113.3, 844.4, 0.1574, 0.3856, 0.5106, 0.2051, 0.3585, 0.1109]",
+          "output": "0",
+          "metadata_fold": 2,
+          "metadata_row_index": 512,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[12.88, 18.22, 84.45, 493.1, 0.1218, 0.1661, 0.04825, 0.05303, 0.1709, 0.07253, 0.4426, 1.169, 3.176, 34.37, 0.005273, 0.02329, 0.01405, 0.01244, 0.01816, 0.003299, 15.05, 24.37, 99.31, 674.7, 0.1456, 0.2961, 0.1246, 0.1096, 0.2582, 0.08893]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 518,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[13.71, 18.68, 88.73, 571.0, 0.09916, 0.107, 0.05385, 0.03783, 0.1714, 0.06843, 0.3191, 1.249, 2.284, 26.45, 0.006739, 0.02251, 0.02086, 0.01352, 0.0187, 0.003747, 15.11, 25.63, 99.43, 701.9, 0.1425, 0.2566, 0.1935, 0.1284, 0.2849, 0.09031]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 523,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[11.67, 20.02, 75.21, 416.2, 0.1016, 0.09453, 0.042, 0.02157, 0.1859, 0.06461, 0.2067, 0.8745, 1.393, 15.34, 0.005251, 0.01727, 0.0184, 0.005298, 0.01449, 0.002671, 13.35, 28.81, 87.0, 550.6, 0.155, 0.2964, 0.2758, 0.0812, 0.3206, 0.0895]",
+          "output": "1",
+          "metadata_fold": 1,
+          "metadata_row_index": 531,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[14.27, 22.55, 93.77, 629.8, 0.1038, 0.1154, 0.1463, 0.06139, 0.1926, 0.05982, 0.2027, 1.851, 1.895, 18.54, 0.006113, 0.02583, 0.04645, 0.01276, 0.01451, 0.003756, 15.29, 34.27, 104.3, 728.3, 0.138, 0.2733, 0.4234, 0.1362, 0.2698, 0.08351]",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_row_index": 536,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[13.62, 23.23, 87.19, 573.2, 0.09246, 0.06747, 0.02974, 0.02443, 0.1664, 0.05801, 0.346, 1.336, 2.066, 31.24, 0.005868, 0.02099, 0.02021, 0.009064, 0.02087, 0.002583, 15.35, 29.09, 97.58, 729.8, 0.1216, 0.1517, 0.1049, 0.07174, 0.2642, 0.06953]",
+          "output": "1",
+          "metadata_fold": 2,
+          "metadata_row_index": 545,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[9.333, 21.94, 59.01, 264.0, 0.0924, 0.05605, 0.03996, 0.01282, 0.1692, 0.06576, 0.3013, 1.879, 2.121, 17.86, 0.01094, 0.01834, 0.03996, 0.01282, 0.03759, 0.004623, 9.845, 25.05, 62.86, 295.8, 0.1103, 0.08298, 0.07993, 0.02564, 0.2435, 0.07393]",
+          "output": "1",
+          "metadata_fold": 4,
+          "metadata_row_index": 553,
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "[11.2, 29.37, 70.67, 386.0, 0.07449, 0.03558, 0.0, 0.0, 0.106, 0.05502, 0.3141, 3.896, 2.041, 22.81, 0.007594, 0.008878, 0.0, 0.0, 0.01989, 0.001773, 11.92, 38.3, 75.19, 439.6, 0.09267, 0.05494, 0.0, 0.0, 0.1566, 0.05905]",
+          "output": "1",
+          "metadata_fold": 3,
+          "metadata_row_index": 561,
+          "metadata_task_type": "classification"
+        }
+      ]
+    }
+  ]
+}

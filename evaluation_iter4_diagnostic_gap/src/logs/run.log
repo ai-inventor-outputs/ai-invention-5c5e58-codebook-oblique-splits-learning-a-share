@@ -1,0 +1,156 @@
+2026-02-28 02:04:48.275 | INFO     | __main__:main:850 - ============================================================
+2026-02-28 02:04:48.276 | INFO     | __main__:main:851 - Diagnostic Gap Decomposition of Codebook-FIGS Accuracy
+2026-02-28 02:04:48.276 | INFO     | __main__:main:852 - ============================================================
+2026-02-28 02:04:48.276 | INFO     | __main__:main:855 - Loading exp_id2 from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id2_it2__opus/full_method_out.json
+2026-02-28 02:04:48.277 | INFO     | __main__:main:857 -   10 datasets loaded
+2026-02-28 02:04:48.277 | INFO     | __main__:main:859 - Loading exp_id1 from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_3/gen_art/exp_id1_it3__opus/full_method_out.json
+2026-02-28 02:04:48.280 | INFO     | __main__:main:861 -   10 datasets loaded
+2026-02-28 02:04:48.280 | INFO     | __main__:main:863 - Loading exp_id3 from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/full_method_out.json
+2026-02-28 02:04:48.370 | INFO     | __main__:main:866 -   10 datasets in CB results
+2026-02-28 02:04:48.370 | INFO     | __main__:main:869 - Extracting scores from exp_id2...
+2026-02-28 02:04:48.371 | INFO     | __main__:main:871 -   Datasets: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:04:48.371 | INFO     | __main__:main:873 - Extracting scores from exp_id1...
+2026-02-28 02:04:48.374 | INFO     | __main__:main:875 -   Datasets: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:04:48.374 | INFO     | __main__:main:877 - Extracting scores from exp_id3...
+2026-02-28 02:04:48.377 | INFO     | __main__:main:879 -   Datasets: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:04:48.377 | INFO     | __main__:main:882 - Verifying fold alignment between exp_id1 and exp_id2...
+2026-02-28 02:04:48.377 | WARNING  | __main__:main:893 - Fold alignment mismatch: breast_cancer_wdbc fold 0: exp2=0.938596 vs exp1=0.929825
+2026-02-28 02:04:48.378 | WARNING  | __main__:main:893 - Fold alignment mismatch: breast_cancer_wdbc fold 1: exp2=0.885965 vs exp1=0.894737
+2026-02-28 02:04:48.378 | WARNING  | __main__:main:893 - Fold alignment mismatch: breast_cancer_wdbc fold 2: exp2=0.921053 vs exp1=0.929825
+2026-02-28 02:04:48.378 | WARNING  | __main__:main:893 - Fold alignment mismatch: breast_cancer_wdbc fold 4: exp2=0.938053 vs exp1=0.946903
+2026-02-28 02:04:48.378 | WARNING  | __main__:main:893 - Fold alignment mismatch: ionosphere fold 0: exp2=0.943662 vs exp1=0.873239
+2026-02-28 02:04:48.378 | WARNING  | __main__:main:893 - Fold alignment mismatch: ionosphere fold 2: exp2=0.871429 vs exp1=0.857143
+2026-02-28 02:04:48.378 | WARNING  | __main__:main:893 - Fold alignment mismatch: ionosphere fold 4: exp2=0.814286 vs exp1=0.842857
+2026-02-28 02:04:48.378 | WARNING  | __main__:main:901 -   7 fold mismatches found!
+2026-02-28 02:04:48.379 | INFO     | __main__:main:907 -   Best K for auto_mpg: config=random, K=5, mean_score=0.7262
+2026-02-28 02:04:48.379 | INFO     | __main__:main:907 -   Best K for breast_cancer_wdbc: config=random, K=3, mean_score=0.9438
+2026-02-28 02:04:48.379 | INFO     | __main__:main:907 -   Best K for california_housing: config=adaptive, K=8, mean_score=0.4362
+2026-02-28 02:04:48.379 | INFO     | __main__:main:907 -   Best K for credit_german: config=random, K=5, mean_score=0.7280
+2026-02-28 02:04:48.379 | INFO     | __main__:main:907 -   Best K for diabetes_pima: config=random, K=3, mean_score=0.7422
+2026-02-28 02:04:48.379 | INFO     | __main__:main:907 -   Best K for diabetes_regression: config=random, K=5, mean_score=0.3626
+2026-02-28 02:04:48.379 | INFO     | __main__:main:907 -   Best K for heart_disease: config=adaptive, K=3, mean_score=0.8106
+2026-02-28 02:04:48.380 | INFO     | __main__:main:907 -   Best K for ionosphere: config=adaptive, K=3, mean_score=0.8489
+2026-02-28 02:04:48.380 | INFO     | __main__:main:907 -   Best K for spambase: config=adaptive, K=8, mean_score=0.9068
+2026-02-28 02:04:48.380 | INFO     | __main__:main:907 -   Best K for wine_quality_red: config=random, K=3, mean_score=0.2574
+2026-02-28 02:04:48.380 | INFO     | __main__:main:913 - Computing gap decomposition...
+2026-02-28 02:04:48.381 | INFO     | __main__:main:915 -   Computed gaps for 10 datasets
+2026-02-28 02:04:48.381 | INFO     | __main__:main:919 -   auto_mpg: Gap A=0.0976, Gap B=-0.0418, Gap C=0.2467, Total=0.0558
+2026-02-28 02:04:48.381 | INFO     | __main__:main:919 -   breast_cancer_wdbc: Gap A=-0.0159, Gap B=-0.0053, Gap C=0.0826, Total=-0.0211
+2026-02-28 02:04:48.381 | INFO     | __main__:main:919 -   california_housing: Gap A=0.1864, Gap B=0.0466, Gap C=0.1666, Total=0.2330
+2026-02-28 02:04:48.381 | INFO     | __main__:main:919 -   credit_german: Gap A=0.0110, Gap B=-0.0200, Gap C=0.0920, Total=-0.0090
+2026-02-28 02:04:48.382 | INFO     | __main__:main:919 -   diabetes_pima: Gap A=-0.0430, Gap B=0.0247, Gap C=0.0599, Total=-0.0183
+2026-02-28 02:04:48.382 | INFO     | __main__:main:919 -   diabetes_regression: Gap A=0.0264, Gap B=-0.1048, Gap C=0.3088, Total=-0.0784
+2026-02-28 02:04:48.382 | INFO     | __main__:main:919 -   heart_disease: Gap A=-0.0003, Gap B=-0.0167, Gap C=0.1386, Total=-0.0169
+2026-02-28 02:04:48.382 | INFO     | __main__:main:919 -   ionosphere: Gap A=0.0340, Gap B=0.0173, Gap C=0.1197, Total=0.0512
+2026-02-28 02:04:48.382 | INFO     | __main__:main:919 -   spambase: Gap A=0.2115, Gap B=-0.2080, Gap C=0.1582, Total=0.0035
+2026-02-28 02:04:48.382 | INFO     | __main__:main:919 -   wine_quality_red: Gap A=0.0942, Gap B=0.0020, Gap C=0.1324, Total=0.0962
+2026-02-28 02:04:48.382 | INFO     | __main__:main:927 - Running statistical analysis...
+2026-02-28 02:04:48.383 | INFO     | __main__:run_statistical_analysis:375 - Per-dataset mean Gap A: [ 0.09759813 -0.01585158  0.18640273  0.011      -0.04301842  0.02638683
+ -0.00028249  0.03396378  0.2114599   0.09423898]
+2026-02-28 02:04:48.383 | INFO     | __main__:run_statistical_analysis:376 - Per-dataset mean Gap B: [-0.04176256 -0.00527868  0.04662316 -0.02        0.02474323 -0.1047951
+ -0.01666667  0.01726358 -0.20798234  0.00197951]
+2026-02-28 02:04:48.383 | INFO     | __main__:run_statistical_analysis:377 - Per-dataset mean Gap C: [0.24669688 0.08256482 0.16664733 0.092      0.0598591  0.30884973
+ 0.13864407 0.11967807 0.15822334 0.13239532]
+2026-02-28 02:04:48.387 | INFO     | __main__:run_statistical_analysis:401 - Wilcoxon Gap A: stat=10.0000, p=0.0840
+2026-02-28 02:04:48.387 | INFO     | __main__:run_statistical_analysis:402 - Wilcoxon Gap B: stat=19.0000, p=0.4316
+2026-02-28 02:04:48.387 | INFO     | __main__:run_statistical_analysis:403 - Wilcoxon |A| vs |B|: stat=14.0000, p=0.1934
+2026-02-28 02:04:49.736 | INFO     | __main__:run_statistical_analysis:409 - Bootstrap CI Gap A: (0.013207187956061631, 0.11120307967181448)
+2026-02-28 02:04:49.736 | INFO     | __main__:run_statistical_analysis:410 - Bootstrap CI Gap B: (-0.07890689892064144, 0.006708769422473481)
+2026-02-28 02:04:49.736 | INFO     | __main__:run_statistical_analysis:411 - Bootstrap CI Gap C: (0.10982605590766366, 0.1995510815171107)
+2026-02-28 02:04:49.737 | INFO     | __main__:run_statistical_analysis:416 - Cohen's d Gap A: 0.7044
+2026-02-28 02:04:49.737 | INFO     | __main__:run_statistical_analysis:417 - Cohen's d Gap B: -0.4087
+2026-02-28 02:05:12.062 | INFO     | __main__:run_statistical_analysis:442 - Corr(Gap B, n_features): rho=-0.500, p=0.1416
+2026-02-28 02:05:12.062 | INFO     | __main__:run_statistical_analysis:446 - Corr(Gap B, n_samples): rho=0.152, p=0.6779
+2026-02-28 02:05:12.062 | INFO     | __main__:run_statistical_analysis:450 - Corr(Gap B, eRank): rho=-0.406, p=0.2459
+2026-02-28 02:05:12.062 | INFO     | __main__:run_statistical_analysis:454 - Corr(Gap B, baseline): rho=-0.115, p=0.7642
+2026-02-28 02:05:12.063 | INFO     | __main__:run_statistical_analysis:476 - Classification Gap B (n=6): mean=-0.0347, std=0.0792
+2026-02-28 02:05:12.063 | INFO     | __main__:run_statistical_analysis:480 - Regression Gap B (n=4): mean=-0.0245, std=0.0559
+2026-02-28 02:05:12.064 | INFO     | __main__:run_statistical_analysis:484 - Mann-Whitney U: stat=12.00, p=1.0000
+2026-02-28 02:05:12.064 | INFO     | __main__:run_statistical_analysis:519 - Gap identity check: |Total - (A + B)| mean = 0.00000000
+2026-02-28 02:05:12.064 | INFO     | __main__:main:930 - BOTTLENECK: implementation
+2026-02-28 02:05:12.064 | INFO     | __main__:main:931 - REASONING: Gap B (codebook constraint) is NOT statistically significant (p=0.4316), meaning the codebook constraint is essentially free. Performance loss comes from other sources.
+2026-02-28 02:05:12.064 | INFO     | __main__:main:934 - Formatting output...
+2026-02-28 02:05:12.069 | INFO     | __main__:main:940 - Saved output to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_4/gen_art/eval_id2_it4__opus/eval_out.json
+2026-02-28 02:05:12.070 | INFO     | __main__:main:941 -   metrics_agg keys: ['bootstrap_ci_gap_a_hi', 'bootstrap_ci_gap_a_lo', 'bootstrap_ci_gap_b_hi', 'bootstrap_ci_gap_b_lo', 'bootstrap_ci_gap_c_hi', 'bootstrap_ci_gap_c_lo', 'clf_gap_b_mean', 'clf_gap_b_std', 'cohens_d_gap_a', 'cohens_d_gap_b', 'corr_gap_b_baseline_p', 'corr_gap_b_baseline_rho', 'corr_gap_b_erank_p', 'corr_gap_b_erank_rho', 'corr_gap_b_nfeatures_p', 'corr_gap_b_nfeatures_rho', 'corr_gap_b_nsamples_p', 'corr_gap_b_nsamples_rho', 'identity_residual', 'mannwhitney_clf_vs_reg_p', 'mannwhitney_clf_vs_reg_stat', 'n_datasets', 'overall_mean_gap_a', 'overall_mean_gap_b', 'overall_mean_gap_c', 'overall_mean_total_gap', 'recoverable_gap', 'recoverable_pct', 'reg_gap_b_mean', 'reg_gap_b_std', 'wilcoxon_ab_magnitude_p', 'wilcoxon_ab_magnitude_stat', 'wilcoxon_gap_a_p', 'wilcoxon_gap_a_stat', 'wilcoxon_gap_b_p', 'wilcoxon_gap_b_stat']
+2026-02-28 02:05:12.070 | INFO     | __main__:main:942 -   datasets: 10
+2026-02-28 02:05:12.070 | INFO     | __main__:main:944 -   total examples: 60
+2026-02-28 02:05:12.070 | INFO     | __main__:main:946 - Done!
+2026-02-28 02:09:33.290 | INFO     | __main__:main:885 - ============================================================
+2026-02-28 02:09:33.293 | INFO     | __main__:main:886 - Diagnostic Gap Decomposition of Codebook-FIGS Accuracy
+2026-02-28 02:09:33.293 | INFO     | __main__:main:887 - ============================================================
+2026-02-28 02:09:33.294 | INFO     | __main__:main:890 - Loading exp_id2 from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id2_it2__opus/full_method_out.json
+2026-02-28 02:09:33.295 | INFO     | __main__:main:892 -   10 datasets loaded
+2026-02-28 02:09:33.296 | INFO     | __main__:main:894 - Loading exp_id1 from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_3/gen_art/exp_id1_it3__opus/full_method_out.json
+2026-02-28 02:09:33.310 | INFO     | __main__:main:896 -   10 datasets loaded
+2026-02-28 02:09:33.310 | INFO     | __main__:main:898 - Loading exp_id3 from /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus/full_method_out.json
+2026-02-28 02:09:33.476 | INFO     | __main__:main:901 -   10 datasets in CB results
+2026-02-28 02:09:33.481 | INFO     | __main__:main:904 - Extracting scores from exp_id2...
+2026-02-28 02:09:33.482 | INFO     | __main__:main:906 -   Datasets: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:09:33.482 | INFO     | __main__:main:908 - Extracting scores from exp_id1...
+2026-02-28 02:09:33.489 | INFO     | __main__:main:910 -   Datasets: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:09:33.491 | INFO     | __main__:main:912 - Extracting scores from exp_id3...
+2026-02-28 02:09:33.491 | INFO     | __main__:main:914 -   Datasets: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:09:33.492 | INFO     | __main__:main:917 - Verifying fold alignment between exp_id1 and exp_id2...
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:928 - Fold alignment mismatch: breast_cancer_wdbc fold 0: exp2=0.938596 vs exp1=0.929825
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:928 - Fold alignment mismatch: breast_cancer_wdbc fold 1: exp2=0.885965 vs exp1=0.894737
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:928 - Fold alignment mismatch: breast_cancer_wdbc fold 2: exp2=0.921053 vs exp1=0.929825
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:928 - Fold alignment mismatch: breast_cancer_wdbc fold 4: exp2=0.938053 vs exp1=0.946903
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:928 - Fold alignment mismatch: ionosphere fold 0: exp2=0.943662 vs exp1=0.873239
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:928 - Fold alignment mismatch: ionosphere fold 2: exp2=0.871429 vs exp1=0.857143
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:928 - Fold alignment mismatch: ionosphere fold 4: exp2=0.814286 vs exp1=0.842857
+2026-02-28 02:09:33.492 | WARNING  | __main__:main:936 -   7 fold mismatches found!
+2026-02-28 02:09:33.493 | INFO     | __main__:main:942 -   Best K for auto_mpg: config=random, K=5, mean_score=0.7262
+2026-02-28 02:09:33.493 | INFO     | __main__:main:942 -   Best K for breast_cancer_wdbc: config=random, K=3, mean_score=0.9438
+2026-02-28 02:09:33.493 | INFO     | __main__:main:942 -   Best K for california_housing: config=adaptive, K=8, mean_score=0.4362
+2026-02-28 02:09:33.493 | INFO     | __main__:main:942 -   Best K for credit_german: config=random, K=5, mean_score=0.7280
+2026-02-28 02:09:33.493 | INFO     | __main__:main:942 -   Best K for diabetes_pima: config=random, K=3, mean_score=0.7422
+2026-02-28 02:09:33.496 | INFO     | __main__:main:942 -   Best K for diabetes_regression: config=random, K=5, mean_score=0.3626
+2026-02-28 02:09:33.497 | INFO     | __main__:main:942 -   Best K for heart_disease: config=adaptive, K=3, mean_score=0.8106
+2026-02-28 02:09:33.497 | INFO     | __main__:main:942 -   Best K for ionosphere: config=adaptive, K=3, mean_score=0.8489
+2026-02-28 02:09:33.497 | INFO     | __main__:main:942 -   Best K for spambase: config=adaptive, K=8, mean_score=0.9068
+2026-02-28 02:09:33.497 | INFO     | __main__:main:942 -   Best K for wine_quality_red: config=random, K=3, mean_score=0.2574
+2026-02-28 02:09:33.497 | INFO     | __main__:main:948 - Computing gap decomposition...
+2026-02-28 02:09:33.499 | INFO     | __main__:main:950 -   Computed gaps for 10 datasets
+2026-02-28 02:09:33.499 | INFO     | __main__:main:954 -   auto_mpg: Gap A=0.0976, Gap B=-0.0418, Gap C=0.2467, Total=0.0558
+2026-02-28 02:09:33.500 | INFO     | __main__:main:954 -   breast_cancer_wdbc: Gap A=-0.0159, Gap B=-0.0053, Gap C=0.0826, Total=-0.0211
+2026-02-28 02:09:33.500 | INFO     | __main__:main:954 -   california_housing: Gap A=0.1864, Gap B=0.0466, Gap C=0.1666, Total=0.2330
+2026-02-28 02:09:33.500 | INFO     | __main__:main:954 -   credit_german: Gap A=0.0110, Gap B=-0.0200, Gap C=0.0920, Total=-0.0090
+2026-02-28 02:09:33.500 | INFO     | __main__:main:954 -   diabetes_pima: Gap A=-0.0430, Gap B=0.0247, Gap C=0.0599, Total=-0.0183
+2026-02-28 02:09:33.500 | INFO     | __main__:main:954 -   diabetes_regression: Gap A=0.0264, Gap B=-0.1048, Gap C=0.3088, Total=-0.0784
+2026-02-28 02:09:33.500 | INFO     | __main__:main:954 -   heart_disease: Gap A=-0.0003, Gap B=-0.0167, Gap C=0.1386, Total=-0.0169
+2026-02-28 02:09:33.505 | INFO     | __main__:main:954 -   ionosphere: Gap A=0.0340, Gap B=0.0173, Gap C=0.1197, Total=0.0512
+2026-02-28 02:09:33.505 | INFO     | __main__:main:954 -   spambase: Gap A=0.2115, Gap B=-0.2080, Gap C=0.1582, Total=0.0035
+2026-02-28 02:09:33.506 | INFO     | __main__:main:954 -   wine_quality_red: Gap A=0.0942, Gap B=0.0020, Gap C=0.1324, Total=0.0962
+2026-02-28 02:09:33.506 | INFO     | __main__:main:962 - Running statistical analysis...
+2026-02-28 02:09:33.507 | INFO     | __main__:run_statistical_analysis:375 - Per-dataset mean Gap A: [ 0.09759813 -0.01585158  0.18640273  0.011      -0.04301842  0.02638683
+ -0.00028249  0.03396378  0.2114599   0.09423898]
+2026-02-28 02:09:33.507 | INFO     | __main__:run_statistical_analysis:376 - Per-dataset mean Gap B: [-0.04176256 -0.00527868  0.04662316 -0.02        0.02474323 -0.1047951
+ -0.01666667  0.01726358 -0.20798234  0.00197951]
+2026-02-28 02:09:33.507 | INFO     | __main__:run_statistical_analysis:377 - Per-dataset mean Gap C: [0.24669688 0.08256482 0.16664733 0.092      0.0598591  0.30884973
+ 0.13864407 0.11967807 0.15822334 0.13239532]
+2026-02-28 02:09:33.515 | INFO     | __main__:run_statistical_analysis:410 - Wilcoxon Gap A: stat=10.0000, p=0.0840
+2026-02-28 02:09:33.519 | INFO     | __main__:run_statistical_analysis:411 - Wilcoxon Gap B: stat=19.0000, p=0.4316
+2026-02-28 02:09:33.519 | INFO     | __main__:run_statistical_analysis:412 - Wilcoxon Gap B' (within-exp): stat=22.0000, p=0.6250
+2026-02-28 02:09:33.520 | INFO     | __main__:run_statistical_analysis:413 - Wilcoxon |A| vs |B|: stat=14.0000, p=0.1934
+2026-02-28 02:09:35.537 | INFO     | __main__:run_statistical_analysis:420 - Bootstrap CI Gap A: (0.013207187956061631, 0.11120307967181448)
+2026-02-28 02:09:35.542 | INFO     | __main__:run_statistical_analysis:421 - Bootstrap CI Gap B: (-0.07890689892064144, 0.006708769422473481)
+2026-02-28 02:09:35.542 | INFO     | __main__:run_statistical_analysis:422 - Bootstrap CI Gap C: (0.10982605590766366, 0.1995510815171107)
+2026-02-28 02:09:35.543 | INFO     | __main__:run_statistical_analysis:428 - Cohen's d Gap A: 0.7044
+2026-02-28 02:09:35.544 | INFO     | __main__:run_statistical_analysis:429 - Cohen's d Gap B: -0.4087
+2026-02-28 02:09:35.544 | INFO     | __main__:run_statistical_analysis:430 - Cohen's d Gap B': 0.3338
+2026-02-28 02:10:00.969 | INFO     | __main__:run_statistical_analysis:455 - Corr(Gap B, n_features): rho=-0.500, p=0.1416
+2026-02-28 02:10:00.971 | INFO     | __main__:run_statistical_analysis:459 - Corr(Gap B, n_samples): rho=0.152, p=0.6779
+2026-02-28 02:10:00.971 | INFO     | __main__:run_statistical_analysis:463 - Corr(Gap B, eRank): rho=-0.406, p=0.2459
+2026-02-28 02:10:00.971 | INFO     | __main__:run_statistical_analysis:467 - Corr(Gap B, baseline): rho=-0.115, p=0.7642
+2026-02-28 02:10:00.973 | INFO     | __main__:run_statistical_analysis:489 - Classification Gap B (n=6): mean=-0.0347, std=0.0792
+2026-02-28 02:10:00.973 | INFO     | __main__:run_statistical_analysis:493 - Regression Gap B (n=4): mean=-0.0245, std=0.0559
+2026-02-28 02:10:00.973 | INFO     | __main__:run_statistical_analysis:497 - Mann-Whitney U: stat=12.00, p=1.0000
+2026-02-28 02:10:00.973 | INFO     | __main__:run_statistical_analysis:532 - Gap identity check: |Total - (A + B)| mean = 0.00000000
+2026-02-28 02:10:00.974 | INFO     | __main__:main:966 - BOTTLENECK: implementation
+2026-02-28 02:10:00.974 | INFO     | __main__:main:967 - REASONING: Gap B (codebook constraint) is NOT statistically significant (p=0.4316), meaning the codebook constraint is essentially free. Performance loss comes from other sources.
+2026-02-28 02:10:00.974 | INFO     | __main__:main:970 - Formatting output...
+2026-02-28 02:10:00.987 | INFO     | __main__:main:976 - Saved output to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_4/gen_art/eval_id2_it4__opus/eval_out.json
+2026-02-28 02:10:00.987 | INFO     | __main__:main:977 -   metrics_agg keys: ['bootstrap_ci_gap_a_hi', 'bootstrap_ci_gap_a_lo', 'bootstrap_ci_gap_b_hi', 'bootstrap_ci_gap_b_lo', 'bootstrap_ci_gap_b_prime_hi', 'bootstrap_ci_gap_b_prime_lo', 'bootstrap_ci_gap_c_hi', 'bootstrap_ci_gap_c_lo', 'clf_gap_b_mean', 'clf_gap_b_std', 'cohens_d_gap_a', 'cohens_d_gap_b', 'cohens_d_gap_b_prime', 'corr_gap_b_baseline_p', 'corr_gap_b_baseline_rho', 'corr_gap_b_erank_p', 'corr_gap_b_erank_rho', 'corr_gap_b_nfeatures_p', 'corr_gap_b_nfeatures_rho', 'corr_gap_b_nsamples_p', 'corr_gap_b_nsamples_rho', 'identity_residual', 'mannwhitney_clf_vs_reg_p', 'mannwhitney_clf_vs_reg_stat', 'n_datasets', 'overall_mean_gap_a', 'overall_mean_gap_b', 'overall_mean_gap_b_prime', 'overall_mean_gap_c', 'overall_mean_total_gap', 'recoverable_gap', 'recoverable_pct', 'reg_gap_b_mean', 'reg_gap_b_std', 'wilcoxon_ab_magnitude_p', 'wilcoxon_ab_magnitude_stat', 'wilcoxon_gap_a_p', 'wilcoxon_gap_a_stat', 'wilcoxon_gap_b_p', 'wilcoxon_gap_b_prime_p', 'wilcoxon_gap_b_prime_stat', 'wilcoxon_gap_b_stat']
+2026-02-28 02:10:00.988 | INFO     | __main__:main:978 -   datasets: 10
+2026-02-28 02:10:00.988 | INFO     | __main__:main:980 -   total examples: 60
+2026-02-28 02:10:00.988 | INFO     | __main__:main:982 - Done!

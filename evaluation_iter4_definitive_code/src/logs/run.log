@@ -1,0 +1,272 @@
+2026-02-28 02:02:28.031 | INFO     | __main__:main:255 - ============================================================
+2026-02-28 02:02:28.031 | INFO     | __main__:main:256 - Loading dependency data
+2026-02-28 02:02:28.031 | INFO     | __main__:main:257 - ============================================================
+2026-02-28 02:02:28.032 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id1_it2__opus
+2026-02-28 02:02:28.033 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:28.033 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id2_it2__opus
+2026-02-28 02:02:28.037 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:28.037 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id3_it2__opus
+2026-02-28 02:02:28.139 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:28.140 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id1_it3__opus
+2026-02-28 02:02:28.145 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:28.145 | INFO     | __main__:load_json:89 - Loading full_data_out.json from data_id2_it1__opus
+2026-02-28 02:02:28.211 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:28.212 | INFO     | __main__:main:288 - Datasets available in iter3: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:28.212 | INFO     | __main__:main:289 - Datasets available in oblique baselines: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:28.212 | INFO     | __main__:main:290 - Datasets available in iter2 main: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:28.212 | INFO     | __main__:main:291 - Dataset metadata: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:28.212 | INFO     | __main__:main:296 - ============================================================
+2026-02-28 02:02:28.212 | INFO     | __main__:main:297 - Computing per-dataset method scores
+2026-02-28 02:02:28.212 | INFO     | __main__:main:298 - ============================================================
+2026-02-28 02:02:28.212 | INFO     | __main__:main:307 - Processing heart_disease (task=classification, metric=accuracy)
+2026-02-28 02:02:28.215 | INFO     | __main__:main:491 -   Scores: FIGS=0.7937, XGB=0.7972, CB-FIGS_best=0.8106 (cb_figs_adaptive_K3)
+2026-02-28 02:02:28.215 | INFO     | __main__:main:307 - Processing diabetes_pima (task=classification, metric=accuracy)
+2026-02-28 02:02:28.216 | INFO     | __main__:main:491 -   Scores: FIGS=0.7239, XGB=0.7591, CB-FIGS_best=0.7422 (cb_figs_random_K3)
+2026-02-28 02:02:28.217 | INFO     | __main__:main:307 - Processing breast_cancer_wdbc (task=classification, metric=accuracy)
+2026-02-28 02:02:28.218 | INFO     | __main__:main:491 -   Scores: FIGS=0.9262, XGB=0.9578, CB-FIGS_best=0.9438 (cb_figs_random_K3)
+2026-02-28 02:02:28.218 | INFO     | __main__:main:307 - Processing credit_german (task=classification, metric=accuracy)
+2026-02-28 02:02:28.220 | INFO     | __main__:main:491 -   Scores: FIGS=0.7190, XGB=0.7570, CB-FIGS_best=0.7280 (cb_figs_random_K5)
+2026-02-28 02:02:28.220 | INFO     | __main__:main:307 - Processing ionosphere (task=classification, metric=accuracy)
+2026-02-28 02:02:28.221 | INFO     | __main__:main:491 -   Scores: FIGS=0.8889, XGB=0.9259, CB-FIGS_best=0.8489 (cb_figs_adaptive_K3)
+2026-02-28 02:02:28.221 | INFO     | __main__:main:307 - Processing spambase (task=classification, metric=accuracy)
+2026-02-28 02:02:28.223 | INFO     | __main__:main:491 -   Scores: FIGS=0.9102, XGB=0.9485, CB-FIGS_best=0.9068 (cb_figs_adaptive_K8)
+2026-02-28 02:02:28.223 | INFO     | __main__:main:307 - Processing diabetes_regression (task=regression, metric=r2)
+2026-02-28 02:02:28.225 | INFO     | __main__:main:491 -   Scores: FIGS=0.2842, XGB=0.3763, CB-FIGS_best=0.3626 (cb_figs_random_K5)
+2026-02-28 02:02:28.225 | INFO     | __main__:main:307 - Processing california_housing (task=regression, metric=r2)
+2026-02-28 02:02:28.226 | INFO     | __main__:main:491 -   Scores: FIGS=0.6692, XGB=0.8104, CB-FIGS_best=0.4362 (cb_figs_adaptive_K8)
+2026-02-28 02:02:28.227 | INFO     | __main__:main:307 - Processing auto_mpg (task=regression, metric=r2)
+2026-02-28 02:02:28.228 | INFO     | __main__:main:491 -   Scores: FIGS=0.7820, XGB=0.8275, CB-FIGS_best=0.7262 (cb_figs_random_K5)
+2026-02-28 02:02:28.229 | INFO     | __main__:main:307 - Processing wine_quality_red (task=regression, metric=r2)
+2026-02-28 02:02:28.230 | INFO     | __main__:main:491 -   Scores: FIGS=0.3537, XGB=0.4174, CB-FIGS_best=0.2574 (cb_figs_random_K3)
+2026-02-28 02:02:28.230 | INFO     | __main__:main:498 - ============================================================
+2026-02-28 02:02:28.230 | INFO     | __main__:main:499 - Computing aggregate metrics
+2026-02-28 02:02:28.230 | INFO     | __main__:main:500 - ============================================================
+2026-02-28 02:02:28.232 | INFO     | __main__:main:514 - Friedman chi2=37.061, p=0.000002
+2026-02-28 02:02:28.232 | INFO     | __main__:main:516 - Nemenyi CD=2.849
+2026-02-28 02:02:28.232 | INFO     | __main__:main:517 - Rankings: {'cb_figs_best': 5.0, 'figs': 5.1, 'lightgbm': 1.85, 'oblique_figs': 5.5, 'sporf_full': 2.0, 'sporf_matched': 5.7, 'xgboost': 2.85}
+2026-02-28 02:02:28.233 | INFO     | __main__:main:563 - Mean gap vs FIGS: 2.88pp
+2026-02-28 02:02:28.233 | INFO     | __main__:main:564 - Mean gap vs XGBoost: 8.14pp
+2026-02-28 02:02:28.233 | INFO     | __main__:main:565 - Mean gap vs LightGBM: 9.41pp
+2026-02-28 02:02:28.233 | INFO     | __main__:main:566 - Mean gap vs best baseline: 9.58pp
+2026-02-28 02:02:28.233 | INFO     | __main__:main:567 - Classification gap vs FIGS: -0.31pp
+2026-02-28 02:02:28.233 | INFO     | __main__:main:568 - Regression gap vs FIGS: 7.67pp
+2026-02-28 02:02:28.233 | INFO     | __main__:main:594 - Compression vs FIGS: 2.10x
+2026-02-28 02:02:28.233 | INFO     | __main__:main:595 - Compression vs SPORF: 2.71x
+2026-02-28 02:02:28.233 | INFO     | __main__:main:596 - Compression vs ObliqueFIGS: 1.73x
+2026-02-28 02:02:28.233 | INFO     | __main__:main:610 - Codebook stability: mean=0.554, max=0.680, pct>0.8=0.0%
+2026-02-28 02:02:28.261 | INFO     | __main__:main:633 - Elbow detection: 8/10 datasets have clear elbows
+2026-02-28 02:02:28.262 | INFO     | __main__:main:634 - Most common optimal K: 12
+2026-02-28 02:02:28.262 | INFO     | __main__:main:661 - Pareto optimal methods: ['figs', 'xgboost', 'lightgbm', 'cb_figs_best']
+2026-02-28 02:02:28.262 | INFO     | __main__:main:673 - Mean iter2->iter3 improvement: 11.35pp
+2026-02-28 02:02:28.262 | INFO     | __main__:main:706 - Hypothesis verdict: PASS=1, FAIL=1, PARTIAL=4
+2026-02-28 02:02:28.262 | INFO     | __main__:main:708 -   a_accuracy_gap: PARTIAL
+2026-02-28 02:02:28.262 | INFO     | __main__:main:708 -   b_stability: PARTIAL
+2026-02-28 02:02:28.262 | INFO     | __main__:main:708 -   c_elbows: PASS
+2026-02-28 02:02:28.262 | INFO     | __main__:main:708 -   d_compression: PARTIAL
+2026-02-28 02:02:28.263 | INFO     | __main__:main:708 -   e_domain_alignment: FAIL
+2026-02-28 02:02:28.263 | INFO     | __main__:main:708 -   f_concept_mapping: PARTIAL
+2026-02-28 02:02:28.263 | INFO     | __main__:main:713 - ============================================================
+2026-02-28 02:02:28.263 | INFO     | __main__:main:714 - Building output
+2026-02-28 02:02:28.263 | INFO     | __main__:main:715 - ============================================================
+2026-02-28 02:02:28.263 | ERROR    | __main__:<module>:1011 - An error has been caught in function '<module>', process 'MainProcess' (2758409), thread 'MainThread' (133792155473728):
+Traceback (most recent call last):
+
+> File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_4/gen_art/eval_id3_it4__opus/eval.py", line 1011, in <module>
+    main()
+    └ <function main at 0x79aec2369120>
+
+  File "/home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_4/gen_art/eval_id3_it4__opus/eval.py", line 827, in main
+    summary_output = json.dumps({
+                     │    └ <function dumps at 0x79aee8d58040>
+                     └ <module 'json' from '/home/adrian/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/json/__init__.py'>
+
+  File "/home/adrian/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           │                │      └ {'figs_mean': 0.793672, 'xgboost_mean': 0.797175, 'lightgbm_mean': 0.830847, 'sporf_matched_mean': 0.817514, 'sporf_full_mean...
+           │                └ <function JSONEncoder.encode at 0x79aee8d58400>
+           └ <json.encoder.JSONEncoder object at 0x79aee8fac4d0>
+  File "/home/adrian/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             │    │          └ {'figs_mean': 0.793672, 'xgboost_mean': 0.797175, 'lightgbm_mean': 0.830847, 'sporf_matched_mean': 0.817514, 'sporf_full_mean...
+             │    └ <function JSONEncoder.iterencode at 0x79aee8d584a0>
+             └ <json.encoder.JSONEncoder object at 0x79aee8fac4d0>
+  File "/home/adrian/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           │           └ {'figs_mean': 0.793672, 'xgboost_mean': 0.797175, 'lightgbm_mean': 0.830847, 'sporf_matched_mean': 0.817514, 'sporf_full_mean...
+           └ <_json.Encoder object at 0x79aec0122c20>
+  File "/home/adrian/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+
+TypeError: Object of type bool is not JSON serializable
+2026-02-28 02:02:45.915 | INFO     | __main__:main:255 - ============================================================
+2026-02-28 02:02:45.915 | INFO     | __main__:main:256 - Loading dependency data
+2026-02-28 02:02:45.915 | INFO     | __main__:main:257 - ============================================================
+2026-02-28 02:02:45.916 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id1_it2__opus
+2026-02-28 02:02:45.918 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:45.919 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id2_it2__opus
+2026-02-28 02:02:45.921 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:45.921 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id3_it2__opus
+2026-02-28 02:02:46.005 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:46.005 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id1_it3__opus
+2026-02-28 02:02:46.009 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:46.009 | INFO     | __main__:load_json:89 - Loading full_data_out.json from data_id2_it1__opus
+2026-02-28 02:02:46.095 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:02:46.095 | INFO     | __main__:main:288 - Datasets available in iter3: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:46.095 | INFO     | __main__:main:289 - Datasets available in oblique baselines: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:46.096 | INFO     | __main__:main:290 - Datasets available in iter2 main: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:46.096 | INFO     | __main__:main:291 - Dataset metadata: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:02:46.096 | INFO     | __main__:main:296 - ============================================================
+2026-02-28 02:02:46.096 | INFO     | __main__:main:297 - Computing per-dataset method scores
+2026-02-28 02:02:46.096 | INFO     | __main__:main:298 - ============================================================
+2026-02-28 02:02:46.096 | INFO     | __main__:main:307 - Processing heart_disease (task=classification, metric=accuracy)
+2026-02-28 02:02:46.098 | INFO     | __main__:main:491 -   Scores: FIGS=0.7937, XGB=0.7972, CB-FIGS_best=0.8106 (cb_figs_adaptive_K3)
+2026-02-28 02:02:46.098 | INFO     | __main__:main:307 - Processing diabetes_pima (task=classification, metric=accuracy)
+2026-02-28 02:02:46.099 | INFO     | __main__:main:491 -   Scores: FIGS=0.7239, XGB=0.7591, CB-FIGS_best=0.7422 (cb_figs_random_K3)
+2026-02-28 02:02:46.099 | INFO     | __main__:main:307 - Processing breast_cancer_wdbc (task=classification, metric=accuracy)
+2026-02-28 02:02:46.101 | INFO     | __main__:main:491 -   Scores: FIGS=0.9262, XGB=0.9578, CB-FIGS_best=0.9438 (cb_figs_random_K3)
+2026-02-28 02:02:46.101 | INFO     | __main__:main:307 - Processing credit_german (task=classification, metric=accuracy)
+2026-02-28 02:02:46.103 | INFO     | __main__:main:491 -   Scores: FIGS=0.7190, XGB=0.7570, CB-FIGS_best=0.7280 (cb_figs_random_K5)
+2026-02-28 02:02:46.103 | INFO     | __main__:main:307 - Processing ionosphere (task=classification, metric=accuracy)
+2026-02-28 02:02:46.105 | INFO     | __main__:main:491 -   Scores: FIGS=0.8889, XGB=0.9259, CB-FIGS_best=0.8489 (cb_figs_adaptive_K3)
+2026-02-28 02:02:46.105 | INFO     | __main__:main:307 - Processing spambase (task=classification, metric=accuracy)
+2026-02-28 02:02:46.106 | INFO     | __main__:main:491 -   Scores: FIGS=0.9102, XGB=0.9485, CB-FIGS_best=0.9068 (cb_figs_adaptive_K8)
+2026-02-28 02:02:46.106 | INFO     | __main__:main:307 - Processing diabetes_regression (task=regression, metric=r2)
+2026-02-28 02:02:46.107 | INFO     | __main__:main:491 -   Scores: FIGS=0.2842, XGB=0.3763, CB-FIGS_best=0.3626 (cb_figs_random_K5)
+2026-02-28 02:02:46.107 | INFO     | __main__:main:307 - Processing california_housing (task=regression, metric=r2)
+2026-02-28 02:02:46.109 | INFO     | __main__:main:491 -   Scores: FIGS=0.6692, XGB=0.8104, CB-FIGS_best=0.4362 (cb_figs_adaptive_K8)
+2026-02-28 02:02:46.109 | INFO     | __main__:main:307 - Processing auto_mpg (task=regression, metric=r2)
+2026-02-28 02:02:46.110 | INFO     | __main__:main:491 -   Scores: FIGS=0.7820, XGB=0.8275, CB-FIGS_best=0.7262 (cb_figs_random_K5)
+2026-02-28 02:02:46.111 | INFO     | __main__:main:307 - Processing wine_quality_red (task=regression, metric=r2)
+2026-02-28 02:02:46.112 | INFO     | __main__:main:491 -   Scores: FIGS=0.3537, XGB=0.4174, CB-FIGS_best=0.2574 (cb_figs_random_K3)
+2026-02-28 02:02:46.112 | INFO     | __main__:main:498 - ============================================================
+2026-02-28 02:02:46.112 | INFO     | __main__:main:499 - Computing aggregate metrics
+2026-02-28 02:02:46.112 | INFO     | __main__:main:500 - ============================================================
+2026-02-28 02:02:46.114 | INFO     | __main__:main:514 - Friedman chi2=37.061, p=0.000002
+2026-02-28 02:02:46.114 | INFO     | __main__:main:516 - Nemenyi CD=2.849
+2026-02-28 02:02:46.114 | INFO     | __main__:main:517 - Rankings: {'cb_figs_best': 5.0, 'figs': 5.1, 'lightgbm': 1.85, 'oblique_figs': 5.5, 'sporf_full': 2.0, 'sporf_matched': 5.7, 'xgboost': 2.85}
+2026-02-28 02:02:46.115 | INFO     | __main__:main:563 - Mean gap vs FIGS: 2.88pp
+2026-02-28 02:02:46.115 | INFO     | __main__:main:564 - Mean gap vs XGBoost: 8.14pp
+2026-02-28 02:02:46.115 | INFO     | __main__:main:565 - Mean gap vs LightGBM: 9.41pp
+2026-02-28 02:02:46.115 | INFO     | __main__:main:566 - Mean gap vs best baseline: 9.58pp
+2026-02-28 02:02:46.115 | INFO     | __main__:main:567 - Classification gap vs FIGS: -0.31pp
+2026-02-28 02:02:46.115 | INFO     | __main__:main:568 - Regression gap vs FIGS: 7.67pp
+2026-02-28 02:02:46.115 | INFO     | __main__:main:594 - Compression vs FIGS: 2.10x
+2026-02-28 02:02:46.115 | INFO     | __main__:main:595 - Compression vs SPORF: 2.71x
+2026-02-28 02:02:46.115 | INFO     | __main__:main:596 - Compression vs ObliqueFIGS: 1.73x
+2026-02-28 02:02:46.115 | INFO     | __main__:main:610 - Codebook stability: mean=0.554, max=0.680, pct>0.8=0.0%
+2026-02-28 02:02:46.120 | INFO     | __main__:main:633 - Elbow detection: 8/10 datasets have clear elbows
+2026-02-28 02:02:46.121 | INFO     | __main__:main:634 - Most common optimal K: 12
+2026-02-28 02:02:46.121 | INFO     | __main__:main:661 - Pareto optimal methods: ['figs', 'xgboost', 'lightgbm', 'cb_figs_best']
+2026-02-28 02:02:46.121 | INFO     | __main__:main:673 - Mean iter2->iter3 improvement: 11.35pp
+2026-02-28 02:02:46.121 | INFO     | __main__:main:706 - Hypothesis verdict: PASS=1, FAIL=1, PARTIAL=4
+2026-02-28 02:02:46.121 | INFO     | __main__:main:708 -   a_accuracy_gap: PARTIAL
+2026-02-28 02:02:46.121 | INFO     | __main__:main:708 -   b_stability: PARTIAL
+2026-02-28 02:02:46.121 | INFO     | __main__:main:708 -   c_elbows: PASS
+2026-02-28 02:02:46.121 | INFO     | __main__:main:708 -   d_compression: PARTIAL
+2026-02-28 02:02:46.121 | INFO     | __main__:main:708 -   e_domain_alignment: FAIL
+2026-02-28 02:02:46.122 | INFO     | __main__:main:708 -   f_concept_mapping: PARTIAL
+2026-02-28 02:02:46.122 | INFO     | __main__:main:713 - ============================================================
+2026-02-28 02:02:46.122 | INFO     | __main__:main:714 - Building output
+2026-02-28 02:02:46.122 | INFO     | __main__:main:715 - ============================================================
+2026-02-28 02:02:46.126 | INFO     | __main__:main:987 - Total examples: 60 (target: 60+)
+2026-02-28 02:02:46.128 | INFO     | __main__:main:991 - Output written to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_4/gen_art/eval_id3_it4__opus/eval_out.json
+2026-02-28 02:02:46.128 | INFO     | __main__:main:992 - Output size: 84.1 KB
+2026-02-28 02:02:46.128 | INFO     | __main__:main:995 - ============================================================
+2026-02-28 02:02:46.128 | INFO     | __main__:main:996 - EVALUATION SUMMARY
+2026-02-28 02:02:46.128 | INFO     | __main__:main:997 - ============================================================
+2026-02-28 02:02:46.128 | INFO     | __main__:main:998 - Friedman chi2=37.0607, p=2e-06
+2026-02-28 02:02:46.128 | INFO     | __main__:main:999 - CB-FIGS rank=5.0, FIGS rank=5.1
+2026-02-28 02:02:46.128 | INFO     | __main__:main:1000 - Gap vs FIGS: 2.88pp
+2026-02-28 02:02:46.129 | INFO     | __main__:main:1001 - Gap vs best baseline: 9.58pp
+2026-02-28 02:02:46.129 | INFO     | __main__:main:1002 - Compression vs FIGS: 2.10x
+2026-02-28 02:02:46.129 | INFO     | __main__:main:1003 - Stability: 0.554
+2026-02-28 02:02:46.129 | INFO     | __main__:main:1004 - Elbows: 80%
+2026-02-28 02:02:46.129 | INFO     | __main__:main:1005 - Hypothesis: PASS=1, FAIL=1, PARTIAL=4
+2026-02-28 02:02:46.129 | INFO     | __main__:main:1006 - Pareto optimal: ['figs', 'xgboost', 'lightgbm', 'cb_figs_best']
+2026-02-28 02:02:46.129 | INFO     | __main__:main:1007 - Iter improvement: 11.35pp
+2026-02-28 02:04:07.996 | INFO     | __main__:main:255 - ============================================================
+2026-02-28 02:04:07.997 | INFO     | __main__:main:256 - Loading dependency data
+2026-02-28 02:04:07.997 | INFO     | __main__:main:257 - ============================================================
+2026-02-28 02:04:07.997 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id1_it2__opus
+2026-02-28 02:04:07.999 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:04:07.999 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id2_it2__opus
+2026-02-28 02:04:08.000 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:04:08.001 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id3_it2__opus
+2026-02-28 02:04:08.073 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:04:08.074 | INFO     | __main__:load_json:89 - Loading full_method_out.json from exp_id1_it3__opus
+2026-02-28 02:04:08.077 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:04:08.077 | INFO     | __main__:load_json:89 - Loading full_data_out.json from data_id2_it1__opus
+2026-02-28 02:04:08.150 | INFO     | __main__:load_json:91 -   Loaded successfully
+2026-02-28 02:04:08.150 | INFO     | __main__:main:288 - Datasets available in iter3: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:04:08.151 | INFO     | __main__:main:289 - Datasets available in oblique baselines: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:04:08.151 | INFO     | __main__:main:290 - Datasets available in iter2 main: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:04:08.151 | INFO     | __main__:main:291 - Dataset metadata: ['auto_mpg', 'breast_cancer_wdbc', 'california_housing', 'credit_german', 'diabetes_pima', 'diabetes_regression', 'heart_disease', 'ionosphere', 'spambase', 'wine_quality_red']
+2026-02-28 02:04:08.151 | INFO     | __main__:main:296 - ============================================================
+2026-02-28 02:04:08.151 | INFO     | __main__:main:297 - Computing per-dataset method scores
+2026-02-28 02:04:08.151 | INFO     | __main__:main:298 - ============================================================
+2026-02-28 02:04:08.151 | INFO     | __main__:main:307 - Processing heart_disease (task=classification, metric=accuracy)
+2026-02-28 02:04:08.152 | INFO     | __main__:main:491 -   Scores: FIGS=0.7937, XGB=0.7972, CB-FIGS_best=0.8106 (cb_figs_adaptive_K3)
+2026-02-28 02:04:08.152 | INFO     | __main__:main:307 - Processing diabetes_pima (task=classification, metric=accuracy)
+2026-02-28 02:04:08.153 | INFO     | __main__:main:491 -   Scores: FIGS=0.7239, XGB=0.7591, CB-FIGS_best=0.7422 (cb_figs_random_K3)
+2026-02-28 02:04:08.154 | INFO     | __main__:main:307 - Processing breast_cancer_wdbc (task=classification, metric=accuracy)
+2026-02-28 02:04:08.155 | INFO     | __main__:main:491 -   Scores: FIGS=0.9262, XGB=0.9578, CB-FIGS_best=0.9438 (cb_figs_random_K3)
+2026-02-28 02:04:08.155 | INFO     | __main__:main:307 - Processing credit_german (task=classification, metric=accuracy)
+2026-02-28 02:04:08.156 | INFO     | __main__:main:491 -   Scores: FIGS=0.7190, XGB=0.7570, CB-FIGS_best=0.7280 (cb_figs_random_K5)
+2026-02-28 02:04:08.156 | INFO     | __main__:main:307 - Processing ionosphere (task=classification, metric=accuracy)
+2026-02-28 02:04:08.157 | INFO     | __main__:main:491 -   Scores: FIGS=0.8889, XGB=0.9259, CB-FIGS_best=0.8489 (cb_figs_adaptive_K3)
+2026-02-28 02:04:08.157 | INFO     | __main__:main:307 - Processing spambase (task=classification, metric=accuracy)
+2026-02-28 02:04:08.158 | INFO     | __main__:main:491 -   Scores: FIGS=0.9102, XGB=0.9485, CB-FIGS_best=0.9068 (cb_figs_adaptive_K8)
+2026-02-28 02:04:08.159 | INFO     | __main__:main:307 - Processing diabetes_regression (task=regression, metric=r2)
+2026-02-28 02:04:08.160 | INFO     | __main__:main:491 -   Scores: FIGS=0.2842, XGB=0.3763, CB-FIGS_best=0.3626 (cb_figs_random_K5)
+2026-02-28 02:04:08.160 | INFO     | __main__:main:307 - Processing california_housing (task=regression, metric=r2)
+2026-02-28 02:04:08.161 | INFO     | __main__:main:491 -   Scores: FIGS=0.6692, XGB=0.8104, CB-FIGS_best=0.4362 (cb_figs_adaptive_K8)
+2026-02-28 02:04:08.161 | INFO     | __main__:main:307 - Processing auto_mpg (task=regression, metric=r2)
+2026-02-28 02:04:08.162 | INFO     | __main__:main:491 -   Scores: FIGS=0.7820, XGB=0.8275, CB-FIGS_best=0.7262 (cb_figs_random_K5)
+2026-02-28 02:04:08.162 | INFO     | __main__:main:307 - Processing wine_quality_red (task=regression, metric=r2)
+2026-02-28 02:04:08.163 | INFO     | __main__:main:491 -   Scores: FIGS=0.3537, XGB=0.4174, CB-FIGS_best=0.2574 (cb_figs_random_K3)
+2026-02-28 02:04:08.164 | INFO     | __main__:main:498 - ============================================================
+2026-02-28 02:04:08.164 | INFO     | __main__:main:499 - Computing aggregate metrics
+2026-02-28 02:04:08.164 | INFO     | __main__:main:500 - ============================================================
+2026-02-28 02:04:08.165 | INFO     | __main__:main:514 - Friedman chi2=37.061, p=0.000002
+2026-02-28 02:04:08.165 | INFO     | __main__:main:516 - Nemenyi CD=2.849
+2026-02-28 02:04:08.166 | INFO     | __main__:main:517 - Rankings: {'cb_figs_best': 5.0, 'figs': 5.1, 'lightgbm': 1.85, 'oblique_figs': 5.5, 'sporf_full': 2.0, 'sporf_matched': 5.7, 'xgboost': 2.85}
+2026-02-28 02:04:08.166 | INFO     | __main__:main:563 - Mean gap vs FIGS: 2.88pp
+2026-02-28 02:04:08.166 | INFO     | __main__:main:564 - Mean gap vs XGBoost: 8.14pp
+2026-02-28 02:04:08.166 | INFO     | __main__:main:565 - Mean gap vs LightGBM: 9.41pp
+2026-02-28 02:04:08.166 | INFO     | __main__:main:566 - Mean gap vs best baseline: 9.58pp
+2026-02-28 02:04:08.166 | INFO     | __main__:main:567 - Classification gap vs FIGS: -0.31pp
+2026-02-28 02:04:08.166 | INFO     | __main__:main:568 - Regression gap vs FIGS: 7.67pp
+2026-02-28 02:04:08.166 | INFO     | __main__:main:594 - Compression vs FIGS: 2.10x
+2026-02-28 02:04:08.167 | INFO     | __main__:main:595 - Compression vs SPORF: 2.71x
+2026-02-28 02:04:08.167 | INFO     | __main__:main:596 - Compression vs ObliqueFIGS: 1.73x
+2026-02-28 02:04:08.167 | INFO     | __main__:main:610 - Codebook stability: mean=0.554, max=0.680, pct>0.8=0.0%
+2026-02-28 02:04:08.171 | INFO     | __main__:main:633 - Elbow detection: 8/10 datasets have clear elbows
+2026-02-28 02:04:08.172 | INFO     | __main__:main:634 - Most common optimal K: 12
+2026-02-28 02:04:08.172 | INFO     | __main__:main:661 - Pareto optimal methods: ['figs', 'xgboost', 'lightgbm', 'cb_figs_best']
+2026-02-28 02:04:08.172 | INFO     | __main__:main:673 - Mean iter2->iter3 improvement: 11.35pp
+2026-02-28 02:04:08.172 | INFO     | __main__:main:706 - Hypothesis verdict: PASS=1, FAIL=1, PARTIAL=4
+2026-02-28 02:04:08.172 | INFO     | __main__:main:708 -   a_accuracy_gap: PARTIAL
+2026-02-28 02:04:08.172 | INFO     | __main__:main:708 -   b_stability: PARTIAL
+2026-02-28 02:04:08.172 | INFO     | __main__:main:708 -   c_elbows: PASS
+2026-02-28 02:04:08.172 | INFO     | __main__:main:708 -   d_compression: PARTIAL
+2026-02-28 02:04:08.172 | INFO     | __main__:main:708 -   e_domain_alignment: FAIL
+2026-02-28 02:04:08.172 | INFO     | __main__:main:708 -   f_concept_mapping: PARTIAL
+2026-02-28 02:04:08.172 | INFO     | __main__:main:713 - ============================================================
+2026-02-28 02:04:08.173 | INFO     | __main__:main:714 - Building output
+2026-02-28 02:04:08.173 | INFO     | __main__:main:715 - ============================================================
+2026-02-28 02:04:08.176 | INFO     | __main__:main:987 - Total examples: 60 (target: 60+)
+2026-02-28 02:04:08.178 | INFO     | __main__:main:991 - Output written to /home/adrian/projects/temp/ai-inventor-old/aii_pipeline/runs/run__20260227_195308/3_invention_loop/iter_4/gen_art/eval_id3_it4__opus/eval_out.json
+2026-02-28 02:04:08.178 | INFO     | __main__:main:992 - Output size: 84.1 KB
+2026-02-28 02:04:08.179 | INFO     | __main__:main:995 - ============================================================
+2026-02-28 02:04:08.179 | INFO     | __main__:main:996 - EVALUATION SUMMARY
+2026-02-28 02:04:08.179 | INFO     | __main__:main:997 - ============================================================
+2026-02-28 02:04:08.179 | INFO     | __main__:main:998 - Friedman chi2=37.0607, p=2e-06
+2026-02-28 02:04:08.179 | INFO     | __main__:main:999 - CB-FIGS rank=5.0, FIGS rank=5.1
+2026-02-28 02:04:08.179 | INFO     | __main__:main:1000 - Gap vs FIGS: 2.88pp
+2026-02-28 02:04:08.179 | INFO     | __main__:main:1001 - Gap vs best baseline: 9.58pp
+2026-02-28 02:04:08.179 | INFO     | __main__:main:1002 - Compression vs FIGS: 2.10x
+2026-02-28 02:04:08.179 | INFO     | __main__:main:1003 - Stability: 0.554
+2026-02-28 02:04:08.179 | INFO     | __main__:main:1004 - Elbows: 80%
+2026-02-28 02:04:08.180 | INFO     | __main__:main:1005 - Hypothesis: PASS=1, FAIL=1, PARTIAL=4
+2026-02-28 02:04:08.180 | INFO     | __main__:main:1006 - Pareto optimal: ['figs', 'xgboost', 'lightgbm', 'cb_figs_best']
+2026-02-28 02:04:08.180 | INFO     | __main__:main:1007 - Iter improvement: 11.35pp
