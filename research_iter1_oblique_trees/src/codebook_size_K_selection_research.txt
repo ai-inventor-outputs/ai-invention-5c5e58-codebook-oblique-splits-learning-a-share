@@ -1,0 +1,510 @@
+================================================================================
+RESEARCH: Heuristics and Theory for Selecting Codebook/Dictionary Size K
+         in Dictionary Learning and Decision Trees
+================================================================================
+Date: 2026-02-27
+
+TABLE OF CONTENTS
+  1. PCA Explained Variance Heuristic
+  2. Rate-Distortion Theory Connection
+  3. Intrinsic Dimensionality Estimation
+  4. Dictionary Learning Literature - K-SVD
+  5. Sparse Autoencoder Literature
+  6. Relationship Between K and Dataset Properties
+  7. Synthesis and Practical Recommendations
+
+
+================================================================================
+1. PCA EXPLAINED VARIANCE HEURISTIC
+================================================================================
+
+STANDARD PRACTICE:
+  Run PCA on the data, select K as the number of components explaining
+  90-95% of the cumulative variance. This is the most widely used heuristic
+  for dimensionality selection.
+
+SCIKIT-LEARN IMPLEMENTATION:
+  scikit-learn directly supports this via a float argument to n_components:
+    pca = PCA(n_components=0.95)  # selects K for 95% variance
+  When 0 < n_components < 1 and svd_solver == 'full', scikit-learn selects
+  the minimum number of components such that cumulative explained variance
+  exceeds the specified threshold.
+
+  After fitting, pca.n_components_ gives the selected K.
+  pca.explained_variance_ratio_ gives per-component variance fractions.
+
+STANDARD THRESHOLDS:
+  - 90% : aggressive reduction, suitable when computation is constrained
+  - 95% : most commonly recommended default in textbooks and tutorials
+  - 99% : conservative, preserves nearly all information
+
+LIMITATIONS:
+  - PCA captures variance (second-order statistics), NOT discriminative
+    directions. A high-variance direction may be irrelevant for classification.
+  - Linear method: cannot capture nonlinear manifold structure.
+  - For dictionary learning applied to decision trees, the directions that
+    matter are those that align with decision boundaries, not necessarily
+    those with maximum variance.
+  - Nonetheless, PCA variance threshold provides a reasonable UPPER BOUND
+    on intrinsic linear dimensionality.
+
+CITATIONS:
+  - scikit-learn PCA docs: https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+  - scikit-learn decomposition guide: https://scikit-learn.org/stable/modules/decomposition.html
+  - Jake VanderPlas, Python Data Science Handbook, PCA Chapter:
+    https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html
+  - Mikulski, "PCA - how to choose the number of components":
+    https://mikulskibartosz.name/pca-how-to-choose-the-number-of-components
+
+
+================================================================================
+2. RATE-DISTORTION THEORY CONNECTION
+================================================================================
+
+RATE-DISTORTION FUNCTION FOR GAUSSIAN SOURCES:
+  For a memoryless Gaussian source X ~ N(0, sigma^2) with mean squared error
+  distortion, the rate-distortion function is:
+
+    R(D) = (1/2) * log2(sigma^2 / D)    for 0 <= D <= sigma^2
+
+  This gives the minimum number of bits per symbol needed to represent X
+  with expected distortion at most D.
+
+  Inverting: D(R) = sigma^2 * 2^(-2R)
+  Each additional bit halves the distortion (6 dB/bit).
+
+  For a d-dimensional Gaussian with covariance Sigma (eigenvalues lambda_i):
+    R(D) = sum_i max(0, (1/2) log2(lambda_i / theta))
+  where theta is chosen so sum_i min(theta, lambda_i) = D.
+  This is the "reverse waterfilling" solution.
+
+CONNECTION TO CODEBOOK/DICTIONARY SIZE:
+  A codebook of size K can represent log2(K) bits of information.
+  If we want distortion D, we need R(D) bits, hence:
+    K >= 2^(R(D)) = 2^((1/2) log2(sigma^2/D)) = sqrt(sigma^2 / D)
+
+  For d-dimensional source with K codewords, the effective rate per
+  dimension is (log2 K)/d. Rate-distortion theory tells us the minimum K
+  needed for a target reconstruction quality.
+
+  For overcomplete dictionaries with sparse coding (s active atoms from K):
+    Effective rate = log2(C(K,s)) approximately = s * log2(K/s) bits
+
+MDL (MINIMUM DESCRIPTION LENGTH) FOR MODEL SELECTION:
+  MDL principle (Rissanen 1978): Select the model minimizing:
+    L(model) + L(data | model) = total description length
+
+  For decision trees (Quinlan & Rivest, 1989):
+    L_total = L(tree structure) + L(misclassifications given tree)
+  A subtree is pruned if the description length of classifying its
+  examples together with the subtree paths exceeds the description
+  length of classifying at the current node.
+
+  For dictionary/codebook selection:
+    L_total = L(dictionary D) + L(sparse codes given D) + L(residuals)
+    L(dictionary D) = K * d * precision_bits  (K atoms in R^d)
+    L(codes) = n * s * log2(K)                (n samples, s-sparse codes)
+    L(residuals) = n * d * (1/2) * log2(D)    (reconstruction error D)
+
+  MDL naturally trades off codebook complexity against reconstruction:
+  too large K => high L(dictionary), too small K => high L(residuals).
+
+  BIC (Bayesian Information Criterion) is asymptotically equivalent to MDL:
+    BIC = -2 * log(likelihood) + p * log(n)
+  where p = number of parameters. For K-means/VQ: p = K*d.
+
+CITATIONS:
+  - Cover & Thomas, "Elements of Information Theory", Chapter 13:
+    https://static.ias.edu/pitp/archive/2012files/Cover_and_Thomas_Chptr13.pdf
+  - Rate-distortion theory Wikipedia:
+    https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory
+  - Quinlan & Rivest, "Inferring Decision Trees Using the MDL Principle",
+    Information & Computation 80:227-248, 1989:
+    https://people.csail.mit.edu/rivest/pubs/QR89.pdf
+  - Mehta, Rissanen, Agrawal, "MDL-Based Decision Tree Pruning", KDD 1995:
+    https://cdn.aaai.org/KDD/1995/KDD95-025.pdf
+  - Grunwald, "A Tutorial Introduction to the MDL Principle":
+    https://homepages.cwi.nl/~pdg/ftp/mdlintro.pdf
+  - MDL for PCA/dimensionality reduction:
+    https://pmc.ncbi.nlm.nih.gov/articles/PMC8871178/
+  - Rate-distortion for model compression (ICML 2019):
+    https://proceedings.mlr.press/v97/gao19c/gao19c.pdf
+
+
+================================================================================
+3. INTRINSIC DIMENSIONALITY ESTIMATION
+================================================================================
+
+METHODS OVERVIEW:
+
+  (a) PCA threshold: Select K = number of eigenvalues explaining 90-95%
+      variance. Linear method; see Section 1.
+
+  (b) MLE - Levina & Bickel (NeurIPS 2004):
+      Assumes density is locally uniform; models neighbor distances as a
+      Poisson process. For each point x, estimates local dimension from
+      distances to k nearest neighbors:
+        d_hat(x) = [ (1/(k-1)) * sum_{j=1}^{k-1} log(T_k(x)/T_j(x)) ]^{-1}
+      where T_j(x) = distance to j-th nearest neighbor.
+      Global estimate = average over all points.
+
+      Known issue: negative bias at high dimensions (corrected by MacKay &
+      Ghahramani). For a 5-d Gaussian, estimate is accurate for k >= 10.
+
+  (c) TWO-NN (Facco et al., Scientific Reports 2017):
+      Uses ONLY the ratio mu = r_2 / r_1 of 2nd to 1st neighbor distance.
+      Derives that -log(1 - F_emp(mu)) should be linear in log(mu) with
+      slope = d (the intrinsic dimension).
+      Very robust to curvature and density variations due to extreme locality.
+
+  (d) Correlation dimension (Grassberger & Procaccia 1983):
+      Based on C(r) ~ r^d scaling. Known to underestimate dimension,
+      especially at high d. Needs exponentially many points w.r.t. dimension.
+
+  (e) Effective Rank (eRank) of covariance (Roy & Vetterli, EUSIPCO 2007):
+      Given singular values sigma_k of data matrix, define:
+        p_k = sigma_k / sum_j sigma_j   (normalized singular values)
+        eRank(A) = exp( -sum_k p_k * log(p_k) ) = exp(H(p))
+      where H(p) is Shannon entropy of the distribution p.
+
+      Properties:
+        - Continuous (real-valued) extension of matrix rank
+        - 1 <= eRank <= rank(A)
+        - eRank = rank(A) iff all nonzero singular values are equal
+        - eRank = 1 iff matrix is rank-1
+
+TYPICAL INTRINSIC DIMENSIONALITY VALUES:
+
+  Synthetic:
+    - Swiss Roll (ambient d=3):        ID ~ 2.0 (TWO-NN: 2.01)
+    - Uniform hypercube d=14 with pbc: ID ~ 14.09 (TWO-NN)
+
+  Image datasets:
+    - MNIST digits (ambient d=784):    ID ~ 8-14 per digit class
+      -- Facco et al. TWO-NN estimate: 13.4 (consistent with 12-14 range)
+      -- Per-digit classes: d in [8, 14]
+      -- Various methods yield 10-14 range
+    - Isomap face dataset: analyzed by Facco et al. with block analysis
+    - ImageNet: ID ~ 26-43 (Pope et al., ICLR 2021)
+
+  Tabular data (heuristic estimates):
+    - For typical UCI/OpenML datasets with d ambient features:
+      intrinsic dimension is often substantially less than d.
+    - Iris (4 features): likely ID ~ 2-3
+    - Wine (13 features): likely ID ~ 5-8
+    - Adult (14 features): likely ID ~ 6-10
+    - General pattern: ID/d ratio is typically 0.3-0.7 for tabular data,
+      but this varies widely. The manifold hypothesis holds: real data
+      lives on low-dimensional manifolds.
+
+CITATIONS:
+  - Levina & Bickel, "Maximum Likelihood Estimation of Intrinsic Dimension",
+    NeurIPS 2004: https://www.stat.berkeley.edu/~bickel/mldim.pdf
+  - Facco, d'Errico, Rodriguez, Laio, "Estimating the intrinsic dimension
+    of datasets by a minimal neighborhood information", Scientific Reports
+    7:12140, 2017: https://www.nature.com/articles/s41598-017-11873-y
+  - Roy & Vetterli, "The Effective Rank: A Measure of Effective
+    Dimensionality", EUSIPCO 2007:
+    https://www.eurasip.org/Proceedings/Eusipco/Eusipco2007/Papers/a5p-h05.pdf
+  - Pope, Zhu, et al., "The Intrinsic Dimension of Images and Its Impact
+    on Learning", ICLR 2021: https://openreview.net/pdf?id=XJk19XzGq2J
+  - Grassberger & Procaccia, "Characterization of strange attractors",
+    Physical Review Letters 50:346, 1983.
+  - Camastra, "Intrinsic dimension estimation: Advances and open problems":
+    https://math.umd.edu/~rvbalan/RESEARCH/DimensionEstimation/camastra2016.pdf
+  - MacKay & Ghahramani, comments on Levina-Bickel:
+    https://www.inference.org.uk/mackay/dimension/
+  - R package intrinsicDimension:
+    https://github.com/kjohnsson/intrinsicDimension
+  - Emergent Mind summary of eRank:
+    https://www.emergentmind.com/topics/effective-rank-erank
+
+
+================================================================================
+4. DICTIONARY LEARNING LITERATURE - K-SVD
+================================================================================
+
+K-SVD ALGORITHM (Aharon, Elad, Bruckstein, IEEE TSP 2006):
+  An iterative algorithm for designing overcomplete dictionaries for sparse
+  representation. Alternates between:
+    1. Sparse coding: represent each signal as sparse combination of atoms
+    2. Dictionary update: update atoms (columns) one at a time via SVD
+
+  Dictionary D in R^{n x K}: n = signal dimension, K = number of atoms.
+
+DICTIONARY SIZE SELECTION IN K-SVD:
+  The 2006 paper does NOT provide a formal methodology for choosing K.
+  Dictionary size is determined by:
+    - Application-specific requirements
+    - Comparison with existing standard dictionaries
+    - Example: K=441 chosen to match undecimated overcomplete Haar dictionary
+
+COMMON DICTIONARY SIZES IN SPARSE CODING:
+
+  Standard configuration for image denoising:
+    - Patch size: 8x8 pixels => signal dimension n = 64
+    - Dictionary size: K = 256 atoms => overcomplete ratio 256/64 = 4x
+    - This D in R^{64 x 256} is the most common K-SVD configuration
+
+  Typical overcomplete ratios:
+    - 2x overcomplete: K = 2n (e.g., 500 atoms for n=256)
+    - 4x overcomplete: K = 4n (most common default)
+    - 7x overcomplete: K = 441 for n = 64 (Aharon et al. 2006)
+    - Higher ratios exist but increase computational cost
+
+UNDERCOMPLETE vs OVERCOMPLETE:
+  - Undercomplete (K < n): K atoms form a subspace; useful when data truly
+    lives in lower dimensions. Cannot provide flexible sparse representations.
+  - Complete (K = n): atoms form a basis.
+  - Overcomplete (K > n): multiple representations possible per signal;
+    enables sparser codes. The "sweet spot" in practice is K = 2n to 4n.
+
+HEURISTIC RULES:
+  - Despite decades of work, "the number of dictionary elements is still
+    heuristically set" (literature consensus).
+  - Sparsity s, dictionary size K, and representation error are three
+    correlated factors: fixing any two determines the third.
+  - Rule of thumb: K = 4d is a good default for general-purpose
+    overcomplete dictionaries.
+
+CITATIONS:
+  - Aharon, Elad, Bruckstein, "K-SVD: An Algorithm for Designing
+    Overcomplete Dictionaries for Sparse Representation", IEEE Trans.
+    Signal Processing 54(11):4311-4322, 2006:
+    https://ieeexplore.ieee.org/document/1710377/
+  - Elad, K-SVD slides: https://elad.cs.technion.ac.il/wp-content/uploads/2018/02/31_KSVD_SPARSE.pdf
+  - Purdue lecture notes on K-SVD: https://engineering.purdue.edu/ChanGroup/ECE695Notes/Lecture_KSVD.pdf
+  - IPOL implementation and analysis of K-SVD:
+    https://www.ipol.im/pub/art/2012/llm-ksvd/article_lr.pdf
+  - Adaptive dictionary size for mammography:
+    https://link.springer.com/chapter/10.1007/978-3-319-30447-2_1
+  - Sparse dictionary learning Wikipedia:
+    https://en.wikipedia.org/wiki/Sparse_dictionary_learning
+
+
+================================================================================
+5. SPARSE AUTOENCODER LITERATURE
+================================================================================
+
+CUNNINGHAM ET AL., ICLR 2024:
+  "Sparse Autoencoders Find Highly Interpretable Features in Language Models"
+
+  Setup: Train sparse autoencoder on MLP activations of a 1-layer transformer.
+    - Model MLP dimension: d_in = 512
+    - Hidden layer size: d_hid = R * d_in, where R = expansion ratio
+    - Tested R = 2 (1,024 features) through R = 16 (8,192 features)
+    - Primary configuration: R = 8 (4,096 features from 512 neurons)
+    - "Sweet spot" configuration: R = 16 with 8,192 features
+
+  Dictionary size choice: heuristic sweep over expansion ratios.
+  Performance: 70% of learned features cleanly mapped to single concepts.
+
+ANTHROPIC - "TOWARDS MONOSEMANTICITY" (Bricken et al., 2023):
+  - 1-layer transformer, 512-neuron MLP
+  - Dictionary of 4,096 features (8x expansion)
+  - Also trained 8,192-feature version (16x expansion)
+  - Extracted nearly 15,000 latent directions at 16x expansion
+
+ANTHROPIC - "SCALING MONOSEMANTICITY" (Templeton et al., 2024):
+  Applied to Claude 3 Sonnet (residual stream dimension ~12,288):
+  - 1M features:  ~83x expansion,  ~2% dead features
+  - 4M features:  ~333x expansion, ~35% dead features
+  - 34M features: ~2,833x expansion, ~65% dead features
+  Fewer than 300 features active per token across all sizes.
+  SAE reconstruction explained >= 65% of activation variance.
+
+GAO ET AL. (OPENAI), ICLR 2025:
+  "Scaling and Evaluating Sparse Autoencoders"
+
+  Key scaling law (Equation 3):
+    L(n,k) = exp(alpha + beta_k*log(k) + beta_n*log(n)
+             + gamma*log(k)*log(n))
+             + exp(zeta + eta*log(k))
+
+  where n = number of latents (dictionary size), k = sparsity (active latents).
+  Coefficients: alpha=-0.50, beta_k=0.26, beta_n=-0.017,
+                gamma=-0.042, zeta=-1.32, eta=-0.085
+
+  Compute scaling: L(C) = 0.09 + 0.056 * C^{-0.084}  (power law)
+  Training tokens to convergence: Theta(n^{0.6}) for GPT-2 small
+
+  Tested configurations:
+    - GPT-2 small: n = 2048 to 131,072 latents
+    - GPT-4: up to 16 million latents
+    - Sparsity k: 32, 64, 128, 256, 512
+
+  Key finding: MSE follows a power law in both n and compute C.
+  TopK activation function dominates ReLU/Gated on Pareto frontier.
+
+RATE-DISTORTION PERSPECTIVE ON SAEs:
+  The rate-distortion framework decomposes SAE operation into:
+    1. Sparse coding phase: selecting which K features to activate
+    2. Compressed sensing phase: reconstructing from sparse activations
+
+  The "infinite width codebook problem": as K -> infinity, the dictionary
+  can memorize all training examples with perfect reconstruction but zero
+  generalization. This motivates regularization and finite K.
+
+  Power laws in feature usage and sensitivity curves as dictionary size
+  and sparsity are swept support the rate-distortion interpretation.
+
+CITATIONS:
+  - Cunningham et al., "Sparse Autoencoders Find Highly Interpretable
+    Features in Language Models", ICLR 2024:
+    https://openreview.net/forum?id=F76bwRSLeK
+    Paper: https://openreview.net/pdf?id=F76bwRSLeK
+  - Bricken et al., "Towards Monosemanticity: Decomposing Language Models
+    With Dictionary Learning", Anthropic 2023:
+    https://transformer-circuits.pub/2023/monosemantic-features
+  - Templeton et al., "Scaling Monosemanticity: Extracting Interpretable
+    Features from Claude 3 Sonnet", Anthropic 2024:
+    https://transformer-circuits.pub/2024/scaling-monosemanticity/
+  - Gao, Dupre la Tour, et al., "Scaling and Evaluating Sparse
+    Autoencoders", OpenAI/ICLR 2025:
+    https://cdn.openai.com/papers/sparse-autoencoders.pdf
+    https://arxiv.org/abs/2406.04093
+  - Adam Karvonen, "An Intuitive Explanation of Sparse Autoencoders":
+    https://adamkarvonen.github.io/machine_learning/2024/06/11/sae-intuitions.html
+
+
+================================================================================
+6. RELATIONSHIP BETWEEN K AND DATASET PROPERTIES
+================================================================================
+
+DECISION TREE COMPLEXITY AND DIMENSIONALITY:
+
+  For a binary decision tree of depth h:
+    - Maximum number of leaves = 2^h
+    - Maximum number of internal nodes = 2^h - 1
+    - Each internal node tests one feature with one threshold
+
+  Decision tree complexity scales with:
+    - Number of features d: more features => more possible splits
+    - Curse of dimensionality: tree branches grow exponentially with d
+    - Time complexity (scikit-learn): O(d * n * log(n))
+    - Inference: O(depth)
+
+  For random forests:
+    - Each tree uses sqrt(d) or d/3 features at each split
+    - Total leaves across forest = n_trees * avg_leaves_per_tree
+
+CODEBOOK SIZE K FOR TABULAR DATA:
+
+  Connecting dictionary size to data properties:
+
+  (a) K ~ intrinsic dimension d_int:
+      If data lives on a d_int-dimensional manifold, a dictionary needs
+      at least d_int atoms to span the relevant subspace. Overcomplete
+      dictionaries need K = 2*d_int to 4*d_int.
+
+  (b) K ~ number of decision regions:
+      For classification with C classes in d dimensions, the number of
+      linear decision boundaries needed scales polynomially with d.
+      A depth-h tree creates at most 2^h regions.
+      For typical tabular tasks: effective depth 5-10, so 32-1024 regions.
+
+  (c) K ~ sqrt(n) (sample-based scaling):
+      Vector quantization theory suggests codebook size should scale
+      as O(n^{d/(d+2)}) for optimal quantization of n points in d dims.
+
+  (d) K from MDL/BIC:
+      BIC = -2*log(L) + p*log(n)
+      For K dictionary atoms in R^d: p = K*d parameters.
+      Optimal K minimizes BIC, naturally balancing model complexity
+      against data fit.
+
+PRACTICAL GUIDELINES FOR TABULAR DATA:
+
+  Given d features and n samples:
+
+  Lower bound on K:
+    K >= d_int (intrinsic dimension)
+    K >= number of PCA components for 90% variance
+
+  Upper bound on K:
+    K << n (must not exceed number of training samples)
+    K <= 4*d (overcomplete dictionary heuristic)
+    K constrained by MDL/BIC: penalty grows as K*d*log(n)
+
+  Sweet spot heuristics:
+    - Start with K = d (complete dictionary)
+    - Try K in {d/2, d, 2d, 4d}
+    - Use PCA 90-95% variance as initial estimate
+    - Refine via cross-validation or BIC
+
+  Typical tabular datasets (d = 10-100 features):
+    - Intrinsic dimension: d_int ~ 3-30
+    - Reasonable K range: 10-200
+    - Most common effective range: K = d to 2d
+
+CITATIONS:
+  - scikit-learn decision tree documentation:
+    https://scikit-learn.org/stable/modules/tree.html
+  - Curse of dimensionality overview:
+    https://www.datacamp.com/blog/curse-of-dimensionality-machine-learning
+  - Vector quantization theory:
+    https://en.wikipedia.org/wiki/Vector_quantization
+  - BIC for clustering/model selection:
+    https://en.wikipedia.org/wiki/Bayesian_information_criterion
+  - mclust BIC documentation:
+    https://mclust-org.github.io/mclust/reference/mclustBIC.html
+
+
+================================================================================
+7. SYNTHESIS AND PRACTICAL RECOMMENDATIONS
+================================================================================
+
+SUMMARY OF K SELECTION APPROACHES (ordered by complexity):
+
+  1. PCA VARIANCE THRESHOLD (simplest):
+     K = # components for 90-95% explained variance
+     Pro: fast, well-understood, scikit-learn native
+     Con: linear, ignores discriminative structure
+
+  2. EFFECTIVE RANK (eRank):
+     K = exp(H(p)) where p = normalized singular values
+     Pro: continuous, information-theoretic grounding
+     Con: still linear/spectral
+
+  3. INTRINSIC DIMENSIONALITY:
+     K = d_int estimated by MLE or TWO-NN, then multiply by
+     overcomplete factor (2-4x)
+     Pro: captures nonlinear manifold structure
+     Con: computational cost, sensitivity to hyperparameters
+
+  4. MDL / BIC:
+     K = argmin_K { L(dictionary) + L(codes) + L(residuals) }
+     Pro: principled model selection, avoids overfitting
+     Con: requires specifying coding scheme
+
+  5. RATE-DISTORTION:
+     K >= 2^{R(D)} where R(D) is rate-distortion function
+     Given target distortion D: K = ceil(sqrt(sigma^2 / D)) for Gaussian
+     Pro: information-theoretic optimality
+     Con: assumes source model, mainly useful as lower bound
+
+  6. CROSS-VALIDATION (gold standard):
+     Try K in geometric grid {d/2, d, 2d, 4d, 8d}
+     Evaluate downstream task performance
+     Pro: directly optimizes what we care about
+     Con: expensive
+
+RECOMMENDED PIPELINE:
+  1. Compute PCA explained variance -> K_pca (90% threshold)
+  2. Compute eRank of data covariance -> K_erank
+  3. Set K_min = max(K_pca, K_erank) (whichever is larger)
+  4. Set K_max = min(4*d, n/10)
+  5. Search K in {K_min, 2*K_min, K_max} via cross-validation
+  6. Validate with MDL/BIC if feasible
+
+KEY NUMBERS TO REMEMBER:
+  - PCA 95% threshold:  standard default
+  - Overcomplete ratio: 2x-4x (dictionary learning standard)
+  - SAE expansion:      4x-16x (interpretability applications)
+  - MNIST intrinsic dim: ~13 from 784 ambient dimensions
+  - Typical tabular:    intrinsic dim is 30-70% of ambient dim
+  - K-SVD standard:     K=256 for n=64 (4x overcomplete)
+
+================================================================================
+END OF RESEARCH DOCUMENT
+================================================================================

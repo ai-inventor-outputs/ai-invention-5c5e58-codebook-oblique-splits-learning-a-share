@@ -1,0 +1,407 @@
+{
+  "summary": "Comprehensive survey of 10 oblique decision tree methods (SPORF, RO-FIGS, SREDT, FoLDTree, FC-ODT, FIGS, OC1, HHCART, CART-ELC, ODRF) covering code availability, benchmark results on 22 OpenML datasets, direction diversity metrics (eRank, stable rank, participation ratio), interpretability measures, and codebook-size K selection heuristics. Provides actionable recommendations for Codebook-FIGS evaluation design including primary benchmark suite, K-sweep strategy, and novel metrics.",
+
+  "sources": [
+    {"index": 1, "url": "https://jmlr.org/papers/v21/18-664.html", "title": "Sparse Projection Oblique Randomer Forests (Tomita et al., JMLR 2020)", "summary": "Original SPORF paper with 105 UCI benchmark datasets, Cohen's kappa metric, sparse random projection split methodology, and hyperparameter details (max_features, feature_combinations lambda=3/p, 500 trees)."},
+    {"index": 2, "url": "https://github.com/neurodata/treeple", "title": "treeple: Scikit-learn-compatible decision trees beyond axis-aligned splits", "summary": "Active Python package (v0.10.3) implementing SPORF as ObliqueRandomForestClassifier, maintained by neurodata lab, last push Feb 2026. Split directions stored in Cython internals, not easily exposed."},
+    {"index": 3, "url": "https://github.com/neurodata/SPORF", "title": "SPORF original repository (neurodata)", "summary": "Original SPORF implementation, effectively abandoned (last commit Dec 2019). Superseded by treeple package."},
+    {"index": 4, "url": "https://ieeexplore.ieee.org/document/10960202", "title": "RO-FIGS: Efficient and Expressive Tree-Based Ensembles for Tabular Data (Matjasec et al., IEEE CITREx 2025)", "summary": "RO-FIGS paper with complete Table I balanced accuracy results for 11 methods on 22 OpenML datasets, average ranks, Friedman test with Bonferroni-Dunn post-hoc, L-1/2 oblique splits, model compactness analysis."},
+    {"index": 5, "url": "https://github.com/um-k/rofigs", "title": "RO-FIGS GitHub Repository", "summary": "Standalone Python implementation of RO-FIGS (Apache-2.0), 10 commits, 1 star, created Dec 2024. Contains ROFIGS class but not integrated into imodels."},
+    {"index": 6, "url": "https://github.com/csinva/imodels", "title": "imodels: Interpretable ML package including FIGS", "summary": "Python package (v2.0.4) with FIGSClassifier/FIGSRegressor. Key extension point _construct_node_with_stump() uses DecisionTreeRegressor(max_depth=1) for axis-parallel splits. Priority queue and residual tracking infrastructure preserved."},
+    {"index": 7, "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29091", "title": "Symbolic Regression Enhanced Decision Trees for Classification Tasks (Fong & Motani, AAAI 2024)", "summary": "SREDT uses gplearn for GP-evolved nonlinear split expressions. 56 PMLB datasets, F-Score metric. No public code. Parsimony 0.001, 40 generations, pop 400, tournament 200."},
+    {"index": 8, "url": "https://arxiv.org/abs/2410.23147", "title": "FoLDTree: A ULDA-Based Decision Tree Framework (Wang, 2024)", "summary": "Forward ULDA-based oblique tree. 9 UCI datasets, accuracy metric. R package LDATree v0.2.0 on CRAN, no Python wrapper."},
+    {"index": 9, "url": "https://cran.r-project.org/package=LDATree", "title": "LDATree: Classification Trees with Linear Discriminant Analysis Splits (CRAN)", "summary": "R package v0.2.0 implementing FoLDTree. Split directions accessible via folda's scaling matrix. Active (updated Oct 2024)."},
+    {"index": 10, "url": "https://arxiv.org/abs/2502.00465", "title": "Enhance Learning Efficiency of Oblique Decision Tree via Feature Concatenation (Lyu et al., 2025)", "summary": "FC-ODT with ridge regression and feature concatenation. O(1/K^2) consistency rate vs O(1/K) for standard ODT. 17 LIBSVM datasets, R-squared metric. No public code. Closest existing work to direction sharing."},
+    {"index": 11, "url": "https://github.com/AndriyMulyar/sklearn-oblique-tree", "title": "sklearn-oblique-tree: OC1 Python wrapper", "summary": "Python wrapper for OC1 (Murthy et al., JAIR 1994). Abandoned since 2019, 48 stars. Sklearn-compatible ObliqueClassifier."},
+    {"index": 12, "url": "https://pypi.org/project/scikit-obliquetree/", "title": "scikit-obliquetree: HHCART implementation (PyPI)", "summary": "Python HHCART implementation v0.1.4 using Householder reflections. Abandoned since May 2021."},
+    {"index": 13, "url": "https://github.com/andrewlaack/cart-elc", "title": "CART-ELC: Exhaustive Linear Combination Trees", "summary": "Active C++/Python implementation (created Apr 2025) of exhaustive linear combination splits. Sklearn compatible."},
+    {"index": 14, "url": "https://cran.r-project.org/package=ODRF", "title": "ODRF: Oblique Decision Random Forest (CRAN)", "summary": "R package supporting customizable linear combination splits for both single trees (ODT) and ensembles (ODRF)."},
+    {"index": 15, "url": "https://ieeexplore.ieee.org/document/4359079", "title": "Effective Rank: A Measure of Effective Dimensionality (Roy & Vetterli, EUSIPCO 2007)", "summary": "Defines eRank = exp(Shannon entropy of normalized singular values). Properties: 1 <= eRank <= rank, subadditive, scale-invariant. Corresponds to Hill number of order 1."},
+    {"index": 16, "url": "https://arxiv.org/abs/2407.21594", "title": "p-Stable Rank and Intrinsic Dimension (Ipsen & Saibaba, 2024)", "summary": "Defines stable rank as ||A||^2_F / ||A||^2_2 (2-stable rank). Framework unifying eRank and stable rank via p-stable ranks."},
+    {"index": 17, "url": "https://arxiv.org/abs/2112.13190", "title": "Scale-dependent dimensionality with participation ratio (Gao et al., 2022)", "summary": "Participation ratio PR = (sum sigma^2)^2 / sum sigma^4 used for neural population dimensionality. Sensitive to dominant directions."},
+    {"index": 18, "url": "https://ieeexplore.ieee.org/document/1710377", "title": "K-SVD: An Algorithm for Designing Overcomplete Dictionaries (Aharon et al., IEEE TSP 2006)", "summary": "K-SVD dictionary learning with typical 4x overcomplete dictionaries. Opposite regime from Codebook-FIGS which needs undercomplete K << d."},
+    {"index": 19, "url": "https://arxiv.org/abs/2404.16014", "title": "Scaling and Evaluating Sparse Autoencoders (Gao et al., ICLR 2025)", "summary": "SAE scaling laws showing 4x-2833x expansion factors. Provides scaling formula L0 proportional to (N/L)^a for predicting feature usage with dictionary size."},
+    {"index": 20, "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca", "title": "scikit-learn PCA documentation", "summary": "Standard PCA 95% variance threshold for dimensionality estimation. Provides data-driven upper bound on codebook size K."},
+    {"index": 21, "url": "https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory", "title": "Rate-Distortion Theory (Wikipedia)", "summary": "Rate-distortion framework: K >= 2^R(D) for target distortion D. Provides information-theoretic lower bound on codebook size."},
+    {"index": 22, "url": "https://en.wikipedia.org/wiki/Minimum_description_length", "title": "Minimum Description Length Principle (Wikipedia)", "summary": "MDL framework for model selection: K = argmin {model_cost + data_cost}. Applicable to codebook size selection."},
+    {"index": 23, "url": "https://projecteuclid.org/journals/annals-of-statistics/volume-33/issue-5/Maximum-likelihood-estimation-of-intrinsic-dimension/10.1214/009053605000000327.full", "title": "Maximum Likelihood Estimation of Intrinsic Dimension (Levina & Bickel, Annals of Statistics 2005)", "summary": "MLE estimator for local intrinsic dimensionality using k-nearest neighbor distances. Can inform K selection for codebook."},
+    {"index": 24, "url": "https://www.nature.com/articles/s41598-017-11873-y", "title": "Estimating the Intrinsic Dimension of Datasets by a Minimal Neighborhood Information (TWO-NN, Facco et al., 2017)", "summary": "TWO-NN method using ratio of two nearest-neighbor distances for intrinsic dimension estimation. Simple and robust."}
+  ],
+
+  "follow_up_questions": [
+    "How does Codebook-FIGS' accuracy-interpretability Pareto frontier compare to RO-FIGS when both are evaluated on the same 22 OpenML datasets with identical balanced accuracy / 10-fold CV protocol?",
+    "What is the empirical relationship between the eRank of the data covariance matrix and the optimal codebook size K across datasets of varying dimensionality?",
+    "Can FC-ODT's vertical direction reuse (parent-to-child feature concatenation) be combined with Codebook-FIGS' horizontal direction sharing (global codebook across trees) for further gains?"
+  ],
+
+  "answer": "## Oblique Decision Tree Landscape for Codebook-FIGS Evaluation\n\n### 1. Implementations and Code Availability\n\nThe oblique decision tree landscape includes 10 methods spanning 30 years. Among actively maintained Python packages, **SPORF** (Sparse Projection Oblique Randomer Forests) is available via `pip install treeple` (v0.10.3), using sparse random projections drawn from {+1, -1} and supporting both classification and regression [1, 2]. The treeple package is actively maintained with the last push in February 2026 [2], though the original SPORF repo by neurodata is effectively abandoned (last commit December 2019) [3]. The key class is `treeple.ObliqueRandomForestClassifier` with hyperparameters `max_features=p`, `feature_combinations=3.0` (lambda=3/p), and `n_estimators=500` [1].\n\n**RO-FIGS** (Random Oblique FIGS) extends FIGS with gradient-descent oblique splits using L-1/2 regularization for sparsity [4]. Code is available at https://github.com/um-k/rofigs as standalone Python (Apache-2.0) [5], though the repo has only 1 star and 10 commits, raising fragility concerns. It is classification-only and not integrated into imodels [4, 5].\n\n**FIGS** (Fast Interpretable Greedy-Tree Sums) is the base method available via `pip install imodels` (v2.0.4) with sklearn-compatible `FIGSClassifier` and `FIGSRegressor` [6]. It uses axis-parallel CART stumps. The critical extension point for Codebook-FIGS is `_construct_node_with_stump()`, which internally calls `DecisionTreeRegressor(max_depth=1)` -- this single method can be replaced with a codebook-constrained split search while preserving FIGS' priority queue, residual tracking, and tree competition infrastructure [6].\n\n**SREDT** (Symbolic Regression Enhanced Decision Trees) uses gplearn-based genetic programming to evolve nonlinear split expressions [7]. It was published at AAAI 2024 but has **no public code** [7]. Key hyperparameters include parsimony coefficient 0.001, 40 generations, population size 400, and tournament size 200 with primitives {add, mul, sub, div} [7]. Because SREDT uses fundamentally nonlinear splits, it is not directly comparable to linear oblique methods.\n\n**FoLDTree** uses Forward ULDA (Uncorrelated Linear Discriminant Analysis) for oblique splits [8]. It is available only as an R package (`LDATree` v0.2.0 on CRAN) with no Python wrapper [9]. Split direction vectors are accessible via the `folda` package's `scaling` matrix [9].\n\n**FC-ODT** (Feature Concatenation Oblique Decision Tree) uses ridge regression with feature concatenation, achieving a provably better consistency rate of O(1/K^2) vs O(1/K) for standard ODT [10]. It has **no public code** and is regression-only in published experiments [10]. FC-ODT is the closest existing work to direction sharing: it concatenates parent node projected scores y_tilde = a^T x with features at child nodes, enabling vertical information reuse within a tree path [10]. This contrasts with Codebook-FIGS' horizontal reuse across trees.\n\nAmong classic methods, **OC1** (hill-climbing perturbation, 1994) has a Python wrapper via sklearn-oblique-tree but is abandoned since 2019 [11]. **HHCART** (Householder reflections) is available as scikit-obliquetree v0.1.4 but abandoned since May 2021 [12]. **CART-ELC** (exhaustive linear combinations) is actively maintained at https://github.com/andrewlaack/cart-elc with sklearn compatibility, created April 2025 [13]. **ODRF** is an R package on CRAN supporting customizable linear combinations [14].\n\n### 2. Benchmark Results and Dataset Alignment\n\nThe most comprehensive recent benchmark comes from the RO-FIGS paper, which evaluates 11 methods across **22 OpenML classification datasets** spanning 4 to 503 features and 303 to 8,378 samples [4]. Full balanced accuracy results (10-fold CV) are provided in Table I of the paper [4]. Average ranks across all 22 datasets show RO-FIGS achieving rank 8.8 (best), followed by CatBoost at 8.5, Ens-ODT at 7.8, MLP at 6.5, and RF at 6.1, with FIGS at 4.5 [4]. The corrected Friedman test with Bonferroni-Dunn post-hoc (p<0.05, CD=2.81) shows RO-FIGS significantly outperforms FIGS, MT, ETC, DT, ODT, and OT, but is not significantly different from CatBoost, Ens-ODT, MLP, or RF [4].\n\nSPORF benchmarks use 105 UCI datasets with Cohen's kappa via 5-fold CV [1], while SREDT uses 56 PMLB datasets with F-Score and accuracy via 70-30 splits with 100 repeats [7]. FoLDTree reports on 9 UCI datasets using accuracy [8], and FC-ODT uses 17 LIBSVM regression datasets with R-squared [10]. **Direct cross-paper comparison is impossible** due to metric incompatibilities (balanced accuracy vs kappa vs F-score vs R-squared) and different CV protocols [1, 4, 7, 8, 10].\n\nThe 22 RO-FIGS OpenML datasets with IDs are fully cataloged, including datasets like blood (ID 1464, 4 features), diabetes (ID 37, 8 features), breast-w (ID 15, 9 features), spambase (ID 44, 57 features), USPS (ID 41964, 256 features), and SpeedDating (ID 40536, 503 features) [4]. The likely overlapping datasets across papers are diabetes, breast-w/breast-cancer, heart, and credit [1, 4, 7, 8].\n\n**Recommendation**: Use the 22 RO-FIGS OpenML datasets as the primary Codebook-FIGS benchmark suite, as they provide the most comprehensive existing baseline numbers across both compact (FIGS, DT) and powerful (CatBoost, RF, MLP) methods [4].\n\n### 3. Direction Diversity and Interpretability Metrics\n\n**No existing oblique tree paper computes SVD-based diversity metrics on split directions** -- this is a novel contribution opportunity for Codebook-FIGS [15, 16].\n\nThe primary recommended metric is **Effective Rank (eRank)**, defined as eRank(A) = exp(-sum_i rho_i ln rho_i) where rho_i = sigma_i / sum_j sigma_j are normalized singular values [15]. Properties include: 1 <= eRank(A) <= rank(A), eRank equals rank iff all nonzero singular values are equal, and eRank(A+B) <= eRank(A) + eRank(B) [15]. For Codebook-FIGS with K entries, eRank(W) <= K by construction since the split direction matrix W has at most K distinct rows, making eRank a natural measure of how uniformly the codebook entries are utilized [15].\n\nThe secondary metric is **Stable Rank**: srank(A) = ||A||^2_F / ||A||^2_2 = sum(sigma_i^2) / max(sigma_i)^2 [16]. It is continuous, differentiable, and less sensitive to small singular values than eRank [16]. The tertiary metric is **Participation Ratio**: PR = (sum sigma_i^2)^2 / sum(sigma_i^4), commonly used in neuroscience for neural population dimensionality [17]. A supplementary metric is **Average Pairwise Cosine Similarity**: mean(|cos(w_i, w_j)|) for all i != j, which is intuitive and does not require SVD.\n\nFor interpretability, existing literature uses: number of splits (total across ensemble) [4, 6], number of trees [4, 6], tree depth [7, 8, 10], features per split [4], SHAP analysis [4], and inference time [7]. Novel codebook-specific metrics proposed include: **codebook entry sparsity** (average L0/L1 norms), **codebook stability across CV folds** (cosine similarity with Hungarian matching), **codebook coverage** (fraction of K entries used), **codebook interpretability score** (fraction with cos(entry, e_j) > 0.9 for some axis), and **domain alignment score** (alignment with known feature combinations).\n\n### 4. Codebook Size K Selection Heuristics\n\nFor Codebook-FIGS, K should be in the **undercomplete regime** (K << d), unlike K-SVD dictionaries (K = 2-4d overcomplete) [18] or sparse autoencoders (4x-2833x expansion) [19]. The goal is finding a small set of reusable directions, not overcomplete representation.\n\nThe **PCA 95% variance threshold** provides a data-driven upper bound: K >= number of PCA components explaining 95% of variance [20]. The **eRank of the data covariance matrix** provides an information-theoretic lower bound on the number of meaningful directions [15]. **Rate-distortion theory** suggests K >= 2^R(D) where R(D) is the rate-distortion function for target distortion D [21]. **MDL (Minimum Description Length)** selects K = argmin_K {K*d*log(bits) + n*s*log2(K) + reconstruction_error} [22].\n\nIntrinsic dimensionality estimation methods include the **MLE estimator** of Levina & Bickel [23] and **TWO-NN** [24], both providing local estimates of manifold dimension that can inform K selection.\n\nPer-dataset guidance based on the RO-FIGS benchmark suite: for d=4-10 features, K=3-5 (blood, diabetes, breast-w); for d=11-30, K=5-10 (ilpd, climate, kc2, heart); for d=31-60, K=8-15 (pc3, biodeg, spambase); for d=61-100, K=10-20 (credit-g, friedman); for d=100+, K=15-30 (usps, bioresponse, speeddating) [4]. The default heuristic is K = min(d, 20) with an evaluation sweep over {3, 5, 8, 10, 15, 20}.\n\nThe recommended K-selection pipeline for experiments: (1) compute PCA 95% threshold as initial estimate [20], (2) compute eRank of data covariance as lower bound [15], (3) sweep over candidate K values via cross-validation, (4) report codebook coverage to detect over-specification.\n\n### 5. Key Gaps and Risks\n\nCritical gaps include: SREDT and FC-ODT lack public code, so results can only be compared via reported numbers [7, 10]. FoLDTree is R-only, complicating pipeline integration [9]. SPORF is a full 500-tree ensemble while FIGS-style models use <=5 trees -- comparing requires careful framing of accuracy-interpretability tradeoffs [1, 4]. The treeple package does not expose split direction vectors via clean public API, requiring Cython internals access for direction diversity analysis [2]. The RO-FIGS repo's minimal development history (10 commits, 1 star) poses reproducibility risks [5]. No existing paper studies direction sharing/reuse quantitatively prior to FC-ODT's feature concatenation mechanism [10].",
+
+  "master_comparison_table": [
+    {
+      "method": "SPORF",
+      "paper": "Tomita et al., Sparse Projection Oblique Randomer Forests",
+      "year": 2020,
+      "venue": "JMLR Vol 21(104)",
+      "code_available": true,
+      "language": "Python/Cython",
+      "package": "pip install treeple (v0.10.3)",
+      "sklearn_compatible": true,
+      "classification": true,
+      "regression": true,
+      "num_benchmark_datasets": 105,
+      "key_metric": "Cohen's kappa (5-fold CV)",
+      "split_type": "sparse random projections from {+1,-1}",
+      "model_type": "full ensemble (500 trees)",
+      "maintenance_status": "Active (treeple last push Feb 2026)",
+      "key_class": "treeple.ObliqueRandomForestClassifier",
+      "key_hyperparameters": {"max_features": "p (sqrt for fast)", "feature_combinations": "3.0 (lambda=3/p)", "n_estimators": 500}
+    },
+    {
+      "method": "RO-FIGS",
+      "paper": "Matjasec et al., RO-FIGS: Efficient and Expressive Tree-Based Ensembles for Tabular Data",
+      "year": 2025,
+      "venue": "IEEE CITREx 2025",
+      "code_available": true,
+      "language": "Python",
+      "package": "https://github.com/um-k/rofigs (standalone)",
+      "sklearn_compatible": false,
+      "classification": true,
+      "regression": false,
+      "num_benchmark_datasets": 22,
+      "key_metric": "Balanced accuracy (10-fold CV)",
+      "split_type": "gradient-descent oblique with L-1/2 regularization",
+      "model_type": "compact additive ensemble (<=5 trees)",
+      "maintenance_status": "New (Dec 2024, 10 commits)",
+      "key_class": "src.rofigs.ROFIGS",
+      "key_hyperparameters": {"beam_size": "features per split", "min_imp_dec": "stopping threshold", "r": 5}
+    },
+    {
+      "method": "SREDT",
+      "paper": "Fong & Motani, Symbolic Regression Enhanced Decision Trees for Classification Tasks",
+      "year": 2024,
+      "venue": "AAAI 2024",
+      "code_available": false,
+      "language": "Python (inferred, uses gplearn)",
+      "package": "No public code",
+      "sklearn_compatible": false,
+      "classification": true,
+      "regression": false,
+      "num_benchmark_datasets": 56,
+      "key_metric": "F-Score and Accuracy (70-30 splits, 100 repeats)",
+      "split_type": "symbolic regression (nonlinear, GP-evolved expressions)",
+      "model_type": "single tree (very compact, depth 1-3)",
+      "maintenance_status": "No code released",
+      "key_class": null,
+      "key_hyperparameters": {"parsimony_coefficient": 0.001, "generations": 40, "population_size": 400, "tournament_size": 200, "primitives": ["add", "mul", "sub", "div"]}
+    },
+    {
+      "method": "FoLDTree",
+      "paper": "Wang, FoLDTree: A ULDA-Based Decision Tree Framework for Efficient Oblique Splits and Feature Selection",
+      "year": 2024,
+      "venue": "arXiv:2410.23147",
+      "code_available": true,
+      "language": "R",
+      "package": "CRAN: LDATree v0.2.0",
+      "sklearn_compatible": false,
+      "classification": true,
+      "regression": false,
+      "num_benchmark_datasets": 9,
+      "key_metric": "Accuracy",
+      "split_type": "Forward ULDA (linear discriminant analysis)",
+      "model_type": "single tree",
+      "maintenance_status": "Active (CRAN updated Oct 2024)",
+      "key_class": "Treee (R function, ldaType parameter)",
+      "key_hyperparameters": {"ldaType": "all", "pruneMethod": "post"}
+    },
+    {
+      "method": "FC-ODT",
+      "paper": "Lyu et al., Enhance Learning Efficiency of Oblique Decision Tree via Feature Concatenation",
+      "year": 2025,
+      "venue": "Information Sciences / arXiv:2502.00465",
+      "code_available": false,
+      "language": "Unknown",
+      "package": "No public code",
+      "sklearn_compatible": false,
+      "classification": false,
+      "regression": true,
+      "num_benchmark_datasets": 17,
+      "key_metric": "R-squared (with Wilcoxon and Friedman-Nemenyi tests)",
+      "split_type": "ridge regression with feature concatenation",
+      "model_type": "single tree (shallow, depth K=4)",
+      "maintenance_status": "No code released",
+      "key_class": null,
+      "key_hyperparameters": {"lambda_range": [0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000], "tree_depth_K": 4}
+    },
+    {
+      "method": "FIGS",
+      "paper": "Tan et al., Fast Interpretable Greedy-Tree Sums",
+      "year": 2022,
+      "venue": "PNAS Vol 122(7)",
+      "code_available": true,
+      "language": "Python",
+      "package": "pip install imodels (v2.0.4)",
+      "sklearn_compatible": true,
+      "classification": true,
+      "regression": true,
+      "num_benchmark_datasets": 15,
+      "key_metric": "AUROC and MSE",
+      "split_type": "axis-parallel (standard CART stumps)",
+      "model_type": "compact additive ensemble",
+      "maintenance_status": "Active (imodels v2.0.4, Nov 2025)",
+      "key_class": "imodels.FIGSClassifier / imodels.FIGSRegressor",
+      "key_hyperparameters": {"max_rules": "total splits across trees", "max_trees": "number of trees", "min_impurity_decrease": "threshold"}
+    },
+    {
+      "method": "OC1 (sklearn-oblique-tree)",
+      "paper": "Murthy et al., A System for Induction of Oblique Decision Trees, JAIR 1994",
+      "year": 1994,
+      "venue": "JAIR",
+      "code_available": true,
+      "language": "C with Python bindings",
+      "package": "https://github.com/AndriyMulyar/sklearn-oblique-tree (build from source)",
+      "sklearn_compatible": true,
+      "classification": true,
+      "regression": false,
+      "num_benchmark_datasets": null,
+      "key_metric": null,
+      "split_type": "hill-climbing perturbation",
+      "model_type": "single tree",
+      "maintenance_status": "Abandoned (last commit 2019, 48 stars)",
+      "key_class": "sklearn_oblique_tree.oblique.ObliqueClassifier",
+      "key_hyperparameters": {}
+    },
+    {
+      "method": "HHCART (scikit-obliquetree)",
+      "paper": "Wickramarachchi et al., HHCART: An Oblique Decision Tree, 2015",
+      "year": 2015,
+      "venue": "Computational Statistics & Data Analysis",
+      "code_available": true,
+      "language": "Python",
+      "package": "pip install scikit-obliquetree (v0.1.4)",
+      "sklearn_compatible": false,
+      "classification": true,
+      "regression": true,
+      "num_benchmark_datasets": null,
+      "key_metric": null,
+      "split_type": "Householder reflections",
+      "model_type": "single tree",
+      "maintenance_status": "Abandoned (last update May 2021)",
+      "key_class": "HouseHolderCART",
+      "key_hyperparameters": {"max_depth": 3}
+    },
+    {
+      "method": "CART-ELC",
+      "paper": "Laack et al., 2025 (under review at TMLR)",
+      "year": 2025,
+      "venue": "arXiv:2505.05402",
+      "code_available": true,
+      "language": "C++/Python",
+      "package": "https://github.com/andrewlaack/cart-elc",
+      "sklearn_compatible": true,
+      "classification": true,
+      "regression": false,
+      "num_benchmark_datasets": null,
+      "key_metric": null,
+      "split_type": "exhaustive linear combinations",
+      "model_type": "single tree",
+      "maintenance_status": "Active (created Apr 2025)",
+      "key_class": "ELCClassifier",
+      "key_hyperparameters": {}
+    },
+    {
+      "method": "ODRF",
+      "paper": "Liu et al., Oblique Decision Random Forest",
+      "year": 2023,
+      "venue": "CRAN",
+      "code_available": true,
+      "language": "R",
+      "package": "CRAN: ODRF",
+      "sklearn_compatible": false,
+      "classification": true,
+      "regression": true,
+      "num_benchmark_datasets": null,
+      "key_metric": null,
+      "split_type": "customizable linear combinations",
+      "model_type": "single tree or ensemble",
+      "maintenance_status": "Active",
+      "key_class": "ODT() / ODRF()",
+      "key_hyperparameters": {}
+    }
+  ],
+
+  "ro_figs_datasets": [
+    {"short_name": "blood", "openml_name": "blood-transfusion-service-center", "openml_id": 1464, "num_features": 4, "samples": 748},
+    {"short_name": "diabetes", "openml_name": "diabetes", "openml_id": 37, "num_features": 8, "samples": 768},
+    {"short_name": "breast-w", "openml_name": "breast-w", "openml_id": 15, "num_features": 9, "samples": 699},
+    {"short_name": "ilpd", "openml_name": "ilpd", "openml_id": 1480, "num_features": 11, "samples": 583},
+    {"short_name": "monks2", "openml_name": "monks-problems-2", "openml_id": 334, "num_features": 17, "samples": 601},
+    {"short_name": "climate", "openml_name": "climate-model-simulation-crashes", "openml_id": 40994, "num_features": 18, "samples": 540},
+    {"short_name": "kc2", "openml_name": "kc2", "openml_id": 1063, "num_features": 21, "samples": 522},
+    {"short_name": "pc1", "openml_name": "pc1", "openml_id": 1068, "num_features": 21, "samples": 1109},
+    {"short_name": "kc1", "openml_name": "kc1", "openml_id": 1067, "num_features": 21, "samples": 2109},
+    {"short_name": "heart", "openml_name": "heart-c", "openml_id": 982, "num_features": 26, "samples": 303},
+    {"short_name": "tictactoe", "openml_name": "tic-tac-toe", "openml_id": 50, "num_features": 27, "samples": 958},
+    {"short_name": "wdbc", "openml_name": "wdbc", "openml_id": 1510, "num_features": 30, "samples": 569},
+    {"short_name": "churn", "openml_name": "churn", "openml_id": 40701, "num_features": 33, "samples": 5000},
+    {"short_name": "pc3", "openml_name": "pc3", "openml_id": 1050, "num_features": 37, "samples": 1563},
+    {"short_name": "biodeg", "openml_name": "qsar-biodeg", "openml_id": 1494, "num_features": 41, "samples": 1055},
+    {"short_name": "credit", "openml_name": "credit-approval", "openml_id": 29, "num_features": 51, "samples": 690},
+    {"short_name": "spambase", "openml_name": "spambase", "openml_id": 44, "num_features": 57, "samples": 4601},
+    {"short_name": "credit-g", "openml_name": "credit-g", "openml_id": 31, "num_features": 61, "samples": 1000},
+    {"short_name": "friedman", "openml_name": "fri_c4_500_100", "openml_id": 610, "num_features": 100, "samples": 500},
+    {"short_name": "usps", "openml_name": "USPS", "openml_id": 41964, "num_features": 256, "samples": 1424},
+    {"short_name": "bioresponse", "openml_name": "Bioresponse", "openml_id": 45019, "num_features": 419, "samples": 3434},
+    {"short_name": "speeddating", "openml_name": "SpeedDating", "openml_id": 40536, "num_features": 503, "samples": 8378}
+  ],
+
+  "ro_figs_results_table": {
+    "metric": "balanced_accuracy_mean_std_10fold",
+    "methods": ["DT", "MT", "OT", "ODT", "RF", "ETC", "CatBoost", "FIGS", "Ens-ODT", "MLP", "RO-FIGS"],
+    "average_ranks": {"DT": 5.3, "MT": 5.5, "OT": 3.4, "ODT": 4.3, "RF": 6.1, "ETC": 5.3, "CatBoost": 8.5, "FIGS": 4.5, "Ens-ODT": 7.8, "MLP": 6.5, "RO-FIGS": 8.8},
+    "results": {
+      "blood": {"DT": 63.3, "MT": 64.5, "OT": 64.1, "ODT": 61.5, "RF": 63.0, "ETC": 58.0, "CatBoost": 60.3, "FIGS": 65.0, "Ens-ODT": 62.8, "MLP": 55.8, "RO-FIGS": 68.5},
+      "diabetes": {"DT": 70.8, "MT": 68.5, "OT": 71.0, "ODT": 69.7, "RF": 72.6, "ETC": 72.5, "CatBoost": 70.5, "FIGS": 70.2, "Ens-ODT": 69.9, "MLP": 70.6, "RO-FIGS": 73.6},
+      "breast-w": {"DT": 93.5, "MT": 96.5, "OT": 93.9, "ODT": 93.4, "RF": 95.8, "ETC": 96.5, "CatBoost": 95.9, "FIGS": 94.4, "Ens-ODT": 96.2, "MLP": 96.1, "RO-FIGS": 96.5},
+      "ilpd": {"DT": 56.0, "MT": 57.3, "OT": 52.0, "ODT": 54.2, "RF": 56.6, "ETC": 54.6, "CatBoost": 58.9, "FIGS": 53.2, "Ens-ODT": 59.8, "MLP": 51.6, "RO-FIGS": 61.9},
+      "monks2": {"DT": 94.6, "MT": 87.1, "OT": 52.8, "ODT": 86.8, "RF": 74.9, "ETC": 91.1, "CatBoost": 78.3, "FIGS": 63.7, "Ens-ODT": 98.1, "MLP": 99.9, "RO-FIGS": 99.5},
+      "climate": {"DT": 69.4, "MT": 69.8, "OT": 62.9, "ODT": 71.4, "RF": 51.0, "ETC": 50.0, "CatBoost": 68.1, "FIGS": 64.8, "Ens-ODT": 71.2, "MLP": 76.8, "RO-FIGS": 73.1},
+      "kc2": {"DT": 72.4, "MT": 66.6, "OT": 70.2, "ODT": 68.6, "RF": 72.1, "ETC": 67.1, "CatBoost": 69.2, "FIGS": 72.8, "Ens-ODT": 69.6, "MLP": 69.6, "RO-FIGS": 77.6},
+      "pc1": {"DT": 60.4, "MT": 53.1, "OT": 56.6, "ODT": 58.5, "RF": 56.9, "ETC": 56.4, "CatBoost": 61.2, "FIGS": 56.4, "Ens-ODT": 60.0, "MLP": 50.5, "RO-FIGS": 66.6},
+      "kc1": {"DT": 60.8, "MT": 58.7, "OT": 58.7, "ODT": 55.8, "RF": 60.5, "ETC": 59.2, "CatBoost": 65.0, "FIGS": 59.0, "Ens-ODT": 60.3, "MLP": 57.9, "RO-FIGS": 64.9},
+      "heart": {"DT": 80.0, "MT": 78.2, "OT": 82.5, "ODT": 77.8, "RF": 82.5, "ETC": 82.7, "CatBoost": 83.3, "FIGS": 81.2, "Ens-ODT": 84.2, "MLP": 82.5, "RO-FIGS": 84.8},
+      "tictactoe": {"DT": 92.2, "MT": 97.6, "OT": 67.6, "ODT": 86.7, "RF": 95.9, "ETC": 97.4, "CatBoost": 99.9, "FIGS": 84.3, "Ens-ODT": 97.1, "MLP": 97.5, "RO-FIGS": 94.4},
+      "wdbc": {"DT": 91.8, "MT": 95.2, "OT": 92.0, "ODT": 95.4, "RF": 94.6, "ETC": 94.3, "CatBoost": 96.3, "FIGS": 92.6, "Ens-ODT": 95.8, "MLP": 97.2, "RO-FIGS": 95.6},
+      "churn": {"DT": 84.2, "MT": 82.9, "OT": 67.5, "ODT": 86.7, "RF": 83.8, "ETC": 74.4, "CatBoost": 88.3, "FIGS": 82.6, "Ens-ODT": 87.8, "MLP": 84.8, "RO-FIGS": 86.3},
+      "pc3": {"DT": 58.3, "MT": 59.7, "OT": 52.3, "ODT": 56.8, "RF": 52.3, "ETC": 52.0, "CatBoost": 60.7, "FIGS": 54.4, "Ens-ODT": 55.6, "MLP": 50.0, "RO-FIGS": 62.9},
+      "biodeg": {"DT": 78.3, "MT": 82.1, "OT": 76.5, "ODT": 79.4, "RF": 82.0, "ETC": 81.4, "CatBoost": 85.3, "FIGS": 76.6, "Ens-ODT": 83.9, "MLP": 86.2, "RO-FIGS": 82.7},
+      "credit": {"DT": 83.9, "MT": 82.0, "OT": 85.4, "ODT": 84.3, "RF": 86.4, "ETC": 86.1, "CatBoost": 86.8, "FIGS": 85.4, "Ens-ODT": 85.9, "MLP": 85.8, "RO-FIGS": 85.7},
+      "spambase": {"DT": 90.4, "MT": 91.4, "OT": 87.9, "ODT": 91.9, "RF": 93.3, "ETC": 92.5, "CatBoost": 94.9, "FIGS": 89.8, "Ens-ODT": 94.6, "MLP": 92.5, "RO-FIGS": 92.9},
+      "credit-g": {"DT": 63.3, "MT": 65.2, "OT": 58.5, "ODT": 64.2, "RF": 63.4, "ETC": 63.6, "CatBoost": 66.8, "FIGS": 62.1, "Ens-ODT": 67.7, "MLP": 68.8, "RO-FIGS": 65.7},
+      "friedman": {"DT": 84.9, "MT": 69.8, "OT": 80.4, "ODT": 61.2, "RF": 77.8, "ETC": 68.5, "CatBoost": 86.4, "FIGS": 82.0, "Ens-ODT": 61.5, "MLP": 59.8, "RO-FIGS": 80.0},
+      "usps": {"DT": 93.4, "MT": 98.5, "OT": 92.3, "ODT": 96.6, "RF": 97.2, "ETC": 97.5, "CatBoost": 98.0, "FIGS": 93.5, "Ens-ODT": 97.8, "MLP": 98.0, "RO-FIGS": 97.5},
+      "bioresponse": {"DT": 71.8, "MT": 71.3, "OT": 71.0, "ODT": 72.3, "RF": 78.9, "ETC": 78.1, "CatBoost": 77.7, "FIGS": 72.6, "Ens-ODT": 78.1, "MLP": 74.6, "RO-FIGS": 72.9},
+      "speeddating": {"DT": 63.8, "MT": 64.0, "OT": 60.1, "ODT": 58.9, "RF": 58.0, "ETC": 57.4, "CatBoost": 69.1, "FIGS": 65.5, "Ens-ODT": 65.8, "MLP": 71.2, "RO-FIGS": 65.4}
+    },
+    "statistical_significance": "Corrected Friedman test + Bonferroni-Dunn post-hoc (p<0.05, CD=2.81). RO-FIGS significantly better than FIGS, MT, ETC, DT, ODT, OT. Not significantly different from CatBoost, Ens-ODT, MLP, RF."
+  },
+
+  "direction_diversity_metrics": {
+    "erank": {
+      "name": "Effective Rank",
+      "formula": "eRank(A) = exp(-sum_i rho_i * ln(rho_i)) where rho_i = sigma_i / sum_j sigma_j are normalized singular values",
+      "reference": "Roy & Vetterli, EUSIPCO 2007",
+      "properties": ["1 <= eRank(A) <= rank(A)", "eRank = rank iff all nonzero singular values equal", "eRank(A+B) <= eRank(A) + eRank(B)", "Corresponds to Hill number of order 1"],
+      "computation": "1. Compute SVD of split direction matrix W (N_splits x d). 2. Normalize singular values: p_i = sigma_i / sum(sigma_j). 3. Compute Shannon entropy: H = -sum(p_i * log(p_i)). 4. eRank = exp(H).",
+      "application_to_codebook_figs": "For Codebook-FIGS with K entries, eRank(W) <= K by construction since W has at most K distinct rows. eRank measures how uniformly the codebook entries are utilized.",
+      "recommended_as": "primary"
+    },
+    "stable_rank": {
+      "name": "Stable Rank",
+      "formula": "srank(A) = ||A||_F^2 / ||A||_2^2 = sum(sigma_i^2) / max(sigma_i)^2",
+      "reference": "Ipsen & Saibaba, arXiv:2407.21594",
+      "properties": ["1 <= srank(A) <= rank(A)", "2-stable rank in the p-stable rank framework", "Continuous and differentiable (no entropy discontinuities)", "Intrinsic dimension = 1-stable rank for HPSD matrices"],
+      "computation": "1. Compute SVD. 2. srank = sum(sigma^2) / max(sigma)^2.",
+      "recommended_as": "secondary (simpler to compute, less sensitive to small singular values)"
+    },
+    "participation_ratio": {
+      "name": "Participation Ratio",
+      "formula": "PR = (sum sigma_i^2)^2 / sum(sigma_i^4) = (Tr(C))^2 / Tr(C^2)",
+      "reference": "Gao et al., scale-dependent dimensionality (2022)",
+      "properties": ["1 <= PR <= rank(A)", "More sensitive to dominant directions than eRank", "Commonly used in neuroscience for neural population dimensionality"],
+      "recommended_as": "tertiary (alternative perspective, useful for cross-checking)"
+    },
+    "cosine_similarity": {
+      "name": "Average Pairwise Cosine Similarity",
+      "formula": "avg_cos = mean(|cos(w_i, w_j)|) for all i != j, where w_i are unit-normalized split directions",
+      "properties": ["Range [0, 1]: 0=all orthogonal, 1=all identical", "Simple to interpret", "Does not require SVD"],
+      "recommended_as": "supplementary (intuitive, easy to communicate)"
+    }
+  },
+
+  "interpretability_metrics": {
+    "existing_in_literature": [
+      {"metric": "Number of splits (total across ensemble)", "used_by": ["RO-FIGS", "FIGS"], "notes": "Primary complexity metric in FIGS literature"},
+      {"metric": "Number of trees", "used_by": ["RO-FIGS", "FIGS"], "notes": "Secondary complexity metric"},
+      {"metric": "Tree depth", "used_by": ["SREDT", "FC-ODT", "FoLDTree"], "notes": "RO-FIGS explicitly rejects depth as unreliable for comparing across methods"},
+      {"metric": "Number of features per split", "used_by": ["RO-FIGS (beam_size parameter)"], "notes": "Controls complexity of individual oblique splits"},
+      {"metric": "SHAP summary plots + split analysis", "used_by": ["RO-FIGS"], "notes": "Qualitative, not quantitative. Examines which features co-occur in splits"},
+      {"metric": "Inference time", "used_by": ["SREDT"], "notes": "SREDT reports 25-27% less inference time than DT/ODT"},
+      {"metric": "Cognitive load proxies (depth, leaves, terms)", "used_by": ["SREDT"], "notes": "References Zhang et al. 2022, Lage et al. 2019, Abdul et al. 2020 on cognitive load"}
+    ],
+    "proposed_codebook_specific": [
+      {"metric": "Codebook entry sparsity", "formula": "Average L0 and L1 norms of codebook direction vectors", "rationale": "Sparser codebook entries are more interpretable (closer to feature-aligned)"},
+      {"metric": "Codebook stability across CV folds", "formula": "Cosine similarity of matched codebook entries across folds (Hungarian matching)", "rationale": "Stable codebooks are more trustworthy; unstable ones indicate overfitting"},
+      {"metric": "Codebook coverage", "formula": "Fraction of K codebook entries actually used by the ensemble", "rationale": "Unused entries waste complexity budget; coverage < 1 suggests K is too large"},
+      {"metric": "Codebook interpretability score", "formula": "Fraction of entries with cos(entry, e_j) > 0.9 for some axis e_j", "rationale": "Axis-aligned entries are trivially interpretable; this measures how many are"},
+      {"metric": "Domain alignment score", "formula": "On datasets with known semantics, measure whether entries align with known feature combinations", "rationale": "E.g., on diabetes: does any entry approximate glucose+age+BMI?"},
+      {"metric": "eRank of split direction matrix", "formula": "eRank(W) where W is the matrix of all split directions used", "rationale": "Primary direction diversity metric; for Codebook-FIGS, eRank <= K"}
+    ]
+  },
+
+  "codebook_size_K_recommendations": {
+    "default_heuristic": "K = min(d, 20) where d is the number of features",
+    "data_driven": "K = number of PCA components explaining 95% of variance",
+    "evaluation_sweep": [3, 5, 8, 10, 15, 20],
+    "per_dataset_guidance": [
+      {"d_range": "4-10", "recommended_K": "3-5", "example_datasets": ["blood (4)", "diabetes (8)", "breast-w (9)"]},
+      {"d_range": "11-30", "recommended_K": "5-10", "example_datasets": ["ilpd (11)", "climate (18)", "kc2 (21)", "heart (26)"]},
+      {"d_range": "31-60", "recommended_K": "8-15", "example_datasets": ["pc3 (37)", "biodeg (41)", "spambase (57)"]},
+      {"d_range": "61-100", "recommended_K": "10-20", "example_datasets": ["credit-g (61)", "friedman (100)"]},
+      {"d_range": "100+", "recommended_K": "15-30", "example_datasets": ["usps (256)", "bioresponse (419)", "speeddating (503)"]}
+    ],
+    "theoretical_connections": {
+      "pca_threshold": "K >= number of PCA components for 90-95% variance (upper bound on linear intrinsic dimensionality)",
+      "erank_of_data": "K >= eRank(covariance_matrix) (information-theoretic lower bound)",
+      "rate_distortion": "K >= 2^R(D) where R(D) is the rate-distortion function for target distortion D",
+      "mdl": "K = argmin_K {K*d*log(bits) + n*s*log2(K) + reconstruction_error} (Minimum Description Length)"
+    },
+    "key_insight": "For Codebook-FIGS, K should be in the UNDERCOMPLETE regime (K << d), unlike K-SVD (K = 2-4d overcomplete) or SAEs (K = 4-2833x expansion). The goal is to find a small set of reusable directions, not to overcomplete-represent all data variations."
+  },
+
+  "dataset_overlap_analysis": {
+    "note": "Direct dataset overlap between papers is limited due to different benchmark suites",
+    "ro_figs_datasets": 22,
+    "sporf_datasets": 105,
+    "sredt_datasets": "6 main + 56 PMLB",
+    "foldtree_datasets": 9,
+    "fc_odt_datasets": 17,
+    "figs_datasets": 15,
+    "likely_overlapping_datasets": ["diabetes", "breast-w/breast-cancer", "heart", "credit"],
+    "metric_incompatibilities": {
+      "ro_figs": "balanced accuracy (10-fold CV)",
+      "sporf": "Cohen's kappa (5-fold CV)",
+      "sredt": "F-Score and accuracy (70-30 splits, 100 repeats)",
+      "foldtree": "accuracy",
+      "fc_odt": "R-squared (regression only)",
+      "figs": "AUROC and MSE"
+    },
+    "recommendation": "Use the 22 RO-FIGS OpenML datasets as the primary benchmark suite for Codebook-FIGS, since they provide the most comprehensive existing baseline numbers. Supplement with overlapping SPORF/FIGS datasets where available."
+  },
+
+  "identified_gaps_and_risks": [
+    "SREDT and FC-ODT lack public code; results can only be compared via reported numbers from their papers",
+    "Metric incompatibilities across papers (balanced accuracy vs kappa vs F-score vs R-squared) make direct comparison impossible without re-running experiments",
+    "FoLDTree is R-only (CRAN LDATree package); no Python wrapper exists, complicating direct comparison pipeline",
+    "SPORF (treeple) is a full ensemble (100-500 trees) while FIGS-style models are compact (<=5 trees) -- comparing requires careful framing of what 'better' means",
+    "RO-FIGS repo has only 1 star and 10 commits -- may be fragile or incomplete",
+    "No existing oblique tree paper measures 'direction diversity' quantitatively -- eRank metric for split directions is novel and untested in this context",
+    "treeple does not expose split direction vectors via clean public API -- extracting them requires Cython internals access",
+    "SREDT uses nonlinear symbolic regression splits (not just linear combinations), making it fundamentally different from linear oblique methods",
+    "FC-ODT is regression-only in its published experiments, while RO-FIGS/FIGS benchmarks are classification",
+    "No paper has studied direction sharing/reuse across tree nodes prior to FC-ODT's feature concatenation mechanism"
+  ],
+
+  "figs_extension_points": {
+    "split_search_method": "_construct_node_with_stump() uses DecisionTreeRegressor(max_depth=1)",
+    "injection_strategy": "Replace the stump-fitting step with custom codebook-constrained split search",
+    "preserved_infrastructure": "Priority queue, residual tracking, tree competition, stopping criteria all remain unchanged",
+    "node_structure": "Node stores: feature, threshold, value, left/right children, impurity_reduction, idxs, tree_num, node_id, depth",
+    "modification_needed": "Extend Node to store split direction vector w instead of single feature index; threshold remains scalar"
+  },
+
+  "fc_odt_direction_sharing": {
+    "description": "FC-ODT is the closest existing work to direction sharing. It concatenates the parent node's projected score y_tilde = a^T*x with original features X at child nodes, enabling information transmission through the tree.",
+    "difference_from_codebook": "FC-ODT transmits parent projections to children (vertical reuse within a path), while Codebook-FIGS constrains all nodes across all trees to share from a global dictionary (horizontal reuse across trees). These are complementary ideas.",
+    "consistency_rate_advantage": "FC-ODT achieves O(1/K^2) consistency rate vs O(1/K) for standard ODT, suggesting direction reuse has theoretical benefits"
+  }
+}
